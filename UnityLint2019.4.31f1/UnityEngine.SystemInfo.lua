@@ -1,0 +1,205 @@
+--- @class UnityEngine.SystemInfo Access system and hardware information.
+--- @field batteryLevel number property get
+---       The current battery level (Read Only).
+--- @field batteryStatus UnityEngine.BatteryStatus property get
+---       Returns the current status of the device's battery (Read Only).
+--- @field operatingSystem string property get
+---       Operating system name with version (Read Only).
+--- @field operatingSystemFamily UnityEngine.OperatingSystemFamily property get
+---       Returns the operating system family the game is running on (Read Only).
+--- @field processorType string property get
+---       Processor name (Read Only).
+--- @field processorFrequency number property get
+---       Processor frequency in MHz (Read Only).
+--- @field processorCount number property get
+---       Number of processors present (Read Only).
+--- @field systemMemorySize number property get
+---       Amount of system memory present (Read Only).
+--- @field deviceUniqueIdentifier string property get
+---       A unique device identifier. It is guaranteed to be unique for every device (Read Only).
+--- @field deviceName string property get
+---       The user defined name of the device (Read Only).
+--- @field deviceModel string property get
+---       The model of the device (Read Only).
+--- @field supportsAccelerometer boolean property get
+---       Is an accelerometer available on the device?
+--- @field supportsGyroscope boolean property get
+---       Is a gyroscope available on the device?
+--- @field supportsLocationService boolean property get
+---       Is the device capable of reporting its location?
+--- @field supportsVibration boolean property get
+---       Is the device capable of providing the user haptic feedback by vibration?
+--- @field supportsAudio boolean property get
+---       Is there an Audio device available for playback? (Read Only)
+--- @field deviceType UnityEngine.DeviceType property get
+---       Returns the kind of device the application is running on (Read Only).
+--- @field graphicsMemorySize number property get
+---       Amount of video memory present (Read Only).
+--- @field graphicsDeviceName string property get
+---       The name of the graphics device (Read Only).
+--- @field graphicsDeviceVendor string property get
+---       The vendor of the graphics device (Read Only).
+--- @field graphicsDeviceID number property get
+---       The identifier code of the graphics device (Read Only).
+--- @field graphicsDeviceVendorID number property get
+---       The identifier code of the graphics device vendor (Read Only).
+--- @field graphicsDeviceType UnityEngine.Rendering.GraphicsDeviceType property get
+---       The graphics API type used by the graphics device (Read Only).
+--- @field graphicsUVStartsAtTop boolean property get
+---       Returns true if the texture UV coordinate convention for this platform has Y starting at the top of the image.
+--- @field graphicsDeviceVersion string property get
+---       The graphics API type and driver version used by the graphics device (Read Only).
+--- @field graphicsShaderLevel number property get
+---       Graphics device shader capability level (Read Only).
+--- @field graphicsMultiThreaded boolean property get
+---       Is graphics device using multi-threaded rendering (Read Only)?
+--- @field renderingThreadingMode UnityEngine.Rendering.RenderingThreadingMode property get
+---       Application's actual rendering threading mode (Read Only).
+--- @field hasHiddenSurfaceRemovalOnGPU boolean property get
+---       True if the GPU supports hidden surface removal.
+--- @field hasDynamicUniformArrayIndexingInFragmentShaders boolean property get
+---       Returns true when the GPU has native support for indexing uniform arrays in fragment shaders without restrictions.
+--- @field supportsShadows boolean property get
+---       Are built-in shadows supported? (Read Only)
+--- @field supportsRawShadowDepthSampling boolean property get
+---       Is sampling raw depth from shadowmaps supported? (Read Only)
+--- @field supportsMotionVectors boolean property get
+---       Whether motion vectors are supported on this platform.
+--- @field supports3DTextures boolean property get
+---       Are 3D (volume) textures supported? (Read Only)
+--- @field supports2DArrayTextures boolean property get
+---       Are 2D Array textures supported? (Read Only)
+--- @field supports3DRenderTextures boolean property get
+---       Are 3D (volume) RenderTextures supported? (Read Only)
+--- @field supportsCubemapArrayTextures boolean property get
+---       Are Cubemap Array textures supported? (Read Only)
+--- @field copyTextureSupport UnityEngine.Rendering.CopyTextureSupport property get
+---       Support for various Graphics.CopyTexture cases (Read Only).
+--- @field supportsComputeShaders boolean property get
+---       Are compute shaders supported? (Read Only)
+--- @field supportsGeometryShaders boolean property get
+---       Are geometry shaders supported? (Read Only)
+--- @field supportsTessellationShaders boolean property get
+---       Are tessellation shaders supported? (Read Only)
+--- @field supportsInstancing boolean property get
+---       Is GPU draw call instancing supported? (Read Only)
+--- @field supportsHardwareQuadTopology boolean property get
+---       Does the hardware support quad topology? (Read Only)
+--- @field supports32bitsIndexBuffer boolean property get
+---       Are 32-bit index buffers supported? (Read Only)
+--- @field supportsSparseTextures boolean property get
+---       Are sparse textures supported? (Read Only)
+--- @field supportedRenderTargetCount number property get
+---       How many simultaneous render targets (MRTs) are supported? (Read Only)
+--- @field supportsSeparatedRenderTargetsBlend boolean property get
+---       Returns true when the platform supports different blend modes when rendering to multiple render targets, or false otherwise.
+--- @field supportedRandomWriteTargetCount number property get
+---       The maximum number of random write targets (UAV) that Unity supports simultaneously. (Read Only)
+--- @field supportsMultisampledTextures number property get
+---       Are multisampled textures supported? (Read Only)
+--- @field supportsMultisampleAutoResolve boolean property get
+---       Returns true if multisampled textures are resolved automatically
+--- @field supportsTextureWrapMirrorOnce number property get
+---       Returns true if the 'Mirror Once' texture wrap mode is supported. (Read Only)
+--- @field usesReversedZBuffer boolean property get
+---       This property is true if the current platform uses a reversed depth buffer (where values range from 1 at the near plane and 0 at far plane), and false if the depth buffer is normal (0 is near, 1 is far). (Read Only)
+--- @field npotSupport UnityEngine.NPOTSupport property get
+---       What NPOT (non-power of two size) texture support does the GPU provide? (Read Only)
+--- @field maxTextureSize number property get
+---       Maximum texture size (Read Only).
+--- @field maxCubemapSize number property get
+---       Maximum Cubemap texture size (Read Only).
+--- @field maxComputeBufferInputsVertex number property get
+---       Determines how many compute buffers Unity supports simultaneously in a vertex shader for reading. (Read Only)
+--- @field maxComputeBufferInputsFragment number property get
+---       Determines how many compute buffers Unity supports simultaneously in a fragment shader for reading. (Read Only)
+--- @field maxComputeBufferInputsGeometry number property get
+---       Determines how many compute buffers Unity supports simultaneously in a geometry shader for reading. (Read Only)
+--- @field maxComputeBufferInputsDomain number property get
+---       Determines how many compute buffers Unity supports simultaneously in a domain shader for reading. (Read Only)
+--- @field maxComputeBufferInputsHull number property get
+---       Determines how many compute buffers Unity supports simultaneously in a hull shader for reading. (Read Only)
+--- @field maxComputeBufferInputsCompute number property get
+---       Determines how many compute buffers Unity supports simultaneously in a compute shader for reading. (Read Only)
+--- @field maxComputeWorkGroupSize number property get
+---       The largest total number of invocations in a single local work group that can be dispatched to a compute shader (Read Only).
+--- @field maxComputeWorkGroupSizeX number property get
+---       The maximum number of work groups that a compute shader can use in X dimension (Read Only).
+--- @field maxComputeWorkGroupSizeY number property get
+---       The maximum number of work groups that a compute shader can use in Y dimension (Read Only).
+--- @field maxComputeWorkGroupSizeZ number property get
+---       The maximum number of work groups that a compute shader can use in Z dimension (Read Only).
+--- @field supportsAsyncCompute boolean property get
+---       Returns true when the platform supports asynchronous compute queues and false if otherwise.
+--- @field supportsGraphicsFence boolean property get
+---       Returns true when the platform supports GraphicsFences, and false if otherwise.
+--- @field supportsAsyncGPUReadback boolean property get
+---       Returns true if asynchronous readback of GPU data is available for this device and false otherwise.
+--- @field supportsRayTracing boolean property get
+---       Checks if ray tracing is supported by the current configuration.
+--- @field supportsSetConstantBuffer boolean property get
+---       Does the current renderer support binding constant buffers directly? (Read Only)
+--- @field minConstantBufferOffsetAlignment boolean property get
+---       Minimum buffer offset (in bytes) when binding a constant buffer using Shader.SetConstantBuffer or Material.SetConstantBuffer.
+--- @field hasMipMaxLevel boolean property get
+---       Returns true if the GPU supports partial mipmap chains (Read Only).
+--- @field supportsMipStreaming boolean property get
+---       Is streaming of texture mip maps supported? (Read Only)
+--- @field usesLoadStoreActions boolean property get
+---       True if the Graphics API takes RenderBufferLoadAction and RenderBufferStoreAction into account, false if otherwise.
+--- @field supportsStoreAndResolveAction boolean property get
+---       This property is true if the graphics API of the target build platform takes RenderBufferStoreAction.StoreAndResolve into account, false if otherwise.
+--- @field supportsRenderTextures boolean property get
+---       Are render textures supported? (Read Only)
+--- @field supportsRenderToCubemap boolean property get
+---       Are cubemap render textures supported? (Read Only)
+--- @field supportsImageEffects boolean property get
+---       Are image effects supported? (Read Only)
+--- @field supportsStencil number property get
+---       Is the stencil buffer supported? (Read Only)
+--- @field graphicsPixelFillrate number
+--- @field supportsVertexPrograms boolean
+--- @field supportsGPUFence boolean property get
+---       This functionality is deprecated, and should no longer be used. Please use SystemInfo.supportsGraphicsFence.
+--- @field unsupportedIdentifier string Value returned by SystemInfo string properties which are not supported on the current platform.
+UnityEngine.SystemInfo = {}
+
+--- Verifies that the specified graphics format is supported for the specified usage.
+--- @param Format UnityEngine.Experimental.Rendering.GraphicsFormat The Experimental.Rendering.GraphicsFormat format to look up.
+--- @param Usage UnityEngine.Experimental.Rendering.FormatUsage The Experimental.Rendering.FormatUsage usage to look up.
+--- @return boolean Returns true if the format is supported for the specific usage. Returns false otherwise.
+function UnityEngine.SystemInfo.IsFormatSupported(format, usage) end
+
+--- Returns a format supported by the platform for the specified usage.
+--- @param Format UnityEngine.Experimental.Rendering.GraphicsFormat The Experimental.Rendering.GraphicsFormat format to look up.
+--- @param Usage UnityEngine.Experimental.Rendering.FormatUsage The Experimental.Rendering.FormatUsage usage to look up.
+--- @return UnityEngine.Experimental.Rendering.GraphicsFormat Returns a format supported by the platform. If no equivalent or compatible format is supported, the function returns GraphicsFormat.None.
+function UnityEngine.SystemInfo.GetCompatibleFormat(format, usage) end
+
+--- Returns the platform-specific GraphicsFormat that is associated with the DefaultFormat.
+--- @param format UnityEngine.Experimental.Rendering.DefaultFormat The DefaultFormat format to look up.
+--- @return UnityEngine.Experimental.Rendering.GraphicsFormat 
+function UnityEngine.SystemInfo.GetGraphicsFormat(format) end
+
+--- Is render texture format supported?
+--- @param format UnityEngine.RenderTextureFormat The format to look up.
+--- @return boolean True if the format is supported.
+function UnityEngine.SystemInfo.SupportsRenderTextureFormat(format) end
+
+--- Is blending supported on render texture format?
+--- @param format UnityEngine.RenderTextureFormat The format to look up.
+--- @return boolean True if blending is supported on the given format.
+function UnityEngine.SystemInfo.SupportsBlendingOnRenderTextureFormat(format) end
+
+--- Is texture format supported on this device?
+--- @param format UnityEngine.TextureFormat The TextureFormat format to look up.
+--- @return boolean True if the format is supported.
+function UnityEngine.SystemInfo.SupportsTextureFormat(format) end
+
+--- Indicates whether the given combination of a vertex attribute format and dimension is supported on this device.
+--- @param format UnityEngine.Rendering.VertexAttributeFormat The VertexAttributeFormat format to look up.
+--- @param dimension number The dimension of vertex data to check for.
+--- @return boolean True if the format with the given dimension is supported.
+function UnityEngine.SystemInfo.SupportsVertexAttributeFormat(format, dimension) end
+
+---  Generated By xerysherry

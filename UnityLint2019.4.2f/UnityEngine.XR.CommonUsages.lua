@@ -1,0 +1,63 @@
+--- @class UnityEngine.XR.CommonUsages Defines static variables that are used to retrieve input features from XR.InputDevice.TryGetFeatureValue.
+--- @field isTracked UnityEngine.XR.InputFeatureUsage`1 Informs to the developer whether the device is currently being tracked.
+--- @field primaryButton UnityEngine.XR.InputFeatureUsage`1 The primary face button being pressed on a device, or sole button if only one is available.
+--- @field primaryTouch UnityEngine.XR.InputFeatureUsage`1 The primary face button being touched on a device.
+--- @field secondaryButton UnityEngine.XR.InputFeatureUsage`1 The secondary face button being pressed on a device.
+--- @field secondaryTouch UnityEngine.XR.InputFeatureUsage`1 The secondary face button being touched on a device.
+--- @field gripButton UnityEngine.XR.InputFeatureUsage`1 A binary measure of whether the device is being gripped.
+--- @field triggerButton UnityEngine.XR.InputFeatureUsage`1 A binary measure of whether the index finger is activating the trigger.
+--- @field menuButton UnityEngine.XR.InputFeatureUsage`1 Represents a menu button, used to pause, go back, or otherwise exit gameplay.
+--- @field primary2DAxisClick UnityEngine.XR.InputFeatureUsage`1 Represents the primary 2D axis being clicked or otherwise depressed.
+--- @field primary2DAxisTouch UnityEngine.XR.InputFeatureUsage`1 Represents the primary 2D axis being touched.
+--- @field secondary2DAxisClick UnityEngine.XR.InputFeatureUsage`1 Represents the secondary 2D axis being clicked or otherwise depressed.
+--- @field secondary2DAxisTouch UnityEngine.XR.InputFeatureUsage`1 Represents the secondary 2D axis being touched.
+--- @field userPresence UnityEngine.XR.InputFeatureUsage`1 Indicates whether the user is present and interacting with the device.
+--- @field trackingState UnityEngine.XR.InputFeatureUsage`1 Represents the values being tracked for this device.
+--- @field batteryLevel UnityEngine.XR.InputFeatureUsage`1 Value representing the current battery life of this device.
+--- @field trigger UnityEngine.XR.InputFeatureUsage`1 A trigger-like control, pressed with the index finger.
+--- @field grip UnityEngine.XR.InputFeatureUsage`1 Represents the users grip on the controller.
+--- @field primary2DAxis UnityEngine.XR.InputFeatureUsage`1 The primary touchpad or joystick on a device.
+--- @field secondary2DAxis UnityEngine.XR.InputFeatureUsage`1 A secondary touchpad or joystick on a device.
+--- @field devicePosition UnityEngine.XR.InputFeatureUsage`1 The position of the device.
+--- @field leftEyePosition UnityEngine.XR.InputFeatureUsage`1 The position of the left eye on this device.
+--- @field rightEyePosition UnityEngine.XR.InputFeatureUsage`1 The position of the right eye on this device.
+--- @field centerEyePosition UnityEngine.XR.InputFeatureUsage`1 The position of the center eye on this device.
+--- @field colorCameraPosition UnityEngine.XR.InputFeatureUsage`1 The position of the color camera on this device.
+--- @field deviceVelocity UnityEngine.XR.InputFeatureUsage`1 The velocity of the device.
+--- @field deviceAngularVelocity UnityEngine.XR.InputFeatureUsage`1 The angular velocity of this device, formatted as euler angles.
+--- @field leftEyeVelocity UnityEngine.XR.InputFeatureUsage`1 The velocity of the left eye on this device.
+--- @field leftEyeAngularVelocity UnityEngine.XR.InputFeatureUsage`1 The angular velocity of the left eye on this device, formatted as euler angles.
+--- @field rightEyeVelocity UnityEngine.XR.InputFeatureUsage`1 The velocity of the right eye on this device.
+--- @field rightEyeAngularVelocity UnityEngine.XR.InputFeatureUsage`1 The angular velocity of the right eye on this device, formatted as euler angles.
+--- @field centerEyeVelocity UnityEngine.XR.InputFeatureUsage`1 The velocity of the center eye on this device.
+--- @field centerEyeAngularVelocity UnityEngine.XR.InputFeatureUsage`1 The angular velocity of the center eye on this device, formatted as euler angles.
+--- @field colorCameraVelocity UnityEngine.XR.InputFeatureUsage`1 The velocity of the color camera on this device.
+--- @field colorCameraAngularVelocity UnityEngine.XR.InputFeatureUsage`1 The angular velocity of the color camera on this device, formatted as euler angles.
+--- @field deviceAcceleration UnityEngine.XR.InputFeatureUsage`1 The acceleration of the device.
+--- @field deviceAngularAcceleration UnityEngine.XR.InputFeatureUsage`1 The angular acceleration of this device, formatted as euler angles.
+--- @field leftEyeAcceleration UnityEngine.XR.InputFeatureUsage`1 The acceleration of the left eye on this device.
+--- @field leftEyeAngularAcceleration UnityEngine.XR.InputFeatureUsage`1 The angular acceleration of the left eye on this device, formatted as euler angles.
+--- @field rightEyeAcceleration UnityEngine.XR.InputFeatureUsage`1 The acceleration of the right eye on this device.
+--- @field rightEyeAngularAcceleration UnityEngine.XR.InputFeatureUsage`1 The angular acceleration of the right eye on this device, formatted as euler angles.
+--- @field centerEyeAcceleration UnityEngine.XR.InputFeatureUsage`1 The acceleration of the center eye on this device.
+--- @field centerEyeAngularAcceleration UnityEngine.XR.InputFeatureUsage`1 The angular acceleration of the center eye on this device, formatted as euler angles.
+--- @field colorCameraAcceleration UnityEngine.XR.InputFeatureUsage`1 The acceleration of the color camera on this device.
+--- @field colorCameraAngularAcceleration UnityEngine.XR.InputFeatureUsage`1 The angular acceleration of the color camera on this device, formatted as euler angles.
+--- @field deviceRotation UnityEngine.XR.InputFeatureUsage`1 The rotation of this device.
+--- @field leftEyeRotation UnityEngine.XR.InputFeatureUsage`1 The rotation of the left eye on this device.
+--- @field rightEyeRotation UnityEngine.XR.InputFeatureUsage`1 The rotation of the right eye on this device.
+--- @field centerEyeRotation UnityEngine.XR.InputFeatureUsage`1 The rotation of the center eye on this device.
+--- @field colorCameraRotation UnityEngine.XR.InputFeatureUsage`1 The rotation of the color camera on this device.
+--- @field handData UnityEngine.XR.InputFeatureUsage`1 Value representing the hand data for this device.
+--- @field eyesData UnityEngine.XR.InputFeatureUsage`1 An Eyes struct containing eye tracking data collected from the device.
+--- @field dPad UnityEngine.XR.InputFeatureUsage`1 A non-handed 2D axis.
+--- @field indexFinger UnityEngine.XR.InputFeatureUsage`1 Represents the grip pressure or angle of the index finger.
+--- @field middleFinger UnityEngine.XR.InputFeatureUsage`1 Represents the grip pressure or angle of the middle finger.
+--- @field ringFinger UnityEngine.XR.InputFeatureUsage`1 Represents the grip pressure or angle of the ring finger.
+--- @field pinkyFinger UnityEngine.XR.InputFeatureUsage`1 Represents the grip pressure or angle of the pinky finger.
+--- @field thumbrest UnityEngine.XR.InputFeatureUsage`1 Represents a thumbrest or light thumb touch.
+--- @field indexTouch UnityEngine.XR.InputFeatureUsage`1 Represents a touch of the trigger or index finger.
+--- @field thumbTouch UnityEngine.XR.InputFeatureUsage`1 Represents the thumb pressing any input or feature.
+UnityEngine.XR.CommonUsages = {}
+
+---  Generated By xerysherry

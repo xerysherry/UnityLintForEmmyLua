@@ -1,0 +1,221 @@
+--- @class UnityEngine.Device.SystemInfo Access platform-specific system and hardware information.
+--- @field batteryLevel number property get
+---       This has the same functionality as SystemInfo.batteryLevel and also mimics platform-specific behavior in the Unity Editor.
+--- @field batteryStatus UnityEngine.BatteryStatus property get
+---       This has the same functionality as SystemInfo.batteryStatus and also mimics platform-specific behavior in the Unity Editor.
+--- @field operatingSystem string property get
+---       This has the same functionality as SystemInfo.operatingSystem and also mimics platform-specific behavior in the Unity Editor.
+--- @field operatingSystemFamily UnityEngine.OperatingSystemFamily property get
+---       This has the same functionality as SystemInfo.operatingSystemFamily and also mimics platform-specific behavior in the Unity Editor.
+--- @field processorType string property get
+---       This has the same functionality as SystemInfo.processorType and also mimics platform-specific behavior in the Unity Editor.
+--- @field processorFrequency number property get
+---       This has the same functionality as SystemInfo.processorFrequency and also mimics platform-specific behavior in the Unity Editor.
+--- @field processorCount number property get
+---       This has the same functionality as SystemInfo.processorCount and also mimics platform-specific behavior in the Unity Editor.
+--- @field systemMemorySize number property get
+---       This has the same functionality as SystemInfo.systemMemorySize and also mimics platform-specific behavior in the Unity Editor.
+--- @field deviceUniqueIdentifier string property get
+---       This has the same functionality as SystemInfo.deviceUniqueIdentifier and also mimics platform-specific behavior in the Unity Editor.
+--- @field deviceName string property get
+---       This has the same functionality as SystemInfo.deviceName and also mimics platform-specific behavior in the Unity Editor.
+--- @field deviceModel string property get
+---       This has the same functionality as SystemInfo.deviceModel and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsAccelerometer boolean property get
+---       This has the same functionality as SystemInfo.supportsAccelerometer and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsGyroscope boolean property get
+---       This has the same functionality as SystemInfo.supportsGyroscope and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsLocationService boolean property get
+---       This has the same functionality as SystemInfo.supportsLocationService and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsVibration boolean property get
+---       This has the same functionality as SystemInfo.supportsVibration and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsAudio boolean property get
+---       This has the same functionality as SystemInfo.supportsAudio and also mimics platform-specific behavior in the Unity Editor.
+--- @field deviceType UnityEngine.DeviceType property get
+---       This has the same functionality as SystemInfo.deviceType and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsMemorySize number property get
+---       This has the same functionality as SystemInfo.graphicsMemorySize and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceName string property get
+---       This has the same functionality as SystemInfo.graphicsDeviceName and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceVendor string property get
+---       This has the same functionality as SystemInfo.graphicsDeviceVendor and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceID number property get
+---       This has the same functionality as SystemInfo.graphicsDeviceID and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceVendorID number property get
+---       This has the same functionality as SystemInfo.graphicsDeviceVendorID and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceType UnityEngine.Rendering.GraphicsDeviceType property get
+---       This has the same functionality as SystemInfo.graphicsDeviceType and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsUVStartsAtTop boolean property get
+---       This has the same functionality as SystemInfo.graphicsUVStartsAtTop and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsDeviceVersion string property get
+---       This has the same functionality as SystemInfo.graphicsDeviceVersion and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsShaderLevel number property get
+---       This has the same functionality as SystemInfo.graphicsShaderLevel and also mimics platform-specific behavior in the Unity Editor.
+--- @field graphicsMultiThreaded boolean property get
+---       This has the same functionality as SystemInfo.graphicsMultiThreaded and also mimics platform-specific behavior in the Unity Editor.
+--- @field renderingThreadingMode UnityEngine.Rendering.RenderingThreadingMode property get
+---       This has the same functionality as SystemInfo.renderingThreadingMode and also mimics platform-specific behavior in the Unity Editor.
+--- @field hasHiddenSurfaceRemovalOnGPU boolean property get
+---       This has the same functionality as SystemInfo.hasHiddenSurfaceRemovalOnGPU and also mimics platform-specific behavior in the Unity Editor.
+--- @field hasDynamicUniformArrayIndexingInFragmentShaders boolean property get
+---       This has the same functionality as SystemInfo.hasDynamicUniformArrayIndexingInFragmentShaders and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsShadows boolean property get
+---       This has the same functionality as SystemInfo.supportsShadows and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsRawShadowDepthSampling boolean property get
+---       This has the same functionality as SystemInfo.supportsRawShadowDepthSampling and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMotionVectors boolean property get
+---       This has the same functionality as SystemInfo.supportsMotionVectors and also mimics platform-specific behavior in the Unity Editor.
+--- @field supports3DTextures boolean property get
+---       This has the same functionality as SystemInfo.supports3DTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsCompressed3DTextures boolean property get
+---       This has the same functionality as SystemInfo.supportsCompressed3DTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supports2DArrayTextures boolean property get
+---       This has the same functionality as SystemInfo.supports2DArrayTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supports3DRenderTextures boolean property get
+---       This has the same functionality as SystemInfo.supports3DRenderTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsCubemapArrayTextures boolean property get
+---       This has the same functionality as SystemInfo.supportsCubemapArrayTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field copyTextureSupport UnityEngine.Rendering.CopyTextureSupport property get
+---       This has the same functionality as SystemInfo.copyTextureSupport and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsComputeShaders boolean property get
+---       This has the same functionality as SystemInfo.supportsComputeShaders and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsGeometryShaders boolean property get
+---       This has the same functionality as SystemInfo.supportsGeometryShaders and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsTessellationShaders boolean property get
+---       This has the same functionality as SystemInfo.supportsTessellationShaders and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsRenderTargetArrayIndexFromVertexShader boolean property get
+---       This has the same functionality as SystemInfo.supportsRenderTargetArrayIndexFromVertexShader and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsInstancing boolean property get
+---       This has the same functionality as SystemInfo.supportsInstancing and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsHardwareQuadTopology boolean property get
+---       This has the same functionality as SystemInfo.supportsHardwareQuadTopology and also mimics platform-specific behavior in the Unity Editor.
+--- @field supports32bitsIndexBuffer boolean property get
+---       This has the same functionality as SystemInfo.supports32bitsIndexBuffer and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsSparseTextures boolean property get
+---       This has the same functionality as SystemInfo.supportsSparseTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportedRenderTargetCount number property get
+---       This has the same functionality as SystemInfo.supportedRenderTargetCount and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsSeparatedRenderTargetsBlend boolean property get
+---       This has the same functionality as SystemInfo.supportsSeparatedRenderTargetsBlend and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportedRandomWriteTargetCount number property get
+---       This has the same functionality as SystemInfo.supportedRandomWriteTargetCount and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMultisampledTextures number property get
+---       This has the same functionality as SystemInfo.supportsMultisampledTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMultisampled2DArrayTextures boolean property get
+---       This has the same functionality as SystemInfo.supportsMultisampled2DArrayTextures and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMultisampleAutoResolve boolean property get
+---       This has the same functionality as SystemInfo.supportsMultisampleAutoResolve and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsTextureWrapMirrorOnce number property get
+---       This has the same functionality as SystemInfo.supportsTextureWrapMirrorOnce and also mimics platform-specific behavior in the Unity Editor.
+--- @field usesReversedZBuffer boolean property get
+---       This has the same functionality as SystemInfo.usesReversedZBuffer and also mimics platform-specific behavior in the Unity Editor.
+--- @field npotSupport UnityEngine.NPOTSupport property get
+---       This has the same functionality as SystemInfo.npotSupport and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxTextureSize number property get
+---       This has the same functionality as SystemInfo.maxTextureSize and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxCubemapSize number property get
+---       This has the same functionality as SystemInfo.maxCubemapSize and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsVertex number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsVertex and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsFragment number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsFragment and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsGeometry number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsGeometry and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsDomain number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsDomain and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsHull number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsHull and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeBufferInputsCompute number property get
+---       This has the same functionality as SystemInfo.maxComputeBufferInputsCompute and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeWorkGroupSize number property get
+---       This has the same functionality as SystemInfo.maxComputeWorkGroupSize and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeWorkGroupSizeX number property get
+---       This has the same functionality as SystemInfo.maxComputeWorkGroupSizeX and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeWorkGroupSizeY number property get
+---       This has the same functionality as SystemInfo.maxComputeWorkGroupSizeY and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxComputeWorkGroupSizeZ number property get
+---       This has the same functionality as SystemInfo.maxComputeWorkGroupSizeZ and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsAsyncCompute boolean property get
+---       This has the same functionality as SystemInfo.supportsAsyncCompute and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsGpuRecorder boolean property get
+---       This has the same functionality as SystemInfo.supportsGpuRecorder and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsGraphicsFence boolean property get
+---       This has the same functionality as SystemInfo.supportsGraphicsFence and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsAsyncGPUReadback boolean property get
+---       This has the same functionality as SystemInfo.supportsAsyncGPUReadback and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsRayTracing boolean property get
+---       This has the same functionality as SystemInfo.supportsRayTracing and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsSetConstantBuffer boolean property get
+---       This has the same functionality as SystemInfo.supportsSetConstantBuffer and also mimics platform-specific behavior in the Unity Editor.
+--- @field constantBufferOffsetAlignment number property get
+---       This has the same functionality as SystemInfo.constantBufferOffsetAlignment and also mimics platform-specific behavior in the Unity Editor.
+--- @field maxGraphicsBufferSize number property get
+---       The maximum size of a graphics buffer (GraphicsBuffer, ComputeBuffer, vertex/index buffer, etc.) in bytes (Read Only).
+--- @field hasMipMaxLevel boolean property get
+---       This has the same functionality as SystemInfo.hasMipMaxLevel and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMipStreaming boolean property get
+---       This has the same functionality as SystemInfo.supportsMipStreaming and also mimics platform-specific behavior in the Unity Editor.
+--- @field usesLoadStoreActions boolean property get
+---       This has the same functionality as SystemInfo.usesLoadStoreActions and also mimics platform-specific behavior in the Unity Editor.
+--- @field hdrDisplaySupportFlags UnityEngine.HDRDisplaySupportFlags property get
+---       This has the same functionality as SystemInfo.hdrDisplaySupportFlags and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsConservativeRaster boolean property get
+---       This has the same functionality as SystemInfo.supportsConservativeRaster and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsMultiview boolean property get
+---       This has the same functionality as SystemInfo.supportsMultiview and also mimics platform-specific behavior in the Unity Editor.
+--- @field supportsStoreAndResolveAction boolean property get
+---       This property has the same functionality as SystemInfo.supportsStoreAndResolveAction and also shows platform-specific behavior in the Unity Editor.
+--- @field supportsMultisampleResolveDepth boolean property get
+---       This property has the same functionality as SystemInfo.supportsMultisampleResolveDepth and also mimics platform-specific behavior in the Unity Editor.
+--- @field unsupportedIdentifier string This has the same functionality as SystemInfo.unsupportedIdentifier.
+UnityEngine.Device.SystemInfo = {}
+
+--- This has the same functionality as SystemInfo.SupportsRenderTextureFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.RenderTextureFormat 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.SupportsRenderTextureFormat(format) end
+
+--- This has the same functionality as SystemInfo.SupportsBlendingOnRenderTextureFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.RenderTextureFormat 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.SupportsBlendingOnRenderTextureFormat(format) end
+
+--- This has the same functionality as SystemInfo.SupportsTextureFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.TextureFormat 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.SupportsTextureFormat(format) end
+
+--- This has the same functionality as SystemInfo.SupportsVertexAttributeFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.Rendering.VertexAttributeFormat 
+--- @param dimension number 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.SupportsVertexAttributeFormat(format, dimension) end
+
+--- This has the same functionality as SystemInfo.IsFormatSupported and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param usage UnityEngine.Experimental.Rendering.FormatUsage 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.IsFormatSupported(format, usage) end
+
+--- This has the same functionality as SystemInfo.GetCompatibleFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param usage UnityEngine.Experimental.Rendering.FormatUsage 
+--- @return UnityEngine.Experimental.Rendering.GraphicsFormat 
+function UnityEngine.Device.SystemInfo.GetCompatibleFormat(format, usage) end
+
+--- This has the same functionality as SystemInfo.GetGraphicsFormat and also mimics platform-specific behavior in the Unity Editor.
+--- @param format UnityEngine.Experimental.Rendering.DefaultFormat 
+--- @return UnityEngine.Experimental.Rendering.GraphicsFormat 
+function UnityEngine.Device.SystemInfo.GetGraphicsFormat(format) end
+
+--- This has the same functionality as SystemInfo.GetRenderTextureSupportedMSAASampleCount and also mimics platform-specific behavior in the Unity Editor.
+--- @param desc UnityEngine.RenderTextureDescriptor 
+--- @return number 
+function UnityEngine.Device.SystemInfo.GetRenderTextureSupportedMSAASampleCount(desc) end
+
+--- This has the same functionality as SystemInfo.SupportsRandomWriteOnRenderTextureFormat. At the moment, the Device Simulator doesn't support simulation of this method.
+--- @param format UnityEngine.RenderTextureFormat 
+--- @return boolean 
+function UnityEngine.Device.SystemInfo.SupportsRandomWriteOnRenderTextureFormat(format) end
+
+---  Generated By xerysherry
