@@ -35,16 +35,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.ScaleConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.ScaleConstraint:set_weight(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.ScaleConstraint:set_scaleAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.ScaleConstraint:set_scaleOffset(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.ScaleConstraint:set_scalingAxis(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.ScaleConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.ScaleConstraint:set_locked(value) end
 
 --- Gets the list of sources.

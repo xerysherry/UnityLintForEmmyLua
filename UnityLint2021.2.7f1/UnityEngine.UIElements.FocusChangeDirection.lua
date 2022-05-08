@@ -12,6 +12,7 @@
 ---        
 UnityEngine.UIElements.FocusChangeDirection = {}
 
+--- @param fcd UnityEngine.UIElements.FocusChangeDirection 
 --- @return number
 function UnityEngine.UIElements.FocusChangeDirection.op_Implicit(fcd) end
 

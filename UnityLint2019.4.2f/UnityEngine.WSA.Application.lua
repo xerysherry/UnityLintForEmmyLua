@@ -5,12 +5,16 @@
 ---       Advertising ID.
 UnityEngine.WSA.Application = {}
 
+--- @param value function 
 function UnityEngine.WSA.Application.add_windowSizeChanged(value) end
 
+--- @param value function 
 function UnityEngine.WSA.Application.remove_windowSizeChanged(value) end
 
+--- @param value function 
 function UnityEngine.WSA.Application.add_windowActivated(value) end
 
+--- @param value function 
 function UnityEngine.WSA.Application.remove_windowActivated(value) end
 
 --- Executes callback item on application thread.

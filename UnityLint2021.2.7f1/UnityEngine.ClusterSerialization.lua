@@ -1,21 +1,27 @@
 --- @class UnityEngine.ClusterSerialization 
 UnityEngine.ClusterSerialization = {}
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return number
 function UnityEngine.ClusterSerialization.SaveTimeManagerState(buffer) end
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return boolean
 function UnityEngine.ClusterSerialization.RestoreTimeManagerState(buffer) end
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return number
 function UnityEngine.ClusterSerialization.SaveInputManagerState(buffer) end
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return boolean
 function UnityEngine.ClusterSerialization.RestoreInputManagerState(buffer) end
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return number
 function UnityEngine.ClusterSerialization.SaveClusterInputState(buffer) end
 
+--- @param buffer Unity.Collections.NativeArray`1 
 --- @return boolean
 function UnityEngine.ClusterSerialization.RestoreClusterInputState(buffer) end
 

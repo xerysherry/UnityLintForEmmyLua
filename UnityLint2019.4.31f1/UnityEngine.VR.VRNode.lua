@@ -1,3 +1,4 @@
+--- @class UnityEngine.VR.VRNode
 UnityEngine.VR.VRNode = {
     LeftEye = 0,
     RightEye = 1,

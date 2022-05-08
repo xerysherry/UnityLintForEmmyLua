@@ -14,6 +14,8 @@ function UnityEngine.Rendering.VirtualTexturing.Resolver:Dispose() end
 function UnityEngine.Rendering.VirtualTexturing.Resolver:UpdateSize(width, height) end
 
 --- Process the passed in feedback texture.
+--- @param cmd UnityEngine.Rendering.CommandBuffer 
+--- @param rt UnityEngine.Rendering.RenderTargetIdentifier 
 function UnityEngine.Rendering.VirtualTexturing.Resolver:Process(cmd, rt) end
 
 --- Process the passed in feedback texture.

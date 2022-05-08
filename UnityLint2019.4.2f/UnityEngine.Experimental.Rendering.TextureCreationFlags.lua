@@ -1,3 +1,4 @@
+--- @class UnityEngine.Experimental.Rendering.TextureCreationFlags
 UnityEngine.Experimental.Rendering.TextureCreationFlags = {
     None = 0,
     MipChain = 1,

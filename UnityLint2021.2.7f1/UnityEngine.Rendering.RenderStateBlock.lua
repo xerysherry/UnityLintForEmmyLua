@@ -13,27 +13,39 @@
 ---       Specifies which parts of the GPU's render state to override.
 UnityEngine.Rendering.RenderStateBlock = {}
 
+--- @param left UnityEngine.Rendering.RenderStateBlock 
+--- @param right UnityEngine.Rendering.RenderStateBlock 
 --- @return boolean
 function UnityEngine.Rendering.RenderStateBlock.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.RenderStateBlock 
+--- @param right UnityEngine.Rendering.RenderStateBlock 
 --- @return boolean
 function UnityEngine.Rendering.RenderStateBlock.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.BlendState 
 function UnityEngine.Rendering.RenderStateBlock:set_blendState(value) end
 
+--- @param value UnityEngine.Rendering.RasterState 
 function UnityEngine.Rendering.RenderStateBlock:set_rasterState(value) end
 
+--- @param value UnityEngine.Rendering.DepthState 
 function UnityEngine.Rendering.RenderStateBlock:set_depthState(value) end
 
+--- @param value UnityEngine.Rendering.StencilState 
 function UnityEngine.Rendering.RenderStateBlock:set_stencilState(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.RenderStateBlock:set_stencilReference(value) end
 
+--- @param value UnityEngine.Rendering.RenderStateMask 
 function UnityEngine.Rendering.RenderStateBlock:set_mask(value) end
 
+--- @param other UnityEngine.Rendering.RenderStateBlock 
 --- @return boolean
 function UnityEngine.Rendering.RenderStateBlock:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.RenderStateBlock:Equals(obj) end
 

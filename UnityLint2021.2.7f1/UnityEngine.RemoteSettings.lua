@@ -1,16 +1,22 @@
 --- @class UnityEngine.RemoteSettings Provides access to your remote settings.
 UnityEngine.RemoteSettings = {}
 
+--- @param value function 
 function UnityEngine.RemoteSettings.add_Updated(value) end
 
+--- @param value function 
 function UnityEngine.RemoteSettings.remove_Updated(value) end
 
+--- @param value function 
 function UnityEngine.RemoteSettings.add_BeforeFetchFromServer(value) end
 
+--- @param value function 
 function UnityEngine.RemoteSettings.remove_BeforeFetchFromServer(value) end
 
+--- @param value function 
 function UnityEngine.RemoteSettings.add_Completed(value) end
 
+--- @param value function 
 function UnityEngine.RemoteSettings.remove_Completed(value) end
 
 function UnityEngine.RemoteSettings.CallOnUpdate() end
@@ -23,6 +29,7 @@ function UnityEngine.RemoteSettings.ForceUpdate() end
 function UnityEngine.RemoteSettings.WasLastUpdatedFromServer() end
 
 --- Gets the value corresponding to remote setting identified by key, if it exists.
+--- @param key string 
 --- @return number The current value of the setting identified by key, or the default value.
 function UnityEngine.RemoteSettings.GetInt(key) end
 
@@ -33,6 +40,7 @@ function UnityEngine.RemoteSettings.GetInt(key) end
 function UnityEngine.RemoteSettings.GetInt(key, defaultValue) end
 
 --- Gets the value corresponding to remote setting identified by key, if it exists.
+--- @param key string 
 --- @return number The current value of the setting identified by key, or the default value.
 function UnityEngine.RemoteSettings.GetLong(key) end
 
@@ -43,6 +51,7 @@ function UnityEngine.RemoteSettings.GetLong(key) end
 function UnityEngine.RemoteSettings.GetLong(key, defaultValue) end
 
 --- Gets the value corresponding to remote setting identified by key, if it exists.
+--- @param key string 
 --- @return number The current value of the setting identified by key, or the default value.
 function UnityEngine.RemoteSettings.GetFloat(key) end
 
@@ -53,6 +62,7 @@ function UnityEngine.RemoteSettings.GetFloat(key) end
 function UnityEngine.RemoteSettings.GetFloat(key, defaultValue) end
 
 --- Gets the value corresponding to remote setting identified by key, if it exists.
+--- @param key string 
 --- @return string The current value of the setting identified by key, or the default value.
 function UnityEngine.RemoteSettings.GetString(key) end
 
@@ -63,6 +73,7 @@ function UnityEngine.RemoteSettings.GetString(key) end
 function UnityEngine.RemoteSettings.GetString(key, defaultValue) end
 
 --- Gets the value corresponding to remote setting identified by key, if it exists.
+--- @param key string 
 --- @return boolean The current value of the setting identified by key, or the default value.
 function UnityEngine.RemoteSettings.GetBool(key) end
 
@@ -91,10 +102,14 @@ function UnityEngine.RemoteSettings.GetKeys() end
 function UnityEngine.RemoteSettings.GetObject(key) end
 
 --- Gets the object corresponding to the remote setting identified by key, if it exists.
+--- @param type System.Type 
+--- @param key string 
 --- @return System.Object An instance of the object with fields assigned the corresponding remote values.
 function UnityEngine.RemoteSettings.GetObject(type, key) end
 
 --- Gets the object corresponding to the remote setting identified by key, if it exists.
+--- @param key string 
+--- @param defaultValue System.Object 
 --- @return System.Object An instance of the object with fields assigned the corresponding remote values.
 function UnityEngine.RemoteSettings.GetObject(key, defaultValue) end
 

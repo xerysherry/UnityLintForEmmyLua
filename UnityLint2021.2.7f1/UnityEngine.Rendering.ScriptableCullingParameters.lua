@@ -45,48 +45,71 @@
 ---       This parameter controls how many active jobs contribute to occlusion culling.
 UnityEngine.Rendering.ScriptableCullingParameters = {}
 
+--- @param left UnityEngine.Rendering.ScriptableCullingParameters 
+--- @param right UnityEngine.Rendering.ScriptableCullingParameters 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableCullingParameters.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.ScriptableCullingParameters 
+--- @param right UnityEngine.Rendering.ScriptableCullingParameters 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableCullingParameters.op_Inequality(left, right) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_maximumVisibleLights(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_conservativeEnclosingSphere(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_numIterationsEnclosingSphere(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_cullingPlaneCount(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_isOrthographic(value) end
 
+--- @param value UnityEngine.Rendering.LODParameters 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_lodParameters(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_cullingMask(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_cullingMatrix(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_origin(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_shadowDistance(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_shadowNearPlaneOffset(value) end
 
+--- @param value UnityEngine.Rendering.CullingOptions 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_cullingOptions(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeSortingCriteria 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_reflectionProbeSortingCriteria(value) end
 
+--- @param value UnityEngine.Rendering.CameraProperties 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_cameraProperties(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_stereoViewMatrix(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_stereoProjectionMatrix(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_stereoSeparationDistance(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_accurateOcclusionThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ScriptableCullingParameters:set_maximumPortalCullingJobs(value) end
 
 --- Get the distance for the culling of a specific layer.
@@ -109,9 +132,11 @@ function UnityEngine.Rendering.ScriptableCullingParameters:GetCullingPlane(index
 --- @param plane UnityEngine.Plane 
 function UnityEngine.Rendering.ScriptableCullingParameters:SetCullingPlane(index, plane) end
 
+--- @param other UnityEngine.Rendering.ScriptableCullingParameters 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableCullingParameters:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableCullingParameters:Equals(obj) end
 

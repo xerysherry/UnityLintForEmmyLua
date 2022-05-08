@@ -1,15 +1,30 @@
 --- @class UnityEngine.UI.StencilMaterial 
 UnityEngine.UI.StencilMaterial = {}
 
+--- @param baseMat UnityEngine.Material 
+--- @param stencilID number 
 --- @return UnityEngine.Material
 function UnityEngine.UI.StencilMaterial.Add(baseMat, stencilID) end
 
+--- @param baseMat UnityEngine.Material 
+--- @param stencilID number 
+--- @param operation UnityEngine.Rendering.StencilOp 
+--- @param compareFunction UnityEngine.Rendering.CompareFunction 
+--- @param colorWriteMask UnityEngine.Rendering.ColorWriteMask 
 --- @return UnityEngine.Material
 function UnityEngine.UI.StencilMaterial.Add(baseMat, stencilID, operation, compareFunction, colorWriteMask) end
 
+--- @param baseMat UnityEngine.Material 
+--- @param stencilID number 
+--- @param operation UnityEngine.Rendering.StencilOp 
+--- @param compareFunction UnityEngine.Rendering.CompareFunction 
+--- @param colorWriteMask UnityEngine.Rendering.ColorWriteMask 
+--- @param readMask number 
+--- @param writeMask number 
 --- @return UnityEngine.Material
 function UnityEngine.UI.StencilMaterial.Add(baseMat, stencilID, operation, compareFunction, colorWriteMask, readMask, writeMask) end
 
+--- @param customMat UnityEngine.Material 
 function UnityEngine.UI.StencilMaterial.Remove(customMat) end
 
 function UnityEngine.UI.StencilMaterial.ClearAll() end

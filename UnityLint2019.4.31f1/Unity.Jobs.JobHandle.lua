@@ -4,30 +4,43 @@
 Unity.Jobs.JobHandle = {}
 
 --- Ensures that all jobs have completed.
+--- @param job0 Unity.Jobs.JobHandle& 
+--- @param job1 Unity.Jobs.JobHandle& 
 function Unity.Jobs.JobHandle.CompleteAll(job0, job1) end
 
 --- Ensures that all jobs have completed.
+--- @param job0 Unity.Jobs.JobHandle& 
+--- @param job1 Unity.Jobs.JobHandle& 
+--- @param job2 Unity.Jobs.JobHandle& 
 function Unity.Jobs.JobHandle.CompleteAll(job0, job1, job2) end
 
 --- Ensures that all jobs have completed.
+--- @param jobs Unity.Collections.NativeArray`1 
 function Unity.Jobs.JobHandle.CompleteAll(jobs) end
 
 --- By default jobs are only put on a local queue when using Job Schedule functions, this actually makes them available to the worker threads to execute them.
 function Unity.Jobs.JobHandle.ScheduleBatchedJobs() end
 
 --- Combines multiple dependencies into a single one.
+--- @param job0 Unity.Jobs.JobHandle 
+--- @param job1 Unity.Jobs.JobHandle 
 --- @return Unity.Jobs.JobHandle 
 function Unity.Jobs.JobHandle.CombineDependencies(job0, job1) end
 
 --- Combines multiple dependencies into a single one.
+--- @param job0 Unity.Jobs.JobHandle 
+--- @param job1 Unity.Jobs.JobHandle 
+--- @param job2 Unity.Jobs.JobHandle 
 --- @return Unity.Jobs.JobHandle 
 function Unity.Jobs.JobHandle.CombineDependencies(job0, job1, job2) end
 
 --- Combines multiple dependencies into a single one.
+--- @param jobs Unity.Collections.NativeArray`1 
 --- @return Unity.Jobs.JobHandle 
 function Unity.Jobs.JobHandle.CombineDependencies(jobs) end
 
 --- Combines multiple dependencies into a single one.
+--- @param jobs Unity.Collections.NativeSlice`1 
 --- @return Unity.Jobs.JobHandle 
 function Unity.Jobs.JobHandle.CombineDependencies(jobs) end
 

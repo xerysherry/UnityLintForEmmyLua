@@ -9,9 +9,11 @@ UnityEngine.Playables.ScriptPlayableOutput = {}
 --- @return UnityEngine.Playables.ScriptPlayableOutput The created ScriptPlayableOutput.
 function UnityEngine.Playables.ScriptPlayableOutput.Create(graph, name) end
 
+--- @param output UnityEngine.Playables.ScriptPlayableOutput 
 --- @return UnityEngine.Playables.PlayableOutput
 function UnityEngine.Playables.ScriptPlayableOutput.op_Implicit(output) end
 
+--- @param output UnityEngine.Playables.PlayableOutput 
 --- @return UnityEngine.Playables.ScriptPlayableOutput
 function UnityEngine.Playables.ScriptPlayableOutput.op_Explicit(output) end
 

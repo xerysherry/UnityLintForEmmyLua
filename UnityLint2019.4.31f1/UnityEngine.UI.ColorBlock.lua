@@ -9,29 +9,42 @@
 --- @field fadeDuration number
 UnityEngine.UI.ColorBlock = {}
 
+--- @param point1 UnityEngine.UI.ColorBlock 
+--- @param point2 UnityEngine.UI.ColorBlock 
 --- @return boolean
 function UnityEngine.UI.ColorBlock.op_Equality(point1, point2) end
 
+--- @param point1 UnityEngine.UI.ColorBlock 
+--- @param point2 UnityEngine.UI.ColorBlock 
 --- @return boolean
 function UnityEngine.UI.ColorBlock.op_Inequality(point1, point2) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UI.ColorBlock:set_normalColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UI.ColorBlock:set_highlightedColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UI.ColorBlock:set_pressedColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UI.ColorBlock:set_selectedColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UI.ColorBlock:set_disabledColor(value) end
 
+--- @param value number 
 function UnityEngine.UI.ColorBlock:set_colorMultiplier(value) end
 
+--- @param value number 
 function UnityEngine.UI.ColorBlock:set_fadeDuration(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UI.ColorBlock:Equals(obj) end
 
+--- @param other UnityEngine.UI.ColorBlock 
 --- @return boolean
 function UnityEngine.UI.ColorBlock:Equals(other) end
 

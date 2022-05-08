@@ -25,10 +25,12 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.BaseInputModule = {}
 
+--- @param value UnityEngine.EventSystems.BaseInput 
 function UnityEngine.EventSystems.BaseInputModule:set_inputOverride(value) end
 
 function UnityEngine.EventSystems.BaseInputModule:Process() end
 
+--- @param pointerId number 
 --- @return boolean
 function UnityEngine.EventSystems.BaseInputModule:IsPointerOverGameObject(pointerId) end
 

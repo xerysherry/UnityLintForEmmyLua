@@ -14,6 +14,7 @@ function UnityEngine.Windows.WebCam.PhotoCaptureFrame:TryGetCameraToWorldMatrix(
 
 --- This method will return the projection matrix at the time the photo was captured if location data if available.
 --- @return boolean True if a valid matrix is returned or false otherwise.  This will be false if the frame has no location data.
+--- @return UnityEngine.Matrix4x4& 
 function UnityEngine.Windows.WebCam.PhotoCaptureFrame:TryGetProjectionMatrix() end
 
 --- This method will return the projection matrix at the time the photo was captured if location data if available.

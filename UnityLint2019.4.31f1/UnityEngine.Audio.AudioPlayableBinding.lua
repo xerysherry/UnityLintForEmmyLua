@@ -2,6 +2,8 @@
 UnityEngine.Audio.AudioPlayableBinding = {}
 
 --- Creates a PlayableBinding that contains information representing an AudioPlayableOutput.
+--- @param name string 
+--- @param key UnityEngine.Object 
 --- @return UnityEngine.Playables.PlayableBinding Returns a PlayableBinding that contains information that is used to create an AudioPlayableOutput.
 function UnityEngine.Audio.AudioPlayableBinding.Create(name, key) end
 

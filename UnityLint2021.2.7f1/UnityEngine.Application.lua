@@ -124,6 +124,7 @@ function UnityEngine.Application.GetBuildTags() end
 --- @param buildTags string[] 
 function UnityEngine.Application.SetBuildTags(buildTags) end
 
+--- @param value boolean 
 function UnityEngine.Application.set_runInBackground(value) end
 
 --- Is Unity activated with the Pro license?
@@ -143,10 +144,13 @@ function UnityEngine.Application.RequestAdvertisingIdentifierAsync(delegateMetho
 --- @param url string The URL to open.
 function UnityEngine.Application.OpenURL(url) end
 
+--- @param mode number 
 function UnityEngine.Application.ForceCrash(mode) end
 
+--- @param value number 
 function UnityEngine.Application.set_targetFrameRate(value) end
 
+--- @param value UnityEngine.StackTraceLogType 
 function UnityEngine.Application.set_stackTraceLogType(value) end
 
 --- Get stack trace logging options. The default value is StackTraceLogType.ScriptOnly.
@@ -159,6 +163,7 @@ function UnityEngine.Application.GetStackTraceLogType(logType) end
 --- @param stackTraceType UnityEngine.StackTraceLogType 
 function UnityEngine.Application.SetStackTraceLogType(logType, stackTraceType) end
 
+--- @param value UnityEngine.ThreadPriority 
 function UnityEngine.Application.set_backgroundLoadingPriority(value) end
 
 --- Request authorization to use the webcam or microphone on iOS.
@@ -171,16 +176,22 @@ function UnityEngine.Application.RequestUserAuthorization(mode) end
 --- @return boolean 
 function UnityEngine.Application.HasUserAuthorization(mode) end
 
+--- @param value function 
 function UnityEngine.Application.add_lowMemory(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_lowMemory(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_logMessageReceived(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_logMessageReceived(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_logMessageReceivedThreaded(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_logMessageReceivedThreaded(value) end
 
 --- Calls a function in the web page that contains the WebGL Player.
@@ -188,6 +199,7 @@ function UnityEngine.Application.remove_logMessageReceivedThreaded(value) end
 --- @param args System.Object[] Array of arguments passed in the call.
 function UnityEngine.Application.ExternalCall(functionName, args) end
 
+--- @param o UnityEngine.Object 
 function UnityEngine.Application.DontDestroyOnLoad(o) end
 
 --- Captures a screenshot at path filename as a PNG file.
@@ -196,69 +208,94 @@ function UnityEngine.Application.DontDestroyOnLoad(o) end
 function UnityEngine.Application.CaptureScreenshot(filename, superSize) end
 
 --- Captures a screenshot at path filename as a PNG file.
+--- @param filename string 
 function UnityEngine.Application.CaptureScreenshot(filename) end
 
+--- @param value function 
 function UnityEngine.Application.add_onBeforeRender(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_onBeforeRender(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_focusChanged(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_focusChanged(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_deepLinkActivated(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_deepLinkActivated(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_wantsToQuit(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_wantsToQuit(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_quitting(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_quitting(value) end
 
+--- @param value function 
 function UnityEngine.Application.add_unloading(value) end
 
+--- @param value function 
 function UnityEngine.Application.remove_unloading(value) end
 
+--- @param handler function 
 function UnityEngine.Application.RegisterLogCallback(handler) end
 
+--- @param handler function 
 function UnityEngine.Application.RegisterLogCallbackThreaded(handler) end
 
 --- Note: This is now obsolete. Use SceneManager.LoadScene instead.
+--- @param index number 
 function UnityEngine.Application.LoadLevel(index) end
 
 --- Note: This is now obsolete. Use SceneManager.LoadScene instead.
+--- @param name string 
 function UnityEngine.Application.LoadLevel(name) end
 
 --- Loads a level additively.
+--- @param index number 
 function UnityEngine.Application.LoadLevelAdditive(index) end
 
 --- Loads a level additively.
+--- @param name string 
 function UnityEngine.Application.LoadLevelAdditive(name) end
 
 --- Loads the level asynchronously in the background.
+--- @param index number 
 --- @return UnityEngine.AsyncOperation 
 function UnityEngine.Application.LoadLevelAsync(index) end
 
 --- Loads the level asynchronously in the background.
+--- @param levelName string 
 --- @return UnityEngine.AsyncOperation 
 function UnityEngine.Application.LoadLevelAsync(levelName) end
 
 --- Loads the level additively and asynchronously in the background.
+--- @param index number 
 --- @return UnityEngine.AsyncOperation 
 function UnityEngine.Application.LoadLevelAdditiveAsync(index) end
 
 --- Loads the level additively and asynchronously in the background.
+--- @param levelName string 
 --- @return UnityEngine.AsyncOperation 
 function UnityEngine.Application.LoadLevelAdditiveAsync(levelName) end
 
 --- Unloads all GameObject associated with the given Scene. Note that assets are currently not unloaded, in order to free up asset memory call Resources.UnloadAllUnusedAssets.
+--- @param index number 
 --- @return boolean Return true if the Scene is unloaded.
 function UnityEngine.Application.UnloadLevel(index) end
 
 --- Unloads all GameObject associated with the given Scene. Note that assets are currently not unloaded, in order to free up asset memory call Resources.UnloadAllUnusedAssets.
+--- @param scenePath string 
 --- @return boolean Return true if the Scene is unloaded.
 function UnityEngine.Application.UnloadLevel(scenePath) end
 

@@ -4,90 +4,125 @@
 --- @class UnityEngine.UIElements.Experimental.Easing
 UnityEngine.UIElements.Experimental.Easing = {}
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.Step(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.Linear(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InSine(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutSine(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutSine(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InQuad(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutQuad(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutQuad(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InCubic(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutCubic(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutCubic(t) end
 
+--- @param t number 
+--- @param power number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InPower(t, power) end
 
+--- @param t number 
+--- @param power number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutPower(t, power) end
 
+--- @param t number 
+--- @param power number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutPower(t, power) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InBounce(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutBounce(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutBounce(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InElastic(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutElastic(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutElastic(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InBack(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutBack(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutBack(t) end
 
+--- @param t number 
+--- @param s number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InBack(t, s) end
 
+--- @param t number 
+--- @param s number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutBack(t, s) end
 
+--- @param t number 
+--- @param s number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutBack(t, s) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InCirc(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.OutCirc(t) end
 
+--- @param t number 
 --- @return number
 function UnityEngine.UIElements.Experimental.Easing.InOutCirc(t) end
 

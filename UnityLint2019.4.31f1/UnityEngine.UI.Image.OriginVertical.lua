@@ -1,8 +1,4 @@
-UnityEngine.UI.Image.OriginVertical = {
-    Bottom = 0,
-    Top = 1,
-}
-
+--- @class UnityEngine.UI.Image.OriginVertical
 UnityEngine.UI.Image.OriginVertical = {
     Bottom = 0,
     Top = 1,

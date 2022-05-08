@@ -11,15 +11,21 @@
 ---       The scale of the mesh, relative to the session origin.
 UnityEngine.XR.MeshTransform = {}
 
+--- @param lhs UnityEngine.XR.MeshTransform 
+--- @param rhs UnityEngine.XR.MeshTransform 
 --- @return boolean
 function UnityEngine.XR.MeshTransform.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.XR.MeshTransform 
+--- @param rhs UnityEngine.XR.MeshTransform 
 --- @return boolean
 function UnityEngine.XR.MeshTransform.op_Inequality(lhs, rhs) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.MeshTransform:Equals(obj) end
 
+--- @param other UnityEngine.XR.MeshTransform 
 --- @return boolean
 function UnityEngine.XR.MeshTransform:Equals(other) end
 

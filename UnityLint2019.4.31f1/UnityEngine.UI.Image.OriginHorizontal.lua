@@ -1,8 +1,4 @@
-UnityEngine.UI.Image.OriginHorizontal = {
-    Left = 0,
-    Right = 1,
-}
-
+--- @class UnityEngine.UI.Image.OriginHorizontal
 UnityEngine.UI.Image.OriginHorizontal = {
     Left = 0,
     Right = 1,

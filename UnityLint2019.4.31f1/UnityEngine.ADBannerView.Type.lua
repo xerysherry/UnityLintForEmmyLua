@@ -1,8 +1,4 @@
-UnityEngine.ADBannerView.Type = {
-    Banner = 0,
-    MediumRect = 1,
-}
-
+--- @class UnityEngine.ADBannerView.Type
 UnityEngine.ADBannerView.Type = {
     Banner = 0,
     MediumRect = 1,

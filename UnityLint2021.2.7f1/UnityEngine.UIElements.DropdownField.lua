@@ -60,10 +60,13 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.DropdownField = {}
 
+--- @param value number 
 function UnityEngine.UIElements.DropdownField:set_index(value) end
 
+--- @param value string[] 
 function UnityEngine.UIElements.DropdownField:set_choices(value) end
 
+--- @param value string 
 function UnityEngine.UIElements.DropdownField:set_value(value) end
 
 --- 

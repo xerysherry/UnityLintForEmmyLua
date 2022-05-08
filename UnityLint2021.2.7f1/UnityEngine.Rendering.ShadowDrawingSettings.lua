@@ -11,25 +11,36 @@
 ---       Specifies the filter Unity applies to GameObjects that it renders in the shadow pass.
 UnityEngine.Rendering.ShadowDrawingSettings = {}
 
+--- @param left UnityEngine.Rendering.ShadowDrawingSettings 
+--- @param right UnityEngine.Rendering.ShadowDrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.ShadowDrawingSettings.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.ShadowDrawingSettings 
+--- @param right UnityEngine.Rendering.ShadowDrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.ShadowDrawingSettings.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.CullingResults 
 function UnityEngine.Rendering.ShadowDrawingSettings:set_cullingResults(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ShadowDrawingSettings:set_lightIndex(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.ShadowDrawingSettings:set_useRenderingLayerMaskTest(value) end
 
+--- @param value UnityEngine.Rendering.ShadowSplitData 
 function UnityEngine.Rendering.ShadowDrawingSettings:set_splitData(value) end
 
+--- @param value UnityEngine.ShadowObjectsFilter 
 function UnityEngine.Rendering.ShadowDrawingSettings:set_objectsFilter(value) end
 
+--- @param other UnityEngine.Rendering.ShadowDrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.ShadowDrawingSettings:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.ShadowDrawingSettings:Equals(obj) end
 

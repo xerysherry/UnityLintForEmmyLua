@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.Text.ColorGradientMode
 UnityEngine.TextCore.Text.ColorGradientMode = {
     Single = 0,
     HorizontalGradient = 1,

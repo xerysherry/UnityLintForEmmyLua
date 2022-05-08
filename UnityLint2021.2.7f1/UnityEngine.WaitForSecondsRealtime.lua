@@ -5,6 +5,7 @@
 --- @field Current System.Object
 UnityEngine.WaitForSecondsRealtime = {}
 
+--- @param value number 
 function UnityEngine.WaitForSecondsRealtime:set_waitTime(value) end
 
 function UnityEngine.WaitForSecondsRealtime:Reset() end

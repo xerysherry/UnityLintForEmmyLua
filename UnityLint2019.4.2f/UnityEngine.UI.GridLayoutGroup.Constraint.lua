@@ -1,9 +1,4 @@
-UnityEngine.UI.GridLayoutGroup.Constraint = {
-    Flexible = 0,
-    FixedColumnCount = 1,
-    FixedRowCount = 2,
-}
-
+--- @class UnityEngine.UI.GridLayoutGroup.Constraint
 UnityEngine.UI.GridLayoutGroup.Constraint = {
     Flexible = 0,
     FixedColumnCount = 1,

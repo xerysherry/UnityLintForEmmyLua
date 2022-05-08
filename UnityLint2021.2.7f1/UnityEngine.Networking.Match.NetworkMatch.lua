@@ -25,6 +25,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Networking.Match.NetworkMatch = {}
 
+--- @param value System.Uri 
 function UnityEngine.Networking.Match.NetworkMatch:set_baseUri(value) end
 
 --- This method is deprecated. Please instead log in through the editor services panel and setup the project under the Unity Multiplayer section. This will populate the required infomation from the cloud site automatically.

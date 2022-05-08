@@ -8,6 +8,7 @@
 ---        
 UnityEngine.UIElements.VisualElementFocusRing = {}
 
+--- @param value UnityEngine.UIElements.VisualElementFocusRing.DefaultFocusOrder 
 function UnityEngine.UIElements.VisualElementFocusRing:set_defaultFocusOrder(value) end
 
 --- 

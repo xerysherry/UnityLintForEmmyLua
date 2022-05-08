@@ -1,3 +1,4 @@
+--- @class UnityEngine.VR.TrackingSpaceType
 UnityEngine.VR.TrackingSpaceType = {
     Stationary = 0,
     RoomScale = 1,

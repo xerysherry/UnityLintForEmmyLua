@@ -33,6 +33,7 @@ UnityEngine.Texture2DArray = {}
 function UnityEngine.Texture2DArray:GetPixels(arrayElement, miplevel) end
 
 --- Returns pixel colors of a single array slice.
+--- @param arrayElement number 
 --- @return UnityEngine.Color[] Array of pixel colors.
 function UnityEngine.Texture2DArray:GetPixels(arrayElement) end
 
@@ -43,6 +44,7 @@ function UnityEngine.Texture2DArray:GetPixels(arrayElement) end
 function UnityEngine.Texture2DArray:GetPixels32(arrayElement, miplevel) end
 
 --- Returns pixel colors of a single array slice.
+--- @param arrayElement number 
 --- @return UnityEngine.Color32[] Array of pixel colors in low precision (8 bits/channel) format.
 function UnityEngine.Texture2DArray:GetPixels32(arrayElement) end
 
@@ -53,6 +55,8 @@ function UnityEngine.Texture2DArray:GetPixels32(arrayElement) end
 function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement, miplevel) end
 
 --- Set pixel colors for the whole mip level.
+--- @param colors UnityEngine.Color[] 
+--- @param arrayElement number 
 function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement) end
 
 --- Set pixel colors for the whole mip level.
@@ -62,6 +66,8 @@ function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement) end
 function UnityEngine.Texture2DArray:SetPixels32(colors, arrayElement, miplevel) end
 
 --- Set pixel colors for the whole mip level.
+--- @param colors UnityEngine.Color32[] 
+--- @param arrayElement number 
 function UnityEngine.Texture2DArray:SetPixels32(colors, arrayElement) end
 
 --- Actually apply all previous SetPixels changes.
@@ -84,6 +90,7 @@ function UnityEngine.Texture2DArray:SetPixelData(data, mipLevel, element, source
 function UnityEngine.Texture2DArray:SetPixelData(data, mipLevel, element, sourceDataStartIndex) end
 
 --- Actually apply all previous SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.Texture2DArray:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixels changes.

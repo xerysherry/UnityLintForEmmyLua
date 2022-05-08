@@ -13,6 +13,8 @@
 --- @field uxmlChildElementsDescription System.Collections.Generic.IEnumerable`1
 UnityEngine.UIElements.UxmlAttributeOverridesFactory = {}
 
+--- @param bag UnityEngine.UIElements.IUxmlAttributes 
+--- @param cc UnityEngine.UIElements.CreationContext 
 --- @return UnityEngine.UIElements.VisualElement
 function UnityEngine.UIElements.UxmlAttributeOverridesFactory:Create(bag, cc) end
 

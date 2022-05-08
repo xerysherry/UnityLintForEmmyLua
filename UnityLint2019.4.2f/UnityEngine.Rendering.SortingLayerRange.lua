@@ -7,19 +7,27 @@
 ---       Inclusive upper bound for the range.
 UnityEngine.Rendering.SortingLayerRange = {}
 
+--- @param lhs UnityEngine.Rendering.SortingLayerRange 
+--- @param rhs UnityEngine.Rendering.SortingLayerRange 
 --- @return boolean
 function UnityEngine.Rendering.SortingLayerRange.op_Inequality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.SortingLayerRange 
+--- @param rhs UnityEngine.Rendering.SortingLayerRange 
 --- @return boolean
 function UnityEngine.Rendering.SortingLayerRange.op_Equality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.Rendering.SortingLayerRange:set_lowerBound(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SortingLayerRange:set_upperBound(value) end
 
+--- @param other UnityEngine.Rendering.SortingLayerRange 
 --- @return boolean
 function UnityEngine.Rendering.SortingLayerRange:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.SortingLayerRange:Equals(obj) end
 

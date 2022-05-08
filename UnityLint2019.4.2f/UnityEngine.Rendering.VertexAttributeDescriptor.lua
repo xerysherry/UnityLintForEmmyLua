@@ -9,18 +9,26 @@
 ---       Which vertex buffer stream the attribute should be in.
 UnityEngine.Rendering.VertexAttributeDescriptor = {}
 
+--- @param lhs UnityEngine.Rendering.VertexAttributeDescriptor 
+--- @param rhs UnityEngine.Rendering.VertexAttributeDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.VertexAttributeDescriptor.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.VertexAttributeDescriptor 
+--- @param rhs UnityEngine.Rendering.VertexAttributeDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.VertexAttributeDescriptor.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.Rendering.VertexAttribute 
 function UnityEngine.Rendering.VertexAttributeDescriptor:set_attribute(value) end
 
+--- @param value UnityEngine.Rendering.VertexAttributeFormat 
 function UnityEngine.Rendering.VertexAttributeDescriptor:set_format(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VertexAttributeDescriptor:set_dimension(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VertexAttributeDescriptor:set_stream(value) end
 
 --- @return string
@@ -29,9 +37,11 @@ function UnityEngine.Rendering.VertexAttributeDescriptor:ToString() end
 --- @return number
 function UnityEngine.Rendering.VertexAttributeDescriptor:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Rendering.VertexAttributeDescriptor:Equals(other) end
 
+--- @param other UnityEngine.Rendering.VertexAttributeDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.VertexAttributeDescriptor:Equals(other) end
 

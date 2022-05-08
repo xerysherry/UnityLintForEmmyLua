@@ -14,6 +14,7 @@ function UnityEngine.DrivenRectTransformTracker.StartRecordingUndo() end
 function UnityEngine.DrivenRectTransformTracker:Add(driver, rectTransform, drivenProperties) end
 
 --- Clear the list of RectTransforms being driven.
+--- @param revertValues boolean 
 function UnityEngine.DrivenRectTransformTracker:Clear(revertValues) end
 
 --- Clear the list of RectTransforms being driven.

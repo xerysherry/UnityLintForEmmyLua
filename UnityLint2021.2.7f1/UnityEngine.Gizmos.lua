@@ -35,9 +35,19 @@ function UnityEngine.Gizmos.DrawWireCube(center, size) end
 function UnityEngine.Gizmos.DrawCube(center, size) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param scale UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawMesh(mesh, submeshIndex, position, rotation, scale) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param scale UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, submeshIndex, position, rotation, scale) end
 
 --- Draw an icon at a position in the Scene view.
@@ -47,15 +57,29 @@ function UnityEngine.Gizmos.DrawWireMesh(mesh, submeshIndex, position, rotation,
 function UnityEngine.Gizmos.DrawIcon(center, name, allowScaling) end
 
 --- Draw an icon at a position in the Scene view.
+--- @param center UnityEngine.Vector3 
+--- @param name string 
+--- @param allowScaling boolean 
+--- @param tint UnityEngine.Color 
 function UnityEngine.Gizmos.DrawIcon(center, name, allowScaling, tint) end
 
 --- Draw a texture in the Scene.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Gizmos.DrawGUITexture(screenRect, texture, leftBorder, rightBorder, topBorder, bottomBorder, mat) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Gizmos.set_color(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Gizmos.set_matrix(value) end
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.Gizmos.set_exposure(value) end
 
 --- Draw a camera frustum using the currently set Gizmos.matrix for it's location and rotation.
@@ -67,63 +91,117 @@ function UnityEngine.Gizmos.set_exposure(value) end
 function UnityEngine.Gizmos.DrawFrustum(center, fov, maxRange, minRange, aspect) end
 
 --- Draws a ray starting at from to from + direction.
+--- @param r UnityEngine.Ray 
 function UnityEngine.Gizmos.DrawRay(r) end
 
 --- Draws a ray starting at from to from + direction.
+--- @param from UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawRay(from, direction) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Gizmos.DrawMesh(mesh, position, rotation) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawMesh(mesh, position) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
 function UnityEngine.Gizmos.DrawMesh(mesh) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param scale UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawMesh(mesh, position, rotation, scale) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Gizmos.DrawMesh(mesh, submeshIndex, position, rotation) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawMesh(mesh, submeshIndex, position) end
 
 --- Draws a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
 function UnityEngine.Gizmos.DrawMesh(mesh, submeshIndex) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, position, rotation) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, position) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
 function UnityEngine.Gizmos.DrawWireMesh(mesh) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param scale UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, position, rotation, scale) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, submeshIndex, position, rotation) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, submeshIndex, position) end
 
 --- Draws a wireframe mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
 function UnityEngine.Gizmos.DrawWireMesh(mesh, submeshIndex) end
 
 --- Draw an icon at a position in the Scene view.
+--- @param center UnityEngine.Vector3 
+--- @param name string 
 function UnityEngine.Gizmos.DrawIcon(center, name) end
 
 --- Draw a texture in the Scene.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
 function UnityEngine.Gizmos.DrawGUITexture(screenRect, texture) end
 
 --- Draw a texture in the Scene.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Gizmos.DrawGUITexture(screenRect, texture, mat) end
 
 --- Draw a texture in the Scene.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
 function UnityEngine.Gizmos.DrawGUITexture(screenRect, texture, leftBorder, rightBorder, topBorder, bottomBorder) end
 
 ---  Generated By xerysherry

@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleRotate = {}
 
+--- @param lhs UnityEngine.UIElements.StyleRotate 
+--- @param rhs UnityEngine.UIElements.StyleRotate 
 --- @return boolean
 function UnityEngine.UIElements.StyleRotate.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleRotate 
+--- @param rhs UnityEngine.UIElements.StyleRotate 
 --- @return boolean
 function UnityEngine.UIElements.StyleRotate.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleRotate
 function UnityEngine.UIElements.StyleRotate.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.Rotate 
 --- @return UnityEngine.UIElements.StyleRotate
 function UnityEngine.UIElements.StyleRotate.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Rotate 
 function UnityEngine.UIElements.StyleRotate:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleRotate:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleRotate 
 --- @return boolean
 function UnityEngine.UIElements.StyleRotate:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleRotate:Equals(obj) end
 

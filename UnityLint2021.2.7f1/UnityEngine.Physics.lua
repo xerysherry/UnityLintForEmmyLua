@@ -57,30 +57,43 @@
 --- @field kAllLayers number
 UnityEngine.Physics = {}
 
+--- @param value function 
 function UnityEngine.Physics.add_ContactModifyEvent(value) end
 
+--- @param value function 
 function UnityEngine.Physics.remove_ContactModifyEvent(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Physics.set_gravity(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_defaultContactOffset(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_sleepThreshold(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_queriesHitTriggers(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_queriesHitBackfaces(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_bounceThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_defaultMaxDepenetrationVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_defaultSolverIterations(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_defaultSolverVelocityIterations(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_defaultMaxAngularSpeed(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_improvedPatchFriction(value) end
 
 --- Makes the collision detection system ignore all collisions between collider1 and collider2.
@@ -90,6 +103,8 @@ function UnityEngine.Physics.set_improvedPatchFriction(value) end
 function UnityEngine.Physics.IgnoreCollision(collider1, collider2, ignore) end
 
 --- Makes the collision detection system ignore all collisions between collider1 and collider2.
+--- @param collider1 UnityEngine.Collider 
+--- @param collider2 UnityEngine.Collider 
 function UnityEngine.Physics.IgnoreCollision(collider1, collider2) end
 
 --- Makes the collision detection system ignore all collisions between any collider in layer1 and any collider in layer2.
@@ -103,6 +118,8 @@ function UnityEngine.Physics.IgnoreLayerCollision(layer1, layer2, ignore) end
 --- Makes the collision detection system ignore all collisions between any collider in layer1 and any collider in layer2.
 --- 
 --- Note that IgnoreLayerCollision will reset the trigger state of affected colliders, so you might receive OnTriggerExit and OnTriggerEnter messages in response to calling this.
+--- @param layer1 number 
+--- @param layer2 number 
 function UnityEngine.Physics.IgnoreLayerCollision(layer1, layer2) end
 
 --- Are collisions between layer1 and layer2 being ignored?
@@ -127,14 +144,23 @@ function UnityEngine.Physics.GetIgnoreCollision(collider1, collider2) end
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance, layerMask) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(origin, direction) end
 
@@ -149,15 +175,27 @@ function UnityEngine.Physics.Raycast(origin, direction) end
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance, layerMask) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(origin, direction, maxDistance) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(origin, direction) end
 
 --- Same as above using ray.origin and ray.direction instead of origin and direction.
@@ -169,14 +207,20 @@ function UnityEngine.Physics.Raycast(origin, direction) end
 function UnityEngine.Physics.Raycast(ray, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(ray, maxDistance, layerMask) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(ray, maxDistance) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
 function UnityEngine.Physics.Raycast(ray) end
 
@@ -190,15 +234,24 @@ function UnityEngine.Physics.Raycast(ray) end
 function UnityEngine.Physics.Raycast(ray, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(ray, maxDistance, layerMask) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(ray, maxDistance) end
 
 --- Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
+--- @param ray UnityEngine.Ray 
 --- @return boolean Returns true if the ray intersects with a Collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Raycast(ray) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
@@ -210,23 +263,40 @@ function UnityEngine.Physics.Raycast(ray) end
 function UnityEngine.Physics.Linecast(start, _end, layerMask, queryTriggerInteraction) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param layerMask number 
 --- @return boolean 
 function UnityEngine.Physics.Linecast(start, _end, layerMask) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
 --- @return boolean 
 function UnityEngine.Physics.Linecast(start, _end) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return boolean 
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Linecast(start, _end, layerMask, queryTriggerInteraction) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param layerMask number 
 --- @return boolean 
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Linecast(start, _end, layerMask) end
 
 --- Returns true if there is any collider intersecting the line between start and end.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
 --- @return boolean 
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.Linecast(start, _end) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
@@ -241,31 +311,72 @@ function UnityEngine.Physics.Linecast(start, _end) end
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance, layerMask) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance, layerMask) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction, maxDistance) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True when the capsule sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
@@ -280,15 +391,30 @@ function UnityEngine.Physics.CapsuleCast(point1, point2, radius, direction) end
 function UnityEngine.Physics.SphereCast(origin, radius, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(origin, radius, direction, maxDistance, layerMask) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(origin, radius, direction, maxDistance) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(origin, radius, direction) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
@@ -301,14 +427,23 @@ function UnityEngine.Physics.SphereCast(origin, radius, direction) end
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance, layerMask) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
 function UnityEngine.Physics.SphereCast(ray, radius) end
 
@@ -323,15 +458,27 @@ function UnityEngine.Physics.SphereCast(ray, radius) end
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance, layerMask) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(ray, radius, maxDistance) end
 
 --- Casts a sphere along a ray and returns detailed information on what was hit.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
 --- @return boolean True when the sphere sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.SphereCast(ray, radius) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
@@ -346,18 +493,36 @@ function UnityEngine.Physics.SphereCast(ray, radius) end
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True, if any intersections were found.
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance, layerMask) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
 --- @return boolean True, if any intersections were found.
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
 --- @return boolean True, if any intersections were found.
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True, if any intersections were found.
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction) end
 
@@ -374,34 +539,70 @@ function UnityEngine.Physics.BoxCast(center, halfExtents, direction) end
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return boolean True, if any intersections were found.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance, layerMask) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
 --- @return boolean True, if any intersections were found.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation, maxDistance) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
 --- @return boolean True, if any intersections were found.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction, orientation) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True, if any intersections were found.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Physics.BoxCast(center, halfExtents, direction) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(origin, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(origin, direction, maxDistance, layerMask) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(origin, direction, maxDistance) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(origin, direction) end
 
@@ -414,14 +615,20 @@ function UnityEngine.Physics.RaycastAll(origin, direction) end
 function UnityEngine.Physics.RaycastAll(ray, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(ray, maxDistance, layerMask) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param ray UnityEngine.Ray 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(ray, maxDistance) end
 
 --- Casts a ray through the Scene and returns all hits. Note that order of the results is undefined.
+--- @param ray UnityEngine.Ray 
 --- @return UnityEngine.RaycastHit[] An array of RaycastHit objects. Note that the order of the results is undefined.
 function UnityEngine.Physics.RaycastAll(ray) end
 
@@ -435,46 +642,95 @@ function UnityEngine.Physics.RaycastAll(ray) end
 function UnityEngine.Physics.RaycastNonAlloc(ray, results, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(ray, results, maxDistance, layerMask) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(ray, results, maxDistance) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(ray, results) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(origin, direction, results, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(origin, direction, results, maxDistance, layerMask) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(origin, direction, results, maxDistance) end
 
 --- Cast a ray through the Scene and store the hits into the buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.RaycastNonAlloc(origin, direction, results) end
 
 --- Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.CapsuleCastAll(point1, point2, radius, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.CapsuleCastAll(point1, point2, radius, direction, maxDistance, layerMask) end
 
 --- Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.CapsuleCastAll(point1, point2, radius, direction, maxDistance) end
 
 --- Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.CapsuleCastAll(point1, point2, radius, direction) end
 
@@ -489,14 +745,26 @@ function UnityEngine.Physics.CapsuleCastAll(point1, point2, radius, direction) e
 function UnityEngine.Physics.SphereCastAll(origin, radius, direction, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(origin, radius, direction, maxDistance, layerMask) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(origin, radius, direction, maxDistance) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(origin, radius, direction) end
 
@@ -510,14 +778,23 @@ function UnityEngine.Physics.SphereCastAll(origin, radius, direction) end
 function UnityEngine.Physics.SphereCastAll(ray, radius, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(ray, radius, maxDistance, layerMask) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(ray, radius, maxDistance) end
 
 --- Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Physics.SphereCastAll(ray, radius) end
 
@@ -531,10 +808,17 @@ function UnityEngine.Physics.SphereCastAll(ray, radius) end
 function UnityEngine.Physics.OverlapCapsule(point0, point1, radius, layerMask, queryTriggerInteraction) end
 
 --- Check the given capsule against the physics world and return all overlapping colliders.
+--- @param point0 UnityEngine.Vector3 
+--- @param point1 UnityEngine.Vector3 
+--- @param radius number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider[] Colliders touching or inside the capsule.
 function UnityEngine.Physics.OverlapCapsule(point0, point1, radius, layerMask) end
 
 --- Check the given capsule against the physics world and return all overlapping colliders.
+--- @param point0 UnityEngine.Vector3 
+--- @param point1 UnityEngine.Vector3 
+--- @param radius number 
 --- @return UnityEngine.Collider[] Colliders touching or inside the capsule.
 function UnityEngine.Physics.OverlapCapsule(point0, point1, radius) end
 
@@ -547,10 +831,15 @@ function UnityEngine.Physics.OverlapCapsule(point0, point1, radius) end
 function UnityEngine.Physics.OverlapSphere(position, radius, layerMask, queryTriggerInteraction) end
 
 --- Computes and stores colliders touching or inside the sphere.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider[] Returns an array with all colliders touching or inside the sphere.
 function UnityEngine.Physics.OverlapSphere(position, radius, layerMask) end
 
 --- Computes and stores colliders touching or inside the sphere.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
 --- @return UnityEngine.Collider[] Returns an array with all colliders touching or inside the sphere.
 function UnityEngine.Physics.OverlapSphere(position, radius) end
 
@@ -558,13 +847,16 @@ function UnityEngine.Physics.OverlapSphere(position, radius) end
 --- @param step number The time to advance physics by.
 function UnityEngine.Physics.Simulate(step) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_autoSimulation(value) end
 
 --- Apply Transform changes to the physics engine.
 function UnityEngine.Physics.SyncTransforms() end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_autoSyncTransforms(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_reuseCollisionCallbacks(value) end
 
 --- Compute the minimal translation required to separate the given colliders apart at specified poses.
@@ -587,12 +879,16 @@ function UnityEngine.Physics.ComputePenetration(colliderA, positionA, rotationA,
 --- @return UnityEngine.Vector3 The point on the collider that is closest to the specified location.
 function UnityEngine.Physics.ClosestPoint(point, collider, position, rotation) end
 
+--- @param value number 
 function UnityEngine.Physics.set_interCollisionDistance(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_interCollisionStiffness(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics.set_interCollisionSettingsToggle(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Physics.set_clothGravity(value) end
 
 --- Computes and stores colliders touching or inside the sphere into the provided buffer.
@@ -605,10 +901,17 @@ function UnityEngine.Physics.set_clothGravity(value) end
 function UnityEngine.Physics.OverlapSphereNonAlloc(position, radius, results, layerMask, queryTriggerInteraction) end
 
 --- Computes and stores colliders touching or inside the sphere into the provided buffer.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
+--- @param results UnityEngine.Collider[] 
+--- @param layerMask number 
 --- @return number Returns the amount of colliders stored into the results buffer.
 function UnityEngine.Physics.OverlapSphereNonAlloc(position, radius, results, layerMask) end
 
 --- Computes and stores colliders touching or inside the sphere into the provided buffer.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
+--- @param results UnityEngine.Collider[] 
 --- @return number Returns the amount of colliders stored into the results buffer.
 function UnityEngine.Physics.OverlapSphereNonAlloc(position, radius, results) end
 
@@ -621,10 +924,15 @@ function UnityEngine.Physics.OverlapSphereNonAlloc(position, radius, results) en
 function UnityEngine.Physics.CheckSphere(position, radius, layerMask, queryTriggerInteraction) end
 
 --- Returns true if there are any colliders overlapping the sphere defined by position and radius in world coordinates.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
+--- @param layerMask number 
 --- @return boolean 
 function UnityEngine.Physics.CheckSphere(position, radius, layerMask) end
 
 --- Returns true if there are any colliders overlapping the sphere defined by position and radius in world coordinates.
+--- @param position UnityEngine.Vector3 
+--- @param radius number 
 --- @return boolean 
 function UnityEngine.Physics.CheckSphere(position, radius) end
 
@@ -641,14 +949,32 @@ function UnityEngine.Physics.CheckSphere(position, radius) end
 function UnityEngine.Physics.CapsuleCastNonAlloc(point1, point2, radius, direction, results, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit into the buffer.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored into the buffer.
 function UnityEngine.Physics.CapsuleCastNonAlloc(point1, point2, radius, direction, results, maxDistance, layerMask) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit into the buffer.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
 --- @return number The amount of hits stored into the buffer.
 function UnityEngine.Physics.CapsuleCastNonAlloc(point1, point2, radius, direction, results, maxDistance) end
 
 --- Casts a capsule against all colliders in the Scene and returns detailed information on what was hit into the buffer.
+--- @param point1 UnityEngine.Vector3 
+--- @param point2 UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored into the buffer.
 function UnityEngine.Physics.CapsuleCastNonAlloc(point1, point2, radius, direction, results) end
 
@@ -664,14 +990,29 @@ function UnityEngine.Physics.CapsuleCastNonAlloc(point1, point2, radius, directi
 function UnityEngine.Physics.SphereCastNonAlloc(origin, radius, direction, results, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(origin, radius, direction, results, maxDistance, layerMask) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(origin, radius, direction, results, maxDistance) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param origin UnityEngine.Vector3 
+--- @param radius number 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(origin, radius, direction, results) end
 
@@ -686,26 +1027,50 @@ function UnityEngine.Physics.SphereCastNonAlloc(origin, radius, direction, resul
 function UnityEngine.Physics.SphereCastNonAlloc(ray, radius, results, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(ray, radius, results, maxDistance, layerMask) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param maxDistance number 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(ray, radius, results, maxDistance) end
 
 --- Cast sphere along the direction and store the results into buffer.
+--- @param ray UnityEngine.Ray 
+--- @param radius number 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored into the results buffer.
 function UnityEngine.Physics.SphereCastNonAlloc(ray, radius, results) end
 
 --- Checks if any colliders overlap a capsule-shaped volume in world space.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param radius number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return boolean 
 function UnityEngine.Physics.CheckCapsule(start, _end, radius, layerMask, queryTriggerInteraction) end
 
 --- Checks if any colliders overlap a capsule-shaped volume in world space.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param radius number 
+--- @param layerMask number 
 --- @return boolean 
 function UnityEngine.Physics.CheckCapsule(start, _end, radius, layerMask) end
 
 --- Checks if any colliders overlap a capsule-shaped volume in world space.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param radius number 
 --- @return boolean 
 function UnityEngine.Physics.CheckCapsule(start, _end, radius) end
 
@@ -719,14 +1084,23 @@ function UnityEngine.Physics.CheckCapsule(start, _end, radius) end
 function UnityEngine.Physics.CheckBox(center, halfExtents, orientation, layermask, queryTriggerInteraction) end
 
 --- Check whether the given box overlaps with other colliders or not.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param layerMask number 
 --- @return boolean True, if the box overlaps with any colliders.
 function UnityEngine.Physics.CheckBox(center, halfExtents, orientation, layerMask) end
 
 --- Check whether the given box overlaps with other colliders or not.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
 --- @return boolean True, if the box overlaps with any colliders.
 function UnityEngine.Physics.CheckBox(center, halfExtents, orientation) end
 
 --- Check whether the given box overlaps with other colliders or not.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
 --- @return boolean True, if the box overlaps with any colliders.
 function UnityEngine.Physics.CheckBox(center, halfExtents) end
 
@@ -740,70 +1114,152 @@ function UnityEngine.Physics.CheckBox(center, halfExtents) end
 function UnityEngine.Physics.OverlapBox(center, halfExtents, orientation, layerMask, queryTriggerInteraction) end
 
 --- Find all colliders touching or inside of the given box.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param layerMask number 
 --- @return UnityEngine.Collider[] Colliders that overlap with the given box.
 function UnityEngine.Physics.OverlapBox(center, halfExtents, orientation, layerMask) end
 
 --- Find all colliders touching or inside of the given box.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
 --- @return UnityEngine.Collider[] Colliders that overlap with the given box.
 function UnityEngine.Physics.OverlapBox(center, halfExtents, orientation) end
 
 --- Find all colliders touching or inside of the given box.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
 --- @return UnityEngine.Collider[] Colliders that overlap with the given box.
 function UnityEngine.Physics.OverlapBox(center, halfExtents) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param results UnityEngine.Collider[] 
+--- @param orientation UnityEngine.Quaternion 
+--- @param mask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return number The amount of colliders stored in results.
 function UnityEngine.Physics.OverlapBoxNonAlloc(center, halfExtents, results, orientation, mask, queryTriggerInteraction) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param results UnityEngine.Collider[] 
+--- @param orientation UnityEngine.Quaternion 
+--- @param mask number 
 --- @return number The amount of colliders stored in results.
 function UnityEngine.Physics.OverlapBoxNonAlloc(center, halfExtents, results, orientation, mask) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param results UnityEngine.Collider[] 
+--- @param orientation UnityEngine.Quaternion 
 --- @return number The amount of colliders stored in results.
 function UnityEngine.Physics.OverlapBoxNonAlloc(center, halfExtents, results, orientation) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param results UnityEngine.Collider[] 
 --- @return number The amount of colliders stored in results.
 function UnityEngine.Physics.OverlapBoxNonAlloc(center, halfExtents, results) end
 
 --- Cast the box along the direction, and store hits in the provided buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return number The amount of hits stored to the results buffer.
 function UnityEngine.Physics.BoxCastNonAlloc(center, halfExtents, direction, results, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Cast the box along the direction, and store hits in the provided buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param orientation UnityEngine.Quaternion 
 --- @return number The amount of hits stored to the results buffer.
 function UnityEngine.Physics.BoxCastNonAlloc(center, halfExtents, direction, results, orientation) end
 
 --- Cast the box along the direction, and store hits in the provided buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
 --- @return number The amount of hits stored to the results buffer.
 function UnityEngine.Physics.BoxCastNonAlloc(center, halfExtents, direction, results, orientation, maxDistance) end
 
 --- Cast the box along the direction, and store hits in the provided buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return number The amount of hits stored to the results buffer.
 function UnityEngine.Physics.BoxCastNonAlloc(center, halfExtents, direction, results, orientation, maxDistance, layerMask) end
 
 --- Cast the box along the direction, and store hits in the provided buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number The amount of hits stored to the results buffer.
 function UnityEngine.Physics.BoxCastNonAlloc(center, halfExtents, direction, results) end
 
 --- Like Physics.BoxCast, but returns all hits.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
+--- @param queryTriggerInteraction UnityEngine.QueryTriggerInteraction 
 --- @return UnityEngine.RaycastHit[] All colliders that were hit.
 function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Like Physics.BoxCast, but returns all hits.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit[] All colliders that were hit.
 function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction, orientation, maxDistance, layerMask) end
 
 --- Like Physics.BoxCast, but returns all hits.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] All colliders that were hit.
 function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction, orientation, maxDistance) end
 
 --- Like Physics.BoxCast, but returns all hits.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param orientation UnityEngine.Quaternion 
 --- @return UnityEngine.RaycastHit[] All colliders that were hit.
 function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction, orientation) end
 
 --- Like Physics.BoxCast, but returns all hits.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return UnityEngine.RaycastHit[] All colliders that were hit.
 function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction) end
 
@@ -818,10 +1274,19 @@ function UnityEngine.Physics.BoxCastAll(center, halfExtents, direction) end
 function UnityEngine.Physics.OverlapCapsuleNonAlloc(point0, point1, radius, results, layerMask, queryTriggerInteraction) end
 
 --- Check the given capsule against the physics world and return all overlapping colliders in the user-provided buffer.
+--- @param point0 UnityEngine.Vector3 
+--- @param point1 UnityEngine.Vector3 
+--- @param radius number 
+--- @param results UnityEngine.Collider[] 
+--- @param layerMask number 
 --- @return number The amount of entries written to the buffer.
 function UnityEngine.Physics.OverlapCapsuleNonAlloc(point0, point1, radius, results, layerMask) end
 
 --- Check the given capsule against the physics world and return all overlapping colliders in the user-provided buffer.
+--- @param point0 UnityEngine.Vector3 
+--- @param point1 UnityEngine.Vector3 
+--- @param radius number 
+--- @param results UnityEngine.Collider[] 
 --- @return number The amount of entries written to the buffer.
 function UnityEngine.Physics.OverlapCapsuleNonAlloc(point0, point1, radius, results) end
 
@@ -835,20 +1300,28 @@ function UnityEngine.Physics.RebuildBroadphaseRegions(worldBounds, subdivisions)
 --- @param convex boolean A flag to indicate whether to bake convex geometry or not.
 function UnityEngine.Physics.BakeMesh(meshID, convex) end
 
+--- @param value number 
 function UnityEngine.Physics.set_minPenetrationForPenalty(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_bounceTreshold(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_sleepVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_sleepAngularVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_maxAngularVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_solverIterationCount(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_solverVelocityIterationCount(value) end
 
+--- @param value number 
 function UnityEngine.Physics.set_penetrationPenaltyForce(value) end
 
 ---  Generated By xerysherry

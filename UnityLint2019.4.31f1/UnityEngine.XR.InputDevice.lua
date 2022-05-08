@@ -15,9 +15,13 @@
 ---       Read Only. A bitmask of enumerated flags describing the characteristics of this InputDevice.
 UnityEngine.XR.InputDevice = {}
 
+--- @param a UnityEngine.XR.InputDevice 
+--- @param b UnityEngine.XR.InputDevice 
 --- @return boolean
 function UnityEngine.XR.InputDevice.op_Equality(a, b) end
 
+--- @param a UnityEngine.XR.InputDevice 
+--- @param b UnityEngine.XR.InputDevice 
 --- @return boolean
 function UnityEngine.XR.InputDevice.op_Inequality(a, b) end
 
@@ -48,47 +52,69 @@ function UnityEngine.XR.InputDevice:StopHaptics() end
 function UnityEngine.XR.InputDevice:TryGetFeatureUsages(featureUsages) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return System.Boolean& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return System.UInt32& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return System.Single& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.Vector2& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.Vector3& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.Quaternion& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.XR.Hand& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.XR.Bone& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.XR.Eyes& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
+--- @param value number[] 
 --- @return boolean True if the feature information is retrieved; otherwise false.
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage, value) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
+--- @param usage UnityEngine.XR.InputFeatureUsage`1 
 --- @return boolean True if the feature information is retrieved; otherwise false.
+--- @return UnityEngine.XR.InputTrackingState& 
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage) end
 
 --- Retrieves information about the input feature specified by the Usage parameter. Those functions which take a time parameter allow querying for that feature at a particular point in time
@@ -140,9 +166,11 @@ function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage, time) end
 --- @return UnityEngine.XR.InputTrackingState& A variable of the appropriate type to receive the information about the feature.
 function UnityEngine.XR.InputDevice:TryGetFeatureValue(usage, time) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.InputDevice:Equals(obj) end
 
+--- @param other UnityEngine.XR.InputDevice 
 --- @return boolean
 function UnityEngine.XR.InputDevice:Equals(other) end
 

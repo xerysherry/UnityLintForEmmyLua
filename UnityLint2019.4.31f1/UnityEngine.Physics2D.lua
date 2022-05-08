@@ -76,17 +76,27 @@
 --- @field AllLayers number Layer mask constant that includes all layers.
 UnityEngine.Physics2D = {}
 
+--- @param value number 
 function UnityEngine.Physics2D.set_minPenetrationForPenalty(value) end
 
 --- Get a list of all colliders that fall within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapAreaAll(pointA, pointB) end
 
 --- Get a list of all colliders that fall within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapAreaAll(pointA, pointB, layerMask) end
 
 --- Get a list of all colliders that fall within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapAreaAll(pointA, pointB, layerMask, minDepth) end
 
@@ -100,14 +110,26 @@ function UnityEngine.Physics2D.OverlapAreaAll(pointA, pointB, layerMask, minDept
 function UnityEngine.Physics2D.OverlapAreaAll(pointA, pointB, layerMask, minDepth, maxDepth) end
 
 --- Get a list of all colliders that fall within a specified area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapAreaNonAlloc(pointA, pointB, results) end
 
 --- Get a list of all colliders that fall within a specified area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapAreaNonAlloc(pointA, pointB, results, layerMask) end
 
 --- Get a list of all colliders that fall within a specified area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapAreaNonAlloc(pointA, pointB, results, layerMask, minDepth) end
 
@@ -122,14 +144,29 @@ function UnityEngine.Physics2D.OverlapAreaNonAlloc(pointA, pointB, results, laye
 function UnityEngine.Physics2D.OverlapAreaNonAlloc(pointA, pointB, results, layerMask, minDepth, maxDepth) end
 
 --- Checks if a collider falls within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
 --- @return UnityEngine.Collider2D The collider overlapping the capsule.
 function UnityEngine.Physics2D.OverlapCapsule(point, size, direction, angle) end
 
 --- Checks if a collider falls within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the capsule.
 function UnityEngine.Physics2D.OverlapCapsule(point, size, direction, angle, layerMask) end
 
 --- Checks if a collider falls within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D The collider overlapping the capsule.
 function UnityEngine.Physics2D.OverlapCapsule(point, size, direction, angle, layerMask, minDepth) end
 
@@ -165,14 +202,29 @@ function UnityEngine.Physics2D.OverlapCapsule(point, size, direction, angle, con
 function UnityEngine.Physics2D.OverlapCapsule(point, size, direction, angle, contactFilter, results) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapCapsuleAll(point, size, direction, angle) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapCapsuleAll(point, size, direction, angle, layerMask) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapCapsuleAll(point, size, direction, angle, layerMask, minDepth) end
 
@@ -188,14 +240,32 @@ function UnityEngine.Physics2D.OverlapCapsuleAll(point, size, direction, angle, 
 function UnityEngine.Physics2D.OverlapCapsuleAll(point, size, direction, angle, layerMask, minDepth, maxDepth) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCapsuleNonAlloc(point, size, direction, angle, results) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCapsuleNonAlloc(point, size, direction, angle, results, layerMask) end
 
 --- Get a list of all colliders that fall within a capsule area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCapsuleNonAlloc(point, size, direction, angle, results, layerMask, minDepth) end
 
@@ -345,19 +415,40 @@ function UnityEngine.Physics2D.GetContacts(rigidbody, colliders) end
 --- @return number Returns the number of colliders placed in the colliders array.
 function UnityEngine.Physics2D.GetContacts(rigidbody, contactFilter, colliders) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_raycastsHitTriggers(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_raycastsStartInColliders(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_deleteStopsCallbacks(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_changeStopsCallbacks(value) end
 
 --- Casts a capsule into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirection, angle, direction, results, distance, layerMask) end
 
 --- Casts a capsule into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirection, angle, direction, results, distance, layerMask, minDepth) end
 
@@ -376,10 +467,13 @@ function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirectio
 function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirection, angle, direction, results, distance, layerMask, minDepth, maxDepth) end
 
 --- Cast a 3D ray against the colliders in the Scene returning the first collider along the ray.
+--- @param ray UnityEngine.Ray 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.GetRayIntersection(ray) end
 
 --- Cast a 3D ray against the colliders in the Scene returning the first collider along the ray.
+--- @param ray UnityEngine.Ray 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.GetRayIntersection(ray, distance) end
 
@@ -391,10 +485,13 @@ function UnityEngine.Physics2D.GetRayIntersection(ray, distance) end
 function UnityEngine.Physics2D.GetRayIntersection(ray, distance, layerMask) end
 
 --- Cast a 3D ray against the colliders in the Scene returning all the colliders along the ray.
+--- @param ray UnityEngine.Ray 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.GetRayIntersectionAll(ray) end
 
 --- Cast a 3D ray against the colliders in the Scene returning all the colliders along the ray.
+--- @param ray UnityEngine.Ray 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.GetRayIntersectionAll(ray, distance) end
 
@@ -406,26 +503,41 @@ function UnityEngine.Physics2D.GetRayIntersectionAll(ray, distance) end
 function UnityEngine.Physics2D.GetRayIntersectionAll(ray, distance, layerMask) end
 
 --- Cast a 3D ray against the colliders in the Scene returning the colliders along the ray.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The number of results returned.
 function UnityEngine.Physics2D.GetRayIntersectionNonAlloc(ray, results) end
 
 --- Cast a 3D ray against the colliders in the Scene returning the colliders along the ray.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number The number of results returned.
 function UnityEngine.Physics2D.GetRayIntersectionNonAlloc(ray, results, distance) end
 
 --- Cast a 3D ray against the colliders in the Scene returning the colliders along the ray.
+--- @param ray UnityEngine.Ray 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number The number of results returned.
 function UnityEngine.Physics2D.GetRayIntersectionNonAlloc(ray, results, distance, layerMask) end
 
 --- Checks if a collider overlaps a point in space.
+--- @param point UnityEngine.Vector2 
 --- @return UnityEngine.Collider2D The collider overlapping the point.
 function UnityEngine.Physics2D.OverlapPoint(point) end
 
 --- Checks if a collider overlaps a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the point.
 function UnityEngine.Physics2D.OverlapPoint(point, layerMask) end
 
 --- Checks if a collider overlaps a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D The collider overlapping the point.
 function UnityEngine.Physics2D.OverlapPoint(point, layerMask, minDepth) end
 
@@ -452,46 +564,79 @@ function UnityEngine.Physics2D.OverlapPoint(point, contactFilter, results) end
 function UnityEngine.Physics2D.OverlapPoint(point, contactFilter, results) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapPointAll(point) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapPointAll(point, layerMask) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapPointAll(point, layerMask, minDepth) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
+--- @param maxDepth number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapPointAll(point, layerMask, minDepth, maxDepth) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapPointNonAlloc(point, results) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapPointNonAlloc(point, results, layerMask) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapPointNonAlloc(point, results, layerMask, minDepth) end
 
 --- Get a list of all colliders that overlap a point in space.
+--- @param point UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
+--- @param maxDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapPointNonAlloc(point, results, layerMask, minDepth, maxDepth) end
 
 --- Checks if a collider falls within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
 --- @return UnityEngine.Collider2D The collider overlapping the circle.
 function UnityEngine.Physics2D.OverlapCircle(point, radius) end
 
 --- Checks if a collider falls within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the circle.
 function UnityEngine.Physics2D.OverlapCircle(point, radius, layerMask) end
 
 --- Checks if a collider falls within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D The collider overlapping the circle.
 function UnityEngine.Physics2D.OverlapCircle(point, radius, layerMask, minDepth) end
 
@@ -521,14 +666,23 @@ function UnityEngine.Physics2D.OverlapCircle(point, radius, contactFilter, resul
 function UnityEngine.Physics2D.OverlapCircle(point, radius, contactFilter, results) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
 --- @return UnityEngine.Collider2D[] The cast results.
 function UnityEngine.Physics2D.OverlapCircleAll(point, radius) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D[] The cast results.
 function UnityEngine.Physics2D.OverlapCircleAll(point, radius, layerMask) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D[] The cast results.
 function UnityEngine.Physics2D.OverlapCircleAll(point, radius, layerMask, minDepth) end
 
@@ -542,14 +696,26 @@ function UnityEngine.Physics2D.OverlapCircleAll(point, radius, layerMask, minDep
 function UnityEngine.Physics2D.OverlapCircleAll(point, radius, layerMask, minDepth, maxDepth) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param results UnityEngine.Collider2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCircleNonAlloc(point, radius, results) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCircleNonAlloc(point, radius, results, layerMask) end
 
 --- Get a list of all colliders that fall within a circular area.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapCircleNonAlloc(point, radius, results, layerMask, minDepth) end
 
@@ -564,14 +730,26 @@ function UnityEngine.Physics2D.OverlapCircleNonAlloc(point, radius, results, lay
 function UnityEngine.Physics2D.OverlapCircleNonAlloc(point, radius, results, layerMask, minDepth, maxDepth) end
 
 --- Checks if a collider falls within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
 --- @return UnityEngine.Collider2D The collider overlapping the box.
 function UnityEngine.Physics2D.OverlapBox(point, size, angle) end
 
 --- Checks if a collider falls within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the box.
 function UnityEngine.Physics2D.OverlapBox(point, size, angle, layerMask) end
 
 --- Checks if a collider falls within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D The collider overlapping the box.
 function UnityEngine.Physics2D.OverlapBox(point, size, angle, layerMask, minDepth) end
 
@@ -604,14 +782,26 @@ function UnityEngine.Physics2D.OverlapBox(point, size, angle, contactFilter, res
 function UnityEngine.Physics2D.OverlapBox(point, size, angle, contactFilter, results) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapBoxAll(point, size, angle) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapBoxAll(point, size, angle, layerMask) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D[] The cast results returned.
 function UnityEngine.Physics2D.OverlapBoxAll(point, size, angle, layerMask, minDepth) end
 
@@ -626,14 +816,29 @@ function UnityEngine.Physics2D.OverlapBoxAll(point, size, angle, layerMask, minD
 function UnityEngine.Physics2D.OverlapBoxAll(point, size, angle, layerMask, minDepth, maxDepth) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapBoxNonAlloc(point, size, angle, results) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapBoxNonAlloc(point, size, angle, results, layerMask) end
 
 --- Get a list of all colliders that fall within a box area.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.OverlapBoxNonAlloc(point, size, angle, results, layerMask, minDepth) end
 
@@ -649,14 +854,23 @@ function UnityEngine.Physics2D.OverlapBoxNonAlloc(point, size, angle, results, l
 function UnityEngine.Physics2D.OverlapBoxNonAlloc(point, size, angle, results, layerMask, minDepth, maxDepth) end
 
 --- Checks if a collider falls within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
 --- @return UnityEngine.Collider2D The collider overlapping the area.
 function UnityEngine.Physics2D.OverlapArea(pointA, pointB) end
 
 --- Checks if a collider falls within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the area.
 function UnityEngine.Physics2D.OverlapArea(pointA, pointB, layerMask) end
 
 --- Checks if a collider falls within a rectangular area.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.Collider2D The collider overlapping the area.
 function UnityEngine.Physics2D.OverlapArea(pointA, pointB, layerMask, minDepth) end
 
@@ -686,34 +900,70 @@ function UnityEngine.Physics2D.OverlapArea(pointA, pointB, contactFilter, result
 function UnityEngine.Physics2D.OverlapArea(pointA, pointB, contactFilter, results) end
 
 --- Casts a ray into the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.RaycastNonAlloc(origin, direction, results, distance) end
 
 --- Casts a ray into the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.RaycastNonAlloc(origin, direction, results, distance, layerMask) end
 
 --- Casts a ray into the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.RaycastNonAlloc(origin, direction, results, distance, layerMask, minDepth) end
 
 --- Casts a ray into the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
+--- @param maxDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.RaycastNonAlloc(origin, direction, results, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a ray against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.RaycastAll(origin, direction) end
 
 --- Casts a ray against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.RaycastAll(origin, direction, distance) end
 
 --- Casts a ray against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.RaycastAll(origin, direction, distance, layerMask) end
 
 --- Casts a ray against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.RaycastAll(origin, direction, distance, layerMask, minDepth) end
 
@@ -728,18 +978,36 @@ function UnityEngine.Physics2D.RaycastAll(origin, direction, distance, layerMask
 function UnityEngine.Physics2D.RaycastAll(origin, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a circle against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction) end
 
 --- Casts a circle against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, distance) end
 
 --- Casts a circle against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, distance, layerMask) end
 
 --- Casts a circle against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, distance, layerMask, minDepth) end
 
@@ -755,6 +1023,11 @@ function UnityEngine.Physics2D.CircleCast(origin, radius, direction, distance, l
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a circle against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The cast results returned.
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, contactFilter, results) end
 
@@ -779,18 +1052,36 @@ function UnityEngine.Physics2D.CircleCast(origin, radius, direction, contactFilt
 function UnityEngine.Physics2D.CircleCast(origin, radius, direction, contactFilter, results, distance) end
 
 --- Casts a circle against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction) end
 
 --- Casts a circle against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction, distance) end
 
 --- Casts a circle against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction, distance, layerMask) end
 
 --- Casts a circle against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction, distance, layerMask, minDepth) end
 
@@ -806,18 +1097,40 @@ function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction, distance
 function UnityEngine.Physics2D.CircleCastAll(origin, radius, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a circle into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, results) end
 
 --- Casts a circle into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, results, distance) end
 
 --- Casts a circle into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, results, distance, layerMask) end
 
 --- Casts a circle into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, results, distance, layerMask, minDepth) end
 
@@ -834,18 +1147,40 @@ function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, res
 function UnityEngine.Physics2D.CircleCastNonAlloc(origin, radius, direction, results, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a box against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction) end
 
 --- Casts a box against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, distance) end
 
 --- Casts a box against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, distance, layerMask) end
 
 --- Casts a box against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, distance, layerMask, minDepth) end
 
@@ -862,6 +1197,12 @@ function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, distance,
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a box against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The cast results returned.
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, contactFilter, results) end
 
@@ -888,18 +1229,40 @@ function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, contactFi
 function UnityEngine.Physics2D.BoxCast(origin, size, angle, direction, contactFilter, results, distance) end
 
 --- Casts a box against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction) end
 
 --- Casts a box against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction, distance) end
 
 --- Casts a box against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction, distance, layerMask) end
 
 --- Casts a box against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction, distance, layerMask, minDepth) end
 
@@ -916,18 +1279,44 @@ function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction, distan
 function UnityEngine.Physics2D.BoxCastAll(origin, size, angle, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a box into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, results) end
 
 --- Casts a box into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, results, distance) end
 
 --- Casts a box into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, results, distance, layerMask) end
 
 --- Casts a box into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, results, distance, layerMask, minDepth) end
 
@@ -945,18 +1334,44 @@ function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, r
 function UnityEngine.Physics2D.BoxCastNonAlloc(origin, size, angle, direction, results, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a capsule against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction) end
 
 --- Casts a capsule against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, distance) end
 
 --- Casts a capsule against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, layerMask) end
 
 --- Casts a capsule against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, layerMask, minDepth) end
 
@@ -974,6 +1389,13 @@ function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a capsule against colliders in the Scene, returning the first collider to contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The cast results returned.
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, contactFilter, results) end
 
@@ -1002,18 +1424,44 @@ function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle
 function UnityEngine.Physics2D.CapsuleCast(origin, size, capsuleDirection, angle, direction, contactFilter, results, distance) end
 
 --- Casts a capsule against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, angle, direction) end
 
 --- Casts a capsule against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, angle, direction, distance) end
 
 --- Casts a capsule against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, angle, direction, distance, layerMask) end
 
 --- Casts a capsule against colliders in the Scene, returning all colliders that contact with it.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, angle, direction, distance, layerMask, minDepth) end
 
@@ -1031,21 +1479,39 @@ function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, an
 function UnityEngine.Physics2D.CapsuleCastAll(origin, size, capsuleDirection, angle, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a capsule into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirection, angle, direction, results) end
 
 --- Casts a capsule into the Scene, returning colliders that contact with it into the provided results array.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.CapsuleCastNonAlloc(origin, size, capsuleDirection, angle, direction, results, distance) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_contactArrowScale(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Physics2D.set_colliderAwakeColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Physics2D.set_colliderAsleepColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Physics2D.set_colliderContactColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Physics2D.set_colliderAABBColor(value) end
 
 --- Simulate physics in the Scene.
@@ -1057,6 +1523,8 @@ function UnityEngine.Physics2D.Simulate(step) end
 function UnityEngine.Physics2D.SyncTransforms() end
 
 --- Makes the collision detection system ignore all collisionstriggers between collider1 and collider2/.
+--- @param collider1 UnityEngine.Collider2D 
+--- @param collider2 UnityEngine.Collider2D 
 function UnityEngine.Physics2D.IgnoreCollision(collider1, collider2) end
 
 --- Makes the collision detection system ignore all collisionstriggers between collider1 and collider2/.
@@ -1072,6 +1540,8 @@ function UnityEngine.Physics2D.IgnoreCollision(collider1, collider2, ignore) end
 function UnityEngine.Physics2D.GetIgnoreCollision(collider1, collider2) end
 
 --- Choose whether to detect or ignore collisions between a specified pair of layers.
+--- @param layer1 number 
+--- @param layer2 number 
 function UnityEngine.Physics2D.IgnoreLayerCollision(layer1, layer2) end
 
 --- Choose whether to detect or ignore collisions between a specified pair of layers.
@@ -1116,6 +1586,7 @@ function UnityEngine.Physics2D.IsTouching(collider1, collider2, contactFilter) e
 function UnityEngine.Physics2D.IsTouching(collider, contactFilter) end
 
 --- Checks whether the collider is touching any colliders on the specified layerMask or not.
+--- @param collider UnityEngine.Collider2D 
 --- @return boolean Whether the collider is touching any colliders on the specified layerMask or not.
 function UnityEngine.Physics2D.IsTouchingLayers(collider) end
 
@@ -1144,14 +1615,23 @@ function UnityEngine.Physics2D.ClosestPoint(position, collider) end
 function UnityEngine.Physics2D.ClosestPoint(position, rigidbody) end
 
 --- Casts a line segment against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Linecast(start, _end) end
 
 --- Casts a line segment against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Linecast(start, _end, layerMask) end
 
 --- Casts a line segment against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Linecast(start, _end, layerMask, minDepth) end
 
@@ -1181,14 +1661,23 @@ function UnityEngine.Physics2D.Linecast(start, _end, contactFilter, results) end
 function UnityEngine.Physics2D.Linecast(start, _end, contactFilter, results) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.LinecastAll(start, _end) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.LinecastAll(start, _end, layerMask) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D[] The cast results returned.
 function UnityEngine.Physics2D.LinecastAll(start, _end, layerMask, minDepth) end
 
@@ -1202,34 +1691,66 @@ function UnityEngine.Physics2D.LinecastAll(start, _end, layerMask, minDepth) end
 function UnityEngine.Physics2D.LinecastAll(start, _end, layerMask, minDepth, maxDepth) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.LinecastNonAlloc(start, _end, results) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.LinecastNonAlloc(start, _end, results, layerMask) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.LinecastNonAlloc(start, _end, results, layerMask, minDepth) end
 
 --- Casts a line against colliders in the Scene.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
+--- @param minDepth number 
+--- @param maxDepth number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.LinecastNonAlloc(start, _end, results, layerMask, minDepth, maxDepth) end
 
 --- Casts a ray against colliders in the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Raycast(origin, direction) end
 
 --- Casts a ray against colliders in the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Raycast(origin, direction, distance) end
 
 --- Casts a ray against colliders in the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Raycast(origin, direction, distance, layerMask) end
 
 --- Casts a ray against colliders in the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.Physics2D.Raycast(origin, direction, distance, layerMask, minDepth) end
 
@@ -1244,6 +1765,10 @@ function UnityEngine.Physics2D.Raycast(origin, direction, distance, layerMask, m
 function UnityEngine.Physics2D.Raycast(origin, direction, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a ray against colliders in the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The cast results returned.
 function UnityEngine.Physics2D.Raycast(origin, direction, contactFilter, results) end
 
@@ -1266,57 +1791,85 @@ function UnityEngine.Physics2D.Raycast(origin, direction, contactFilter, results
 function UnityEngine.Physics2D.Raycast(origin, direction, contactFilter, results, distance) end
 
 --- Casts a ray into the Scene.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Physics2D.RaycastNonAlloc(origin, direction, results) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_velocityIterations(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_positionIterations(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Physics2D.set_gravity(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_queriesHitTriggers(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_queriesStartInColliders(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_callbacksOnDisable(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_reuseCollisionCallbacks(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_autoSyncTransforms(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_autoSimulation(value) end
 
+--- @param value UnityEngine.PhysicsJobOptions2D 
 function UnityEngine.Physics2D.set_jobOptions(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_velocityThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_maxLinearCorrection(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_maxAngularCorrection(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_maxTranslationSpeed(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_maxRotationSpeed(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_defaultContactOffset(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_baumgarteScale(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_baumgarteTOIScale(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_timeToSleep(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_linearSleepTolerance(value) end
 
+--- @param value number 
 function UnityEngine.Physics2D.set_angularSleepTolerance(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_alwaysShowColliders(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_showColliderSleep(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_showColliderContacts(value) end
 
+--- @param value boolean 
 function UnityEngine.Physics2D.set_showColliderAABB(value) end
 
 ---  Generated By xerysherry

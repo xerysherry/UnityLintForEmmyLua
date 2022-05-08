@@ -140,10 +140,13 @@ function UnityEngine.Terrain.CreateTerrainGameObject(assignTerrain) end
 --- @param bottom UnityEngine.Terrain The Terrain tile to the bottom is in the negative Z direction.
 function UnityEngine.Terrain:SetNeighbors(left, top, right, bottom) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_treeLODBiasMultiplier(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_collectDetailPatches(value) end
 
+--- @param value UnityEngine.TerrainRenderFlags 
 function UnityEngine.Terrain:set_editorRenderFlags(value) end
 
 --- Get the position of the terrain.
@@ -161,77 +164,110 @@ function UnityEngine.Terrain:SetSplatMaterialPropertyBlock(properties) end
 --- @param dest UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Terrain:GetSplatMaterialPropertyBlock(dest) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_bakeLightProbesForTrees(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_deringLightProbesForTrees(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_preserveTreePrototypeLayers(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_renderingLayerMask(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_splatmapDistance(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_castShadows(value) end
 
+--- @param value UnityEngine.Terrain.MaterialType 
 function UnityEngine.Terrain:set_materialType(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Terrain:set_legacySpecular(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_legacyShininess(value) end
 
 --- Update the terrain's LOD and vegetation information after making changes with TerrainData.SetHeightsDelayLOD.
 function UnityEngine.Terrain:ApplyDelayedHeightmapModification() end
 
+--- @param value UnityEngine.TerrainData 
 function UnityEngine.Terrain:set_terrainData(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_treeDistance(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_treeBillboardDistance(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_treeCrossFadeLength(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_treeMaximumFullLODCount(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_detailObjectDistance(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_detailObjectDensity(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_heightmapPixelError(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_heightmapMaximumLOD(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_basemapDistance(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_lightmapIndex(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_realtimeLightmapIndex(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Terrain:set_lightmapScaleOffset(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Terrain:set_realtimeLightmapScaleOffset(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_freeUnusedRenderingResources(value) end
 
+--- @param value UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Terrain:set_shadowCastingMode(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeUsage 
 function UnityEngine.Terrain:set_reflectionProbeUsage(value) end
 
 --- Fills the list with reflection probes whose AABB intersects with terrain's AABB. Their weights are also provided. Weight shows how much influence the probe has on the terrain, and is used when the blending between multiple reflection probes occurs.
 --- @param result UnityEngine.Rendering.ReflectionProbeBlendInfo[] [in / out] A list to hold the returned reflection probes and their weights. See ReflectionProbeBlendInfo.
 function UnityEngine.Terrain:GetClosestReflectionProbes(result) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.Terrain:set_materialTemplate(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_drawHeightmap(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_allowAutoConnect(value) end
 
+--- @param value number 
 function UnityEngine.Terrain:set_groupingID(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_drawInstanced(value) end
 
+--- @param value boolean 
 function UnityEngine.Terrain:set_drawTreesAndFoliage(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Terrain:set_patchBoundsMultiplier(value) end
 
 --- Samples the height at the given position defined in world space, relative to the Terrain space.

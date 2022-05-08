@@ -29,12 +29,16 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.CanvasGroup = {}
 
+--- @param value number 
 function UnityEngine.CanvasGroup:set_alpha(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasGroup:set_interactable(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasGroup:set_blocksRaycasts(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasGroup:set_ignoreParentGroups(value) end
 
 --- Returns true if the Group allows raycasts.

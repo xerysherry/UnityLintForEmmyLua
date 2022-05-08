@@ -57,6 +57,7 @@ function UnityEngine.Event.PopEvent(outEvent) end
 --- @return number Current number of events currently in the event queue.
 function UnityEngine.Event.GetEventCount() end
 
+--- @param value UnityEngine.Event 
 function UnityEngine.Event.set_current(value) end
 
 --- Create a keyboard event.
@@ -64,28 +65,40 @@ function UnityEngine.Event.set_current(value) end
 --- @return UnityEngine.Event 
 function UnityEngine.Event.KeyboardEvent(key) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Event:set_mousePosition(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Event:set_delta(value) end
 
+--- @param value UnityEngine.PointerType 
 function UnityEngine.Event:set_pointerType(value) end
 
+--- @param value number 
 function UnityEngine.Event:set_button(value) end
 
+--- @param value UnityEngine.EventModifiers 
 function UnityEngine.Event:set_modifiers(value) end
 
+--- @param value number 
 function UnityEngine.Event:set_pressure(value) end
 
+--- @param value number 
 function UnityEngine.Event:set_clickCount(value) end
 
+--- @param value number 
 function UnityEngine.Event:set_character(value) end
 
+--- @param value UnityEngine.KeyCode 
 function UnityEngine.Event:set_keyCode(value) end
 
+--- @param value number 
 function UnityEngine.Event:set_displayIndex(value) end
 
+--- @param value UnityEngine.EventType 
 function UnityEngine.Event:set_type(value) end
 
+--- @param value string 
 function UnityEngine.Event:set_commandName(value) end
 
 --- Get a filtered event type for a given control ID.
@@ -93,23 +106,31 @@ function UnityEngine.Event:set_commandName(value) end
 --- @return UnityEngine.EventType 
 function UnityEngine.Event:GetTypeForControl(controlID) end
 
+--- @param value UnityEngine.Ray 
 function UnityEngine.Event:set_mouseRay(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_shift(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_control(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_alt(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_command(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_capsLock(value) end
 
+--- @param value boolean 
 function UnityEngine.Event:set_numeric(value) end
 
 --- @return number
 function UnityEngine.Event:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Event:Equals(obj) end
 

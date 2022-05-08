@@ -1,3 +1,4 @@
+--- @class UnityEngineInternal.TypeInferenceRules
 UnityEngineInternal.TypeInferenceRules = {
     TypeReferencedByFirstArgument = 0,
     TypeReferencedBySecondArgument = 1,

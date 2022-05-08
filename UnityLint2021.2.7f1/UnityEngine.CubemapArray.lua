@@ -31,6 +31,8 @@ UnityEngine.CubemapArray = {}
 function UnityEngine.CubemapArray:GetPixels(face, arrayElement, miplevel) end
 
 --- Retrieves a copy of the pixel color data for a given mip level of a given face of a given slice. The colors are represented by Color structs.
+--- @param face UnityEngine.CubemapFace 
+--- @param arrayElement number 
 --- @return UnityEngine.Color[] An array that contains a copy of the requested pixel colors, represented by Color structs.
 function UnityEngine.CubemapArray:GetPixels(face, arrayElement) end
 
@@ -42,6 +44,8 @@ function UnityEngine.CubemapArray:GetPixels(face, arrayElement) end
 function UnityEngine.CubemapArray:GetPixels32(face, arrayElement, miplevel) end
 
 --- Retrieves a copy of the pixel color data for a given face of a given slice, at a given mip level. The colors are represented by lower-precision Color32 structs.
+--- @param face UnityEngine.CubemapFace 
+--- @param arrayElement number 
 --- @return UnityEngine.Color32[] An array that contains a copy of the requested pixel colors, represented by lower-precision Color32 structs.
 function UnityEngine.CubemapArray:GetPixels32(face, arrayElement) end
 
@@ -53,6 +57,9 @@ function UnityEngine.CubemapArray:GetPixels32(face, arrayElement) end
 function UnityEngine.CubemapArray:SetPixels(colors, face, arrayElement, miplevel) end
 
 --- Set pixel colors for a single array slice/face.
+--- @param colors UnityEngine.Color[] 
+--- @param face UnityEngine.CubemapFace 
+--- @param arrayElement number 
 function UnityEngine.CubemapArray:SetPixels(colors, face, arrayElement) end
 
 --- Set pixel colors for a single array slice/face.
@@ -63,6 +70,9 @@ function UnityEngine.CubemapArray:SetPixels(colors, face, arrayElement) end
 function UnityEngine.CubemapArray:SetPixels32(colors, face, arrayElement, miplevel) end
 
 --- Set pixel colors for a single array slice/face.
+--- @param colors UnityEngine.Color32[] 
+--- @param face UnityEngine.CubemapFace 
+--- @param arrayElement number 
 function UnityEngine.CubemapArray:SetPixels32(colors, face, arrayElement) end
 
 --- Actually apply all previous SetPixels changes.
@@ -71,15 +81,26 @@ function UnityEngine.CubemapArray:SetPixels32(colors, face, arrayElement) end
 function UnityEngine.CubemapArray:Apply(updateMipmaps, makeNoLongerReadable) end
 
 --- Actually apply all previous SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.CubemapArray:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixels changes.
 function UnityEngine.CubemapArray:Apply() end
 
 --- Set pixel values from raw preformatted data.
+--- @param data UnityEngine.CubemapArray.T[] 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param element number 
+--- @param sourceDataStartIndex number 
 function UnityEngine.CubemapArray:SetPixelData(data, mipLevel, face, element, sourceDataStartIndex) end
 
 --- Set pixel values from raw preformatted data.
+--- @param data Unity.Collections.NativeArray`1 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param element number 
+--- @param sourceDataStartIndex number 
 function UnityEngine.CubemapArray:SetPixelData(data, mipLevel, face, element, sourceDataStartIndex) end
 
 --- Gets raw data from a Texture for reading or writing.

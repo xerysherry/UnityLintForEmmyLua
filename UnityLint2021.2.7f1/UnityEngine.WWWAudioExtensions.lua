@@ -1,27 +1,44 @@
 --- @class UnityEngine.WWWAudioExtensions 
 UnityEngine.WWWAudioExtensions = {}
 
+--- @param www UnityEngine.WWW 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClip(www) end
 
+--- @param www UnityEngine.WWW 
+--- @param threeD boolean 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClip(www, threeD) end
 
+--- @param www UnityEngine.WWW 
+--- @param threeD boolean 
+--- @param stream boolean 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClip(www, threeD, stream) end
 
+--- @param www UnityEngine.WWW 
+--- @param threeD boolean 
+--- @param stream boolean 
+--- @param audioType UnityEngine.AudioType 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClip(www, threeD, stream, audioType) end
 
+--- @param www UnityEngine.WWW 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClipCompressed(www) end
 
+--- @param www UnityEngine.WWW 
+--- @param threeD boolean 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClipCompressed(www, threeD) end
 
+--- @param www UnityEngine.WWW 
+--- @param threeD boolean 
+--- @param audioType UnityEngine.AudioType 
 --- @return UnityEngine.AudioClip
 function UnityEngine.WWWAudioExtensions.GetAudioClipCompressed(www, threeD, audioType) end
 
+--- @param www UnityEngine.WWW 
 --- @return UnityEngine.MovieTexture
 function UnityEngine.WWWAudioExtensions.GetMovieTexture(www) end
 

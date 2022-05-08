@@ -6,9 +6,11 @@
 ---       Set debug to true to log calls through the AndroidJNIHelper.
 UnityEngine.AndroidJNIHelper = {}
 
+--- @param value boolean 
 function UnityEngine.AndroidJNIHelper.set_debug(value) end
 
 --- Scans a particular Java class for a constructor method matching a signature.
+--- @param javaClass System.IntPtr 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetConstructorID(javaClass) end
 
@@ -19,10 +21,15 @@ function UnityEngine.AndroidJNIHelper.GetConstructorID(javaClass) end
 function UnityEngine.AndroidJNIHelper.GetConstructorID(javaClass, signature) end
 
 --- Scans a particular Java class for a method matching a name and a signature.
+--- @param javaClass System.IntPtr 
+--- @param methodName string 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetMethodID(javaClass, methodName) end
 
 --- Scans a particular Java class for a method matching a name and a signature.
+--- @param javaClass System.IntPtr 
+--- @param methodName string 
+--- @param signature string 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetMethodID(javaClass, methodName, signature) end
 
@@ -35,10 +42,15 @@ function UnityEngine.AndroidJNIHelper.GetMethodID(javaClass, methodName, signatu
 function UnityEngine.AndroidJNIHelper.GetMethodID(javaClass, methodName, signature, isStatic) end
 
 --- Scans a particular Java class for a field matching a name and a signature.
+--- @param javaClass System.IntPtr 
+--- @param fieldName string 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetFieldID(javaClass, fieldName) end
 
 --- Scans a particular Java class for a field matching a name and a signature.
+--- @param javaClass System.IntPtr 
+--- @param fieldName string 
+--- @param signature string 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetFieldID(javaClass, fieldName, signature) end
 
@@ -51,6 +63,7 @@ function UnityEngine.AndroidJNIHelper.GetFieldID(javaClass, fieldName, signature
 function UnityEngine.AndroidJNIHelper.GetFieldID(javaClass, fieldName, signature, isStatic) end
 
 --- Creates a UnityJavaRunnable object (implements java.lang.Runnable).
+--- @param jrunnable function 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.CreateJavaRunnable(jrunnable) end
 
@@ -75,10 +88,16 @@ function UnityEngine.AndroidJNIHelper.CreateJNIArgArray(args) end
 function UnityEngine.AndroidJNIHelper.DeleteJNIArgArray(args, jniArgs) end
 
 --- Scans a particular Java class for a constructor method matching a signature.
+--- @param jclass System.IntPtr 
+--- @param args System.Object[] 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetConstructorID(jclass, args) end
 
 --- Scans a particular Java class for a method matching a name and a signature.
+--- @param jclass System.IntPtr 
+--- @param methodName string 
+--- @param args System.Object[] 
+--- @param isStatic boolean 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetMethodID(jclass, methodName, args, isStatic) end
 
@@ -98,10 +117,17 @@ function UnityEngine.AndroidJNIHelper.GetSignature(args) end
 function UnityEngine.AndroidJNIHelper.ConvertFromJNIArray(array) end
 
 --- Scans a particular Java class for a method matching a name and a signature.
+--- @param jclass System.IntPtr 
+--- @param methodName string 
+--- @param args System.Object[] 
+--- @param isStatic boolean 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetMethodID(jclass, methodName, args, isStatic) end
 
 --- Scans a particular Java class for a field matching a name and a signature.
+--- @param jclass System.IntPtr 
+--- @param fieldName string 
+--- @param isStatic boolean 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNIHelper.GetFieldID(jclass, fieldName, isStatic) end
 

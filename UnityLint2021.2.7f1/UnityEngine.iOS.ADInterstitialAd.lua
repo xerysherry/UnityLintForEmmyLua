@@ -5,12 +5,16 @@
 ---       Has the interstitial ad object downloaded an advertisement? (Read Only)
 UnityEngine.iOS.ADInterstitialAd = {}
 
+--- @param value function 
 function UnityEngine.iOS.ADInterstitialAd.add_onInterstitialWasLoaded(value) end
 
+--- @param value function 
 function UnityEngine.iOS.ADInterstitialAd.remove_onInterstitialWasLoaded(value) end
 
+--- @param value function 
 function UnityEngine.iOS.ADInterstitialAd.add_onInterstitialWasViewed(value) end
 
+--- @param value function 
 function UnityEngine.iOS.ADInterstitialAd.remove_onInterstitialWasViewed(value) end
 
 --- Shows full-screen advertisement to user.

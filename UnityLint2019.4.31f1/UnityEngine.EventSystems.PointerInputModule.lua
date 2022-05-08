@@ -29,6 +29,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.PointerInputModule = {}
 
+--- @param pointerId number 
 --- @return boolean
 function UnityEngine.EventSystems.PointerInputModule:IsPointerOverGameObject(pointerId) end
 

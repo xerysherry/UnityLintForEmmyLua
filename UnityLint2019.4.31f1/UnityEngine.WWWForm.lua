@@ -6,6 +6,8 @@
 UnityEngine.WWWForm = {}
 
 --- Add a simple field to the form.
+--- @param fieldName string 
+--- @param value string 
 function UnityEngine.WWWForm:AddField(fieldName, value) end
 
 --- Add a simple field to the form.
@@ -20,9 +22,14 @@ function UnityEngine.WWWForm:AddField(fieldName, value, e) end
 function UnityEngine.WWWForm:AddField(fieldName, i) end
 
 --- Add binary data to the form.
+--- @param fieldName string 
+--- @param contents number[] 
 function UnityEngine.WWWForm:AddBinaryData(fieldName, contents) end
 
 --- Add binary data to the form.
+--- @param fieldName string 
+--- @param contents number[] 
+--- @param fileName string 
 function UnityEngine.WWWForm:AddBinaryData(fieldName, contents, fileName) end
 
 --- Add binary data to the form.

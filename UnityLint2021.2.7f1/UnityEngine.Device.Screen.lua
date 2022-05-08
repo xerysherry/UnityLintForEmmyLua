@@ -37,34 +37,57 @@
 ---       The Device Simulator doesn't simulate this property.
 UnityEngine.Device.Screen = {}
 
+--- @param value boolean 
 function UnityEngine.Device.Screen.set_autorotateToLandscapeLeft(value) end
 
+--- @param value boolean 
 function UnityEngine.Device.Screen.set_autorotateToLandscapeRight(value) end
 
+--- @param value boolean 
 function UnityEngine.Device.Screen.set_autorotateToPortrait(value) end
 
+--- @param value boolean 
 function UnityEngine.Device.Screen.set_autorotateToPortraitUpsideDown(value) end
 
+--- @param value boolean 
 function UnityEngine.Device.Screen.set_fullScreen(value) end
 
+--- @param value UnityEngine.FullScreenMode 
 function UnityEngine.Device.Screen.set_fullScreenMode(value) end
 
+--- @param value UnityEngine.ScreenOrientation 
 function UnityEngine.Device.Screen.set_orientation(value) end
 
+--- @param value number 
 function UnityEngine.Device.Screen.set_sleepTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Device.Screen.set_brightness(value) end
 
 --- This has the same functionality as Screen.SetResolution and also mimics platform-specific behavior in the Unity Editor.
+--- @param width number 
+--- @param height number 
+--- @param fullscreenMode UnityEngine.FullScreenMode 
+--- @param preferredRefreshRate number 
 function UnityEngine.Device.Screen.SetResolution(width, height, fullscreenMode, preferredRefreshRate) end
 
 --- This has the same functionality as Screen.SetResolution and also mimics platform-specific behavior in the Unity Editor.
+--- @param width number 
+--- @param height number 
+--- @param fullscreenMode UnityEngine.FullScreenMode 
 function UnityEngine.Device.Screen.SetResolution(width, height, fullscreenMode) end
 
 --- This has the same functionality as Screen.SetResolution and also mimics platform-specific behavior in the Unity Editor.
+--- @param width number 
+--- @param height number 
+--- @param fullscreen boolean 
+--- @param preferredRefreshRate number 
 function UnityEngine.Device.Screen.SetResolution(width, height, fullscreen, preferredRefreshRate) end
 
 --- This has the same functionality as Screen.SetResolution and also mimics platform-specific behavior in the Unity Editor.
+--- @param width number 
+--- @param height number 
+--- @param fullscreen boolean 
 function UnityEngine.Device.Screen.SetResolution(width, height, fullscreen) end
 
 --- The Device Simulator doesn't simulate this property.

@@ -2,16 +2,28 @@
 --- @field localUser UnityEngine.SocialPlatforms.ILocalUser
 UnityEngine.SocialPlatforms.Local = {}
 
+--- @param userIDs string[] 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:LoadUsers(userIDs, callback) end
 
+--- @param id string 
+--- @param progress number 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:ReportProgress(id, progress, callback) end
 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:LoadAchievementDescriptions(callback) end
 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:LoadAchievements(callback) end
 
+--- @param score number 
+--- @param board string 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:ReportScore(score, board, callback) end
 
+--- @param leaderboardID string 
+--- @param callback function 
 function UnityEngine.SocialPlatforms.Local:LoadScores(leaderboardID, callback) end
 
 function UnityEngine.SocialPlatforms.Local:ShowAchievementsUI() end

@@ -51,22 +51,47 @@ UnityEngine.Sprite = {}
 function UnityEngine.Sprite.Create(texture, rect, pivot, pixelsPerUnit, extrude, meshType, border, generateFallbackPhysicsShape) end
 
 --- Create a new Sprite object.
+--- @param texture UnityEngine.Texture2D 
+--- @param rect UnityEngine.Rect 
+--- @param pivot UnityEngine.Vector2 
+--- @param pixelsPerUnit number 
+--- @param extrude number 
+--- @param meshType UnityEngine.SpriteMeshType 
+--- @param border UnityEngine.Vector4 
 --- @return UnityEngine.Sprite 
 function UnityEngine.Sprite.Create(texture, rect, pivot, pixelsPerUnit, extrude, meshType, border) end
 
 --- Create a new Sprite object.
+--- @param texture UnityEngine.Texture2D 
+--- @param rect UnityEngine.Rect 
+--- @param pivot UnityEngine.Vector2 
+--- @param pixelsPerUnit number 
+--- @param extrude number 
+--- @param meshType UnityEngine.SpriteMeshType 
 --- @return UnityEngine.Sprite 
 function UnityEngine.Sprite.Create(texture, rect, pivot, pixelsPerUnit, extrude, meshType) end
 
 --- Create a new Sprite object.
+--- @param texture UnityEngine.Texture2D 
+--- @param rect UnityEngine.Rect 
+--- @param pivot UnityEngine.Vector2 
+--- @param pixelsPerUnit number 
+--- @param extrude number 
 --- @return UnityEngine.Sprite 
 function UnityEngine.Sprite.Create(texture, rect, pivot, pixelsPerUnit, extrude) end
 
 --- Create a new Sprite object.
+--- @param texture UnityEngine.Texture2D 
+--- @param rect UnityEngine.Rect 
+--- @param pivot UnityEngine.Vector2 
+--- @param pixelsPerUnit number 
 --- @return UnityEngine.Sprite 
 function UnityEngine.Sprite.Create(texture, rect, pivot, pixelsPerUnit) end
 
 --- Create a new Sprite object.
+--- @param texture UnityEngine.Texture2D 
+--- @param rect UnityEngine.Rect 
+--- @param pivot UnityEngine.Vector2 
 --- @return UnityEngine.Sprite 
 function UnityEngine.Sprite.Create(texture, rect, pivot) end
 

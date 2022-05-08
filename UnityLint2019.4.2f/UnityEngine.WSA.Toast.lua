@@ -18,13 +18,17 @@ UnityEngine.WSA.Toast = {}
 function UnityEngine.WSA.Toast.GetTemplate(templ) end
 
 --- Create toast notification.
+--- @param xml string 
 --- @return UnityEngine.WSA.Toast A toast object for further work with created notification or null, if creation of toast failed.
 function UnityEngine.WSA.Toast.Create(xml) end
 
 --- Create toast notification.
+--- @param image string 
+--- @param text string 
 --- @return UnityEngine.WSA.Toast A toast object for further work with created notification or null, if creation of toast failed.
 function UnityEngine.WSA.Toast.Create(image, text) end
 
+--- @param value string 
 function UnityEngine.WSA.Toast:set_arguments(value) end
 
 --- Show toast notification.

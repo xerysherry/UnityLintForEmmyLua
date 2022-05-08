@@ -16,6 +16,7 @@ function UnityEngine.Windows.WebCam.VideoCapture.GetSupportedFrameRatesForResolu
 function UnityEngine.Windows.WebCam.VideoCapture.CreateAsync(showHolograms, onCreatedCallback) end
 
 --- Asynchronously creates an instance of a VideoCapture object that can be used to record videos from the web camera to disk.
+--- @param onCreatedCallback function 
 function UnityEngine.Windows.WebCam.VideoCapture.CreateAsync(onCreatedCallback) end
 
 --- Asynchronously starts video mode.

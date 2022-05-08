@@ -5,8 +5,10 @@
 ---       The agent type ID, specifying which navigation meshes to consider for the query functions.
 UnityEngine.AI.NavMeshQueryFilter = {}
 
+--- @param value number 
 function UnityEngine.AI.NavMeshQueryFilter:set_areaMask(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshQueryFilter:set_agentTypeID(value) end
 
 --- Returns the area cost multiplier for the given area type for this filter.

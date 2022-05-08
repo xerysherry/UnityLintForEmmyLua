@@ -5,6 +5,7 @@
 ---       The local user (potentially not logged in).
 UnityEngine.Social = {}
 
+--- @param value UnityEngine.SocialPlatforms.ISocialPlatform 
 function UnityEngine.Social.set_Active(value) end
 
 --- Load the user profiles accociated with the given array of user IDs.

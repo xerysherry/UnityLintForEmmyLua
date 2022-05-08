@@ -5,9 +5,13 @@
 --- @field Item UnityEngine.UIElements.StyleSheet
 UnityEngine.UIElements.VisualElementStyleSheetSet = {}
 
+--- @param left UnityEngine.UIElements.VisualElementStyleSheetSet 
+--- @param right UnityEngine.UIElements.VisualElementStyleSheetSet 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet.op_Equality(left, right) end
 
+--- @param left UnityEngine.UIElements.VisualElementStyleSheetSet 
+--- @param right UnityEngine.UIElements.VisualElementStyleSheetSet 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet.op_Inequality(left, right) end
 
@@ -19,6 +23,7 @@ function UnityEngine.UIElements.VisualElementStyleSheetSet:Add(styleSheet) end
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Clear() end
 
 --- Removes a style sheet for the owner element.
+--- @param styleSheet UnityEngine.UIElements.StyleSheet 
 --- @return boolean 
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Remove(styleSheet) end
 
@@ -27,9 +32,11 @@ function UnityEngine.UIElements.VisualElementStyleSheetSet:Remove(styleSheet) en
 --- @return boolean True if the style sheet is attached to the owner element, false otherwise.
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Contains(styleSheet) end
 
+--- @param other UnityEngine.UIElements.VisualElementStyleSheetSet 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Equals(obj) end
 

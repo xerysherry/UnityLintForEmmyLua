@@ -1,118 +1,175 @@
 --- @class UnityEngine.XR.WSA.Input.GestureRecognizer Manager class with API for recognizing user gestures.
 UnityEngine.XR.WSA.Input.GestureRecognizer = {}
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldCompletedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_TappedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_TappedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationCompletedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationCompletedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationUpdatedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationUpdatedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationCompletedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationCompletedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationUpdatedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationUpdatedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_RecognitionEndedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_RecognitionEndedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_RecognitionStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_RecognitionStartedEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_GestureErrorEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_GestureErrorEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_Tapped(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_Tapped(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_ManipulationUpdated(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_ManipulationUpdated(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationCanceled(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationCompleted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_NavigationUpdated(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_NavigationUpdated(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_RecognitionEnded(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_RecognitionEnded(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_RecognitionStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_RecognitionStarted(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_GestureError(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_GestureError(value) end
 
 --- Disposes the resources used by gesture recognizer.
@@ -140,10 +197,13 @@ function UnityEngine.XR.WSA.Input.GestureRecognizer:IsCapturingGestures() end
 --- Cancels any pending gesture events.  Additionally this will call StopCapturingGestures.
 function UnityEngine.XR.WSA.Input.GestureRecognizer:CancelGestures() end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:remove_HoldCanceledEvent(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.Input.GestureRecognizer:add_HoldCompletedEvent(value) end
 
 ---  Generated By xerysherry

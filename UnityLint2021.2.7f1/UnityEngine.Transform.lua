@@ -57,32 +57,46 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Transform = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_position(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_localPosition(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_eulerAngles(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_localEulerAngles(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_right(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_up(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_forward(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Transform:set_rotation(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Transform:set_localRotation(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Transform:set_localScale(value) end
 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Transform:set_parent(value) end
 
 --- Set the parent of the transform.
+--- @param p UnityEngine.Transform 
 function UnityEngine.Transform:SetParent(p) end
 
 --- Set the parent of the transform.
+--- @param parent UnityEngine.Transform 
+--- @param worldPositionStays boolean 
 function UnityEngine.Transform:SetParent(parent, worldPositionStays) end
 
 --- Sets the world space position and rotation of the Transform component.
@@ -96,6 +110,7 @@ function UnityEngine.Transform:SetPositionAndRotation(position, rotation) end
 function UnityEngine.Transform:Translate(translation, relativeTo) end
 
 --- Moves the transform in the direction and distance of translation.
+--- @param translation UnityEngine.Vector3 
 function UnityEngine.Transform:Translate(translation) end
 
 --- Moves the transform by x along the x axis, y along the y axis, and z along the z axis.
@@ -106,6 +121,9 @@ function UnityEngine.Transform:Translate(translation) end
 function UnityEngine.Transform:Translate(x, y, z, relativeTo) end
 
 --- Moves the transform in the direction and distance of translation.
+--- @param x number 
+--- @param y number 
+--- @param z number 
 function UnityEngine.Transform:Translate(x, y, z) end
 
 --- Moves the transform in the direction and distance of translation.
@@ -130,6 +148,10 @@ function UnityEngine.Transform:Rotate(eulers, relativeTo) end
 function UnityEngine.Transform:Rotate(eulers) end
 
 --- Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).
+--- @param xAngle number 
+--- @param yAngle number 
+--- @param zAngle number 
+--- @param relativeTo UnityEngine.Space 
 function UnityEngine.Transform:Rotate(xAngle, yAngle, zAngle, relativeTo) end
 
 --- The implementation of this method applies a rotation of zAngle degrees around the z axis, xAngle degrees around the x axis, and yAngle degrees around the y axis (in that order).
@@ -139,6 +161,9 @@ function UnityEngine.Transform:Rotate(xAngle, yAngle, zAngle, relativeTo) end
 function UnityEngine.Transform:Rotate(xAngle, yAngle, zAngle) end
 
 --- Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).
+--- @param axis UnityEngine.Vector3 
+--- @param angle number 
+--- @param relativeTo UnityEngine.Space 
 function UnityEngine.Transform:Rotate(axis, angle, relativeTo) end
 
 --- Rotates the object around the given axis by the number of degrees defined by the given angle.
@@ -158,6 +183,7 @@ function UnityEngine.Transform:RotateAround(point, axis, angle) end
 function UnityEngine.Transform:LookAt(target, worldUp) end
 
 --- Rotates the transform so the forward vector points at target's current position.
+--- @param target UnityEngine.Transform 
 function UnityEngine.Transform:LookAt(target) end
 
 --- Rotates the transform so the forward vector points at worldPosition.
@@ -166,6 +192,7 @@ function UnityEngine.Transform:LookAt(target) end
 function UnityEngine.Transform:LookAt(worldPosition, worldUp) end
 
 --- Rotates the transform so the forward vector points at target's current position.
+--- @param worldPosition UnityEngine.Vector3 
 function UnityEngine.Transform:LookAt(worldPosition) end
 
 --- Transforms direction from local space to world space.
@@ -267,8 +294,10 @@ function UnityEngine.Transform:Find(n) end
 --- @return boolean 
 function UnityEngine.Transform:IsChildOf(parent) end
 
+--- @param value boolean 
 function UnityEngine.Transform:set_hasChanged(value) end
 
+--- @param n string 
 --- @return UnityEngine.Transform
 function UnityEngine.Transform:FindChild(n) end
 
@@ -280,6 +309,8 @@ function UnityEngine.Transform:GetEnumerator() end
 --- @param angle number 
 function UnityEngine.Transform:RotateAround(axis, angle) end
 
+--- @param axis UnityEngine.Vector3 
+--- @param angle number 
 function UnityEngine.Transform:RotateAroundLocal(axis, angle) end
 
 --- Returns a transform child by index.
@@ -290,6 +321,7 @@ function UnityEngine.Transform:GetChild(index) end
 --- @return number
 function UnityEngine.Transform:GetChildCount() end
 
+--- @param value number 
 function UnityEngine.Transform:set_hierarchyCapacity(value) end
 
 ---  Generated By xerysherry

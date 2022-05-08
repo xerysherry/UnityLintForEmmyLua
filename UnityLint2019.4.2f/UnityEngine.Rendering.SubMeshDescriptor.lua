@@ -15,18 +15,25 @@
 ---       Number of vertices used by the index buffer of this sub-mesh.
 UnityEngine.Rendering.SubMeshDescriptor = {}
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Rendering.SubMeshDescriptor:set_bounds(value) end
 
+--- @param value UnityEngine.MeshTopology 
 function UnityEngine.Rendering.SubMeshDescriptor:set_topology(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SubMeshDescriptor:set_indexStart(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SubMeshDescriptor:set_indexCount(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SubMeshDescriptor:set_baseVertex(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SubMeshDescriptor:set_firstVertex(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.SubMeshDescriptor:set_vertexCount(value) end
 
 --- @return string

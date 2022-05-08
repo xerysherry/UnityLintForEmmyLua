@@ -3,6 +3,7 @@
 ---       The regular expression that should be matched by the value.
 UnityEngine.UIElements.UxmlValueMatches = {}
 
+--- @param value string 
 function UnityEngine.UIElements.UxmlValueMatches:set_regex(value) end
 
 --- Indicates whether the current UxmlValueMatches object is equal to another object of the same type.

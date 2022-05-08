@@ -14,25 +14,36 @@
 ---       Unity renders objects whose SortingLayer.value value is within range specified by this Rendering.SortingLayerRange.
 UnityEngine.Rendering.FilteringSettings = {}
 
+--- @param left UnityEngine.Rendering.FilteringSettings 
+--- @param right UnityEngine.Rendering.FilteringSettings 
 --- @return boolean
 function UnityEngine.Rendering.FilteringSettings.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.FilteringSettings 
+--- @param right UnityEngine.Rendering.FilteringSettings 
 --- @return boolean
 function UnityEngine.Rendering.FilteringSettings.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.RenderQueueRange 
 function UnityEngine.Rendering.FilteringSettings:set_renderQueueRange(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.FilteringSettings:set_layerMask(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.FilteringSettings:set_renderingLayerMask(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.FilteringSettings:set_excludeMotionVectorObjects(value) end
 
+--- @param value UnityEngine.Rendering.SortingLayerRange 
 function UnityEngine.Rendering.FilteringSettings:set_sortingLayerRange(value) end
 
+--- @param other UnityEngine.Rendering.FilteringSettings 
 --- @return boolean
 function UnityEngine.Rendering.FilteringSettings:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.FilteringSettings:Equals(obj) end
 

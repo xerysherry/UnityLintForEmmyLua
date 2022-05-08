@@ -2,38 +2,50 @@
 --- @field factory UnityEngine.UI.DefaultControls.IFactoryControls
 UnityEngine.UI.DefaultControls = {}
 
+--- @param value UnityEngine.UI.DefaultControls.IFactoryControls 
 function UnityEngine.UI.DefaultControls.set_factory(value) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreatePanel(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateButton(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateText(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateImage(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateRawImage(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateSlider(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateScrollbar(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateToggle(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateInputField(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateDropdown(resources) end
 
+--- @param resources UnityEngine.UI.DefaultControls.Resources 
 --- @return UnityEngine.GameObject
 function UnityEngine.UI.DefaultControls.CreateScrollView(resources) end
 

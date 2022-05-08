@@ -106,46 +106,67 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.ArticulationBody = {}
 
+--- @param value UnityEngine.ArticulationJointType 
 function UnityEngine.ArticulationBody:set_jointType(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_anchorPosition(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_parentAnchorPosition(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.ArticulationBody:set_anchorRotation(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.ArticulationBody:set_parentAnchorRotation(value) end
 
+--- @param value boolean 
 function UnityEngine.ArticulationBody:set_computeParentAnchor(value) end
 
+--- @param value boolean 
 function UnityEngine.ArticulationBody:set_matchAnchors(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_linearLockX(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_linearLockY(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_linearLockZ(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_swingYLock(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_swingZLock(value) end
 
+--- @param value UnityEngine.ArticulationDofLock 
 function UnityEngine.ArticulationBody:set_twistLock(value) end
 
+--- @param value UnityEngine.ArticulationDrive 
 function UnityEngine.ArticulationBody:set_xDrive(value) end
 
+--- @param value UnityEngine.ArticulationDrive 
 function UnityEngine.ArticulationBody:set_yDrive(value) end
 
+--- @param value UnityEngine.ArticulationDrive 
 function UnityEngine.ArticulationBody:set_zDrive(value) end
 
+--- @param value boolean 
 function UnityEngine.ArticulationBody:set_immovable(value) end
 
+--- @param value boolean 
 function UnityEngine.ArticulationBody:set_useGravity(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_linearDamping(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_angularDamping(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_jointFriction(value) end
 
 --- Applies a force to the ArticulationBody.
@@ -154,6 +175,7 @@ function UnityEngine.ArticulationBody:set_jointFriction(value) end
 function UnityEngine.ArticulationBody:AddForce(force, mode) end
 
 --- Applies a force to the ArticulationBody.
+--- @param force UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:AddForce(force) end
 
 --- Applies a force to the Articulation Body, relative to its local coordinate system.
@@ -162,6 +184,7 @@ function UnityEngine.ArticulationBody:AddForce(force) end
 function UnityEngine.ArticulationBody:AddRelativeForce(force, mode) end
 
 --- Applies a force to the Articulation Body, relative to its local coordinate system.
+--- @param force UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:AddRelativeForce(force) end
 
 --- Add torque to the articulation body.
@@ -170,6 +193,7 @@ function UnityEngine.ArticulationBody:AddRelativeForce(force) end
 function UnityEngine.ArticulationBody:AddTorque(torque, mode) end
 
 --- Add torque to the articulation body.
+--- @param torque UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:AddTorque(torque) end
 
 --- Applies a torque to the articulation body, relative to its local coordinate system.
@@ -178,6 +202,7 @@ function UnityEngine.ArticulationBody:AddTorque(torque) end
 function UnityEngine.ArticulationBody:AddRelativeTorque(torque, mode) end
 
 --- Applies a torque to the articulation body, relative to its local coordinate system.
+--- @param torque UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:AddRelativeTorque(torque) end
 
 --- Applies a force at a specific position, resulting in applying a torque and force on the object.
@@ -187,18 +212,26 @@ function UnityEngine.ArticulationBody:AddRelativeTorque(torque) end
 function UnityEngine.ArticulationBody:AddForceAtPosition(force, position, mode) end
 
 --- Applies a force at a specific position, resulting in applying a torque and force on the object.
+--- @param force UnityEngine.Vector3 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:AddForceAtPosition(force, position) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_velocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_angularVelocity(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_mass(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_centerOfMass(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ArticulationBody:set_inertiaTensor(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.ArticulationBody:set_inertiaTensorRotation(value) end
 
 --- Resets the center of mass of the articulation body.
@@ -217,26 +250,37 @@ function UnityEngine.ArticulationBody:IsSleeping() end
 --- Forces an articulation body to wake up.
 function UnityEngine.ArticulationBody:WakeUp() end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_sleepThreshold(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_solverIterations(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_solverVelocityIterations(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_maxAngularVelocity(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_maxLinearVelocity(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_maxJointVelocity(value) end
 
+--- @param value number 
 function UnityEngine.ArticulationBody:set_maxDepenetrationVelocity(value) end
 
+--- @param value UnityEngine.ArticulationReducedSpace 
 function UnityEngine.ArticulationBody:set_jointPosition(value) end
 
+--- @param value UnityEngine.ArticulationReducedSpace 
 function UnityEngine.ArticulationBody:set_jointVelocity(value) end
 
+--- @param value UnityEngine.ArticulationReducedSpace 
 function UnityEngine.ArticulationBody:set_jointAcceleration(value) end
 
+--- @param value UnityEngine.ArticulationReducedSpace 
 function UnityEngine.ArticulationBody:set_jointForce(value) end
 
 --- Teleport the root body of the articulation to a new pose.
@@ -323,6 +367,7 @@ function UnityEngine.ArticulationBody:SetDriveTargetVelocities(targetVelocities)
 --- @return number Total degrees of freedom for the entire hierarchy of articulation bodies.
 function UnityEngine.ArticulationBody:GetDofStartIndices(dofStartIndices) end
 
+--- @param value UnityEngine.CollisionDetectionMode 
 function UnityEngine.ArticulationBody:set_collisionDetectionMode(value) end
 
 --- Snap the anchor to the closest contact between the connected bodies.

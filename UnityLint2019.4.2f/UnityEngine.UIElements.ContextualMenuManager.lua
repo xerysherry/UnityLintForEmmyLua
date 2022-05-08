@@ -2,6 +2,8 @@
 UnityEngine.UIElements.ContextualMenuManager = {}
 
 --- Checks if the event triggers the display of the contextual menu. This method also displays the menu.
+--- @param evt UnityEngine.UIElements.EventBase 
+--- @param eventHandler UnityEngine.UIElements.IEventHandler 
 function UnityEngine.UIElements.ContextualMenuManager:DisplayMenuIfEventMatches(evt, eventHandler) end
 
 --- Displays the contextual menu.

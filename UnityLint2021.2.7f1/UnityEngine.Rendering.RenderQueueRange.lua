@@ -13,19 +13,27 @@
 ---       Inclusive upper bound for the range.
 UnityEngine.Rendering.RenderQueueRange = {}
 
+--- @param left UnityEngine.Rendering.RenderQueueRange 
+--- @param right UnityEngine.Rendering.RenderQueueRange 
 --- @return boolean
 function UnityEngine.Rendering.RenderQueueRange.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.RenderQueueRange 
+--- @param right UnityEngine.Rendering.RenderQueueRange 
 --- @return boolean
 function UnityEngine.Rendering.RenderQueueRange.op_Inequality(left, right) end
 
+--- @param value number 
 function UnityEngine.Rendering.RenderQueueRange:set_lowerBound(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.RenderQueueRange:set_upperBound(value) end
 
+--- @param other UnityEngine.Rendering.RenderQueueRange 
 --- @return boolean
 function UnityEngine.Rendering.RenderQueueRange:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.RenderQueueRange:Equals(obj) end
 

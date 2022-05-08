@@ -11,25 +11,36 @@
 ---       Rendering view height in pixels.
 UnityEngine.Rendering.LODParameters = {}
 
+--- @param left UnityEngine.Rendering.LODParameters 
+--- @param right UnityEngine.Rendering.LODParameters 
 --- @return boolean
 function UnityEngine.Rendering.LODParameters.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.LODParameters 
+--- @param right UnityEngine.Rendering.LODParameters 
 --- @return boolean
 function UnityEngine.Rendering.LODParameters.op_Inequality(left, right) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.LODParameters:set_isOrthographic(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rendering.LODParameters:set_cameraPosition(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.LODParameters:set_fieldOfView(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.LODParameters:set_orthoSize(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.LODParameters:set_cameraPixelHeight(value) end
 
+--- @param other UnityEngine.Rendering.LODParameters 
 --- @return boolean
 function UnityEngine.Rendering.LODParameters:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.LODParameters:Equals(obj) end
 

@@ -35,16 +35,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.PositionConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.PositionConstraint:set_weight(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.PositionConstraint:set_translationAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.PositionConstraint:set_translationOffset(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.PositionConstraint:set_translationAxis(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.PositionConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.PositionConstraint:set_locked(value) end
 
 --- Gets the list of sources.

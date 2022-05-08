@@ -7,6 +7,10 @@ Unity.Collections.LowLevel.Unsafe.DisposeSentinel = {}
 function Unity.Collections.LowLevel.Unsafe.DisposeSentinel.Dispose(safety, sentinel) end
 
 --- Creates a new AtomicSafetyHandle and a new DisposeSentinel, to be used to track safety and leaks on some native data.
+--- @param callSiteStackDepth number 
+--- @param allocator Unity.Collections.Allocator 
+--- @return Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle& 
+--- @return Unity.Collections.LowLevel.Unsafe.DisposeSentinel& 
 function Unity.Collections.LowLevel.Unsafe.DisposeSentinel.Create(callSiteStackDepth, allocator) end
 
 --- Clears the DisposeSentinel.

@@ -1,3 +1,4 @@
+--- @class UnityEngine.CalendarIdentifier
 UnityEngine.CalendarIdentifier = {
     GregorianCalendar = 0,
     BuddhistCalendar = 1,

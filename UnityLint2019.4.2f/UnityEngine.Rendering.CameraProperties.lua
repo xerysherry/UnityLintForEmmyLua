@@ -1,9 +1,13 @@
 --- @class UnityEngine.Rendering.CameraProperties Camera related properties in CullingParameters.
 UnityEngine.Rendering.CameraProperties = {}
 
+--- @param left UnityEngine.Rendering.CameraProperties 
+--- @param right UnityEngine.Rendering.CameraProperties 
 --- @return boolean
 function UnityEngine.Rendering.CameraProperties.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.CameraProperties 
+--- @param right UnityEngine.Rendering.CameraProperties 
 --- @return boolean
 function UnityEngine.Rendering.CameraProperties.op_Inequality(left, right) end
 
@@ -27,9 +31,11 @@ function UnityEngine.Rendering.CameraProperties:GetCameraCullingPlane(index) end
 --- @param plane UnityEngine.Plane Camera culling plane.
 function UnityEngine.Rendering.CameraProperties:SetCameraCullingPlane(index, plane) end
 
+--- @param other UnityEngine.Rendering.CameraProperties 
 --- @return boolean
 function UnityEngine.Rendering.CameraProperties:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.CameraProperties:Equals(obj) end
 

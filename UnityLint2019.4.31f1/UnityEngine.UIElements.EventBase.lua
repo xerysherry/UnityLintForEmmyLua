@@ -30,6 +30,7 @@ UnityEngine.UIElements.EventBase = {}
 --- Implementation of IDisposable.
 function UnityEngine.UIElements.EventBase:Dispose() end
 
+--- @param value UnityEngine.UIElements.IEventHandler 
 function UnityEngine.UIElements.EventBase:set_target(value) end
 
 --- Stops propagating this event. The event is not sent to other elements along the propagation path. This method does not prevent other event handlers from executing on the current target.

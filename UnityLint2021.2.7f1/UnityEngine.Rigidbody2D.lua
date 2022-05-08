@@ -67,8 +67,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Rigidbody2D = {}
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:set_position(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_rotation(value) end
 
 --- Sets the rotation of the Rigidbody2D to angle (given in degrees).
@@ -91,36 +93,52 @@ function UnityEngine.Rigidbody2D:MoveRotation(angle) end
 --- @param rotation UnityEngine.Quaternion Full 3D rotation used to extract only the z-axis rotation.
 function UnityEngine.Rigidbody2D:MoveRotation(rotation) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:set_velocity(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_angularVelocity(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_useAutoMass(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_mass(value) end
 
+--- @param value UnityEngine.PhysicsMaterial2D 
 function UnityEngine.Rigidbody2D:set_sharedMaterial(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:set_centerOfMass(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_inertia(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_drag(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_angularDrag(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody2D:set_gravityScale(value) end
 
+--- @param value UnityEngine.RigidbodyType2D 
 function UnityEngine.Rigidbody2D:set_bodyType(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_useFullKinematicContacts(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_isKinematic(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_fixedAngle(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_freezeRotation(value) end
 
+--- @param value UnityEngine.RigidbodyConstraints2D 
 function UnityEngine.Rigidbody2D:set_constraints(value) end
 
 --- Is the rigidbody "sleeping"?
@@ -137,12 +155,16 @@ function UnityEngine.Rigidbody2D:Sleep() end
 --- Disables the "sleeping" state of a rigidbody.
 function UnityEngine.Rigidbody2D:WakeUp() end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody2D:set_simulated(value) end
 
+--- @param value UnityEngine.RigidbodyInterpolation2D 
 function UnityEngine.Rigidbody2D:set_interpolation(value) end
 
+--- @param value UnityEngine.RigidbodySleepMode2D 
 function UnityEngine.Rigidbody2D:set_sleepMode(value) end
 
+--- @param value UnityEngine.CollisionDetectionMode2D 
 function UnityEngine.Rigidbody2D:set_collisionDetectionMode(value) end
 
 --- Checks whether the collider  is touching any of the collider(s) attached to this rigidbody or not.
@@ -186,6 +208,7 @@ function UnityEngine.Rigidbody2D:Distance(collider) end
 function UnityEngine.Rigidbody2D:ClosestPoint(position) end
 
 --- Apply a force to the rigidbody.
+--- @param force UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:AddForce(force) end
 
 --- Apply a force to the rigidbody.
@@ -194,6 +217,7 @@ function UnityEngine.Rigidbody2D:AddForce(force) end
 function UnityEngine.Rigidbody2D:AddForce(force, mode) end
 
 --- Adds a force to the rigidbody2D relative to its coordinate system.
+--- @param relativeForce UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:AddRelativeForce(relativeForce) end
 
 --- Adds a force to the rigidbody2D relative to its coordinate system.
@@ -202,6 +226,8 @@ function UnityEngine.Rigidbody2D:AddRelativeForce(relativeForce) end
 function UnityEngine.Rigidbody2D:AddRelativeForce(relativeForce, mode) end
 
 --- Apply a force at a given position in space.
+--- @param force UnityEngine.Vector2 
+--- @param position UnityEngine.Vector2 
 function UnityEngine.Rigidbody2D:AddForceAtPosition(force, position) end
 
 --- Apply a force at a given position in space.
@@ -211,6 +237,7 @@ function UnityEngine.Rigidbody2D:AddForceAtPosition(force, position) end
 function UnityEngine.Rigidbody2D:AddForceAtPosition(force, position, mode) end
 
 --- Apply a torque at the rigidbody's centre of mass.
+--- @param torque number 
 function UnityEngine.Rigidbody2D:AddTorque(torque) end
 
 --- Apply a torque at the rigidbody's centre of mass.
@@ -315,6 +342,8 @@ function UnityEngine.Rigidbody2D:GetAttachedColliders(results) end
 function UnityEngine.Rigidbody2D:GetAttachedColliders(results) end
 
 --- All the Collider2D shapes attached to the Rigidbody2D are cast into the Scene starting at each Collider position ignoring the Colliders attached to the same Rigidbody2D.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Rigidbody2D:Cast(direction, results) end
 
@@ -333,6 +362,9 @@ function UnityEngine.Rigidbody2D:Cast(direction, results, distance) end
 function UnityEngine.Rigidbody2D:Cast(direction, results, distance) end
 
 --- All the Collider2D shapes attached to the Rigidbody2D are cast into the Scene starting at each Collider position ignoring the Colliders attached to the same Rigidbody2D.
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.Rigidbody2D:Cast(direction, contactFilter, results) end
 

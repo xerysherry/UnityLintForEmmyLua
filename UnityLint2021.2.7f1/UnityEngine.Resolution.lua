@@ -7,10 +7,13 @@
 ---       Resolution's vertical refresh rate in Hz.
 UnityEngine.Resolution = {}
 
+--- @param value number 
 function UnityEngine.Resolution:set_width(value) end
 
+--- @param value number 
 function UnityEngine.Resolution:set_height(value) end
 
+--- @param value number 
 function UnityEngine.Resolution:set_refreshRate(value) end
 
 --- Returns a nicely formatted string of the resolution.

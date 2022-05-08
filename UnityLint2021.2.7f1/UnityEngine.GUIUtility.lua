@@ -9,21 +9,31 @@
 ---       The controlID of the control that has keyboard focus.
 UnityEngine.GUIUtility = {}
 
+--- @param value string 
 function UnityEngine.GUIUtility.set_systemCopyBuffer(value) end
 
 --- Get a unique ID for a control.
+--- @param hint number 
+--- @param focusType UnityEngine.FocusType 
+--- @param rect UnityEngine.Rect 
 --- @return number 
 function UnityEngine.GUIUtility.GetControlID(hint, focusType, rect) end
 
 --- Align a local space rectangle to the pixel grid.
+--- @param rect UnityEngine.Rect 
 --- @return UnityEngine.Rect The aligned rectangle in local space.
+--- @return System.Int32& 
+--- @return System.Int32& 
 function UnityEngine.GUIUtility.AlignRectToDevice(rect) end
 
 --- Get a unique ID for a control.
+--- @param focus UnityEngine.FocusType 
 --- @return number 
 function UnityEngine.GUIUtility.GetControlID(focus) end
 
 --- Get a unique ID for a control.
+--- @param contents UnityEngine.GUIContent 
+--- @param focus UnityEngine.FocusType 
 --- @return number 
 function UnityEngine.GUIUtility.GetControlID(contents, focus) end
 
@@ -41,6 +51,8 @@ function UnityEngine.GUIUtility.GetControlID(focus, position) end
 function UnityEngine.GUIUtility.GetControlID(contents, focus, position) end
 
 --- Get a unique ID for a control.
+--- @param hint number 
+--- @param focus UnityEngine.FocusType 
 --- @return number 
 function UnityEngine.GUIUtility.GetControlID(hint, focus) end
 
@@ -56,8 +68,10 @@ function UnityEngine.GUIUtility.GetStateObject(t, controlID) end
 --- @return System.Object 
 function UnityEngine.GUIUtility.QueryStateObject(t, controlID) end
 
+--- @param value number 
 function UnityEngine.GUIUtility.set_hotControl(value) end
 
+--- @param value number 
 function UnityEngine.GUIUtility.set_keyboardControl(value) end
 
 --- Puts the GUI in a state that will prevent all subsequent immediate mode GUI functions from evaluating for the remainder of the GUI loop by throwing an ExitGUIException.
@@ -94,6 +108,7 @@ function UnityEngine.GUIUtility.RotateAroundPivot(angle, pivotPoint) end
 function UnityEngine.GUIUtility.ScaleAroundPivot(scale, pivotPoint) end
 
 --- Align a local space rectangle to the pixel grid.
+--- @param rect UnityEngine.Rect 
 --- @return UnityEngine.Rect The aligned rectangle in local space.
 function UnityEngine.GUIUtility.AlignRectToDevice(rect) end
 

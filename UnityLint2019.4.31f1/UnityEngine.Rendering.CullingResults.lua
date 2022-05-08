@@ -13,9 +13,13 @@
 ---       Gets the number of per-object light and reflection probe indices.
 UnityEngine.Rendering.CullingResults = {}
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Inequality(left, right) end
 
@@ -78,9 +82,11 @@ function UnityEngine.Rendering.CullingResults:ComputePointShadowMatricesAndCulli
 --- @return UnityEngine.Rendering.ShadowSplitData& The computed cascade data.
 function UnityEngine.Rendering.CullingResults:ComputeDirectionalShadowMatricesAndCullingPrimitives(activeLightIndex, splitIndex, splitCount, splitRatio, shadowResolution, shadowNearPlaneOffset) end
 
+--- @param other UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(obj) end
 

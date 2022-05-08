@@ -3,8 +3,10 @@
 ---       The current state of the world tracking systems.
 UnityEngine.XR.WSA.WorldManager = {}
 
+--- @param value function 
 function UnityEngine.XR.WSA.WorldManager.add_OnPositionalLocatorStateChanged(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.WorldManager.remove_OnPositionalLocatorStateChanged(value) end
 
 --- Return the native pointer to Windows::Perception::Spatial::ISpatialCoordinateSystem which was retrieved from an Windows::Perception::Spatial::ISpatialStationaryFrameOfReference object underlying the Unity World Origin.

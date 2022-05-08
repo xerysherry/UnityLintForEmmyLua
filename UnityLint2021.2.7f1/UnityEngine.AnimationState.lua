@@ -24,27 +24,38 @@
 ---       Which blend mode should be used?
 UnityEngine.AnimationState = {}
 
+--- @param value boolean 
 function UnityEngine.AnimationState:set_enabled(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_weight(value) end
 
+--- @param value UnityEngine.WrapMode 
 function UnityEngine.AnimationState:set_wrapMode(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_time(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_normalizedTime(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_speed(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_normalizedSpeed(value) end
 
+--- @param value number 
 function UnityEngine.AnimationState:set_layer(value) end
 
+--- @param value string 
 function UnityEngine.AnimationState:set_name(value) end
 
+--- @param value UnityEngine.AnimationBlendMode 
 function UnityEngine.AnimationState:set_blendMode(value) end
 
 --- Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.
+--- @param mix UnityEngine.Transform 
 function UnityEngine.AnimationState:AddMixingTransform(mix) end
 
 --- Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.

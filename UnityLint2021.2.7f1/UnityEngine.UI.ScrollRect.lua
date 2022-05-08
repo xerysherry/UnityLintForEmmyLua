@@ -50,40 +50,58 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.ScrollRect = {}
 
+--- @param value UnityEngine.RectTransform 
 function UnityEngine.UI.ScrollRect:set_content(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.ScrollRect:set_horizontal(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.ScrollRect:set_vertical(value) end
 
+--- @param value UnityEngine.UI.ScrollRect.MovementType 
 function UnityEngine.UI.ScrollRect:set_movementType(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_elasticity(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.ScrollRect:set_inertia(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_decelerationRate(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_scrollSensitivity(value) end
 
+--- @param value UnityEngine.RectTransform 
 function UnityEngine.UI.ScrollRect:set_viewport(value) end
 
+--- @param value UnityEngine.UI.Scrollbar 
 function UnityEngine.UI.ScrollRect:set_horizontalScrollbar(value) end
 
+--- @param value UnityEngine.UI.Scrollbar 
 function UnityEngine.UI.ScrollRect:set_verticalScrollbar(value) end
 
+--- @param value UnityEngine.UI.ScrollRect.ScrollbarVisibility 
 function UnityEngine.UI.ScrollRect:set_horizontalScrollbarVisibility(value) end
 
+--- @param value UnityEngine.UI.ScrollRect.ScrollbarVisibility 
 function UnityEngine.UI.ScrollRect:set_verticalScrollbarVisibility(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_horizontalScrollbarSpacing(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_verticalScrollbarSpacing(value) end
 
+--- @param value UnityEngine.UI.ScrollRect.ScrollRectEvent 
 function UnityEngine.UI.ScrollRect:set_onValueChanged(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UI.ScrollRect:set_velocity(value) end
 
+--- @param executing UnityEngine.UI.CanvasUpdate 
 function UnityEngine.UI.ScrollRect:Rebuild(executing) end
 
 function UnityEngine.UI.ScrollRect:LayoutComplete() end
@@ -95,20 +113,28 @@ function UnityEngine.UI.ScrollRect:IsActive() end
 
 function UnityEngine.UI.ScrollRect:StopMovement() end
 
+--- @param data UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.ScrollRect:OnScroll(data) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.ScrollRect:OnInitializePotentialDrag(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.ScrollRect:OnBeginDrag(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.ScrollRect:OnEndDrag(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.ScrollRect:OnDrag(eventData) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UI.ScrollRect:set_normalizedPosition(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_horizontalNormalizedPosition(value) end
 
+--- @param value number 
 function UnityEngine.UI.ScrollRect:set_verticalNormalizedPosition(value) end
 
 function UnityEngine.UI.ScrollRect:CalculateLayoutInputHorizontal() end

@@ -7,19 +7,27 @@
 ---       How should depth testing be performed.
 UnityEngine.Rendering.DepthState = {}
 
+--- @param left UnityEngine.Rendering.DepthState 
+--- @param right UnityEngine.Rendering.DepthState 
 --- @return boolean
 function UnityEngine.Rendering.DepthState.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.DepthState 
+--- @param right UnityEngine.Rendering.DepthState 
 --- @return boolean
 function UnityEngine.Rendering.DepthState.op_Inequality(left, right) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.DepthState:set_writeEnabled(value) end
 
+--- @param value UnityEngine.Rendering.CompareFunction 
 function UnityEngine.Rendering.DepthState:set_compareFunction(value) end
 
+--- @param other UnityEngine.Rendering.DepthState 
 --- @return boolean
 function UnityEngine.Rendering.DepthState:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.DepthState:Equals(obj) end
 

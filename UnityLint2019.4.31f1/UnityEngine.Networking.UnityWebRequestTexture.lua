@@ -2,10 +2,12 @@
 UnityEngine.Networking.UnityWebRequestTexture = {}
 
 --- Create a UnityWebRequest intended to download an image via HTTP GET and create a Texture based on the retrieved data.
+--- @param uri string 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest properly configured to download an image and convert it to a Texture.
 function UnityEngine.Networking.UnityWebRequestTexture.GetTexture(uri) end
 
 --- Create a UnityWebRequest intended to download an image via HTTP GET and create a Texture based on the retrieved data.
+--- @param uri System.Uri 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest properly configured to download an image and convert it to a Texture.
 function UnityEngine.Networking.UnityWebRequestTexture.GetTexture(uri) end
 

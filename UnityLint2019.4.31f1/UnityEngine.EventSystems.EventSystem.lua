@@ -32,25 +32,35 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.EventSystem = {}
 
+--- @param value UnityEngine.EventSystems.EventSystem 
 function UnityEngine.EventSystems.EventSystem.set_current(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.EventSystem:set_sendNavigationEvents(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.EventSystem:set_pixelDragThreshold(value) end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.EventSystem:set_firstSelectedGameObject(value) end
 
 function UnityEngine.EventSystems.EventSystem:UpdateModules() end
 
+--- @param selected UnityEngine.GameObject 
+--- @param pointer UnityEngine.EventSystems.BaseEventData 
 function UnityEngine.EventSystems.EventSystem:SetSelectedGameObject(selected, pointer) end
 
+--- @param selected UnityEngine.GameObject 
 function UnityEngine.EventSystems.EventSystem:SetSelectedGameObject(selected) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
+--- @param raycastResults UnityEngine.EventSystems.RaycastResult[] 
 function UnityEngine.EventSystems.EventSystem:RaycastAll(eventData, raycastResults) end
 
 --- @return boolean
 function UnityEngine.EventSystems.EventSystem:IsPointerOverGameObject() end
 
+--- @param pointerId number 
 --- @return boolean
 function UnityEngine.EventSystems.EventSystem:IsPointerOverGameObject(pointerId) end
 

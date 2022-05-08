@@ -4,9 +4,13 @@
 ---       Gets the name of the tag referred to by the shader tag id.
 UnityEngine.Rendering.ShaderTagId = {}
 
+--- @param tag1 UnityEngine.Rendering.ShaderTagId 
+--- @param tag2 UnityEngine.Rendering.ShaderTagId 
 --- @return boolean
 function UnityEngine.Rendering.ShaderTagId.op_Equality(tag1, tag2) end
 
+--- @param tag1 UnityEngine.Rendering.ShaderTagId 
+--- @param tag2 UnityEngine.Rendering.ShaderTagId 
 --- @return boolean
 function UnityEngine.Rendering.ShaderTagId.op_Inequality(tag1, tag2) end
 
@@ -20,9 +24,11 @@ function UnityEngine.Rendering.ShaderTagId.op_Explicit(name) end
 --- @return string 
 function UnityEngine.Rendering.ShaderTagId.op_Explicit(tagId) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.ShaderTagId:Equals(obj) end
 
+--- @param other UnityEngine.Rendering.ShaderTagId 
 --- @return boolean
 function UnityEngine.Rendering.ShaderTagId:Equals(other) end
 

@@ -1,8 +1,4 @@
-UnityEngine.EventSystems.StandaloneInputModule.InputMode = {
-    Mouse = 0,
-    Buttons = 1,
-}
-
+--- @class UnityEngine.EventSystems.StandaloneInputModule.InputMode
 UnityEngine.EventSystems.StandaloneInputModule.InputMode = {
     Mouse = 0,
     Buttons = 1,

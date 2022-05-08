@@ -96,6 +96,7 @@ function UnityEngine.Vector2.Distance(a, b) end
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.ClampMagnitude(vector, maxLength) end
 
+--- @param a UnityEngine.Vector2 
 --- @return number
 function UnityEngine.Vector2.SqrMagnitude(a) end
 
@@ -112,10 +113,19 @@ function UnityEngine.Vector2.Min(lhs, rhs) end
 function UnityEngine.Vector2.Max(lhs, rhs) end
 
 --- Gradually changes a vector towards a desired goal over time.
+--- @param current UnityEngine.Vector2 
+--- @param target UnityEngine.Vector2 
+--- @param currentVelocity UnityEngine.Vector2& 
+--- @param smoothTime number 
+--- @param maxSpeed number 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.SmoothDamp(current, target, currentVelocity, smoothTime, maxSpeed) end
 
 --- Gradually changes a vector towards a desired goal over time.
+--- @param current UnityEngine.Vector2 
+--- @param target UnityEngine.Vector2 
+--- @param currentVelocity UnityEngine.Vector2& 
+--- @param smoothTime number 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.SmoothDamp(current, target, currentVelocity, smoothTime) end
 
@@ -129,9 +139,13 @@ function UnityEngine.Vector2.SmoothDamp(current, target, currentVelocity, smooth
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.SmoothDamp(current, target, currentVelocity, smoothTime, maxSpeed, deltaTime) end
 
+--- @param a UnityEngine.Vector2 
+--- @param b UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_Addition(a, b) end
 
+--- @param a UnityEngine.Vector2 
+--- @param b UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_Subtraction(a, b) end
 
@@ -141,9 +155,12 @@ function UnityEngine.Vector2.op_Subtraction(a, b) end
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.op_Multiply(a, b) end
 
+--- @param a UnityEngine.Vector2 
+--- @param b UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_Division(a, b) end
 
+--- @param a UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_UnaryNegation(a) end
 
@@ -159,21 +176,31 @@ function UnityEngine.Vector2.op_Multiply(a, d) end
 --- @return UnityEngine.Vector2 
 function UnityEngine.Vector2.op_Multiply(d, a) end
 
+--- @param a UnityEngine.Vector2 
+--- @param d number 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_Division(a, d) end
 
+--- @param lhs UnityEngine.Vector2 
+--- @param rhs UnityEngine.Vector2 
 --- @return boolean
 function UnityEngine.Vector2.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Vector2 
+--- @param rhs UnityEngine.Vector2 
 --- @return boolean
 function UnityEngine.Vector2.op_Inequality(lhs, rhs) end
 
+--- @param v UnityEngine.Vector3 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2.op_Implicit(v) end
 
+--- @param v UnityEngine.Vector2 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector2.op_Implicit(v) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Vector2:set_Item(index, value) end
 
 --- Set x and y components of an existing Vector2.

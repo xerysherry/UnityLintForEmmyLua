@@ -13,10 +13,17 @@ function UnityEngine.Animations.AnimatorJobExtensions.AddJobDependency(animator,
 function UnityEngine.Animations.AnimatorJobExtensions.BindStreamTransform(animator, transform) end
 
 --- Create a PropertyStreamHandle representing the new binding on the Component property of a Transform already bound to the Animator.
+--- @param animator UnityEngine.Animator 
+--- @param transform UnityEngine.Transform 
+--- @param type System.Type 
+--- @param property string 
 --- @return UnityEngine.Animations.PropertyStreamHandle Returns the PropertyStreamHandle that represents the new binding.
 function UnityEngine.Animations.AnimatorJobExtensions.BindStreamProperty(animator, transform, type, property) end
 
 --- Create a custom property in the AnimationStream to pass extra data to downstream animation jobs in your graph. Custom properties created in the AnimationStream do not exist in the scene.
+--- @param animator UnityEngine.Animator 
+--- @param property string 
+--- @param type UnityEngine.Animations.CustomStreamPropertyType 
 --- @return UnityEngine.Animations.PropertyStreamHandle Returns the PropertyStreamHandle that represents the new binding.
 function UnityEngine.Animations.AnimatorJobExtensions.BindCustomStreamProperty(animator, property, type) end
 
@@ -36,6 +43,10 @@ function UnityEngine.Animations.AnimatorJobExtensions.BindStreamProperty(animato
 function UnityEngine.Animations.AnimatorJobExtensions.BindSceneTransform(animator, transform) end
 
 --- Create a PropertySceneHandle representing the new binding on the Component property of a Transform in the Scene.
+--- @param animator UnityEngine.Animator 
+--- @param transform UnityEngine.Transform 
+--- @param type System.Type 
+--- @param property string 
 --- @return UnityEngine.Animations.PropertySceneHandle Returns the PropertySceneHandle that represents the new binding.
 function UnityEngine.Animations.AnimatorJobExtensions.BindSceneProperty(animator, transform, type, property) end
 

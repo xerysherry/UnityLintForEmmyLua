@@ -1,3 +1,4 @@
+--- @class UnityEngine.RemoteNotificationType
 UnityEngine.RemoteNotificationType = {
     None = 0,
     Badge = 1,

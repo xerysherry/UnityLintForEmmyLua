@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.Text.TextFontWeight
 UnityEngine.TextCore.Text.TextFontWeight = {
     Thin = 100,
     ExtraLight = 200,

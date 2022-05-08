@@ -11,26 +11,36 @@
 ---       The height of the glyph.
 UnityEngine.TextCore.GlyphRect = {}
 
+--- @param lhs UnityEngine.TextCore.GlyphRect 
+--- @param rhs UnityEngine.TextCore.GlyphRect 
 --- @return boolean
 function UnityEngine.TextCore.GlyphRect.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.TextCore.GlyphRect 
+--- @param rhs UnityEngine.TextCore.GlyphRect 
 --- @return boolean
 function UnityEngine.TextCore.GlyphRect.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphRect:set_x(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphRect:set_y(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphRect:set_width(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphRect:set_height(value) end
 
 --- @return number
 function UnityEngine.TextCore.GlyphRect:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.TextCore.GlyphRect:Equals(obj) end
 
+--- @param other UnityEngine.TextCore.GlyphRect 
 --- @return boolean
 function UnityEngine.TextCore.GlyphRect:Equals(other) end
 

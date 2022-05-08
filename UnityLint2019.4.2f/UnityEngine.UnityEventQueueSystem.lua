@@ -1,6 +1,7 @@
 --- @class UnityEngine.UnityEventQueueSystem 
 UnityEngine.UnityEventQueueSystem = {}
 
+--- @param eventPayloadName string 
 --- @return string
 function UnityEngine.UnityEventQueueSystem.GenerateEventIdForPayload(eventPayloadName) end
 

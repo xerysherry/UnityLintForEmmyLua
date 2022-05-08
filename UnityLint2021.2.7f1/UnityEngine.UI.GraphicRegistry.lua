@@ -2,17 +2,27 @@
 --- @field instance UnityEngine.UI.GraphicRegistry
 UnityEngine.UI.GraphicRegistry = {}
 
+--- @param c UnityEngine.Canvas 
+--- @param graphic UnityEngine.UI.Graphic 
 function UnityEngine.UI.GraphicRegistry.RegisterGraphicForCanvas(c, graphic) end
 
+--- @param c UnityEngine.Canvas 
+--- @param graphic UnityEngine.UI.Graphic 
 function UnityEngine.UI.GraphicRegistry.RegisterRaycastGraphicForCanvas(c, graphic) end
 
+--- @param c UnityEngine.Canvas 
+--- @param graphic UnityEngine.UI.Graphic 
 function UnityEngine.UI.GraphicRegistry.UnregisterGraphicForCanvas(c, graphic) end
 
+--- @param c UnityEngine.Canvas 
+--- @param graphic UnityEngine.UI.Graphic 
 function UnityEngine.UI.GraphicRegistry.UnregisterRaycastGraphicForCanvas(c, graphic) end
 
+--- @param canvas UnityEngine.Canvas 
 --- @return System.Collections.Generic.IList`1
 function UnityEngine.UI.GraphicRegistry.GetGraphicsForCanvas(canvas) end
 
+--- @param canvas UnityEngine.Canvas 
 --- @return System.Collections.Generic.IList`1
 function UnityEngine.UI.GraphicRegistry.GetRaycastableGraphicsForCanvas(canvas) end
 

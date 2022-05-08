@@ -45,26 +45,37 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.AimConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.AimConstraint:set_weight(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.AimConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.AimConstraint:set_locked(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AimConstraint:set_rotationAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AimConstraint:set_rotationOffset(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.AimConstraint:set_rotationAxis(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AimConstraint:set_aimVector(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AimConstraint:set_upVector(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AimConstraint:set_worldUpVector(value) end
 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Animations.AimConstraint:set_worldUpObject(value) end
 
+--- @param value UnityEngine.Animations.AimConstraint.WorldUpType 
 function UnityEngine.Animations.AimConstraint:set_worldUpType(value) end
 
 --- Gets the list of sources.

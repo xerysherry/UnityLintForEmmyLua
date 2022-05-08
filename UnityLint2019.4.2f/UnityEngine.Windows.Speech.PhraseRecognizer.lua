@@ -3,8 +3,10 @@
 ---       Tells whether the phrase recognizer is listening for phrases.
 UnityEngine.Windows.Speech.PhraseRecognizer = {}
 
+--- @param value function 
 function UnityEngine.Windows.Speech.PhraseRecognizer:add_OnPhraseRecognized(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.PhraseRecognizer:remove_OnPhraseRecognized(value) end
 
 --- Makes the phrase recognizer start listening to phrases.

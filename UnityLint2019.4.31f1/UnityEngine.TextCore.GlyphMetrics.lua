@@ -11,28 +11,39 @@
 ---       The horizontal distance to increase (left to right) or decrease (right to left) the drawing position relative to the origin of the text element.
 UnityEngine.TextCore.GlyphMetrics = {}
 
+--- @param lhs UnityEngine.TextCore.GlyphMetrics 
+--- @param rhs UnityEngine.TextCore.GlyphMetrics 
 --- @return boolean
 function UnityEngine.TextCore.GlyphMetrics.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.TextCore.GlyphMetrics 
+--- @param rhs UnityEngine.TextCore.GlyphMetrics 
 --- @return boolean
 function UnityEngine.TextCore.GlyphMetrics.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphMetrics:set_width(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphMetrics:set_height(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphMetrics:set_horizontalBearingX(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphMetrics:set_horizontalBearingY(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.GlyphMetrics:set_horizontalAdvance(value) end
 
 --- @return number
 function UnityEngine.TextCore.GlyphMetrics:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.TextCore.GlyphMetrics:Equals(obj) end
 
+--- @param other UnityEngine.TextCore.GlyphMetrics 
 --- @return boolean
 function UnityEngine.TextCore.GlyphMetrics:Equals(other) end
 

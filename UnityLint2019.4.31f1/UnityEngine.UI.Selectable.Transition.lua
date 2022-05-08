@@ -1,10 +1,4 @@
-UnityEngine.UI.Selectable.Transition = {
-    None = 0,
-    ColorTint = 1,
-    SpriteSwap = 2,
-    Animation = 3,
-}
-
+--- @class UnityEngine.UI.Selectable.Transition
 UnityEngine.UI.Selectable.Transition = {
     None = 0,
     ColorTint = 1,

@@ -61,53 +61,76 @@
 ---       This has the same functionality as Application.version. At the moment, the Device Simulator doesn't support simulation of this property.
 UnityEngine.Device.Application = {}
 
+--- @param value UnityEngine.ThreadPriority 
 function UnityEngine.Device.Application.set_backgroundLoadingPriority(value) end
 
+--- @param value boolean 
 function UnityEngine.Device.Application.set_runInBackground(value) end
 
+--- @param value number 
 function UnityEngine.Device.Application.set_targetFrameRate(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_deepLinkActivated(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_deepLinkActivated(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_focusChanged(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_focusChanged(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_logMessageReceived(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_logMessageReceived(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_logMessageReceivedThreaded(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_logMessageReceivedThreaded(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_lowMemory(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_lowMemory(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_onBeforeRender(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_onBeforeRender(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_quitting(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_quitting(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_wantsToQuit(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_wantsToQuit(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.add_unloading(value) end
 
+--- @param value function 
 function UnityEngine.Device.Application.remove_unloading(value) end
 
 --- This has the same functionality as Application.CanStreamedLevelBeLoaded. At the moment, the Device Simulator doesn't support simulation of this method.
+--- @param levelIndex number 
 --- @return boolean 
 function UnityEngine.Device.Application.CanStreamedLevelBeLoaded(levelIndex) end
 
 --- This has the same functionality as Application.CanStreamedLevelBeLoaded. At the moment, the Device Simulator doesn't support simulation of this method.
+--- @param levelName string 
 --- @return boolean 
 function UnityEngine.Device.Application.CanStreamedLevelBeLoaded(levelName) end
 

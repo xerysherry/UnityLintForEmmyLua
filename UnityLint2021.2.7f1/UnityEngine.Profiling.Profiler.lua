@@ -20,14 +20,19 @@
 ---       Returns the number of bytes that Unity has allocated. This does not include bytes allocated by external libraries or drivers.
 UnityEngine.Profiling.Profiler = {}
 
+--- @param value string 
 function UnityEngine.Profiling.Profiler.set_logFile(value) end
 
+--- @param value boolean 
 function UnityEngine.Profiling.Profiler.set_enableBinaryLog(value) end
 
+--- @param value number 
 function UnityEngine.Profiling.Profiler.set_maxUsedMemory(value) end
 
+--- @param value boolean 
 function UnityEngine.Profiling.Profiler.set_enabled(value) end
 
+--- @param value boolean 
 function UnityEngine.Profiling.Profiler.set_enableAllocationCallstacks(value) end
 
 --- Enable or disable a given ProfilerArea.
@@ -53,6 +58,7 @@ function UnityEngine.Profiling.Profiler.BeginThreadProfiling(threadGroupName, th
 function UnityEngine.Profiling.Profiler.EndThreadProfiling() end
 
 --- Begin profiling a piece of code with a custom label.
+--- @param name string 
 function UnityEngine.Profiling.Profiler.BeginSample(name) end
 
 --- Begin profiling a piece of code with a custom label.
@@ -63,6 +69,7 @@ function UnityEngine.Profiling.Profiler.BeginSample(name, targetObject) end
 --- Ends the current profiling sample.
 function UnityEngine.Profiling.Profiler.EndSample() end
 
+--- @param value number 
 function UnityEngine.Profiling.Profiler.set_maxNumberOfSamplesPerFrame(value) end
 
 --- Returns the runtime memory usage of the resource.

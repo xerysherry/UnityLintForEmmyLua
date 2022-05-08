@@ -1,3 +1,4 @@
+--- @class UnityEngine.Rendering.ShaderHardwareTier
 UnityEngine.Rendering.ShaderHardwareTier = {
     Tier1 = 0,
     Tier2 = 1,

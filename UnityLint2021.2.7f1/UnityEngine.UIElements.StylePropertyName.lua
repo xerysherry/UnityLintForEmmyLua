@@ -11,21 +11,28 @@ UnityEngine.UIElements.StylePropertyName = {}
 --- @return boolean True if propertyName is invalid. False otherwise.
 function UnityEngine.UIElements.StylePropertyName.IsNullOrEmpty(propertyName) end
 
+--- @param lhs UnityEngine.UIElements.StylePropertyName 
+--- @param rhs UnityEngine.UIElements.StylePropertyName 
 --- @return boolean
 function UnityEngine.UIElements.StylePropertyName.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StylePropertyName 
+--- @param rhs UnityEngine.UIElements.StylePropertyName 
 --- @return boolean
 function UnityEngine.UIElements.StylePropertyName.op_Inequality(lhs, rhs) end
 
+--- @param name string 
 --- @return UnityEngine.UIElements.StylePropertyName
 function UnityEngine.UIElements.StylePropertyName.op_Implicit(name) end
 
 --- @return number
 function UnityEngine.UIElements.StylePropertyName:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StylePropertyName:Equals(other) end
 
+--- @param other UnityEngine.UIElements.StylePropertyName 
 --- @return boolean
 function UnityEngine.UIElements.StylePropertyName:Equals(other) end
 

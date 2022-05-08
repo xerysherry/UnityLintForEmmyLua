@@ -1,3 +1,4 @@
+--- @class UnityEngine.Experimental.Rendering.WaitForPresentSyncPoint
 UnityEngine.Experimental.Rendering.WaitForPresentSyncPoint = {
     BeginFrame = 0,
     EndFrame = 1,

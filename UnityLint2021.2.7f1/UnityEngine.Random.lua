@@ -20,6 +20,7 @@ UnityEngine.Random = {}
 --- @param seed number Seed used to initialize the random number generator.
 function UnityEngine.Random.InitState(seed) end
 
+--- @param value UnityEngine.Random.State 
 function UnityEngine.Random.set_state(value) end
 
 --- Returns a random float within [minInclusive..maxInclusive] (range is inclusive).
@@ -34,11 +35,16 @@ function UnityEngine.Random.Range(minInclusive, maxInclusive) end
 --- @return number 
 function UnityEngine.Random.Range(minInclusive, maxExclusive) end
 
+--- @param value number 
 function UnityEngine.Random.set_seed(value) end
 
+--- @param min number 
+--- @param max number 
 --- @return number
 function UnityEngine.Random.RandomRange(min, max) end
 
+--- @param min number 
+--- @param max number 
 --- @return number
 function UnityEngine.Random.RandomRange(min, max) end
 
@@ -47,14 +53,26 @@ function UnityEngine.Random.RandomRange(min, max) end
 function UnityEngine.Random.ColorHSV() end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the (inclusive) input ranges. Values for each component are derived via linear interpolation of value.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax) end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
+--- @param saturationMin number 
+--- @param saturationMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the (inclusive) input ranges. Values for each component are derived via linear interpolation of value.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax, saturationMin, saturationMax) end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
+--- @param saturationMin number 
+--- @param saturationMax number 
+--- @param valueMin number 
+--- @param valueMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the (inclusive) input ranges. Values for each component are derived via linear interpolation of value.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax, saturationMin, saturationMax, valueMin, valueMax) end
 

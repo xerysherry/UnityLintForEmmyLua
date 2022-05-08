@@ -10,22 +10,31 @@ UnityEngine.UIElements.Length = {}
 --- @return UnityEngine.UIElements.Length The created length.
 function UnityEngine.UIElements.Length.Percent(value) end
 
+--- @param value number 
 --- @return UnityEngine.UIElements.Length
 function UnityEngine.UIElements.Length.op_Implicit(value) end
 
+--- @param lhs UnityEngine.UIElements.Length 
+--- @param rhs UnityEngine.UIElements.Length 
 --- @return boolean
 function UnityEngine.UIElements.Length.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Length 
+--- @param rhs UnityEngine.UIElements.Length 
 --- @return boolean
 function UnityEngine.UIElements.Length.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.UIElements.Length:set_value(value) end
 
+--- @param value UnityEngine.UIElements.LengthUnit 
 function UnityEngine.UIElements.Length:set_unit(value) end
 
+--- @param other UnityEngine.UIElements.Length 
 --- @return boolean
 function UnityEngine.UIElements.Length:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Length:Equals(obj) end
 

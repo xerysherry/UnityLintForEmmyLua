@@ -13,6 +13,7 @@ function UnityEngine.PlayerPrefs.SetInt(key, value) end
 function UnityEngine.PlayerPrefs.GetInt(key, defaultValue) end
 
 --- Returns the value corresponding to key in the preference file if it exists.
+--- @param key string 
 --- @return number 
 function UnityEngine.PlayerPrefs.GetInt(key) end
 
@@ -28,6 +29,7 @@ function UnityEngine.PlayerPrefs.SetFloat(key, value) end
 function UnityEngine.PlayerPrefs.GetFloat(key, defaultValue) end
 
 --- Returns the value corresponding to key in the preference file if it exists.
+--- @param key string 
 --- @return number 
 function UnityEngine.PlayerPrefs.GetFloat(key) end
 
@@ -43,6 +45,7 @@ function UnityEngine.PlayerPrefs.SetString(key, value) end
 function UnityEngine.PlayerPrefs.GetString(key, defaultValue) end
 
 --- Returns the value corresponding to key in the preference file if it exists.
+--- @param key string 
 --- @return string 
 function UnityEngine.PlayerPrefs.GetString(key) end
 

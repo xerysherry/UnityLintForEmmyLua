@@ -39,8 +39,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.RawImage = {}
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.UI.RawImage:set_texture(value) end
 
+--- @param value UnityEngine.Rect 
 function UnityEngine.UI.RawImage:set_uvRect(value) end
 
 function UnityEngine.UI.RawImage:SetNativeSize() end

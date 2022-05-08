@@ -4,6 +4,7 @@ UnityEngine.StackTraceUtility = {}
 --- @return string
 function UnityEngine.StackTraceUtility.ExtractStackTrace() end
 
+--- @param exception System.Object 
 --- @return string
 function UnityEngine.StackTraceUtility.ExtractStringFromException(exception) end
 

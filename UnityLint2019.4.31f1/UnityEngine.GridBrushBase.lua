@@ -4,9 +4,15 @@
 UnityEngine.GridBrushBase = {}
 
 --- Paints data into a grid within the given bounds.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.Vector3Int 
 function UnityEngine.GridBrushBase:Paint(gridLayout, brushTarget, position) end
 
 --- Erases data on a grid within the given bounds.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.Vector3Int 
 function UnityEngine.GridBrushBase:Erase(gridLayout, brushTarget, position) end
 
 --- Box fills tiles and GameObjects into given bounds within the selected layers.
@@ -22,6 +28,9 @@ function UnityEngine.GridBrushBase:BoxFill(gridLayout, brushTarget, position) en
 function UnityEngine.GridBrushBase:BoxErase(gridLayout, brushTarget, position) end
 
 --- Select an area of a grid.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.BoundsInt 
 function UnityEngine.GridBrushBase:Select(gridLayout, brushTarget, position) end
 
 --- Flood fills data onto a grid given the starting coordinates of the cell.
@@ -41,15 +50,29 @@ function UnityEngine.GridBrushBase:Rotate(direction, layout) end
 function UnityEngine.GridBrushBase:Flip(flip, layout) end
 
 --- Picks data from a grid given the coordinates of the cells.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.BoundsInt 
+--- @param pivot UnityEngine.Vector3Int 
 function UnityEngine.GridBrushBase:Pick(gridLayout, brushTarget, position, pivot) end
 
 --- Move is called when user moves the area previously selected with the selection marquee.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param from UnityEngine.BoundsInt 
+--- @param to UnityEngine.BoundsInt 
 function UnityEngine.GridBrushBase:Move(gridLayout, brushTarget, from, to) end
 
 --- MoveEnd is called when user starts moving the area previously selected with the selection marquee.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.BoundsInt 
 function UnityEngine.GridBrushBase:MoveStart(gridLayout, brushTarget, position) end
 
 --- MoveEnd is called when user has ended the move of the area previously selected with the selection marquee.
+--- @param gridLayout UnityEngine.GridLayout 
+--- @param brushTarget UnityEngine.GameObject 
+--- @param position UnityEngine.BoundsInt 
 function UnityEngine.GridBrushBase:MoveEnd(gridLayout, brushTarget, position) end
 
 --- Changes the Z position of the GridBrushBase.

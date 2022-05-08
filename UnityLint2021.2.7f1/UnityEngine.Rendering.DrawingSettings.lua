@@ -18,26 +18,38 @@
 ---       Configures what light should be used as main light.
 UnityEngine.Rendering.DrawingSettings = {}
 
+--- @param left UnityEngine.Rendering.DrawingSettings 
+--- @param right UnityEngine.Rendering.DrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.DrawingSettings.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.DrawingSettings 
+--- @param right UnityEngine.Rendering.DrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.DrawingSettings.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.SortingSettings 
 function UnityEngine.Rendering.DrawingSettings:set_sortingSettings(value) end
 
+--- @param value UnityEngine.Rendering.PerObjectData 
 function UnityEngine.Rendering.DrawingSettings:set_perObjectData(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.DrawingSettings:set_enableDynamicBatching(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.DrawingSettings:set_enableInstancing(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.Rendering.DrawingSettings:set_overrideMaterial(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.DrawingSettings:set_overrideMaterialPassIndex(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.Rendering.DrawingSettings:set_fallbackMaterial(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.DrawingSettings:set_mainLightIndex(value) end
 
 --- Get the shader passes that this draw call can render.
@@ -50,9 +62,11 @@ function UnityEngine.Rendering.DrawingSettings:GetShaderPassName(index) end
 --- @param shaderPassName UnityEngine.Rendering.ShaderTagId Name of the shader pass.
 function UnityEngine.Rendering.DrawingSettings:SetShaderPassName(index, shaderPassName) end
 
+--- @param other UnityEngine.Rendering.DrawingSettings 
 --- @return boolean
 function UnityEngine.Rendering.DrawingSettings:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.DrawingSettings:Equals(obj) end
 

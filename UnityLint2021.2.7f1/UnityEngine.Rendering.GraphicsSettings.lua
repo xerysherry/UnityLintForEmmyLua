@@ -31,24 +31,34 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Rendering.GraphicsSettings = {}
 
+--- @param value UnityEngine.TransparencySortMode 
 function UnityEngine.Rendering.GraphicsSettings.set_transparencySortMode(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rendering.GraphicsSettings.set_transparencySortAxis(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_realtimeDirectRectangularAreaLights(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_lightsUseLinearIntensity(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_lightsUseColorTemperature(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.GraphicsSettings.set_defaultRenderingLayerMask(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_useScriptableRenderPipelineBatching(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_logWhenShaderIsCompiled(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_disableBuiltinCustomRenderTextureUpdate(value) end
 
+--- @param value UnityEngine.Rendering.VideoShadersIncludeMode 
 function UnityEngine.Rendering.GraphicsSettings.set_videoShadersIncludeMode(value) end
 
 --- Returns true if shader define was set when compiling shaders for current GraphicsTier. Graphics Tiers are only available in the Built-in Render Pipeline.
@@ -62,8 +72,10 @@ function UnityEngine.Rendering.GraphicsSettings.HasShaderDefine(tier, defineHash
 --- @return boolean 
 function UnityEngine.Rendering.GraphicsSettings.HasShaderDefine(defineHash) end
 
+--- @param value UnityEngine.Rendering.RenderPipelineAsset 
 function UnityEngine.Rendering.GraphicsSettings.set_renderPipelineAsset(value) end
 
+--- @param value UnityEngine.Rendering.RenderPipelineAsset 
 function UnityEngine.Rendering.GraphicsSettings.set_defaultRenderPipeline(value) end
 
 --- Provides a reference to the GraphicSettings object.

@@ -1,3 +1,4 @@
+--- @class UnityEngine.EventSystems.EventTriggerType
 UnityEngine.EventSystems.EventTriggerType = {
     PointerEnter = 0,
     PointerExit = 1,

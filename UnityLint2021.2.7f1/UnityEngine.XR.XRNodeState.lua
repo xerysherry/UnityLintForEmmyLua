@@ -21,22 +21,31 @@
 ---       Sets the vector representing the current angular acceleration of the tracked node.
 UnityEngine.XR.XRNodeState = {}
 
+--- @param value number 
 function UnityEngine.XR.XRNodeState:set_uniqueID(value) end
 
+--- @param value UnityEngine.XR.XRNode 
 function UnityEngine.XR.XRNodeState:set_nodeType(value) end
 
+--- @param value boolean 
 function UnityEngine.XR.XRNodeState:set_tracked(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.XR.XRNodeState:set_position(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.XR.XRNodeState:set_rotation(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.XR.XRNodeState:set_velocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.XR.XRNodeState:set_angularVelocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.XR.XRNodeState:set_acceleration(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.XR.XRNodeState:set_angularAcceleration(value) end
 
 --- Attempt to retrieve a vector representing the current position of the tracked node.

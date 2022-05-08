@@ -147,60 +147,88 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.BaseVerticalCollectionView = {}
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_onItemChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_onItemChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_onItemsChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_onItemsChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_onSelectionChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_onSelectionChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_onSelectionChange(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_onSelectionChange(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_onSelectedIndicesChange(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_onSelectedIndicesChange(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_itemIndexChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_itemIndexChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:add_itemsSourceChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:remove_itemsSourceChanged(value) end
 
+--- @param value System.Collections.IList 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_itemsSource(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_makeItem(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_bindItem(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_unbindItem(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_destroyItem(value) end
 
+--- @param value UnityEngine.UIElements.SelectionType 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_selectionType(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_selectedIndex(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_showBorder(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_reorderable(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_horizontalScrollingEnabled(value) end
 
+--- @param value UnityEngine.UIElements.AlternatingRowBackground 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_showAlternatingRowBackgrounds(value) end
 
+--- @param value UnityEngine.UIElements.CollectionVirtualizationMethod 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_virtualizationMethod(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_itemHeight(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.BaseVerticalCollectionView:set_fixedItemHeight(value) end
 
 --- 
@@ -253,6 +281,7 @@ function UnityEngine.UIElements.BaseVerticalCollectionView:ScrollToItem(index) e
 --- @param id number Item id to scroll to.
 function UnityEngine.UIElements.BaseVerticalCollectionView:ScrollToId(id) end
 
+--- @param evt UnityEngine.UIElements.KeyDownEvent 
 function UnityEngine.UIElements.BaseVerticalCollectionView:OnKeyDown(evt) end
 
 --- 

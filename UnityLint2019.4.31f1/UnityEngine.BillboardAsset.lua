@@ -17,12 +17,16 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.BillboardAsset = {}
 
+--- @param value number 
 function UnityEngine.BillboardAsset:set_width(value) end
 
+--- @param value number 
 function UnityEngine.BillboardAsset:set_height(value) end
 
+--- @param value number 
 function UnityEngine.BillboardAsset:set_bottom(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.BillboardAsset:set_material(value) end
 
 --- Get the array of billboard image texture coordinate data.

@@ -24,6 +24,12 @@
 UnityEngine.Texture3D = {}
 
 --- Creates Unity Texture out of externally created native texture object.
+--- @param width number 
+--- @param height number 
+--- @param depth number 
+--- @param format UnityEngine.TextureFormat 
+--- @param mipChain boolean 
+--- @param nativeTex System.IntPtr 
 --- @return UnityEngine.Texture3D 
 function UnityEngine.Texture3D.CreateExternalTexture(width, height, depth, format, mipChain, nativeTex) end
 
@@ -55,6 +61,7 @@ function UnityEngine.Texture3D:GetPixels32() end
 function UnityEngine.Texture3D:SetPixels(colors, miplevel) end
 
 --- Sets pixel colors of a 3D texture.
+--- @param colors UnityEngine.Color[] 
 function UnityEngine.Texture3D:SetPixels(colors) end
 
 --- Sets pixel colors of a 3D texture.
@@ -63,6 +70,7 @@ function UnityEngine.Texture3D:SetPixels(colors) end
 function UnityEngine.Texture3D:SetPixels32(colors, miplevel) end
 
 --- Sets pixel colors of a 3D texture.
+--- @param colors UnityEngine.Color32[] 
 function UnityEngine.Texture3D:SetPixels32(colors) end
 
 --- Actually apply all previous SetPixels changes.
@@ -71,12 +79,17 @@ function UnityEngine.Texture3D:SetPixels32(colors) end
 function UnityEngine.Texture3D:Apply(updateMipmaps, makeNoLongerReadable) end
 
 --- Actually apply all previous SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.Texture3D:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixels changes.
 function UnityEngine.Texture3D:Apply() end
 
 --- Sets the pixel color that represents one mip level of the 3D texture at coordinates (x,y,z).
+--- @param x number 
+--- @param y number 
+--- @param z number 
+--- @param color UnityEngine.Color 
 function UnityEngine.Texture3D:SetPixel(x, y, z, color) end
 
 --- Sets the pixel color that represents one mip level of the 3D texture at coordinates (x,y,z).
@@ -88,6 +101,9 @@ function UnityEngine.Texture3D:SetPixel(x, y, z, color) end
 function UnityEngine.Texture3D:SetPixel(x, y, z, color, mipLevel) end
 
 --- Returns the pixel color that represents one mip level of the 3D texture at coordinates (x,y,z).
+--- @param x number 
+--- @param y number 
+--- @param z number 
 --- @return UnityEngine.Color The color of the pixel.
 function UnityEngine.Texture3D:GetPixel(x, y, z) end
 
@@ -100,6 +116,9 @@ function UnityEngine.Texture3D:GetPixel(x, y, z) end
 function UnityEngine.Texture3D:GetPixel(x, y, z, mipLevel) end
 
 --- Returns the filtered pixel color that represents one mip level of the 3D texture at normalized coordinates (u,v,w).
+--- @param u number 
+--- @param v number 
+--- @param w number 
 --- @return UnityEngine.Color The colors to return by bilinear filtering.
 function UnityEngine.Texture3D:GetPixelBilinear(u, v, w) end
 

@@ -2,9 +2,14 @@
 UnityEngine.UIElements.CallbackEventHandler = {}
 
 --- Adds an event handler to the instance. If the event handler has already been registered for the same phase (either TrickleDown or BubbleUp) then this method has no effect.
+--- @param callback function 
+--- @param useTrickleDown UnityEngine.UIElements.TrickleDown 
 function UnityEngine.UIElements.CallbackEventHandler:RegisterCallback(callback, useTrickleDown) end
 
 --- Adds an event handler to the instance. If the event handler has already been registered for the same phase (either TrickleDown or BubbleUp) then this method has no effect.
+--- @param callback function 
+--- @param userArgs UnityEngine.UIElements.CallbackEventHandler.TUserArgsType 
+--- @param useTrickleDown UnityEngine.UIElements.TrickleDown 
 function UnityEngine.UIElements.CallbackEventHandler:RegisterCallback(callback, userArgs, useTrickleDown) end
 
 --- Remove callback from the instance.

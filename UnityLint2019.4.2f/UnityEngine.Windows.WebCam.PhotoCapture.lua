@@ -9,6 +9,7 @@ UnityEngine.Windows.WebCam.PhotoCapture = {}
 function UnityEngine.Windows.WebCam.PhotoCapture.CreateAsync(showHolograms, onCreatedCallback) end
 
 --- Asynchronously creates an instance of a PhotoCapture object that can be used to capture photos.
+--- @param onCreatedCallback function 
 function UnityEngine.Windows.WebCam.PhotoCapture.CreateAsync(onCreatedCallback) end
 
 --- Asynchronously starts photo mode.
@@ -21,9 +22,13 @@ function UnityEngine.Windows.WebCam.PhotoCapture:StartPhotoModeAsync(setupParams
 function UnityEngine.Windows.WebCam.PhotoCapture:StopPhotoModeAsync(onPhotoModeStoppedCallback) end
 
 --- Asynchronously captures a photo from the web camera and saves it to disk.
+--- @param filename string 
+--- @param fileOutputFormat UnityEngine.Windows.WebCam.PhotoCaptureFileOutputFormat 
+--- @param onCapturedPhotoToDiskCallback function 
 function UnityEngine.Windows.WebCam.PhotoCapture:TakePhotoAsync(filename, fileOutputFormat, onCapturedPhotoToDiskCallback) end
 
 --- Asynchronously captures a photo from the web camera and saves it to disk.
+--- @param onCapturedPhotoToMemoryCallback function 
 function UnityEngine.Windows.WebCam.PhotoCapture:TakePhotoAsync(onCapturedPhotoToMemoryCallback) end
 
 --- Provides a COM pointer to the native IVideoDeviceController.

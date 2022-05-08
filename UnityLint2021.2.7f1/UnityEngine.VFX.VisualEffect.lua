@@ -40,18 +40,25 @@
 --- @field outputEventReceived function Output event are reported trough this callback.
 UnityEngine.VFX.VisualEffect = {}
 
+--- @param value boolean 
 function UnityEngine.VFX.VisualEffect:set_pause(value) end
 
+--- @param value number 
 function UnityEngine.VFX.VisualEffect:set_playRate(value) end
 
+--- @param value number 
 function UnityEngine.VFX.VisualEffect:set_startSeed(value) end
 
+--- @param value boolean 
 function UnityEngine.VFX.VisualEffect:set_resetSeedOnPlay(value) end
 
+--- @param value number 
 function UnityEngine.VFX.VisualEffect:set_initialEventID(value) end
 
+--- @param value string 
 function UnityEngine.VFX.VisualEffect:set_initialEventName(value) end
 
+--- @param value UnityEngine.VFX.VisualEffectAsset 
 function UnityEngine.VFX.VisualEffect:set_visualEffectAsset(value) end
 
 --- Use this method to create a new VFXEventAttribute.
@@ -59,15 +66,21 @@ function UnityEngine.VFX.VisualEffect:set_visualEffectAsset(value) end
 function UnityEngine.VFX.VisualEffect:CreateVFXEventAttribute() end
 
 --- Use this method to send a custom named event.
+--- @param eventNameID number 
+--- @param eventAttribute UnityEngine.VFX.VFXEventAttribute 
 function UnityEngine.VFX.VisualEffect:SendEvent(eventNameID, eventAttribute) end
 
 --- Use this method to send a custom named event.
+--- @param eventName string 
+--- @param eventAttribute UnityEngine.VFX.VFXEventAttribute 
 function UnityEngine.VFX.VisualEffect:SendEvent(eventName, eventAttribute) end
 
 --- Use this method to send a custom named event.
+--- @param eventNameID number 
 function UnityEngine.VFX.VisualEffect:SendEvent(eventNameID) end
 
 --- Use this method to send a custom named event.
+--- @param eventName string 
 function UnityEngine.VFX.VisualEffect:SendEvent(eventName) end
 
 --- Use this method to send a play event to every Spawn system.
@@ -91,167 +104,226 @@ function UnityEngine.VFX.VisualEffect:Reinit() end
 function UnityEngine.VFX.VisualEffect:AdvanceOneFrame() end
 
 --- Use this method to set the overridden state to false. This restores the default value that the Visual Effect Asset specifies.
+--- @param nameID number 
 function UnityEngine.VFX.VisualEffect:ResetOverride(nameID) end
 
 --- Gets expected texture dimension for a named exposed texture.
+--- @param nameID number 
 --- @return UnityEngine.Rendering.TextureDimension 
 function UnityEngine.VFX.VisualEffect:GetTextureDimension(nameID) end
 
 --- Checks if the Visual Effect can override a bool with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasBool(nameID) end
 
 --- Checks if the Visual Effect can override an integer with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasInt(nameID) end
 
 --- Checks if the Visual Effect can override an unsigned integer with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasUInt(nameID) end
 
 --- Checks if the Visual Effect can override a float with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasFloat(nameID) end
 
 --- Checks if the Visual Effect can override a Vector2 with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector2(nameID) end
 
 --- Checks if the Visual Effect can override a Vector3 with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector3(nameID) end
 
 --- Checks if the Visual Effect can override a Vector4 or Color with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector4(nameID) end
 
 --- Checks if the Visual Effect can override a Matrix4x4 with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasMatrix4x4(nameID) end
 
 --- Checks if the Visual Effect can override a texture with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasTexture(nameID) end
 
 --- Checks if the Visual Effect can override an Animation Curve with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasAnimationCurve(nameID) end
 
 --- Checks if the Visual Effect can override a Gradient with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasGradient(nameID) end
 
 --- Checks if the Visual Effect can override a Mesh with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasMesh(nameID) end
 
 --- Checks if the Visual Effect can override a Skinned Mesh Renderer with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasSkinnedMeshRenderer(nameID) end
 
 --- Checks if the Visual Effect can override a GraphicsBuffer with the name you pass in.
+--- @param nameID number 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasGraphicsBuffer(nameID) end
 
 --- Sets the value of a named bool property.
+--- @param nameID number 
+--- @param b boolean 
 function UnityEngine.VFX.VisualEffect:SetBool(nameID, b) end
 
 --- Sets the value of a named integer property.
+--- @param nameID number 
+--- @param i number 
 function UnityEngine.VFX.VisualEffect:SetInt(nameID, i) end
 
 --- Sets the value of a named unsigned integer property.
+--- @param nameID number 
+--- @param i number 
 function UnityEngine.VFX.VisualEffect:SetUInt(nameID, i) end
 
 --- Sets the value of a named float property.
+--- @param nameID number 
+--- @param f number 
 function UnityEngine.VFX.VisualEffect:SetFloat(nameID, f) end
 
 --- Sets the value of a named Vector2 property.
+--- @param nameID number 
+--- @param v UnityEngine.Vector2 
 function UnityEngine.VFX.VisualEffect:SetVector2(nameID, v) end
 
 --- Sets the value of a named Vector3 property.
+--- @param nameID number 
+--- @param v UnityEngine.Vector3 
 function UnityEngine.VFX.VisualEffect:SetVector3(nameID, v) end
 
 --- Sets the value of a named Vector4 or Color property.
+--- @param nameID number 
+--- @param v UnityEngine.Vector4 
 function UnityEngine.VFX.VisualEffect:SetVector4(nameID, v) end
 
 --- Sets the value of a named Matrix4x4 property.
+--- @param nameID number 
+--- @param v UnityEngine.Matrix4x4 
 function UnityEngine.VFX.VisualEffect:SetMatrix4x4(nameID, v) end
 
 --- Sets the value of a named texture property.
+--- @param nameID number 
+--- @param t UnityEngine.Texture 
 function UnityEngine.VFX.VisualEffect:SetTexture(nameID, t) end
 
 --- Sets the value of a named Animation Curve property.
+--- @param nameID number 
+--- @param c UnityEngine.AnimationCurve 
 function UnityEngine.VFX.VisualEffect:SetAnimationCurve(nameID, c) end
 
 --- Sets the value of a named Gradient property.
+--- @param nameID number 
+--- @param g UnityEngine.Gradient 
 function UnityEngine.VFX.VisualEffect:SetGradient(nameID, g) end
 
 --- Sets the value of a named Mesh property.
+--- @param nameID number 
+--- @param m UnityEngine.Mesh 
 function UnityEngine.VFX.VisualEffect:SetMesh(nameID, m) end
 
 --- Sets the value of a named Skinned Mesh Renderer property.
+--- @param nameID number 
+--- @param m UnityEngine.SkinnedMeshRenderer 
 function UnityEngine.VFX.VisualEffect:SetSkinnedMeshRenderer(nameID, m) end
 
 --- Sets the value of a named GraphicsBuffer property.
+--- @param nameID number 
+--- @param g UnityEngine.GraphicsBuffer 
 function UnityEngine.VFX.VisualEffect:SetGraphicsBuffer(nameID, g) end
 
 --- Gets the value of a named bool property.
+--- @param nameID number 
 --- @return boolean The value for the bool you specify. Returns false if VFX.VisualEffect.HasBool returns false.
 function UnityEngine.VFX.VisualEffect:GetBool(nameID) end
 
 --- Get a named exposed integer.
+--- @param nameID number 
 --- @return number The value for the integer you specify. Returns 0 if VFX.VisualEffect.HasInt returns false.
 function UnityEngine.VFX.VisualEffect:GetInt(nameID) end
 
 --- Gets the value of a named unsigned integer property.
+--- @param nameID number 
 --- @return number The value for the unsigned integer you specify. Returns 0 if VFX.VisualEffect.HasUInt returns false.
 function UnityEngine.VFX.VisualEffect:GetUInt(nameID) end
 
 --- Gets the value of a named float property.
+--- @param nameID number 
 --- @return number The value for the float you specify. Returns 0.0f if VFX.VisualEffect.HasFloat returns false.
 function UnityEngine.VFX.VisualEffect:GetFloat(nameID) end
 
 --- Gets the value of a named Vector2 property.
+--- @param nameID number 
 --- @return UnityEngine.Vector2 The value for the Vector2 you specify. Returns Vector2.zero if VFX.VisualEffect.HasVector2 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector2(nameID) end
 
 --- Gets the value of a named Vector3 property.
+--- @param nameID number 
 --- @return UnityEngine.Vector3 The value for the Vector3 you specify. Returns Vector3.zero if VFX.VisualEffect.HasVector3 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector3(nameID) end
 
 --- Gets the value of a named Vector4 or Color property.
+--- @param nameID number 
 --- @return UnityEngine.Vector4 The value for the Vector4 you specify. Returns Vector4.zero if VFX.VisualEffect.HasVector4 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector4(nameID) end
 
 --- Gets the value of a named Matrix4x4 property.
+--- @param nameID number 
 --- @return UnityEngine.Matrix4x4 The value for the Matrix4x4 you specify. Returns Matrix4x4.identity if VFX.VisualEffect.HasMatrix4x4 returns false.
 function UnityEngine.VFX.VisualEffect:GetMatrix4x4(nameID) end
 
 --- Gets the value of a named texture property.
+--- @param nameID number 
 --- @return UnityEngine.Texture The value for the texture you specify. Returns null if VFX.VisualEffect.HasTexture returns false.
 function UnityEngine.VFX.VisualEffect:GetTexture(nameID) end
 
 --- Gets the value of a named Mesh property.
+--- @param nameID number 
 --- @return UnityEngine.Mesh The value for the Mesh you specify. Returns null if VFX.VisualEffect.HasMesh returns false.
 function UnityEngine.VFX.VisualEffect:GetMesh(nameID) end
 
 --- Gets the value of a named Skinned Mesh Renderer property.
+--- @param nameID number 
 --- @return UnityEngine.SkinnedMeshRenderer The value for the Skinned Mesh Renderer you specify. Returns null if VFX.VisualEffect.HasSkinnedMeshRenderer returns false.
 function UnityEngine.VFX.VisualEffect:GetSkinnedMeshRenderer(nameID) end
 
 --- Gets the value of a named Gradient property.
+--- @param nameID number 
 --- @return UnityEngine.Gradient The value for the Gradient you specify. Returns an empty Gradient if VFX.VisualEffect.HasGradient returns false.
 function UnityEngine.VFX.VisualEffect:GetGradient(nameID) end
 
 --- Gets the value of a named Animation Curve property.
+--- @param nameID number 
 --- @return UnityEngine.AnimationCurve The value for the Animation Curve you specify. Returns an empty Animation Curve if VFX.VisualEffect.HasAnimationCurve returns false.
 function UnityEngine.VFX.VisualEffect:GetAnimationCurve(nameID) end
 
 --- Use this function to determine if the VisualEffect has the system you pass in.
+--- @param nameID number 
 --- @return boolean true if the VisualEffect has the system you pass in. Returns false otherwise.
 function UnityEngine.VFX.VisualEffect:HasSystem(nameID) end
 
 --- Gets information on a particle system.
+--- @param nameID number 
 --- @return UnityEngine.VFX.VFXParticleSystemInfo A VFXSystemInfo instance.
 function UnityEngine.VFX.VisualEffect:GetParticleSystemInfo(nameID) end
 
@@ -260,9 +332,12 @@ function UnityEngine.VFX.VisualEffect:GetParticleSystemInfo(nameID) end
 function UnityEngine.VFX.VisualEffect:HasAnySystemAwake() end
 
 --- Gets state on a spawn system.
+--- @param nameID number 
+--- @param spawnState UnityEngine.VFX.VFXSpawnerState 
 function UnityEngine.VFX.VisualEffect:GetSpawnSystemInfo(nameID, spawnState) end
 
 --- Gets state on a spawn system.
+--- @param nameID number 
 --- @return UnityEngine.VFX.VFXSpawnerState 
 function UnityEngine.VFX.VisualEffect:GetSpawnSystemInfo(nameID) end
 
@@ -283,171 +358,231 @@ function UnityEngine.VFX.VisualEffect:GetOutputEventNames(names) end
 function UnityEngine.VFX.VisualEffect:GetSpawnSystemNames(names) end
 
 --- Use this method to set the overridden state to false. This restores the default value that the Visual Effect Asset specifies.
+--- @param name string 
 function UnityEngine.VFX.VisualEffect:ResetOverride(name) end
 
 --- Checks if the Visual Effect can override an integer with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasInt(name) end
 
 --- Checks if the Visual Effect can override an unsigned integer with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasUInt(name) end
 
 --- Checks if the Visual Effect can override a float with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasFloat(name) end
 
 --- Checks if the Visual Effect can override a Vector2 with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector2(name) end
 
 --- Checks if the Visual Effect can override a Vector3 with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector3(name) end
 
 --- Checks if the Visual Effect can override a Vector4 or Color with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasVector4(name) end
 
 --- Checks if the Visual Effect can override a Matrix4x4 with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasMatrix4x4(name) end
 
 --- Checks if the Visual Effect can override a texture with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasTexture(name) end
 
 --- Gets expected texture dimension for a named exposed texture.
+--- @param name string 
 --- @return UnityEngine.Rendering.TextureDimension 
 function UnityEngine.VFX.VisualEffect:GetTextureDimension(name) end
 
 --- Checks if the Visual Effect can override an Animation Curve with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasAnimationCurve(name) end
 
 --- Checks if the Visual Effect can override a Gradient with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasGradient(name) end
 
 --- Checks if the Visual Effect can override a Mesh with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasMesh(name) end
 
 --- Checks if the Visual Effect can override a Skinned Mesh Renderer with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasSkinnedMeshRenderer(name) end
 
 --- Checks if the Visual Effect can override a GraphicsBuffer with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasGraphicsBuffer(name) end
 
 --- Checks if the Visual Effect can override a bool with the name you pass in.
+--- @param name string 
 --- @return boolean 
 function UnityEngine.VFX.VisualEffect:HasBool(name) end
 
 --- Sets the value of a named integer property.
+--- @param name string 
+--- @param i number 
 function UnityEngine.VFX.VisualEffect:SetInt(name, i) end
 
 --- Sets the value of a named unsigned integer property.
+--- @param name string 
+--- @param i number 
 function UnityEngine.VFX.VisualEffect:SetUInt(name, i) end
 
 --- Sets the value of a named float property.
+--- @param name string 
+--- @param f number 
 function UnityEngine.VFX.VisualEffect:SetFloat(name, f) end
 
 --- Sets the value of a named Vector2 property.
+--- @param name string 
+--- @param v UnityEngine.Vector2 
 function UnityEngine.VFX.VisualEffect:SetVector2(name, v) end
 
 --- Sets the value of a named Vector3 property.
+--- @param name string 
+--- @param v UnityEngine.Vector3 
 function UnityEngine.VFX.VisualEffect:SetVector3(name, v) end
 
 --- Sets the value of a named Vector4 or Color property.
+--- @param name string 
+--- @param v UnityEngine.Vector4 
 function UnityEngine.VFX.VisualEffect:SetVector4(name, v) end
 
 --- Sets the value of a named Matrix4x4 property.
+--- @param name string 
+--- @param v UnityEngine.Matrix4x4 
 function UnityEngine.VFX.VisualEffect:SetMatrix4x4(name, v) end
 
 --- Sets the value of a named texture property.
+--- @param name string 
+--- @param t UnityEngine.Texture 
 function UnityEngine.VFX.VisualEffect:SetTexture(name, t) end
 
 --- Sets the value of a named Animation Curve property.
+--- @param name string 
+--- @param c UnityEngine.AnimationCurve 
 function UnityEngine.VFX.VisualEffect:SetAnimationCurve(name, c) end
 
 --- Sets the value of a named Gradient property.
+--- @param name string 
+--- @param g UnityEngine.Gradient 
 function UnityEngine.VFX.VisualEffect:SetGradient(name, g) end
 
 --- Sets the value of a named Mesh property.
+--- @param name string 
+--- @param m UnityEngine.Mesh 
 function UnityEngine.VFX.VisualEffect:SetMesh(name, m) end
 
 --- Sets the value of a named Skinned Mesh Renderer property.
+--- @param name string 
+--- @param m UnityEngine.SkinnedMeshRenderer 
 function UnityEngine.VFX.VisualEffect:SetSkinnedMeshRenderer(name, m) end
 
 --- Sets the value of a named GraphicsBuffer property.
+--- @param name string 
+--- @param g UnityEngine.GraphicsBuffer 
 function UnityEngine.VFX.VisualEffect:SetGraphicsBuffer(name, g) end
 
 --- Sets the value of a named bool property.
+--- @param name string 
+--- @param b boolean 
 function UnityEngine.VFX.VisualEffect:SetBool(name, b) end
 
 --- Get a named exposed integer.
+--- @param name string 
 --- @return number The value for the integer you specify. Returns 0 if VFX.VisualEffect.HasInt returns false.
 function UnityEngine.VFX.VisualEffect:GetInt(name) end
 
 --- Gets the value of a named unsigned integer property.
+--- @param name string 
 --- @return number The value for the unsigned integer you specify. Returns 0 if VFX.VisualEffect.HasUInt returns false.
 function UnityEngine.VFX.VisualEffect:GetUInt(name) end
 
 --- Gets the value of a named float property.
+--- @param name string 
 --- @return number The value for the float you specify. Returns 0.0f if VFX.VisualEffect.HasFloat returns false.
 function UnityEngine.VFX.VisualEffect:GetFloat(name) end
 
 --- Gets the value of a named Vector2 property.
+--- @param name string 
 --- @return UnityEngine.Vector2 The value for the Vector2 you specify. Returns Vector2.zero if VFX.VisualEffect.HasVector2 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector2(name) end
 
 --- Gets the value of a named Vector3 property.
+--- @param name string 
 --- @return UnityEngine.Vector3 The value for the Vector3 you specify. Returns Vector3.zero if VFX.VisualEffect.HasVector3 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector3(name) end
 
 --- Gets the value of a named Vector4 or Color property.
+--- @param name string 
 --- @return UnityEngine.Vector4 The value for the Vector4 you specify. Returns Vector4.zero if VFX.VisualEffect.HasVector4 returns false.
 function UnityEngine.VFX.VisualEffect:GetVector4(name) end
 
 --- Gets the value of a named Matrix4x4 property.
+--- @param name string 
 --- @return UnityEngine.Matrix4x4 The value for the Matrix4x4 you specify. Returns Matrix4x4.identity if VFX.VisualEffect.HasMatrix4x4 returns false.
 function UnityEngine.VFX.VisualEffect:GetMatrix4x4(name) end
 
 --- Gets the value of a named texture property.
+--- @param name string 
 --- @return UnityEngine.Texture The value for the texture you specify. Returns null if VFX.VisualEffect.HasTexture returns false.
 function UnityEngine.VFX.VisualEffect:GetTexture(name) end
 
 --- Gets the value of a named Mesh property.
+--- @param name string 
 --- @return UnityEngine.Mesh The value for the Mesh you specify. Returns null if VFX.VisualEffect.HasMesh returns false.
 function UnityEngine.VFX.VisualEffect:GetMesh(name) end
 
 --- Gets the value of a named Skinned Mesh Renderer property.
+--- @param name string 
 --- @return UnityEngine.SkinnedMeshRenderer The value for the Skinned Mesh Renderer you specify. Returns null if VFX.VisualEffect.HasSkinnedMeshRenderer returns false.
 function UnityEngine.VFX.VisualEffect:GetSkinnedMeshRenderer(name) end
 
 --- Gets the value of a named bool property.
+--- @param name string 
 --- @return boolean The value for the bool you specify. Returns false if VFX.VisualEffect.HasBool returns false.
 function UnityEngine.VFX.VisualEffect:GetBool(name) end
 
 --- Gets the value of a named Animation Curve property.
+--- @param name string 
 --- @return UnityEngine.AnimationCurve The value for the Animation Curve you specify. Returns an empty Animation Curve if VFX.VisualEffect.HasAnimationCurve returns false.
 function UnityEngine.VFX.VisualEffect:GetAnimationCurve(name) end
 
 --- Gets the value of a named Gradient property.
+--- @param name string 
 --- @return UnityEngine.Gradient The value for the Gradient you specify. Returns an empty Gradient if VFX.VisualEffect.HasGradient returns false.
 function UnityEngine.VFX.VisualEffect:GetGradient(name) end
 
 --- Use this function to determine if the VisualEffect has the system you pass in.
+--- @param name string 
 --- @return boolean true if the VisualEffect has the system you pass in. Returns false otherwise.
 function UnityEngine.VFX.VisualEffect:HasSystem(name) end
 
 --- Gets information on a particle system.
+--- @param name string 
 --- @return UnityEngine.VFX.VFXParticleSystemInfo A VFXSystemInfo instance.
 function UnityEngine.VFX.VisualEffect:GetParticleSystemInfo(name) end
 
 --- Gets state on a spawn system.
+--- @param name string 
 --- @return UnityEngine.VFX.VFXSpawnerState 
 function UnityEngine.VFX.VisualEffect:GetSpawnSystemInfo(name) end
 

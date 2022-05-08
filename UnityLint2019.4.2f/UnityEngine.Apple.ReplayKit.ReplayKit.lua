@@ -24,8 +24,10 @@
 ---       A string value of the last error incurred by the ReplayKit: Either 'Failed to get Screen Recorder' or 'No recording available'. (Read Only)
 UnityEngine.Apple.ReplayKit.ReplayKit = {}
 
+--- @param value boolean 
 function UnityEngine.Apple.ReplayKit.ReplayKit.set_cameraEnabled(value) end
 
+--- @param value boolean 
 function UnityEngine.Apple.ReplayKit.ReplayKit.set_microphoneEnabled(value) end
 
 --- Start a new recording.
@@ -35,6 +37,7 @@ function UnityEngine.Apple.ReplayKit.ReplayKit.set_microphoneEnabled(value) end
 function UnityEngine.Apple.ReplayKit.ReplayKit.StartRecording(enableMicrophone, enableCamera) end
 
 --- Start a new recording.
+--- @param enableMicrophone boolean 
 --- @return boolean A boolean value of True if recording started successfully or False if an error occurred.
 function UnityEngine.Apple.ReplayKit.ReplayKit.StartRecording(enableMicrophone) end
 
@@ -55,12 +58,15 @@ function UnityEngine.Apple.ReplayKit.ReplayKit.StartBroadcasting(callback, enabl
 --- When StartBroadcast is called, user is presented with a broadcast provider selection screen, and then a broadcast setup screen. Once it is finished, a broadcast will be started, and the callback will be invoked.
 --- It will also be invoked in case of any error.
 ---         
+--- @param callback function 
+--- @param enableMicrophone boolean 
 function UnityEngine.Apple.ReplayKit.ReplayKit.StartBroadcasting(callback, enableMicrophone) end
 
 --- Initiates and starts a new broadcast
 --- When StartBroadcast is called, user is presented with a broadcast provider selection screen, and then a broadcast setup screen. Once it is finished, a broadcast will be started, and the callback will be invoked.
 --- It will also be invoked in case of any error.
 ---         
+--- @param callback function 
 function UnityEngine.Apple.ReplayKit.ReplayKit.StartBroadcasting(callback) end
 
 --- Stop the current recording.
@@ -88,6 +94,8 @@ function UnityEngine.Apple.ReplayKit.ReplayKit.Preview() end
 function UnityEngine.Apple.ReplayKit.ReplayKit.Discard() end
 
 --- Shows camera preview at coordinates posX and posY. The preview is width by height in size.
+--- @param posX number 
+--- @param posY number 
 --- @return boolean 
 function UnityEngine.Apple.ReplayKit.ReplayKit.ShowCameraPreviewAt(posX, posY) end
 

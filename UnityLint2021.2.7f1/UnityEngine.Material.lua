@@ -27,115 +27,147 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Material = {}
 
+--- @param scriptContents string 
 --- @return UnityEngine.Material
 function UnityEngine.Material.Create(scriptContents) end
 
+--- @param value UnityEngine.Shader 
 function UnityEngine.Material:set_shader(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Material:set_color(value) end
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.Material:set_mainTexture(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:set_mainTextureOffset(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:set_mainTextureScale(value) end
 
 --- Checks if the ShaderLab file assigned to the Material has a property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasProperty(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasProperty(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Float property with the given name. This also works with the Float Array property.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasFloat(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Float property with the given name. This also works with the Float Array property.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasFloat(nameID) end
 
 --- This method is deprecated. Use HasFloat or HasInteger instead.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasInt(name) end
 
 --- This method is deprecated. Use HasFloat or HasInteger instead.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasInt(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has an Integer property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasInteger(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has an Integer property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasInteger(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Texture property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasTexture(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Texture property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasTexture(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Matrix property with the given name. This also works with the Matrix Array property.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasMatrix(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Matrix property with the given name. This also works with the Matrix Array property.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasMatrix(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Vector property with the given name. This also works with the Vector Array property.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasVector(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Vector property with the given name. This also works with the Vector Array property.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasVector(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Color property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasColor(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a Color property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasColor(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a ComputeBuffer property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasBuffer(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a ComputeBuffer property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasBuffer(nameID) end
 
 --- Checks if the ShaderLab file assigned to the Material has a ConstantBuffer property with the given name.
+--- @param name string 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasConstantBuffer(name) end
 
 --- Checks if the ShaderLab file assigned to the Material has a ConstantBuffer property with the given name.
+--- @param nameID number 
 --- @return boolean Returns true if the ShaderLab file assigned to the Material has this property.
 function UnityEngine.Material:HasConstantBuffer(nameID) end
 
+--- @param value number 
 function UnityEngine.Material:set_renderQueue(value) end
 
 --- Enables a local shader keyword for this material.
+--- @param keyword string 
 function UnityEngine.Material:EnableKeyword(keyword) end
 
 --- Disables a local shader keyword for this material.
+--- @param keyword string 
 function UnityEngine.Material:DisableKeyword(keyword) end
 
 --- Checks whether a local shader keyword is enabled for this material.
+--- @param keyword string 
 --- @return boolean Returns true if a Rendering.LocalKeyword with the given name is enabled  for this material.
 function UnityEngine.Material:IsKeywordEnabled(keyword) end
 
 --- Enables a local shader keyword for this material.
+--- @param keyword UnityEngine.Rendering.LocalKeyword& 
 function UnityEngine.Material:EnableKeyword(keyword) end
 
 --- Disables a local shader keyword for this material.
+--- @param keyword UnityEngine.Rendering.LocalKeyword& 
 function UnityEngine.Material:DisableKeyword(keyword) end
 
 --- Sets the state of a local shader keyword for this material.
@@ -144,15 +176,20 @@ function UnityEngine.Material:DisableKeyword(keyword) end
 function UnityEngine.Material:SetKeyword(keyword, value) end
 
 --- Checks whether a local shader keyword is enabled for this material.
+--- @param keyword UnityEngine.Rendering.LocalKeyword& 
 --- @return boolean Returns true if a Rendering.LocalKeyword with the given name is enabled  for this material.
 function UnityEngine.Material:IsKeywordEnabled(keyword) end
 
+--- @param value UnityEngine.Rendering.LocalKeyword[] 
 function UnityEngine.Material:set_enabledKeywords(value) end
 
+--- @param value UnityEngine.MaterialGlobalIlluminationFlags 
 function UnityEngine.Material:set_globalIlluminationFlags(value) end
 
+--- @param value boolean 
 function UnityEngine.Material:set_doubleSidedGI(value) end
 
+--- @param value boolean 
 function UnityEngine.Material:set_enableInstancing(value) end
 
 --- Enables or disables a Shader pass on a per-Material level.
@@ -188,6 +225,8 @@ function UnityEngine.Material:SetOverrideTag(tag, val) end
 function UnityEngine.Material:GetTag(tag, searchFallbacks, defaultValue) end
 
 --- Get the value of material's shader tag.
+--- @param tag string 
+--- @param searchFallbacks boolean 
 --- @return string 
 function UnityEngine.Material:GetTag(tag, searchFallbacks) end
 
@@ -206,6 +245,7 @@ function UnityEngine.Material:SetPass(pass) end
 --- @param mat UnityEngine.Material 
 function UnityEngine.Material:CopyPropertiesFromMaterial(mat) end
 
+--- @param value string[] 
 function UnityEngine.Material:set_shaderKeywords(value) end
 
 --- Computes a CRC hash value from the content of the material.
@@ -229,262 +269,402 @@ function UnityEngine.Material:GetTexturePropertyNames(outNames) end
 function UnityEngine.Material:GetTexturePropertyNameIDs(outNames) end
 
 --- This method is deprecated. Use SetFloat or SetInteger instead.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Material:SetInt(name, value) end
 
 --- This method is deprecated. Use SetFloat or SetInteger instead.
+--- @param nameID number 
+--- @param value number 
 function UnityEngine.Material:SetInt(nameID, value) end
 
 --- Sets a named float value.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Material:SetFloat(name, value) end
 
 --- Sets a named float value.
+--- @param nameID number 
+--- @param value number 
 function UnityEngine.Material:SetFloat(nameID, value) end
 
 --- Sets a named integer value.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Material:SetInteger(name, value) end
 
 --- Sets a named integer value.
+--- @param nameID number 
+--- @param value number 
 function UnityEngine.Material:SetInteger(nameID, value) end
 
 --- Sets a named color value.
+--- @param name string 
+--- @param value UnityEngine.Color 
 function UnityEngine.Material:SetColor(name, value) end
 
 --- Sets a named color value.
+--- @param nameID number 
+--- @param value UnityEngine.Color 
 function UnityEngine.Material:SetColor(nameID, value) end
 
 --- Sets a named vector value.
+--- @param name string 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Material:SetVector(name, value) end
 
 --- Sets a named vector value.
+--- @param nameID number 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Material:SetVector(nameID, value) end
 
 --- Sets a named matrix for the shader.
+--- @param name string 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Material:SetMatrix(name, value) end
 
 --- Sets a named matrix for the shader.
+--- @param nameID number 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Material:SetMatrix(nameID, value) end
 
 --- Sets a named texture.
+--- @param name string 
+--- @param value UnityEngine.Texture 
 function UnityEngine.Material:SetTexture(name, value) end
 
 --- Sets a named texture.
+--- @param nameID number 
+--- @param value UnityEngine.Texture 
 function UnityEngine.Material:SetTexture(nameID, value) end
 
 --- Sets a named texture.
+--- @param name string 
+--- @param value UnityEngine.RenderTexture 
+--- @param element UnityEngine.Rendering.RenderTextureSubElement 
 function UnityEngine.Material:SetTexture(name, value, element) end
 
 --- Sets a named texture.
+--- @param nameID number 
+--- @param value UnityEngine.RenderTexture 
+--- @param element UnityEngine.Rendering.RenderTextureSubElement 
 function UnityEngine.Material:SetTexture(nameID, value, element) end
 
 --- Sets a named buffer value.
+--- @param name string 
+--- @param value UnityEngine.ComputeBuffer 
 function UnityEngine.Material:SetBuffer(name, value) end
 
 --- Sets a named buffer value.
+--- @param nameID number 
+--- @param value UnityEngine.ComputeBuffer 
 function UnityEngine.Material:SetBuffer(nameID, value) end
 
 --- Sets a named buffer value.
+--- @param name string 
+--- @param value UnityEngine.GraphicsBuffer 
 function UnityEngine.Material:SetBuffer(name, value) end
 
 --- Sets a named buffer value.
+--- @param nameID number 
+--- @param value UnityEngine.GraphicsBuffer 
 function UnityEngine.Material:SetBuffer(nameID, value) end
 
 --- Sets a ComputeBuffer or GraphicsBuffer as a named constant buffer for the material.
+--- @param name string 
+--- @param value UnityEngine.ComputeBuffer 
+--- @param offset number 
+--- @param size number 
 function UnityEngine.Material:SetConstantBuffer(name, value, offset, size) end
 
 --- Sets a ComputeBuffer or GraphicsBuffer as a named constant buffer for the material.
+--- @param nameID number 
+--- @param value UnityEngine.ComputeBuffer 
+--- @param offset number 
+--- @param size number 
 function UnityEngine.Material:SetConstantBuffer(nameID, value, offset, size) end
 
 --- Sets a ComputeBuffer or GraphicsBuffer as a named constant buffer for the material.
+--- @param name string 
+--- @param value UnityEngine.GraphicsBuffer 
+--- @param offset number 
+--- @param size number 
 function UnityEngine.Material:SetConstantBuffer(name, value, offset, size) end
 
 --- Sets a ComputeBuffer or GraphicsBuffer as a named constant buffer for the material.
+--- @param nameID number 
+--- @param value UnityEngine.GraphicsBuffer 
+--- @param offset number 
+--- @param size number 
 function UnityEngine.Material:SetConstantBuffer(nameID, value, offset, size) end
 
 --- Sets a float array property.
+--- @param name string 
+--- @param values number[] 
 function UnityEngine.Material:SetFloatArray(name, values) end
 
 --- Sets a float array property.
+--- @param nameID number 
+--- @param values number[] 
 function UnityEngine.Material:SetFloatArray(nameID, values) end
 
 --- Sets a float array property.
+--- @param name string 
+--- @param values number[] 
 function UnityEngine.Material:SetFloatArray(name, values) end
 
 --- Sets a float array property.
+--- @param nameID number 
+--- @param values number[] 
 function UnityEngine.Material:SetFloatArray(nameID, values) end
 
 --- Sets a color array property.
+--- @param name string 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:SetColorArray(name, values) end
 
 --- Sets a color array property.
+--- @param nameID number 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:SetColorArray(nameID, values) end
 
 --- Sets a color array property.
+--- @param name string 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:SetColorArray(name, values) end
 
 --- Sets a color array property.
+--- @param nameID number 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:SetColorArray(nameID, values) end
 
 --- Sets a vector array property.
+--- @param name string 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:SetVectorArray(name, values) end
 
 --- Sets a vector array property.
+--- @param nameID number 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:SetVectorArray(nameID, values) end
 
 --- Sets a vector array property.
+--- @param name string 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:SetVectorArray(name, values) end
 
 --- Sets a vector array property.
+--- @param nameID number 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:SetVectorArray(nameID, values) end
 
 --- Sets a matrix array property.
+--- @param name string 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:SetMatrixArray(name, values) end
 
 --- Sets a matrix array property.
+--- @param nameID number 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:SetMatrixArray(nameID, values) end
 
 --- Sets a matrix array property.
+--- @param name string 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:SetMatrixArray(name, values) end
 
 --- Sets a matrix array property.
+--- @param nameID number 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:SetMatrixArray(nameID, values) end
 
 --- This method is deprecated. Use GetFloat or GetInteger instead.
+--- @param name string 
 --- @return number 
 function UnityEngine.Material:GetInt(name) end
 
 --- This method is deprecated. Use GetFloat or GetInteger instead.
+--- @param nameID number 
 --- @return number 
 function UnityEngine.Material:GetInt(nameID) end
 
 --- Get a named float value.
+--- @param name string 
 --- @return number 
 function UnityEngine.Material:GetFloat(name) end
 
 --- Get a named float value.
+--- @param nameID number 
 --- @return number 
 function UnityEngine.Material:GetFloat(nameID) end
 
 --- Get a named integer value.
+--- @param name string 
 --- @return number 
 function UnityEngine.Material:GetInteger(name) end
 
 --- Get a named integer value.
+--- @param nameID number 
 --- @return number 
 function UnityEngine.Material:GetInteger(nameID) end
 
 --- Get a named color value.
+--- @param name string 
 --- @return UnityEngine.Color 
 function UnityEngine.Material:GetColor(name) end
 
 --- Get a named color value.
+--- @param nameID number 
 --- @return UnityEngine.Color 
 function UnityEngine.Material:GetColor(nameID) end
 
 --- Get a named vector value.
+--- @param name string 
 --- @return UnityEngine.Vector4 
 function UnityEngine.Material:GetVector(name) end
 
 --- Get a named vector value.
+--- @param nameID number 
 --- @return UnityEngine.Vector4 
 function UnityEngine.Material:GetVector(nameID) end
 
 --- Get a named matrix value from the shader.
+--- @param name string 
 --- @return UnityEngine.Matrix4x4 
 function UnityEngine.Material:GetMatrix(name) end
 
 --- Get a named matrix value from the shader.
+--- @param nameID number 
 --- @return UnityEngine.Matrix4x4 
 function UnityEngine.Material:GetMatrix(nameID) end
 
 --- Get a named texture.
+--- @param name string 
 --- @return UnityEngine.Texture 
 function UnityEngine.Material:GetTexture(name) end
 
 --- Get a named texture.
+--- @param nameID number 
 --- @return UnityEngine.Texture 
 function UnityEngine.Material:GetTexture(nameID) end
 
 --- Get a named float array.
+--- @param name string 
 --- @return number[] 
 function UnityEngine.Material:GetFloatArray(name) end
 
 --- Get a named float array.
+--- @param nameID number 
 --- @return number[] 
 function UnityEngine.Material:GetFloatArray(nameID) end
 
 --- Get a named color array.
+--- @param name string 
 --- @return UnityEngine.Color[] 
 function UnityEngine.Material:GetColorArray(name) end
 
 --- Get a named color array.
+--- @param nameID number 
 --- @return UnityEngine.Color[] 
 function UnityEngine.Material:GetColorArray(nameID) end
 
 --- Get a named vector array.
+--- @param name string 
 --- @return UnityEngine.Vector4[] 
 function UnityEngine.Material:GetVectorArray(name) end
 
 --- Get a named vector array.
+--- @param nameID number 
 --- @return UnityEngine.Vector4[] 
 function UnityEngine.Material:GetVectorArray(nameID) end
 
 --- Get a named matrix array.
+--- @param name string 
 --- @return UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:GetMatrixArray(name) end
 
 --- Get a named matrix array.
+--- @param nameID number 
 --- @return UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:GetMatrixArray(nameID) end
 
 --- Get a named float array.
+--- @param name string 
+--- @param values number[] 
 function UnityEngine.Material:GetFloatArray(name, values) end
 
 --- Get a named float array.
+--- @param nameID number 
+--- @param values number[] 
 function UnityEngine.Material:GetFloatArray(nameID, values) end
 
 --- Get a named color array.
+--- @param name string 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:GetColorArray(name, values) end
 
 --- Get a named color array.
+--- @param nameID number 
+--- @param values UnityEngine.Color[] 
 function UnityEngine.Material:GetColorArray(nameID, values) end
 
 --- Get a named vector array.
+--- @param name string 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:GetVectorArray(name, values) end
 
 --- Get a named vector array.
+--- @param nameID number 
+--- @param values UnityEngine.Vector4[] 
 function UnityEngine.Material:GetVectorArray(nameID, values) end
 
 --- Get a named matrix array.
+--- @param name string 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:GetMatrixArray(name, values) end
 
 --- Get a named matrix array.
+--- @param nameID number 
+--- @param values UnityEngine.Matrix4x4[] 
 function UnityEngine.Material:GetMatrixArray(nameID, values) end
 
 --- Sets the placement offset of texture propertyName.
+--- @param name string 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:SetTextureOffset(name, value) end
 
 --- Sets the placement offset of texture propertyName.
+--- @param nameID number 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:SetTextureOffset(nameID, value) end
 
 --- Sets the placement scale of texture propertyName.
+--- @param name string 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:SetTextureScale(name, value) end
 
 --- Sets the placement scale of texture propertyName.
+--- @param nameID number 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Material:SetTextureScale(nameID, value) end
 
 --- Gets the placement offset of texture propertyName.
+--- @param name string 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Material:GetTextureOffset(name) end
 
 --- Gets the placement offset of texture propertyName.
+--- @param nameID number 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Material:GetTextureOffset(nameID) end
 
 --- Gets the placement scale of texture propertyName.
+--- @param name string 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Material:GetTextureScale(name) end
 
 --- Gets the placement scale of texture propertyName.
+--- @param nameID number 
 --- @return UnityEngine.Vector2 
 function UnityEngine.Material:GetTextureScale(nameID) end
 

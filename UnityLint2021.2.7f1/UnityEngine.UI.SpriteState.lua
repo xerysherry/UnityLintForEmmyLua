@@ -5,14 +5,19 @@
 --- @field disabledSprite UnityEngine.Sprite
 UnityEngine.UI.SpriteState = {}
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.SpriteState:set_highlightedSprite(value) end
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.SpriteState:set_pressedSprite(value) end
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.SpriteState:set_selectedSprite(value) end
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.SpriteState:set_disabledSprite(value) end
 
+--- @param other UnityEngine.UI.SpriteState 
 --- @return boolean
 function UnityEngine.UI.SpriteState:Equals(other) end
 

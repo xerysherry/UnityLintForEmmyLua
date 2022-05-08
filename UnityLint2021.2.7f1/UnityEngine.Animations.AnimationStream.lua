@@ -17,8 +17,10 @@
 ---       Gets the number of input streams. (Read Only)
 UnityEngine.Animations.AnimationStream = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AnimationStream:set_velocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AnimationStream:set_angularVelocity(value) end
 
 --- Gets the same stream, but as an AnimationHumanStream.

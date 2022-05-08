@@ -32,8 +32,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.LayoutGroup = {}
 
+--- @param value UnityEngine.RectOffset 
 function UnityEngine.UI.LayoutGroup:set_padding(value) end
 
+--- @param value UnityEngine.TextAnchor 
 function UnityEngine.UI.LayoutGroup:set_childAlignment(value) end
 
 function UnityEngine.UI.LayoutGroup:CalculateLayoutInputHorizontal() end

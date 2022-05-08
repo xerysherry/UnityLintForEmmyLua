@@ -14,6 +14,7 @@ UnityEngine.Profiling.Recorder = {}
 --- @return UnityEngine.Profiling.Recorder Recorder object for the specified Sampler.
 function UnityEngine.Profiling.Recorder.Get(samplerName) end
 
+--- @param value boolean 
 function UnityEngine.Profiling.Recorder:set_enabled(value) end
 
 --- Configures the recorder to only collect data from the current thread.

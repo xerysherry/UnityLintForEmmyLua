@@ -8,6 +8,9 @@ UnityEngine.U2D.SpriteDataAccessExtensions = {}
 function UnityEngine.U2D.SpriteDataAccessExtensions.GetVertexAttribute(sprite, channel) end
 
 --- Sets a specific channel of the VertexAttribute.
+--- @param sprite UnityEngine.Sprite 
+--- @param channel UnityEngine.Rendering.VertexAttribute 
+--- @param src Unity.Collections.NativeArray`1 
 function UnityEngine.U2D.SpriteDataAccessExtensions.SetVertexAttribute(sprite, channel, src) end
 
 --- Returns an array of BindPoses.
@@ -16,6 +19,8 @@ function UnityEngine.U2D.SpriteDataAccessExtensions.SetVertexAttribute(sprite, c
 function UnityEngine.U2D.SpriteDataAccessExtensions.GetBindPoses(sprite) end
 
 --- Sets the bind poses for this Sprite.
+--- @param sprite UnityEngine.Sprite 
+--- @param src Unity.Collections.NativeArray`1 
 function UnityEngine.U2D.SpriteDataAccessExtensions.SetBindPoses(sprite, src) end
 
 --- Returns a list of indices. This is the same as Sprite.triangle.
@@ -24,6 +29,8 @@ function UnityEngine.U2D.SpriteDataAccessExtensions.SetBindPoses(sprite, src) en
 function UnityEngine.U2D.SpriteDataAccessExtensions.GetIndices(sprite) end
 
 --- Set the indices for this Sprite. This is the same as Sprite.triangle.
+--- @param sprite UnityEngine.Sprite 
+--- @param src Unity.Collections.NativeArray`1 
 function UnityEngine.U2D.SpriteDataAccessExtensions.SetIndices(sprite, src) end
 
 --- Returns a list of SpriteBone in this Sprite.

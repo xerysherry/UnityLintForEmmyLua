@@ -8,11 +8,14 @@
 --- @field acceleration UnityEngine.Vector3
 UnityEngine.iPhoneInput = {}
 
+--- @param value boolean 
 function UnityEngine.iPhoneInput.set_multiTouchEnabled(value) end
 
+--- @param index number 
 --- @return UnityEngine.iPhoneTouch
 function UnityEngine.iPhoneInput.GetTouch(index) end
 
+--- @param index number 
 --- @return UnityEngine.iPhoneAccelerationEvent
 function UnityEngine.iPhoneInput.GetAccelerationEvent(index) end
 

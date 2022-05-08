@@ -28,6 +28,8 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.BaseRaycaster = {}
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
+--- @param resultAppendList UnityEngine.EventSystems.RaycastResult[] 
 function UnityEngine.EventSystems.BaseRaycaster:Raycast(eventData, resultAppendList) end
 
 --- @return string

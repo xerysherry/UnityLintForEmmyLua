@@ -31,36 +31,53 @@
 ---       A BoundsInt.PositionCollection that contains all positions within the BoundsInt.
 UnityEngine.BoundsInt = {}
 
+--- @param lhs UnityEngine.BoundsInt 
+--- @param rhs UnityEngine.BoundsInt 
 --- @return boolean
 function UnityEngine.BoundsInt.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.BoundsInt 
+--- @param rhs UnityEngine.BoundsInt 
 --- @return boolean
 function UnityEngine.BoundsInt.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_x(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_y(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_z(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.BoundsInt:set_min(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.BoundsInt:set_max(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_xMin(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_yMin(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_zMin(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_xMax(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_yMax(value) end
 
+--- @param value number 
 function UnityEngine.BoundsInt:set_zMax(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.BoundsInt:set_position(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.BoundsInt:set_size(value) end
 
 --- Sets the bounds to the min and max value of the box.
@@ -82,6 +99,7 @@ function UnityEngine.BoundsInt:Contains(position) end
 function UnityEngine.BoundsInt:ToString() end
 
 --- Returns a formatted string for the bounds.
+--- @param format string 
 --- @return string 
 function UnityEngine.BoundsInt:ToString(format) end
 
@@ -91,9 +109,11 @@ function UnityEngine.BoundsInt:ToString(format) end
 --- @return string 
 function UnityEngine.BoundsInt:ToString(format, formatProvider) end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.BoundsInt:Equals(other) end
 
+--- @param other UnityEngine.BoundsInt 
 --- @return boolean
 function UnityEngine.BoundsInt:Equals(other) end
 

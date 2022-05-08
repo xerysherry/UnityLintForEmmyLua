@@ -17,19 +17,26 @@
 ---       The Transform of the object that was hit.
 UnityEngine.RaycastHit2D = {}
 
+--- @param hit UnityEngine.RaycastHit2D 
 --- @return boolean
 function UnityEngine.RaycastHit2D.op_Implicit(hit) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RaycastHit2D:set_centroid(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RaycastHit2D:set_point(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RaycastHit2D:set_normal(value) end
 
+--- @param value number 
 function UnityEngine.RaycastHit2D:set_distance(value) end
 
+--- @param value number 
 function UnityEngine.RaycastHit2D:set_fraction(value) end
 
+--- @param other UnityEngine.RaycastHit2D 
 --- @return number
 function UnityEngine.RaycastHit2D:CompareTo(other) end
 

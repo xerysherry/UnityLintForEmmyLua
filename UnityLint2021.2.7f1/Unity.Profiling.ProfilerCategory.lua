@@ -41,6 +41,7 @@
 ---       Gets Profiler category color.
 Unity.Profiling.ProfilerCategory = {}
 
+--- @param category Unity.Profiling.ProfilerCategory 
 --- @return number
 function Unity.Profiling.ProfilerCategory.op_Implicit(category) end
 

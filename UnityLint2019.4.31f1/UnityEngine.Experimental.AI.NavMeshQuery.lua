@@ -5,6 +5,10 @@ UnityEngine.Experimental.AI.NavMeshQuery = {}
 function UnityEngine.Experimental.AI.NavMeshQuery:Dispose() end
 
 --- Initiates a pathfinding operation between two locations on the NavMesh.
+--- @param start UnityEngine.Experimental.AI.NavMeshLocation 
+--- @param _end UnityEngine.Experimental.AI.NavMeshLocation 
+--- @param areaMask number 
+--- @param costs Unity.Collections.NativeArray`1 
 --- @return UnityEngine.Experimental.AI.PathQueryStatus InProgress if the operation was successful and the query is ready to search for a path.
 ---       
 ---       Failure if the query's NavMeshWorld or any of the received parameters are no longer valid.

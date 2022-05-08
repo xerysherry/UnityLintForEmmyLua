@@ -3,12 +3,17 @@
 UnityEngine.Animations.AnimationScriptPlayable = {}
 
 --- Creates an AnimationScriptPlayable in the PlayableGraph.
+--- @param graph UnityEngine.Playables.PlayableGraph 
+--- @param jobData UnityEngine.Animations.AnimationScriptPlayable.T 
+--- @param inputCount number 
 --- @return UnityEngine.Animations.AnimationScriptPlayable A new AnimationScriptPlayable linked to the PlayableGraph.
 function UnityEngine.Animations.AnimationScriptPlayable.Create(graph, jobData, inputCount) end
 
+--- @param playable UnityEngine.Animations.AnimationScriptPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Animations.AnimationScriptPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Animations.AnimationScriptPlayable
 function UnityEngine.Animations.AnimationScriptPlayable.op_Explicit(playable) end
 
@@ -23,6 +28,7 @@ function UnityEngine.Animations.AnimationScriptPlayable:GetJobData() end
 --- @param jobData UnityEngine.Animations.AnimationScriptPlayable.T The new IAnimationJob data to set in the playable.
 function UnityEngine.Animations.AnimationScriptPlayable:SetJobData(jobData) end
 
+--- @param other UnityEngine.Animations.AnimationScriptPlayable 
 --- @return boolean
 function UnityEngine.Animations.AnimationScriptPlayable:Equals(other) end
 

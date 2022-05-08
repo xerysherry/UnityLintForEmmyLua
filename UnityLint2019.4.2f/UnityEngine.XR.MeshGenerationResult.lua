@@ -11,15 +11,21 @@
 ---       The MeshVertexAttributes that were written to the MeshGenerationResult.Mesh.
 UnityEngine.XR.MeshGenerationResult = {}
 
+--- @param lhs UnityEngine.XR.MeshGenerationResult 
+--- @param rhs UnityEngine.XR.MeshGenerationResult 
 --- @return boolean
 function UnityEngine.XR.MeshGenerationResult.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.XR.MeshGenerationResult 
+--- @param rhs UnityEngine.XR.MeshGenerationResult 
 --- @return boolean
 function UnityEngine.XR.MeshGenerationResult.op_Inequality(lhs, rhs) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.MeshGenerationResult:Equals(obj) end
 
+--- @param other UnityEngine.XR.MeshGenerationResult 
 --- @return boolean
 function UnityEngine.XR.MeshGenerationResult:Equals(other) end
 

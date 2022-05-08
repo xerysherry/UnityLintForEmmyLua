@@ -14,17 +14,24 @@ UnityEngine.UIElements.Rotate = {}
 --- @return UnityEngine.UIElements.Rotate 
 function UnityEngine.UIElements.Rotate.None() end
 
+--- @param lhs UnityEngine.UIElements.Rotate 
+--- @param rhs UnityEngine.UIElements.Rotate 
 --- @return boolean
 function UnityEngine.UIElements.Rotate.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Rotate 
+--- @param rhs UnityEngine.UIElements.Rotate 
 --- @return boolean
 function UnityEngine.UIElements.Rotate.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.UIElements.Angle 
 function UnityEngine.UIElements.Rotate:set_angle(value) end
 
+--- @param other UnityEngine.UIElements.Rotate 
 --- @return boolean
 function UnityEngine.UIElements.Rotate:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Rotate:Equals(obj) end
 

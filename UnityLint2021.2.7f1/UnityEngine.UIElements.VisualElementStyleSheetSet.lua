@@ -10,9 +10,13 @@
 --- @field Item UnityEngine.UIElements.StyleSheet
 UnityEngine.UIElements.VisualElementStyleSheetSet = {}
 
+--- @param left UnityEngine.UIElements.VisualElementStyleSheetSet 
+--- @param right UnityEngine.UIElements.VisualElementStyleSheetSet 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet.op_Equality(left, right) end
 
+--- @param left UnityEngine.UIElements.VisualElementStyleSheetSet 
+--- @param right UnityEngine.UIElements.VisualElementStyleSheetSet 
 --- @return boolean
 function UnityEngine.UIElements.VisualElementStyleSheetSet.op_Inequality(left, right) end
 
@@ -51,6 +55,7 @@ function UnityEngine.UIElements.VisualElementStyleSheetSet:Equals(other) end
 --- 
 ---  Compares instances of the VisualElementStyleSheetSet struct for equality.
 ---  
+--- @param obj System.Object 
 --- @return boolean Returns true if the two instances refer to the same element, false otherwise.
 function UnityEngine.UIElements.VisualElementStyleSheetSet:Equals(obj) end
 

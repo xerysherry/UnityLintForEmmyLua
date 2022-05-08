@@ -8,20 +8,28 @@
 ---        
 UnityEngine.UIElements.EasingFunction = {}
 
+--- @param easingMode UnityEngine.UIElements.EasingMode 
 --- @return UnityEngine.UIElements.EasingFunction
 function UnityEngine.UIElements.EasingFunction.op_Implicit(easingMode) end
 
+--- @param lhs UnityEngine.UIElements.EasingFunction 
+--- @param rhs UnityEngine.UIElements.EasingFunction 
 --- @return boolean
 function UnityEngine.UIElements.EasingFunction.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.EasingFunction 
+--- @param rhs UnityEngine.UIElements.EasingFunction 
 --- @return boolean
 function UnityEngine.UIElements.EasingFunction.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.UIElements.EasingMode 
 function UnityEngine.UIElements.EasingFunction:set_mode(value) end
 
+--- @param other UnityEngine.UIElements.EasingFunction 
 --- @return boolean
 function UnityEngine.UIElements.EasingFunction:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.EasingFunction:Equals(obj) end
 

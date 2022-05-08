@@ -2,6 +2,7 @@
 UnityEngine.GUIElement = {}
 
 --- Is a point on screen inside the element?
+--- @param screenPosition UnityEngine.Vector3 
 --- @return boolean 
 function UnityEngine.GUIElement:HitTest(screenPosition) end
 

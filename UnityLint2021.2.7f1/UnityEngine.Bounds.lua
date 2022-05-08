@@ -11,29 +11,40 @@
 ---       The maximal point of the box. This is always equal to center+extents.
 UnityEngine.Bounds = {}
 
+--- @param lhs UnityEngine.Bounds 
+--- @param rhs UnityEngine.Bounds 
 --- @return boolean
 function UnityEngine.Bounds.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Bounds 
+--- @param rhs UnityEngine.Bounds 
 --- @return boolean
 function UnityEngine.Bounds.op_Inequality(lhs, rhs) end
 
 --- @return number
 function UnityEngine.Bounds:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Bounds:Equals(other) end
 
+--- @param other UnityEngine.Bounds 
 --- @return boolean
 function UnityEngine.Bounds:Equals(other) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Bounds:set_center(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Bounds:set_size(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Bounds:set_extents(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Bounds:set_min(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Bounds:set_max(value) end
 
 --- Sets the bounds to the min and max value of the box.
@@ -78,6 +89,7 @@ function UnityEngine.Bounds:IntersectRay(ray) end
 function UnityEngine.Bounds:ToString() end
 
 --- Returns a formatted string for the bounds.
+--- @param format string 
 --- @return string 
 function UnityEngine.Bounds:ToString(format) end
 

@@ -107,39 +107,56 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Light = {}
 
+--- @param value number 
 function UnityEngine.Light.set_pixelLightCount(value) end
 
+--- @param type UnityEngine.LightType 
+--- @param layer number 
 --- @return UnityEngine.Light[]
 function UnityEngine.Light.GetLights(type, layer) end
 
+--- @param value UnityEngine.LightShadows 
 function UnityEngine.Light:set_shadows(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowStrength(value) end
 
+--- @param value UnityEngine.Rendering.LightShadowResolution 
 function UnityEngine.Light:set_shadowResolution(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowSoftness(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowSoftnessFade(value) end
 
+--- @param value number[] 
 function UnityEngine.Light:set_layerShadowCullDistances(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_cookieSize(value) end
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.Light:set_cookie(value) end
 
+--- @param value UnityEngine.LightRenderMode 
 function UnityEngine.Light:set_renderMode(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_bakedIndex(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Light:set_areaSize(value) end
 
+--- @param value UnityEngine.LightmapBakeType 
 function UnityEngine.Light:set_lightmapBakeType(value) end
 
 --- Sets a light dirty to notify the light baking backends to update their internal light representation (Editor only).
 function UnityEngine.Light:SetLightDirty() end
 
 --- Add a command buffer to be executed at a specified place.
+--- @param evt UnityEngine.Rendering.LightEvent 
+--- @param buffer UnityEngine.Rendering.CommandBuffer 
 function UnityEngine.Light:AddCommandBuffer(evt, buffer) end
 
 --- Add a command buffer to be executed at a specified place.
@@ -149,9 +166,16 @@ function UnityEngine.Light:AddCommandBuffer(evt, buffer) end
 function UnityEngine.Light:AddCommandBuffer(evt, buffer, shadowPassMask) end
 
 --- Adds a command buffer to the GPU's async compute queues and executes that command buffer when graphics processing reaches a given point.
+--- @param evt UnityEngine.Rendering.LightEvent 
+--- @param buffer UnityEngine.Rendering.CommandBuffer 
+--- @param queueType UnityEngine.Rendering.ComputeQueueType 
 function UnityEngine.Light:AddCommandBufferAsync(evt, buffer, queueType) end
 
 --- Adds a command buffer to the GPU's async compute queues and executes that command buffer when graphics processing reaches a given point.
+--- @param evt UnityEngine.Rendering.LightEvent 
+--- @param buffer UnityEngine.Rendering.CommandBuffer 
+--- @param shadowPassMask UnityEngine.Rendering.ShadowMapPass 
+--- @param queueType UnityEngine.Rendering.ComputeQueueType 
 function UnityEngine.Light:AddCommandBufferAsync(evt, buffer, shadowPassMask, queueType) end
 
 --- Remove command buffer from execution at a specified place.
@@ -171,64 +195,94 @@ function UnityEngine.Light:RemoveAllCommandBuffers() end
 --- @return UnityEngine.Rendering.CommandBuffer[] Array of command buffers.
 function UnityEngine.Light:GetCommandBuffers(evt) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowConstantBias(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowObjectSizeBias(value) end
 
+--- @param value boolean 
 function UnityEngine.Light:set_attenuate(value) end
 
+--- @param value UnityEngine.LightmappingMode 
 function UnityEngine.Light:set_lightmappingMode(value) end
 
+--- @param value boolean 
 function UnityEngine.Light:set_alreadyLightmapped(value) end
 
+--- @param value UnityEngine.LightType 
 function UnityEngine.Light:set_type(value) end
 
+--- @param value UnityEngine.LightShape 
 function UnityEngine.Light:set_shape(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_spotAngle(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_innerSpotAngle(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Light:set_color(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_colorTemperature(value) end
 
+--- @param value boolean 
 function UnityEngine.Light:set_useColorTemperature(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_intensity(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_bounceIntensity(value) end
 
+--- @param value boolean 
 function UnityEngine.Light:set_useBoundingSphereOverride(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Light:set_boundingSphereOverride(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowCustomResolution(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowBias(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowNormalBias(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowNearPlane(value) end
 
+--- @param value boolean 
 function UnityEngine.Light:set_useShadowMatrixOverride(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Light:set_shadowMatrixOverride(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_range(value) end
 
+--- @param value UnityEngine.Flare 
 function UnityEngine.Light:set_flare(value) end
 
+--- @param value UnityEngine.LightBakingOutput 
 function UnityEngine.Light:set_bakingOutput(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_cullingMask(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_renderingLayerMask(value) end
 
+--- @param value UnityEngine.LightShadowCasterMode 
 function UnityEngine.Light:set_lightShadowCasterMode(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowRadius(value) end
 
+--- @param value number 
 function UnityEngine.Light:set_shadowAngle(value) end
 
 --- Revert all light parameters to default.

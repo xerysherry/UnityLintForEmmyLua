@@ -1,6 +1,7 @@
 --- @class UnityEngine.SubsystemsImplementation.Extensions.SubsystemExtensions 
 UnityEngine.SubsystemsImplementation.Extensions.SubsystemExtensions = {}
 
+--- @param subsystem UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3 
 --- @return UnityEngine.SubsystemsImplementation.Extensions.SubsystemExtensions.TProvider
 function UnityEngine.SubsystemsImplementation.Extensions.SubsystemExtensions.GetProvider(subsystem) end
 

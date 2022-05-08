@@ -19,6 +19,7 @@
 --- @field generateOutOfBounds boolean Continue to generate characters even if the text runs out of bounds.
 UnityEngine.TextGenerationSettings = {}
 
+--- @param other UnityEngine.TextGenerationSettings 
 --- @return boolean
 function UnityEngine.TextGenerationSettings:Equals(other) end
 

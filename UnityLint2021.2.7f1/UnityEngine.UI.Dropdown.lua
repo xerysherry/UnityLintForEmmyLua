@@ -41,40 +41,56 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.Dropdown = {}
 
+--- @param value UnityEngine.RectTransform 
 function UnityEngine.UI.Dropdown:set_template(value) end
 
+--- @param value UnityEngine.UI.Text 
 function UnityEngine.UI.Dropdown:set_captionText(value) end
 
+--- @param value UnityEngine.UI.Image 
 function UnityEngine.UI.Dropdown:set_captionImage(value) end
 
+--- @param value UnityEngine.UI.Text 
 function UnityEngine.UI.Dropdown:set_itemText(value) end
 
+--- @param value UnityEngine.UI.Image 
 function UnityEngine.UI.Dropdown:set_itemImage(value) end
 
+--- @param value UnityEngine.UI.Dropdown.OptionData[] 
 function UnityEngine.UI.Dropdown:set_options(value) end
 
+--- @param value UnityEngine.UI.Dropdown.DropdownEvent 
 function UnityEngine.UI.Dropdown:set_onValueChanged(value) end
 
+--- @param value number 
 function UnityEngine.UI.Dropdown:set_alphaFadeSpeed(value) end
 
+--- @param value number 
 function UnityEngine.UI.Dropdown:set_value(value) end
 
+--- @param input number 
 function UnityEngine.UI.Dropdown:SetValueWithoutNotify(input) end
 
 function UnityEngine.UI.Dropdown:RefreshShownValue() end
 
+--- @param options UnityEngine.UI.Dropdown.OptionData[] 
 function UnityEngine.UI.Dropdown:AddOptions(options) end
 
+--- @param options string[] 
 function UnityEngine.UI.Dropdown:AddOptions(options) end
 
+--- @param options UnityEngine.Sprite[] 
 function UnityEngine.UI.Dropdown:AddOptions(options) end
 
 function UnityEngine.UI.Dropdown:ClearOptions() end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.Dropdown:OnPointerClick(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
 function UnityEngine.UI.Dropdown:OnSubmit(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
 function UnityEngine.UI.Dropdown:OnCancel(eventData) end
 
 function UnityEngine.UI.Dropdown:Show() end

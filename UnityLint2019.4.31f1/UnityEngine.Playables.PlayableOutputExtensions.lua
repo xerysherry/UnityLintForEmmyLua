@@ -11,6 +11,7 @@ function UnityEngine.Playables.PlayableOutputExtensions.IsOutputNull(output) end
 --- @return boolean True if the PlayableOutput has not yet been destroyed and false otherwise.
 function UnityEngine.Playables.PlayableOutputExtensions.IsOutputValid(output) end
 
+--- @param output UnityEngine.Playables.PlayableOutputExtensions.U 
 --- @return UnityEngine.Object
 function UnityEngine.Playables.PlayableOutputExtensions.GetReferenceObject(output) end
 
@@ -82,9 +83,12 @@ function UnityEngine.Playables.PlayableOutputExtensions.AddNotificationReceiver(
 --- @param receiver UnityEngine.Playables.INotificationReceiver The receiver to unregister.
 function UnityEngine.Playables.PlayableOutputExtensions.RemoveNotificationReceiver(output, receiver) end
 
+--- @param output UnityEngine.Playables.PlayableOutputExtensions.U 
 --- @return number
 function UnityEngine.Playables.PlayableOutputExtensions.GetSourceInputPort(output) end
 
+--- @param output UnityEngine.Playables.PlayableOutputExtensions.U 
+--- @param value number 
 function UnityEngine.Playables.PlayableOutputExtensions.SetSourceInputPort(output, value) end
 
 --- Sets the source playable's output connection index. For playables with multiple outputs, this determines which sub-branch of the source playable generates this output.

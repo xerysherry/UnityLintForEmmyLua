@@ -50,16 +50,22 @@ function UnityEngine.SceneManagement.SceneManager.MergeScenes(sourceScene, desti
 --- @param scene UnityEngine.SceneManagement.Scene Scene to move into.
 function UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(go, scene) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.add_sceneLoaded(value) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.remove_sceneLoaded(value) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.add_sceneUnloaded(value) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.remove_sceneUnloaded(value) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.add_activeSceneChanged(value) end
 
+--- @param value function 
 function UnityEngine.SceneManagement.SceneManager.remove_activeSceneChanged(value) end
 
 --- Returns an array of all the Scenes currently open in the hierarchy.
@@ -67,86 +73,119 @@ function UnityEngine.SceneManagement.SceneManager.remove_activeSceneChanged(valu
 function UnityEngine.SceneManagement.SceneManager.GetAllScenes() end
 
 --- Create an empty new Scene at runtime with the given name.
+--- @param sceneName string 
 --- @return UnityEngine.SceneManagement.Scene A reference to the new Scene that was created, or an invalid Scene if creation failed.
 function UnityEngine.SceneManagement.SceneManager.CreateScene(sceneName) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneName string 
+--- @param mode UnityEngine.SceneManagement.LoadSceneMode 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, mode) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneName string 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneName string 
+--- @param parameters UnityEngine.SceneManagement.LoadSceneParameters 
 --- @return UnityEngine.SceneManagement.Scene 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, parameters) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneBuildIndex number 
+--- @param mode UnityEngine.SceneManagement.LoadSceneMode 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneBuildIndex, mode) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneBuildIndex number 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneBuildIndex) end
 
 --- Loads the Scene by its name or index in Build Settings.
+--- @param sceneBuildIndex number 
+--- @param parameters UnityEngine.SceneManagement.LoadSceneParameters 
 --- @return UnityEngine.SceneManagement.Scene 
 function UnityEngine.SceneManagement.SceneManager.LoadScene(sceneBuildIndex, parameters) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneBuildIndex number 
+--- @param mode UnityEngine.SceneManagement.LoadSceneMode 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneBuildIndex, mode) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneBuildIndex number 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneBuildIndex) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneBuildIndex number 
+--- @param parameters UnityEngine.SceneManagement.LoadSceneParameters 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneBuildIndex, parameters) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneName string 
+--- @param mode UnityEngine.SceneManagement.LoadSceneMode 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, mode) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneName string 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName) end
 
 --- Loads the Scene asynchronously in the background.
+--- @param sceneName string 
+--- @param parameters UnityEngine.SceneManagement.LoadSceneParameters 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, parameters) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param scene UnityEngine.SceneManagement.Scene 
 --- @return boolean Returns true if the Scene is unloaded.
 function UnityEngine.SceneManagement.SceneManager.UnloadScene(scene) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneBuildIndex number 
 --- @return boolean Returns true if the Scene is unloaded.
 function UnityEngine.SceneManagement.SceneManager.UnloadScene(sceneBuildIndex) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneName string 
 --- @return boolean Returns true if the Scene is unloaded.
 function UnityEngine.SceneManagement.SceneManager.UnloadScene(sceneName) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneBuildIndex number 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneBuildIndex) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneName string 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param scene UnityEngine.SceneManagement.Scene 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(scene) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneBuildIndex number 
+--- @param options UnityEngine.SceneManagement.UnloadSceneOptions 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneBuildIndex, options) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param sceneName string 
+--- @param options UnityEngine.SceneManagement.UnloadSceneOptions 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName, options) end
 
 --- Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.
+--- @param scene UnityEngine.SceneManagement.Scene 
+--- @param options UnityEngine.SceneManagement.UnloadSceneOptions 
 --- @return UnityEngine.AsyncOperation Use the AsyncOperation to determine if the operation has completed.
 function UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(scene, options) end
 

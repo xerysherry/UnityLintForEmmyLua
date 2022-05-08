@@ -88,18 +88,25 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Renderer = {}
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Renderer:set_lightmapTilingOffset(value) end
 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Renderer:set_lightProbeAnchor(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_castShadows(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_motionVectors(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_useLightProbes(value) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Renderer:set_bounds(value) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Renderer:set_localBounds(value) end
 
 --- Reset custom world space bounds.
@@ -113,6 +120,7 @@ function UnityEngine.Renderer:ResetLocalBounds() end
 function UnityEngine.Renderer:HasPropertyBlock() end
 
 --- Lets you set or clear per-renderer or per-material parameter overrides.
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Renderer:SetPropertyBlock(properties) end
 
 --- Lets you set or clear per-renderer or per-material parameter overrides.
@@ -121,6 +129,7 @@ function UnityEngine.Renderer:SetPropertyBlock(properties) end
 function UnityEngine.Renderer:SetPropertyBlock(properties, materialIndex) end
 
 --- Get per-Renderer or per-Material property block.
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Renderer:GetPropertyBlock(properties) end
 
 --- Get per-Renderer or per-Material property block.
@@ -128,54 +137,79 @@ function UnityEngine.Renderer:GetPropertyBlock(properties) end
 --- @param materialIndex number The index of the Material you want to get overridden parameters from. The index ranges from 0 to Renderer.sharedMaterials.Length-1.
 function UnityEngine.Renderer:GetPropertyBlock(properties, materialIndex) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_enabled(value) end
 
+--- @param value UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Renderer:set_shadowCastingMode(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_receiveShadows(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_forceRenderingOff(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_staticShadowCaster(value) end
 
+--- @param value UnityEngine.MotionVectorGenerationMode 
 function UnityEngine.Renderer:set_motionVectorGenerationMode(value) end
 
+--- @param value UnityEngine.Rendering.LightProbeUsage 
 function UnityEngine.Renderer:set_lightProbeUsage(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeUsage 
 function UnityEngine.Renderer:set_reflectionProbeUsage(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_renderingLayerMask(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_rendererPriority(value) end
 
+--- @param value UnityEngine.Experimental.Rendering.RayTracingMode 
 function UnityEngine.Renderer:set_rayTracingMode(value) end
 
+--- @param value string 
 function UnityEngine.Renderer:set_sortingLayerName(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_sortingLayerID(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_sortingOrder(value) end
 
+--- @param value boolean 
 function UnityEngine.Renderer:set_allowOcclusionWhenDynamic(value) end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.Renderer:set_lightProbeProxyVolumeOverride(value) end
 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Renderer:set_probeAnchor(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_lightmapIndex(value) end
 
+--- @param value number 
 function UnityEngine.Renderer:set_realtimeLightmapIndex(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Renderer:set_lightmapScaleOffset(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Renderer:set_realtimeLightmapScaleOffset(value) end
 
+--- @param value UnityEngine.Material[] 
 function UnityEngine.Renderer:set_materials(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.Renderer:set_material(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.Renderer:set_sharedMaterial(value) end
 
+--- @param value UnityEngine.Material[] 
 function UnityEngine.Renderer:set_sharedMaterials(value) end
 
 --- Returns all the instantiated materials of this object.

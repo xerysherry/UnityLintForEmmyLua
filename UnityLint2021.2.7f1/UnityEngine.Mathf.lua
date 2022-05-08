@@ -105,34 +105,46 @@ function UnityEngine.Mathf.Abs(f) end
 function UnityEngine.Mathf.Abs(value) end
 
 --- Returns the smallest of two or more values.
+--- @param a number 
+--- @param b number 
 --- @return number 
 function UnityEngine.Mathf.Min(a, b) end
 
 --- Returns the smallest of two or more values.
+--- @param values number[] 
 --- @return number 
 function UnityEngine.Mathf.Min(values) end
 
 --- Returns the smallest of two or more values.
+--- @param a number 
+--- @param b number 
 --- @return number 
 function UnityEngine.Mathf.Min(a, b) end
 
 --- Returns the smallest of two or more values.
+--- @param values number[] 
 --- @return number 
 function UnityEngine.Mathf.Min(values) end
 
 --- Returns largest of two or more values.
+--- @param a number 
+--- @param b number 
 --- @return number 
 function UnityEngine.Mathf.Max(a, b) end
 
 --- Returns largest of two or more values.
+--- @param values number[] 
 --- @return number 
 function UnityEngine.Mathf.Max(values) end
 
 --- Returns largest of two or more values.
+--- @param a number 
+--- @param b number 
 --- @return number 
 function UnityEngine.Mathf.Max(a, b) end
 
 --- Returns largest of two or more values.
+--- @param values number[] 
 --- @return number 
 function UnityEngine.Mathf.Max(values) end
 
@@ -259,6 +271,9 @@ function UnityEngine.Mathf.MoveTowardsAngle(current, target, maxDelta) end
 --- @return number 
 function UnityEngine.Mathf.SmoothStep(from, to, t) end
 
+--- @param value number 
+--- @param absmax number 
+--- @param gamma number 
 --- @return number
 function UnityEngine.Mathf.Gamma(value, absmax, gamma) end
 
@@ -269,10 +284,19 @@ function UnityEngine.Mathf.Gamma(value, absmax, gamma) end
 function UnityEngine.Mathf.Approximately(a, b) end
 
 --- Gradually changes a value towards a desired goal over time.
+--- @param current number 
+--- @param target number 
+--- @param currentVelocity System.Single& 
+--- @param smoothTime number 
+--- @param maxSpeed number 
 --- @return number 
 function UnityEngine.Mathf.SmoothDamp(current, target, currentVelocity, smoothTime, maxSpeed) end
 
 --- Gradually changes a value towards a desired goal over time.
+--- @param current number 
+--- @param target number 
+--- @param currentVelocity System.Single& 
+--- @param smoothTime number 
 --- @return number 
 function UnityEngine.Mathf.SmoothDamp(current, target, currentVelocity, smoothTime) end
 
@@ -287,10 +311,19 @@ function UnityEngine.Mathf.SmoothDamp(current, target, currentVelocity, smoothTi
 function UnityEngine.Mathf.SmoothDamp(current, target, currentVelocity, smoothTime, maxSpeed, deltaTime) end
 
 --- Gradually changes an angle given in degrees towards a desired goal angle over time.
+--- @param current number 
+--- @param target number 
+--- @param currentVelocity System.Single& 
+--- @param smoothTime number 
+--- @param maxSpeed number 
 --- @return number 
 function UnityEngine.Mathf.SmoothDampAngle(current, target, currentVelocity, smoothTime, maxSpeed) end
 
 --- Gradually changes an angle given in degrees towards a desired goal angle over time.
+--- @param current number 
+--- @param target number 
+--- @param currentVelocity System.Single& 
+--- @param smoothTime number 
 --- @return number 
 function UnityEngine.Mathf.SmoothDampAngle(current, target, currentVelocity, smoothTime) end
 

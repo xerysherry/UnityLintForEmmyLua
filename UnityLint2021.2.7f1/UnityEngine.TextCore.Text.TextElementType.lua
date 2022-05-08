@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.Text.TextElementType
 UnityEngine.TextCore.Text.TextElementType = {
     Character = 1,
     Sprite = 2,

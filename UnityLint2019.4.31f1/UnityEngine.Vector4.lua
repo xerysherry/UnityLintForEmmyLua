@@ -71,6 +71,7 @@ function UnityEngine.Vector4.Project(a, b) end
 --- @return number 
 function UnityEngine.Vector4.Distance(a, b) end
 
+--- @param a UnityEngine.Vector4 
 --- @return number
 function UnityEngine.Vector4.Magnitude(a) end
 
@@ -86,12 +87,17 @@ function UnityEngine.Vector4.Min(lhs, rhs) end
 --- @return UnityEngine.Vector4 
 function UnityEngine.Vector4.Max(lhs, rhs) end
 
+--- @param a UnityEngine.Vector4 
+--- @param b UnityEngine.Vector4 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_Addition(a, b) end
 
+--- @param a UnityEngine.Vector4 
+--- @param b UnityEngine.Vector4 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_Subtraction(a, b) end
 
+--- @param a UnityEngine.Vector4 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_UnaryNegation(a) end
 
@@ -107,30 +113,43 @@ function UnityEngine.Vector4.op_Multiply(a, d) end
 --- @return UnityEngine.Vector4 
 function UnityEngine.Vector4.op_Multiply(d, a) end
 
+--- @param a UnityEngine.Vector4 
+--- @param d number 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_Division(a, d) end
 
+--- @param lhs UnityEngine.Vector4 
+--- @param rhs UnityEngine.Vector4 
 --- @return boolean
 function UnityEngine.Vector4.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Vector4 
+--- @param rhs UnityEngine.Vector4 
 --- @return boolean
 function UnityEngine.Vector4.op_Inequality(lhs, rhs) end
 
+--- @param v UnityEngine.Vector3 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_Implicit(v) end
 
+--- @param v UnityEngine.Vector4 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector4.op_Implicit(v) end
 
+--- @param v UnityEngine.Vector2 
 --- @return UnityEngine.Vector4
 function UnityEngine.Vector4.op_Implicit(v) end
 
+--- @param v UnityEngine.Vector4 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector4.op_Implicit(v) end
 
+--- @param a UnityEngine.Vector4 
 --- @return number
 function UnityEngine.Vector4.SqrMagnitude(a) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Vector4:set_Item(index, value) end
 
 --- Set x, y, z and w components of an existing Vector4.

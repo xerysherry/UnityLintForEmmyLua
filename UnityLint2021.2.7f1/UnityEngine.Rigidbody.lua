@@ -73,50 +73,71 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Rigidbody = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rigidbody:set_velocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rigidbody:set_angularVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_drag(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_angularDrag(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_mass(value) end
 
 --- Sets the mass based on the attached colliders assuming a constant density.
 --- @param density number 
 function UnityEngine.Rigidbody:SetDensity(density) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody:set_useGravity(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_maxDepenetrationVelocity(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody:set_isKinematic(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody:set_freezeRotation(value) end
 
+--- @param value UnityEngine.RigidbodyConstraints 
 function UnityEngine.Rigidbody:set_constraints(value) end
 
+--- @param value UnityEngine.CollisionDetectionMode 
 function UnityEngine.Rigidbody:set_collisionDetectionMode(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rigidbody:set_centerOfMass(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Rigidbody:set_inertiaTensorRotation(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rigidbody:set_inertiaTensor(value) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody:set_detectCollisions(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rigidbody:set_position(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Rigidbody:set_rotation(value) end
 
+--- @param value UnityEngine.RigidbodyInterpolation 
 function UnityEngine.Rigidbody:set_interpolation(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_solverIterations(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_sleepThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_maxAngularVelocity(value) end
 
 --- Moves the kinematic Rigidbody towards position.
@@ -153,6 +174,7 @@ function UnityEngine.Rigidbody:GetRelativePointVelocity(relativePoint) end
 --- @return UnityEngine.Vector3 
 function UnityEngine.Rigidbody:GetPointVelocity(worldPoint) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_solverVelocityIterations(value) end
 
 --- Adds a force to the Rigidbody.
@@ -161,6 +183,7 @@ function UnityEngine.Rigidbody:set_solverVelocityIterations(value) end
 function UnityEngine.Rigidbody:AddForce(force, mode) end
 
 --- Adds a force to the Rigidbody.
+--- @param force UnityEngine.Vector3 
 function UnityEngine.Rigidbody:AddForce(force) end
 
 --- Adds a force to the Rigidbody.
@@ -171,6 +194,9 @@ function UnityEngine.Rigidbody:AddForce(force) end
 function UnityEngine.Rigidbody:AddForce(x, y, z, mode) end
 
 --- Adds a force to the Rigidbody.
+--- @param x number 
+--- @param y number 
+--- @param z number 
 function UnityEngine.Rigidbody:AddForce(x, y, z) end
 
 --- Adds a force to the rigidbody relative to its coordinate system.
@@ -179,6 +205,7 @@ function UnityEngine.Rigidbody:AddForce(x, y, z) end
 function UnityEngine.Rigidbody:AddRelativeForce(force, mode) end
 
 --- Adds a force to the rigidbody relative to its coordinate system.
+--- @param force UnityEngine.Vector3 
 function UnityEngine.Rigidbody:AddRelativeForce(force) end
 
 --- Adds a force to the rigidbody relative to its coordinate system.
@@ -189,6 +216,9 @@ function UnityEngine.Rigidbody:AddRelativeForce(force) end
 function UnityEngine.Rigidbody:AddRelativeForce(x, y, z, mode) end
 
 --- Adds a force to the rigidbody relative to its coordinate system.
+--- @param x number 
+--- @param y number 
+--- @param z number 
 function UnityEngine.Rigidbody:AddRelativeForce(x, y, z) end
 
 --- Adds a torque to the rigidbody.
@@ -197,6 +227,7 @@ function UnityEngine.Rigidbody:AddRelativeForce(x, y, z) end
 function UnityEngine.Rigidbody:AddTorque(torque, mode) end
 
 --- Adds a torque to the rigidbody.
+--- @param torque UnityEngine.Vector3 
 function UnityEngine.Rigidbody:AddTorque(torque) end
 
 --- Adds a torque to the rigidbody.
@@ -207,6 +238,9 @@ function UnityEngine.Rigidbody:AddTorque(torque) end
 function UnityEngine.Rigidbody:AddTorque(x, y, z, mode) end
 
 --- Adds a torque to the rigidbody.
+--- @param x number 
+--- @param y number 
+--- @param z number 
 function UnityEngine.Rigidbody:AddTorque(x, y, z) end
 
 --- Adds a torque to the rigidbody relative to its coordinate system.
@@ -215,6 +249,7 @@ function UnityEngine.Rigidbody:AddTorque(x, y, z) end
 function UnityEngine.Rigidbody:AddRelativeTorque(torque, mode) end
 
 --- Adds a torque to the rigidbody relative to its coordinate system.
+--- @param torque UnityEngine.Vector3 
 function UnityEngine.Rigidbody:AddRelativeTorque(torque) end
 
 --- Adds a torque to the rigidbody relative to its coordinate system.
@@ -225,6 +260,9 @@ function UnityEngine.Rigidbody:AddRelativeTorque(torque) end
 function UnityEngine.Rigidbody:AddRelativeTorque(x, y, z, mode) end
 
 --- Adds a torque to the rigidbody relative to its coordinate system.
+--- @param x number 
+--- @param y number 
+--- @param z number 
 function UnityEngine.Rigidbody:AddRelativeTorque(x, y, z) end
 
 --- Applies force at position. As a result this will apply a torque and force on the object.
@@ -234,6 +272,8 @@ function UnityEngine.Rigidbody:AddRelativeTorque(x, y, z) end
 function UnityEngine.Rigidbody:AddForceAtPosition(force, position, mode) end
 
 --- Applies force at position. As a result this will apply a torque and force on the object.
+--- @param force UnityEngine.Vector3 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Rigidbody:AddForceAtPosition(force, position) end
 
 --- Applies a force to a rigidbody that simulates explosion effects.
@@ -245,9 +285,16 @@ function UnityEngine.Rigidbody:AddForceAtPosition(force, position) end
 function UnityEngine.Rigidbody:AddExplosionForce(explosionForce, explosionPosition, explosionRadius, upwardsModifier, mode) end
 
 --- Applies a force to a rigidbody that simulates explosion effects.
+--- @param explosionForce number 
+--- @param explosionPosition UnityEngine.Vector3 
+--- @param explosionRadius number 
+--- @param upwardsModifier number 
 function UnityEngine.Rigidbody:AddExplosionForce(explosionForce, explosionPosition, explosionRadius, upwardsModifier) end
 
 --- Applies a force to a rigidbody that simulates explosion effects.
+--- @param explosionForce number 
+--- @param explosionPosition UnityEngine.Vector3 
+--- @param explosionRadius number 
 function UnityEngine.Rigidbody:AddExplosionForce(explosionForce, explosionPosition, explosionRadius) end
 
 --- The closest point to the bounding box of the attached colliders.
@@ -264,11 +311,16 @@ function UnityEngine.Rigidbody:ClosestPointOnBounds(position) end
 function UnityEngine.Rigidbody:SweepTest(direction, maxDistance, queryTriggerInteraction) end
 
 --- Tests if a rigidbody would collide with anything, if it was moved through the Scene.
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return boolean True when the rigidbody sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Rigidbody:SweepTest(direction, maxDistance) end
 
 --- Tests if a rigidbody would collide with anything, if it was moved through the Scene.
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True when the rigidbody sweep intersects any collider, otherwise false.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.Rigidbody:SweepTest(direction) end
 
 --- Like Rigidbody.SweepTest, but returns all hits.
@@ -279,23 +331,32 @@ function UnityEngine.Rigidbody:SweepTest(direction) end
 function UnityEngine.Rigidbody:SweepTestAll(direction, maxDistance, queryTriggerInteraction) end
 
 --- Like Rigidbody.SweepTest, but returns all hits.
+--- @param direction UnityEngine.Vector3 
+--- @param maxDistance number 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Rigidbody:SweepTestAll(direction, maxDistance) end
 
 --- Like Rigidbody.SweepTest, but returns all hits.
+--- @param direction UnityEngine.Vector3 
 --- @return UnityEngine.RaycastHit[] An array of all colliders hit in the sweep.
 function UnityEngine.Rigidbody:SweepTestAll(direction) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_sleepVelocity(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_sleepAngularVelocity(value) end
 
+--- @param a number 
 function UnityEngine.Rigidbody:SetMaxAngularVelocity(a) end
 
+--- @param value boolean 
 function UnityEngine.Rigidbody:set_useConeFriction(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_solverIterationCount(value) end
 
+--- @param value number 
 function UnityEngine.Rigidbody:set_solverVelocityIterationCount(value) end
 
 ---  Generated By xerysherry

@@ -1,8 +1,4 @@
-UnityEngine.Experimental.XR.Boundary.Type = {
-    PlayArea = 0,
-    TrackedArea = 1,
-}
-
+--- @class UnityEngine.Experimental.XR.Boundary.Type
 UnityEngine.Experimental.XR.Boundary.Type = {
     PlayArea = 0,
     TrackedArea = 1,

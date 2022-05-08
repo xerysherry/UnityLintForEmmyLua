@@ -61,12 +61,16 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.TextElement = {}
 
+--- @param evt UnityEngine.UIElements.EventBase 
 function UnityEngine.UIElements.TextElement:HandleEvent(evt) end
 
+--- @param value string 
 function UnityEngine.UIElements.TextElement:set_text(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.TextElement:set_enableRichText(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.TextElement:set_displayTooltipWhenElided(value) end
 
 --- 

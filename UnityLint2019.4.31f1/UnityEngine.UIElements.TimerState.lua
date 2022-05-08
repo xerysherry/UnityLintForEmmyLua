@@ -7,21 +7,29 @@
 ---       Time difference in milliseconds between now and the previous callback.
 UnityEngine.UIElements.TimerState = {}
 
+--- @param state1 UnityEngine.UIElements.TimerState 
+--- @param state2 UnityEngine.UIElements.TimerState 
 --- @return boolean
 function UnityEngine.UIElements.TimerState.op_Equality(state1, state2) end
 
+--- @param state1 UnityEngine.UIElements.TimerState 
+--- @param state2 UnityEngine.UIElements.TimerState 
 --- @return boolean
 function UnityEngine.UIElements.TimerState.op_Inequality(state1, state2) end
 
+--- @param value number 
 function UnityEngine.UIElements.TimerState:set_start(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.TimerState:set_now(value) end
 
 --- Compare this object with another object and return true if they are equal.
+--- @param obj System.Object 
 --- @return boolean True if the objects are equal.
 function UnityEngine.UIElements.TimerState:Equals(obj) end
 
 --- Compare this object with another object and return true if they are equal.
+--- @param other UnityEngine.UIElements.TimerState 
 --- @return boolean True if the objects are equal.
 function UnityEngine.UIElements.TimerState:Equals(other) end
 

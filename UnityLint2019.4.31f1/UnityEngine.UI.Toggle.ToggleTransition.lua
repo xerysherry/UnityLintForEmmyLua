@@ -1,8 +1,4 @@
-UnityEngine.UI.Toggle.ToggleTransition = {
-    None = 0,
-    Fade = 1,
-}
-
+--- @class UnityEngine.UI.Toggle.ToggleTransition
 UnityEngine.UI.Toggle.ToggleTransition = {
     None = 0,
     Fade = 1,

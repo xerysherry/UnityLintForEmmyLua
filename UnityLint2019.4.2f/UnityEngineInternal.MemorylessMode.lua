@@ -1,3 +1,4 @@
+--- @class UnityEngineInternal.MemorylessMode
 UnityEngineInternal.MemorylessMode = {
     Unused = 0,
     Forced = 1,

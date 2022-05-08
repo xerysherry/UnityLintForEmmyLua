@@ -75,12 +75,16 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.AbstractProgressBar = {}
 
+--- @param value string 
 function UnityEngine.UIElements.AbstractProgressBar:set_title(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.AbstractProgressBar:set_lowValue(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.AbstractProgressBar:set_highValue(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.AbstractProgressBar:set_value(value) end
 
 --- 

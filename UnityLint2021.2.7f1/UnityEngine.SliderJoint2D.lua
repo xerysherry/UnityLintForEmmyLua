@@ -52,16 +52,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.SliderJoint2D = {}
 
+--- @param value boolean 
 function UnityEngine.SliderJoint2D:set_autoConfigureAngle(value) end
 
+--- @param value number 
 function UnityEngine.SliderJoint2D:set_angle(value) end
 
+--- @param value boolean 
 function UnityEngine.SliderJoint2D:set_useMotor(value) end
 
+--- @param value boolean 
 function UnityEngine.SliderJoint2D:set_useLimits(value) end
 
+--- @param value UnityEngine.JointMotor2D 
 function UnityEngine.SliderJoint2D:set_motor(value) end
 
+--- @param value UnityEngine.JointTranslationLimits2D 
 function UnityEngine.SliderJoint2D:set_limits(value) end
 
 --- Gets the motor force of the joint given the specified timestep.

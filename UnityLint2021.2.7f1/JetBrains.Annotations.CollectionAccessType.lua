@@ -1,3 +1,4 @@
+--- @class JetBrains.Annotations.CollectionAccessType
 JetBrains.Annotations.CollectionAccessType = {
     None = 0,
     Read = 1,

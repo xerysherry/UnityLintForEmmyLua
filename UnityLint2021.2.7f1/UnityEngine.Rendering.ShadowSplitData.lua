@@ -12,16 +12,23 @@
 ---                       
 UnityEngine.Rendering.ShadowSplitData = {}
 
+--- @param left UnityEngine.Rendering.ShadowSplitData 
+--- @param right UnityEngine.Rendering.ShadowSplitData 
 --- @return boolean
 function UnityEngine.Rendering.ShadowSplitData.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.ShadowSplitData 
+--- @param right UnityEngine.Rendering.ShadowSplitData 
 --- @return boolean
 function UnityEngine.Rendering.ShadowSplitData.op_Inequality(left, right) end
 
+--- @param value number 
 function UnityEngine.Rendering.ShadowSplitData:set_cullingPlaneCount(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Rendering.ShadowSplitData:set_cullingSphere(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.ShadowSplitData:set_shadowCascadeBlendCullingFactor(value) end
 
 --- Gets a culling plane.
@@ -34,9 +41,11 @@ function UnityEngine.Rendering.ShadowSplitData:GetCullingPlane(index) end
 --- @param plane UnityEngine.Plane The culling plane.
 function UnityEngine.Rendering.ShadowSplitData:SetCullingPlane(index, plane) end
 
+--- @param other UnityEngine.Rendering.ShadowSplitData 
 --- @return boolean
 function UnityEngine.Rendering.ShadowSplitData:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.ShadowSplitData:Equals(obj) end
 

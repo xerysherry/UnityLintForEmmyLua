@@ -1,6 +1,7 @@
 --- @class UnityEngineInternal.XR.WSA.RemoteSpeechAccess 
 UnityEngineInternal.XR.WSA.RemoteSpeechAccess = {}
 
+--- @param remoteDeviceVersion UnityEngine.XR.WSA.RemoteDeviceVersion 
 function UnityEngineInternal.XR.WSA.RemoteSpeechAccess.EnableRemoteSpeech(remoteDeviceVersion) end
 
 function UnityEngineInternal.XR.WSA.RemoteSpeechAccess.DisableRemoteSpeech() end

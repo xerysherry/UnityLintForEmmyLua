@@ -1,3 +1,4 @@
+--- @class UnityEngine.iPhoneMovieScalingMode
 UnityEngine.iPhoneMovieScalingMode = {
     None = 0,
     AspectFit = 1,

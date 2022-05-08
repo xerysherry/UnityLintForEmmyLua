@@ -91,26 +91,37 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.TrailRenderer = {}
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_time(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_startWidth(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_endWidth(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_widthMultiplier(value) end
 
+--- @param value boolean 
 function UnityEngine.TrailRenderer:set_autodestruct(value) end
 
+--- @param value boolean 
 function UnityEngine.TrailRenderer:set_emitting(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_numCornerVertices(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_numCapVertices(value) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_minVertexDistance(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.TrailRenderer:set_startColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.TrailRenderer:set_endColor(value) end
 
 --- Set the position of a vertex in the trail.
@@ -123,12 +134,16 @@ function UnityEngine.TrailRenderer:SetPosition(index, position) end
 --- @return UnityEngine.Vector3 The position at the specified index in the array.
 function UnityEngine.TrailRenderer:GetPosition(index) end
 
+--- @param value number 
 function UnityEngine.TrailRenderer:set_shadowBias(value) end
 
+--- @param value boolean 
 function UnityEngine.TrailRenderer:set_generateLightingData(value) end
 
+--- @param value UnityEngine.LineTextureMode 
 function UnityEngine.TrailRenderer:set_textureMode(value) end
 
+--- @param value UnityEngine.LineAlignment 
 function UnityEngine.TrailRenderer:set_alignment(value) end
 
 --- Removes all points from the TrailRenderer.
@@ -136,6 +151,8 @@ function UnityEngine.TrailRenderer:set_alignment(value) end
 function UnityEngine.TrailRenderer:Clear() end
 
 --- Creates a snapshot of TrailRenderer and stores it in mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param useTransform boolean 
 function UnityEngine.TrailRenderer:BakeMesh(mesh, useTransform) end
 
 --- Creates a snapshot of TrailRenderer and stores it in mesh.
@@ -144,8 +161,10 @@ function UnityEngine.TrailRenderer:BakeMesh(mesh, useTransform) end
 --- @param useTransform boolean Include the rotation and scale of the Transform in the baked mesh.
 function UnityEngine.TrailRenderer:BakeMesh(mesh, camera, useTransform) end
 
+--- @param value UnityEngine.AnimationCurve 
 function UnityEngine.TrailRenderer:set_widthCurve(value) end
 
+--- @param value UnityEngine.Gradient 
 function UnityEngine.TrailRenderer:set_colorGradient(value) end
 
 --- Get the positions of all vertices in the trail.

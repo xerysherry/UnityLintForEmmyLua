@@ -3,36 +3,59 @@
 UnityEngine.Assertions.Assert = {}
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
+--- @param obj1 System.Object 
+--- @param obj2 System.Object 
 --- @return boolean
 function UnityEngine.Assertions.Assert.Equals(obj1, obj2) end
 
+--- @param obj1 System.Object 
+--- @param obj2 System.Object 
 --- @return boolean
 function UnityEngine.Assertions.Assert.ReferenceEquals(obj1, obj2) end
 
 --- Asserts that the condition is true.
+--- @param condition boolean 
 function UnityEngine.Assertions.Assert.IsTrue(condition) end
 
 --- Asserts that the condition is true.
+--- @param condition boolean 
+--- @param message string 
 function UnityEngine.Assertions.Assert.IsTrue(condition, message) end
 
 --- Return true when the condition is false.  Otherwise return false.
+--- @param condition boolean 
 function UnityEngine.Assertions.Assert.IsFalse(condition) end
 
 --- Return true when the condition is false.  Otherwise return false.
@@ -41,33 +64,62 @@ function UnityEngine.Assertions.Assert.IsFalse(condition) end
 function UnityEngine.Assertions.Assert.IsFalse(condition, message) end
 
 --- Assert the values are approximately equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreApproximatelyEqual(expected, actual) end
 
 --- Assert the values are approximately equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreApproximatelyEqual(expected, actual, message) end
 
 --- Assert the values are approximately equal.
+--- @param expected number 
+--- @param actual number 
+--- @param tolerance number 
 function UnityEngine.Assertions.Assert.AreApproximatelyEqual(expected, actual, tolerance) end
 
 --- Assert the values are approximately equal.
+--- @param expected number 
+--- @param actual number 
+--- @param tolerance number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreApproximatelyEqual(expected, actual, tolerance, message) end
 
 --- Asserts that the values are approximately not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotApproximatelyEqual(expected, actual) end
 
 --- Asserts that the values are approximately not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotApproximatelyEqual(expected, actual, message) end
 
 --- Asserts that the values are approximately not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param tolerance number 
 function UnityEngine.Assertions.Assert.AreNotApproximatelyEqual(expected, actual, tolerance) end
 
 --- Asserts that the values are approximately not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param tolerance number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotApproximatelyEqual(expected, actual, tolerance, message) end
 
 --- Assert that the values are equal.
+--- @param expected UnityEngine.Assertions.Assert.T 
+--- @param actual UnityEngine.Assertions.Assert.T 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected UnityEngine.Assertions.Assert.T 
+--- @param actual UnityEngine.Assertions.Assert.T 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
@@ -78,12 +130,20 @@ function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message, comparer) end
 
 --- Assert that the values are equal.
+--- @param expected UnityEngine.Object 
+--- @param actual UnityEngine.Object 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected UnityEngine.Assertions.Assert.T 
+--- @param actual UnityEngine.Assertions.Assert.T 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected UnityEngine.Assertions.Assert.T 
+--- @param actual UnityEngine.Assertions.Assert.T 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
@@ -94,9 +154,13 @@ function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) en
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message, comparer) end
 
 --- Assert that the values are not equal.
+--- @param expected UnityEngine.Object 
+--- @param actual UnityEngine.Object 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert the value is null.
+--- @param value UnityEngine.Assertions.Assert.T 
 function UnityEngine.Assertions.Assert.IsNull(value) end
 
 --- Assert the value is null.
@@ -110,6 +174,7 @@ function UnityEngine.Assertions.Assert.IsNull(value, message) end
 function UnityEngine.Assertions.Assert.IsNull(value, message) end
 
 --- Assert that the value is not null.
+--- @param value UnityEngine.Assertions.Assert.T 
 function UnityEngine.Assertions.Assert.IsNotNull(value) end
 
 --- Assert that the value is not null.
@@ -123,93 +188,168 @@ function UnityEngine.Assertions.Assert.IsNotNull(value, message) end
 function UnityEngine.Assertions.Assert.IsNotNull(value, message) end
 
 --- Assert that the values are equal.
+--- @param expected System.SByte 
+--- @param actual System.SByte 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected System.SByte 
+--- @param actual System.SByte 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected System.SByte 
+--- @param actual System.SByte 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected System.SByte 
+--- @param actual System.SByte 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual) end
 
 --- Assert that the values are not equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreNotEqual(expected, actual, message) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual) end
 
 --- Assert that the values are equal.
+--- @param expected number 
+--- @param actual number 
+--- @param message string 
 function UnityEngine.Assertions.Assert.AreEqual(expected, actual, message) end
 
 ---  Generated By xerysherry

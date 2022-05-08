@@ -7,10 +7,13 @@
 ---       To selective enable debug log message.
 UnityEngine.Logger = {}
 
+--- @param value UnityEngine.ILogHandler 
 function UnityEngine.Logger:set_logHandler(value) end
 
+--- @param value boolean 
 function UnityEngine.Logger:set_logEnabled(value) end
 
+--- @param value UnityEngine.LogType 
 function UnityEngine.Logger:set_filterLogType(value) end
 
 --- Check logging is enabled based on the LogType.
@@ -19,12 +22,20 @@ function UnityEngine.Logger:set_filterLogType(value) end
 function UnityEngine.Logger:IsLogTypeAllowed(logType) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param logType UnityEngine.LogType 
+--- @param message System.Object 
 function UnityEngine.Logger:Log(logType, message) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param logType UnityEngine.LogType 
+--- @param message System.Object 
+--- @param context UnityEngine.Object 
 function UnityEngine.Logger:Log(logType, message, context) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param logType UnityEngine.LogType 
+--- @param tag string 
+--- @param message System.Object 
 function UnityEngine.Logger:Log(logType, tag, message) end
 
 --- Logs message to the Unity Console using default logger.
@@ -35,15 +46,23 @@ function UnityEngine.Logger:Log(logType, tag, message) end
 function UnityEngine.Logger:Log(logType, tag, message, context) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param message System.Object 
 function UnityEngine.Logger:Log(message) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param tag string 
+--- @param message System.Object 
 function UnityEngine.Logger:Log(tag, message) end
 
 --- Logs message to the Unity Console using default logger.
+--- @param tag string 
+--- @param message System.Object 
+--- @param context UnityEngine.Object 
 function UnityEngine.Logger:Log(tag, message, context) end
 
 --- A variant of Logger.Log that logs an warning message.
+--- @param tag string 
+--- @param message System.Object 
 function UnityEngine.Logger:LogWarning(tag, message) end
 
 --- A variant of Logger.Log that logs an warning message.
@@ -53,6 +72,8 @@ function UnityEngine.Logger:LogWarning(tag, message) end
 function UnityEngine.Logger:LogWarning(tag, message, context) end
 
 --- A variant of Logger.Log that logs an error message.
+--- @param tag string 
+--- @param message System.Object 
 function UnityEngine.Logger:LogError(tag, message) end
 
 --- A variant of Logger.Log that logs an error message.
@@ -62,6 +83,7 @@ function UnityEngine.Logger:LogError(tag, message) end
 function UnityEngine.Logger:LogError(tag, message, context) end
 
 --- A variant of Logger.Log that logs an exception message.
+--- @param exception System.Exception 
 function UnityEngine.Logger:LogException(exception) end
 
 --- A variant of Logger.Log that logs an exception message.
@@ -70,6 +92,9 @@ function UnityEngine.Logger:LogException(exception) end
 function UnityEngine.Logger:LogException(exception, context) end
 
 --- Logs a formatted message.
+--- @param logType UnityEngine.LogType 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Logger:LogFormat(logType, format, args) end
 
 --- Logs a formatted message.

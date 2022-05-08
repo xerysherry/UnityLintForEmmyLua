@@ -19,23 +19,31 @@
 ---       The number of seconds that an AssetBundle may remain unused in the cache before it is automatically deleted.
 UnityEngine.Cache = {}
 
+--- @param lhs UnityEngine.Cache 
+--- @param rhs UnityEngine.Cache 
 --- @return boolean
 function UnityEngine.Cache.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Cache 
+--- @param rhs UnityEngine.Cache 
 --- @return boolean
 function UnityEngine.Cache.op_Inequality(lhs, rhs) end
 
 --- @return number
 function UnityEngine.Cache:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Cache:Equals(other) end
 
+--- @param other UnityEngine.Cache 
 --- @return boolean
 function UnityEngine.Cache:Equals(other) end
 
+--- @param value number 
 function UnityEngine.Cache:set_maximumAvailableStorageSpace(value) end
 
+--- @param value number 
 function UnityEngine.Cache:set_expirationDelay(value) end
 
 --- Removes all cached content in the cache that has been cached by the current application.

@@ -55,10 +55,14 @@
 UnityEngine.Networking.UnityWebRequest = {}
 
 --- Creates a UnityWebRequest configured to send form data to a server via HTTP POST.
+--- @param uri string 
+--- @param multipartFormSections UnityEngine.Networking.IMultipartFormSection[] 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to send form data to uri via POST.
 function UnityEngine.Networking.UnityWebRequest.Post(uri, multipartFormSections) end
 
 --- Creates a UnityWebRequest configured to send form data to a server via HTTP POST.
+--- @param uri System.Uri 
+--- @param multipartFormSections UnityEngine.Networking.IMultipartFormSection[] 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to send form data to uri via POST.
 function UnityEngine.Networking.UnityWebRequest.Post(uri, multipartFormSections) end
 
@@ -89,6 +93,7 @@ function UnityEngine.Networking.UnityWebRequest.Post(uri, formFields) end
 function UnityEngine.Networking.UnityWebRequest.Post(uri, formFields) end
 
 --- Escapes characters in a string to ensure they are URL-friendly.
+--- @param s string 
 --- @return string 
 function UnityEngine.Networking.UnityWebRequest.EscapeURL(s) end
 
@@ -99,6 +104,7 @@ function UnityEngine.Networking.UnityWebRequest.EscapeURL(s) end
 function UnityEngine.Networking.UnityWebRequest.EscapeURL(s, e) end
 
 --- Converts URL-friendly escape sequences back to normal text.
+--- @param s string 
 --- @return string 
 function UnityEngine.Networking.UnityWebRequest.UnEscapeURL(s) end
 
@@ -154,6 +160,7 @@ function UnityEngine.Networking.UnityWebRequest.Head(uri) end
 function UnityEngine.Networking.UnityWebRequest.Head(uri) end
 
 --- Creates a UnityWebRequest intended to download an image via HTTP GET and create a Texture based on the retrieved data.
+--- @param uri string 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest properly configured to download an image and convert it to a Texture.
 function UnityEngine.Networking.UnityWebRequest.GetTexture(uri) end
 
@@ -170,22 +177,34 @@ function UnityEngine.Networking.UnityWebRequest.GetTexture(uri, nonReadable) end
 function UnityEngine.Networking.UnityWebRequest.GetAudioClip(uri, audioType) end
 
 --- Deprecated. Replaced by UnityWebRequestAssetBundle.GetAssetBundle.
+--- @param uri string 
 --- @return UnityEngine.Networking.UnityWebRequest 
 function UnityEngine.Networking.UnityWebRequest.GetAssetBundle(uri) end
 
 --- Deprecated. Replaced by UnityWebRequestAssetBundle.GetAssetBundle.
+--- @param uri string 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest 
 function UnityEngine.Networking.UnityWebRequest.GetAssetBundle(uri, crc) end
 
 --- Deprecated. Replaced by UnityWebRequestAssetBundle.GetAssetBundle.
+--- @param uri string 
+--- @param version number 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest 
 function UnityEngine.Networking.UnityWebRequest.GetAssetBundle(uri, version, crc) end
 
 --- Deprecated. Replaced by UnityWebRequestAssetBundle.GetAssetBundle.
+--- @param uri string 
+--- @param hash UnityEngine.Hash128 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest 
 function UnityEngine.Networking.UnityWebRequest.GetAssetBundle(uri, hash, crc) end
 
 --- Deprecated. Replaced by UnityWebRequestAssetBundle.GetAssetBundle.
+--- @param uri string 
+--- @param cachedAssetBundle UnityEngine.CachedAssetBundle 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest 
 function UnityEngine.Networking.UnityWebRequest.GetAssetBundle(uri, cachedAssetBundle, crc) end
 
@@ -249,10 +268,13 @@ function UnityEngine.Networking.UnityWebRequest.Post(uri, formData) end
 function UnityEngine.Networking.UnityWebRequest.ClearCookieCache() end
 
 --- Clears stored cookies from the cache.
+--- @param uri System.Uri 
 function UnityEngine.Networking.UnityWebRequest.ClearCookieCache(uri) end
 
+--- @param value number 
 function UnityEngine.Networking.UnityWebRequest:set_redirectLimit(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.UnityWebRequest:set_chunkedTransfer(value) end
 
 --- Retrieves the value of a custom request header.
@@ -274,18 +296,25 @@ function UnityEngine.Networking.UnityWebRequest:GetResponseHeader(name) end
 --- @return table<string, string> A dictionary containing all the response headers received in the latest HTTP response. If no responses have been received, returns null.
 function UnityEngine.Networking.UnityWebRequest:GetResponseHeaders() end
 
+--- @param value UnityEngine.Networking.UploadHandler 
 function UnityEngine.Networking.UnityWebRequest:set_uploadHandler(value) end
 
+--- @param value UnityEngine.Networking.DownloadHandler 
 function UnityEngine.Networking.UnityWebRequest:set_downloadHandler(value) end
 
+--- @param value UnityEngine.Networking.CertificateHandler 
 function UnityEngine.Networking.UnityWebRequest:set_certificateHandler(value) end
 
+--- @param value number 
 function UnityEngine.Networking.UnityWebRequest:set_timeout(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.UnityWebRequest:set_disposeCertificateHandlerOnDispose(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.UnityWebRequest:set_disposeDownloadHandlerOnDispose(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.UnityWebRequest:set_disposeUploadHandlerOnDispose(value) end
 
 --- Signals that this UnityWebRequest is no longer being used, and should clean up any resources it is using.
@@ -302,12 +331,16 @@ function UnityEngine.Networking.UnityWebRequest:SendWebRequest() end
 --- If in progress, halts the UnityWebRequest as soon as possible.
 function UnityEngine.Networking.UnityWebRequest:Abort() end
 
+--- @param value string 
 function UnityEngine.Networking.UnityWebRequest:set_method(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.UnityWebRequest:set_useHttpContinue(value) end
 
+--- @param value string 
 function UnityEngine.Networking.UnityWebRequest:set_url(value) end
 
+--- @param value System.Uri 
 function UnityEngine.Networking.UnityWebRequest:set_uri(value) end
 
 ---  Generated By xerysherry

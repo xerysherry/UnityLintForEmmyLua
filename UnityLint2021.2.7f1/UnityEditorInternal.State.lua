@@ -9,23 +9,29 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEditorInternal.State = {}
 
+--- @param value number 
 function UnityEditorInternal.State:set_speed(value) end
 
+--- @param value boolean 
 function UnityEditorInternal.State:set_mirror(value) end
 
+--- @param value boolean 
 function UnityEditorInternal.State:set_iKOnFeet(value) end
 
+--- @param value string 
 function UnityEditorInternal.State:set_tag(value) end
 
 --- @return UnityEngine.Motion
 function UnityEditorInternal.State:GetMotion() end
 
+--- @param layer UnityEditorInternal.AnimatorControllerLayer 
 --- @return UnityEngine.Motion
 function UnityEditorInternal.State:GetMotion(layer) end
 
 --- @return UnityEditorInternal.BlendTree
 function UnityEditorInternal.State:CreateBlendTree() end
 
+--- @param layer UnityEditorInternal.AnimatorControllerLayer 
 --- @return UnityEditorInternal.BlendTree
 function UnityEditorInternal.State:CreateBlendTree(layer) end
 

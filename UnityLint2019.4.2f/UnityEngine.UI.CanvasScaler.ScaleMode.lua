@@ -1,9 +1,4 @@
-UnityEngine.UI.CanvasScaler.ScaleMode = {
-    ConstantPixelSize = 0,
-    ScaleWithScreenSize = 1,
-    ConstantPhysicalSize = 2,
-}
-
+--- @class UnityEngine.UI.CanvasScaler.ScaleMode
 UnityEngine.UI.CanvasScaler.ScaleMode = {
     ConstantPixelSize = 0,
     ScaleWithScreenSize = 1,

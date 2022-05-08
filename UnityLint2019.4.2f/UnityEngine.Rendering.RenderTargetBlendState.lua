@@ -17,29 +17,42 @@
 ---       Operation used for blending the alpha (A) channel.
 UnityEngine.Rendering.RenderTargetBlendState = {}
 
+--- @param left UnityEngine.Rendering.RenderTargetBlendState 
+--- @param right UnityEngine.Rendering.RenderTargetBlendState 
 --- @return boolean
 function UnityEngine.Rendering.RenderTargetBlendState.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.RenderTargetBlendState 
+--- @param right UnityEngine.Rendering.RenderTargetBlendState 
 --- @return boolean
 function UnityEngine.Rendering.RenderTargetBlendState.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.ColorWriteMask 
 function UnityEngine.Rendering.RenderTargetBlendState:set_writeMask(value) end
 
+--- @param value UnityEngine.Rendering.BlendMode 
 function UnityEngine.Rendering.RenderTargetBlendState:set_sourceColorBlendMode(value) end
 
+--- @param value UnityEngine.Rendering.BlendMode 
 function UnityEngine.Rendering.RenderTargetBlendState:set_destinationColorBlendMode(value) end
 
+--- @param value UnityEngine.Rendering.BlendMode 
 function UnityEngine.Rendering.RenderTargetBlendState:set_sourceAlphaBlendMode(value) end
 
+--- @param value UnityEngine.Rendering.BlendMode 
 function UnityEngine.Rendering.RenderTargetBlendState:set_destinationAlphaBlendMode(value) end
 
+--- @param value UnityEngine.Rendering.BlendOp 
 function UnityEngine.Rendering.RenderTargetBlendState:set_colorBlendOperation(value) end
 
+--- @param value UnityEngine.Rendering.BlendOp 
 function UnityEngine.Rendering.RenderTargetBlendState:set_alphaBlendOperation(value) end
 
+--- @param other UnityEngine.Rendering.RenderTargetBlendState 
 --- @return boolean
 function UnityEngine.Rendering.RenderTargetBlendState:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.RenderTargetBlendState:Equals(obj) end
 

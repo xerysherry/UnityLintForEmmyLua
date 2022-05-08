@@ -56,6 +56,7 @@
 ---        
 UnityEngine.UIElements.EventBase = {}
 
+--- @param value UnityEngine.UIElements.IEventHandler 
 function UnityEngine.UIElements.EventBase:set_target(value) end
 
 --- 

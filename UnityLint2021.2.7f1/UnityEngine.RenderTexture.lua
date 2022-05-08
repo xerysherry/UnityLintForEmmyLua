@@ -70,6 +70,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.RenderTexture = {}
 
+--- @param value UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.set_active(value) end
 
 --- Does a RenderTexture have stencil buffer?
@@ -82,95 +83,188 @@ function UnityEngine.RenderTexture.SupportsStencil(rt) end
 function UnityEngine.RenderTexture.ReleaseTemporary(temp) end
 
 --- Allocate a temporary render texture.
+--- @param desc UnityEngine.RenderTextureDescriptor 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(desc) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
+--- @param vrUsage UnityEngine.VRTextureUsage 
+--- @param useDynamicScale boolean 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, antiAliasing, memorylessMode, vrUsage, useDynamicScale) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
+--- @param vrUsage UnityEngine.VRTextureUsage 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, antiAliasing, memorylessMode, vrUsage) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, antiAliasing, memorylessMode) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
+--- @param antiAliasing number 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, antiAliasing) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.Experimental.Rendering.GraphicsFormat 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
+--- @param readWrite UnityEngine.RenderTextureReadWrite 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
+--- @param vrUsage UnityEngine.VRTextureUsage 
+--- @param useDynamicScale boolean 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, readWrite, antiAliasing, memorylessMode, vrUsage, useDynamicScale) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
+--- @param readWrite UnityEngine.RenderTextureReadWrite 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
+--- @param vrUsage UnityEngine.VRTextureUsage 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, readWrite, antiAliasing, memorylessMode, vrUsage) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
+--- @param readWrite UnityEngine.RenderTextureReadWrite 
+--- @param antiAliasing number 
+--- @param memorylessMode UnityEngine.RenderTextureMemoryless 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, readWrite, antiAliasing, memorylessMode) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
+--- @param readWrite UnityEngine.RenderTextureReadWrite 
+--- @param antiAliasing number 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, readWrite, antiAliasing) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
+--- @param readWrite UnityEngine.RenderTextureReadWrite 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format, readWrite) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
+--- @param format UnityEngine.RenderTextureFormat 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer, format) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
+--- @param depthBuffer number 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height, depthBuffer) end
 
 --- Allocate a temporary render texture.
+--- @param width number 
+--- @param height number 
 --- @return UnityEngine.RenderTexture 
 function UnityEngine.RenderTexture.GetTemporary(width, height) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture.set_enabled(value) end
 
+--- @param value number 
 function UnityEngine.RenderTexture:set_width(value) end
 
+--- @param value number 
 function UnityEngine.RenderTexture:set_height(value) end
 
+--- @param value UnityEngine.Rendering.TextureDimension 
 function UnityEngine.RenderTexture:set_dimension(value) end
 
+--- @param value UnityEngine.Experimental.Rendering.GraphicsFormat 
 function UnityEngine.RenderTexture:set_graphicsFormat(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_useMipMap(value) end
 
+--- @param value UnityEngine.VRTextureUsage 
 function UnityEngine.RenderTexture:set_vrUsage(value) end
 
+--- @param value UnityEngine.RenderTextureMemoryless 
 function UnityEngine.RenderTexture:set_memorylessMode(value) end
 
+--- @param value UnityEngine.RenderTextureFormat 
 function UnityEngine.RenderTexture:set_format(value) end
 
+--- @param value UnityEngine.Experimental.Rendering.GraphicsFormat 
 function UnityEngine.RenderTexture:set_stencilFormat(value) end
 
+--- @param value UnityEngine.Experimental.Rendering.GraphicsFormat 
 function UnityEngine.RenderTexture:set_depthStencilFormat(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_autoGenerateMips(value) end
 
+--- @param value number 
 function UnityEngine.RenderTexture:set_volumeDepth(value) end
 
+--- @param value number 
 function UnityEngine.RenderTexture:set_antiAliasing(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_bindTextureMS(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_enableRandomWrite(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_useDynamicScale(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_isPowerOfTwo(value) end
 
 --- Retrieve a native (underlying graphics API) pointer to the depth buffer resource.
@@ -220,16 +314,22 @@ function UnityEngine.RenderTexture:GenerateMips() end
 --- @param eye UnityEngine.Camera.MonoOrStereoscopicEye A Camera eye corresponding to the left or right eye for stereoscopic rendering, or neither for monoscopic rendering.
 function UnityEngine.RenderTexture:ConvertToEquirect(equirect, eye) end
 
+--- @param value number 
 function UnityEngine.RenderTexture:set_depth(value) end
 
+--- @param value UnityEngine.RenderTextureDescriptor 
 function UnityEngine.RenderTexture:set_descriptor(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_generateMips(value) end
 
+--- @param color UnityEngine.Color 
 function UnityEngine.RenderTexture:SetBorderColor(color) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_isCubemap(value) end
 
+--- @param value boolean 
 function UnityEngine.RenderTexture:set_isVolume(value) end
 
 --- @return UnityEngine.Vector2

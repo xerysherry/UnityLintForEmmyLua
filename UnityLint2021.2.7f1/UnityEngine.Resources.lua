@@ -37,6 +37,8 @@ function UnityEngine.Resources.LoadAsync(path) end
 function UnityEngine.Resources.LoadAsync(path) end
 
 --- Asynchronously loads an asset stored at path in a Resources folder.
+--- @param path string 
+--- @param type System.Type 
 --- @return UnityEngine.ResourceRequest 
 function UnityEngine.Resources.LoadAsync(path, type) end
 
@@ -56,9 +58,12 @@ function UnityEngine.Resources.LoadAll(path) end
 --- @return UnityEngine.Resources.T[] 
 function UnityEngine.Resources.LoadAll(path) end
 
+--- @param type System.Type 
+--- @param path string 
 --- @return UnityEngine.Object
 function UnityEngine.Resources.GetBuiltinResource(type, path) end
 
+--- @param path string 
 --- @return UnityEngine.Resources.T
 function UnityEngine.Resources.GetBuiltinResource(path) end
 

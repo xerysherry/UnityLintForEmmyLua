@@ -6,15 +6,18 @@ UnityEngine.Experimental.Playables.TextureMixerPlayable = {}
 --- @return UnityEngine.Experimental.Playables.TextureMixerPlayable A TextureMixerPlayable linked to the PlayableGraph.
 function UnityEngine.Experimental.Playables.TextureMixerPlayable.Create(graph) end
 
+--- @param playable UnityEngine.Experimental.Playables.TextureMixerPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Experimental.Playables.TextureMixerPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Experimental.Playables.TextureMixerPlayable
 function UnityEngine.Experimental.Playables.TextureMixerPlayable.op_Explicit(playable) end
 
 --- @return UnityEngine.Playables.PlayableHandle
 function UnityEngine.Experimental.Playables.TextureMixerPlayable:GetHandle() end
 
+--- @param other UnityEngine.Experimental.Playables.TextureMixerPlayable 
 --- @return boolean
 function UnityEngine.Experimental.Playables.TextureMixerPlayable:Equals(other) end
 

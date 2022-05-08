@@ -26,30 +26,43 @@
 ---       Options for collecting debug data during the build process.
 UnityEngine.AI.NavMeshBuildSettings = {}
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_agentTypeID(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_agentRadius(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_agentHeight(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_agentSlope(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_agentClimb(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_minRegionArea(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshBuildSettings:set_overrideVoxelSize(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_voxelSize(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshBuildSettings:set_overrideTileSize(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_tileSize(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshBuildSettings:set_maxJobWorkers(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshBuildSettings:set_preserveTilesOutsideBounds(value) end
 
+--- @param value UnityEngine.AI.NavMeshBuildDebugSettings 
 function UnityEngine.AI.NavMeshBuildSettings:set_debug(value) end
 
 --- Validates the properties of NavMeshBuildSettings.

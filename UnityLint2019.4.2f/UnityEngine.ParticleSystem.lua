@@ -129,10 +129,13 @@ function UnityEngine.ParticleSystem.ResetPreMappedBufferMemory() end
 function UnityEngine.ParticleSystem:GetParticles(particles, size, offset) end
 
 --- Gets the particles of this Particle System.
+--- @param particles UnityEngine.ParticleSystem.Particle[] 
+--- @param size number 
 --- @return number The number of particles written to the input particle array (the number of particles currently alive).
 function UnityEngine.ParticleSystem:GetParticles(particles, size) end
 
 --- Gets the particles of this Particle System.
+--- @param particles UnityEngine.ParticleSystem.Particle[] 
 --- @return number The number of particles written to the input particle array (the number of particles currently alive).
 function UnityEngine.ParticleSystem:GetParticles(particles) end
 
@@ -144,10 +147,13 @@ function UnityEngine.ParticleSystem:GetParticles(particles) end
 function UnityEngine.ParticleSystem:GetParticles(particles, size, offset) end
 
 --- Gets the particles of this Particle System.
+--- @param particles Unity.Collections.NativeArray`1 
+--- @param size number 
 --- @return number The number of particles written to the input particle array (the number of particles currently alive).
 function UnityEngine.ParticleSystem:GetParticles(particles, size) end
 
 --- Gets the particles of this Particle System.
+--- @param particles Unity.Collections.NativeArray`1 
 --- @return number The number of particles written to the input particle array (the number of particles currently alive).
 function UnityEngine.ParticleSystem:GetParticles(particles) end
 
@@ -175,6 +181,7 @@ function UnityEngine.ParticleSystem:SetPlaybackState(playbackState) end
 function UnityEngine.ParticleSystem:GetTrails() end
 
 --- Use this method with the results of an earlier call to ParticleSystem.GetTrails, in order to restore the Particle System to the state stored in the Trails object.
+--- @param trailData UnityEngine.ParticleSystem.Trails 
 function UnityEngine.ParticleSystem:SetTrails(trailData) end
 
 --- Fast-forwards the Particle System by simulating particles over the given period of time, then pauses it.
@@ -185,12 +192,18 @@ function UnityEngine.ParticleSystem:SetTrails(trailData) end
 function UnityEngine.ParticleSystem:Simulate(t, withChildren, restart, fixedTimeStep) end
 
 --- Fast-forwards the Particle System by simulating particles over the given period of time, then pauses it.
+--- @param t number 
+--- @param withChildren boolean 
+--- @param restart boolean 
 function UnityEngine.ParticleSystem:Simulate(t, withChildren, restart) end
 
 --- Fast-forwards the Particle System by simulating particles over the given period of time, then pauses it.
+--- @param t number 
+--- @param withChildren boolean 
 function UnityEngine.ParticleSystem:Simulate(t, withChildren) end
 
 --- Fast-forwards the Particle System by simulating particles over the given period of time, then pauses it.
+--- @param t number 
 function UnityEngine.ParticleSystem:Simulate(t) end
 
 --- Starts the Particle System.
@@ -213,6 +226,7 @@ function UnityEngine.ParticleSystem:Pause() end
 function UnityEngine.ParticleSystem:Stop(withChildren, stopBehavior) end
 
 --- Stops playing the Particle System using the supplied stop behaviour.
+--- @param withChildren boolean 
 function UnityEngine.ParticleSystem:Stop(withChildren) end
 
 --- Stops playing the Particle System using the supplied stop behaviour.
@@ -248,9 +262,13 @@ function UnityEngine.ParticleSystem:Emit(emitParams, count) end
 function UnityEngine.ParticleSystem:TriggerSubEmitter(subEmitterIndex) end
 
 --- Triggers the specified sub emitter on all particles of the Particle System.
+--- @param subEmitterIndex number 
+--- @param particle UnityEngine.Particle& 
 function UnityEngine.ParticleSystem:TriggerSubEmitter(subEmitterIndex, particle) end
 
 --- Triggers the specified sub emitter on all particles of the Particle System.
+--- @param subEmitterIndex number 
+--- @param particles UnityEngine.ParticleSystem.Particle[] 
 function UnityEngine.ParticleSystem:TriggerSubEmitter(subEmitterIndex, particles) end
 
 --- 
@@ -265,42 +283,61 @@ function UnityEngine.ParticleSystem:Emit(position, velocity, size, lifetime, col
 --- @param particle UnityEngine.ParticleSystem.Particle 
 function UnityEngine.ParticleSystem:Emit(particle) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_startDelay(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystem:set_loop(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystem:set_playOnAwake(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_playbackSpeed(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystem:set_enableEmission(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_emissionRate(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_startSpeed(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_startSize(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.ParticleSystem:set_startColor(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_startRotation(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ParticleSystem:set_startRotation3D(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_startLifetime(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_gravityModifier(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_maxParticles(value) end
 
+--- @param value UnityEngine.ParticleSystemSimulationSpace 
 function UnityEngine.ParticleSystem:set_simulationSpace(value) end
 
+--- @param value UnityEngine.ParticleSystemScalingMode 
 function UnityEngine.ParticleSystem:set_scalingMode(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_time(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystem:set_randomSeed(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystem:set_useAutoRandomSeed(value) end
 
 --- Sets the particles of this Particle System.
@@ -310,9 +347,12 @@ function UnityEngine.ParticleSystem:set_useAutoRandomSeed(value) end
 function UnityEngine.ParticleSystem:SetParticles(particles, size, offset) end
 
 --- Sets the particles of this Particle System.
+--- @param particles UnityEngine.ParticleSystem.Particle[] 
+--- @param size number 
 function UnityEngine.ParticleSystem:SetParticles(particles, size) end
 
 --- Sets the particles of this Particle System.
+--- @param particles UnityEngine.ParticleSystem.Particle[] 
 function UnityEngine.ParticleSystem:SetParticles(particles) end
 
 --- Sets the particles of this Particle System.
@@ -322,9 +362,12 @@ function UnityEngine.ParticleSystem:SetParticles(particles) end
 function UnityEngine.ParticleSystem:SetParticles(particles, size, offset) end
 
 --- Sets the particles of this Particle System.
+--- @param particles Unity.Collections.NativeArray`1 
+--- @param size number 
 function UnityEngine.ParticleSystem:SetParticles(particles, size) end
 
 --- Sets the particles of this Particle System.
+--- @param particles Unity.Collections.NativeArray`1 
 function UnityEngine.ParticleSystem:SetParticles(particles) end
 
 ---  Generated By xerysherry

@@ -2,16 +2,21 @@
 --- @field instance UnityEngine.UI.CanvasUpdateRegistry
 UnityEngine.UI.CanvasUpdateRegistry = {}
 
+--- @param element UnityEngine.UI.ICanvasElement 
 function UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(element) end
 
+--- @param element UnityEngine.UI.ICanvasElement 
 --- @return boolean
 function UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(element) end
 
+--- @param element UnityEngine.UI.ICanvasElement 
 function UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(element) end
 
+--- @param element UnityEngine.UI.ICanvasElement 
 --- @return boolean
 function UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(element) end
 
+--- @param element UnityEngine.UI.ICanvasElement 
 function UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(element) end
 
 --- @return boolean

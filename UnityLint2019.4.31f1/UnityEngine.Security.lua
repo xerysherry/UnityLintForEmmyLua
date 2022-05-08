@@ -8,10 +8,13 @@ UnityEngine.Security = {}
 function UnityEngine.Security.LoadAndVerifyAssembly(assemblyData, authorizationKey) end
 
 --- Loads an assembly and checks that it is allowed to be used in the webplayer. (Web Player is no Longer Supported).
+--- @param assemblyData number[] 
 --- @return System.Reflection.Assembly Loaded, verified, assembly, or null if the assembly cannot be verfied.
 function UnityEngine.Security.LoadAndVerifyAssembly(assemblyData) end
 
 --- Prefetch the webplayer socket security policy from a non-default port number.
+--- @param ip string 
+--- @param atPort number 
 --- @return boolean 
 function UnityEngine.Security.PrefetchSocketPolicy(ip, atPort) end
 

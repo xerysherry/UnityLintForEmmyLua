@@ -1,11 +1,15 @@
 --- @class UnityEngine.GUILayoutUtility Utility functions for implementing and extending the GUILayout class.
 UnityEngine.GUILayoutUtility = {}
 
+--- @param GroupName string 
 function UnityEngine.GUILayoutUtility.BeginGroup(GroupName) end
 
+--- @param groupName string 
 function UnityEngine.GUILayoutUtility.EndGroup(groupName) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param content UnityEngine.GUIContent 
+--- @param style UnityEngine.GUIStyle 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(content, style) end
 
@@ -19,14 +23,22 @@ function UnityEngine.GUILayoutUtility.GetRect(content, style) end
 function UnityEngine.GUILayoutUtility.GetRect(content, style, options) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param width number 
+--- @param height number 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(width, height) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param width number 
+--- @param height number 
+--- @param style UnityEngine.GUIStyle 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(width, height, style) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param width number 
+--- @param height number 
+--- @param options UnityEngine.GUILayoutOption[] 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(width, height, options) end
 
@@ -41,14 +53,28 @@ function UnityEngine.GUILayoutUtility.GetRect(width, height, options) end
 function UnityEngine.GUILayoutUtility.GetRect(width, height, style, options) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param minWidth number 
+--- @param maxWidth number 
+--- @param minHeight number 
+--- @param maxHeight number 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(minWidth, maxWidth, minHeight, maxHeight) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param minWidth number 
+--- @param maxWidth number 
+--- @param minHeight number 
+--- @param maxHeight number 
+--- @param style UnityEngine.GUIStyle 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(minWidth, maxWidth, minHeight, maxHeight, style) end
 
 --- Reserve layout space for a rectangle for displaying some contents with a specific style.
+--- @param minWidth number 
+--- @param maxWidth number 
+--- @param minHeight number 
+--- @param maxHeight number 
+--- @param options UnityEngine.GUILayoutOption[] 
 --- @return UnityEngine.Rect A rectangle that is large enough to contain content when rendered in style.
 function UnityEngine.GUILayoutUtility.GetRect(minWidth, maxWidth, minHeight, maxHeight, options) end
 
@@ -69,14 +95,19 @@ function UnityEngine.GUILayoutUtility.GetRect(minWidth, maxWidth, minHeight, max
 function UnityEngine.GUILayoutUtility.GetLastRect() end
 
 --- Reserve layout space for a rectangle with a specific aspect ratio.
+--- @param aspect number 
 --- @return UnityEngine.Rect The rect for the control.
 function UnityEngine.GUILayoutUtility.GetAspectRect(aspect) end
 
 --- Reserve layout space for a rectangle with a specific aspect ratio.
+--- @param aspect number 
+--- @param style UnityEngine.GUIStyle 
 --- @return UnityEngine.Rect The rect for the control.
 function UnityEngine.GUILayoutUtility.GetAspectRect(aspect, style) end
 
 --- Reserve layout space for a rectangle with a specific aspect ratio.
+--- @param aspect number 
+--- @param options UnityEngine.GUILayoutOption[] 
 --- @return UnityEngine.Rect The rect for the control.
 function UnityEngine.GUILayoutUtility.GetAspectRect(aspect, options) end
 

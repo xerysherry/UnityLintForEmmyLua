@@ -121,58 +121,85 @@ UnityEngine.Networking.ConnectionConfig = {}
 --- @param config UnityEngine.Networking.ConnectionConfig 
 function UnityEngine.Networking.ConnectionConfig.Validate(config) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_PacketSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_FragmentSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_ResendTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_DisconnectTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_ConnectTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_MinUpdateTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_PingTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_ReducedPingTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_AllCostTimeout(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_NetworkDropThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_OverflowDropThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_MaxConnectionAttempt(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_AckDelay(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_SendDelay(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_MaxCombinedReliableMessageSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_MaxCombinedReliableMessageCount(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_MaxSentMessageQueueSize(value) end
 
+--- @param value UnityEngine.Networking.ConnectionAcksType 
 function UnityEngine.Networking.ConnectionConfig:set_AcksType(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.ConnectionConfig:set_IsAcksLong(value) end
 
+--- @param value boolean 
 function UnityEngine.Networking.ConnectionConfig:set_UsePlatformSpecificProtocols(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_InitialBandwidth(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_BandwidthPeakFactor(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_WebSocketReceiveBufferMaxSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.ConnectionConfig:set_UdpSocketReceiveBufferMaxSize(value) end
 
+--- @param value string 
 function UnityEngine.Networking.ConnectionConfig:set_SSLCertFilePath(value) end
 
+--- @param value string 
 function UnityEngine.Networking.ConnectionConfig:set_SSLPrivateKeyFilePath(value) end
 
+--- @param value string 
 function UnityEngine.Networking.ConnectionConfig:set_SSLCAFilePath(value) end
 
 --- Adds a new channel to the configuration and returns the unique id of that channel.

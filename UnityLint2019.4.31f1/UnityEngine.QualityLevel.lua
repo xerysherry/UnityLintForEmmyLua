@@ -1,3 +1,4 @@
+--- @class UnityEngine.QualityLevel
 UnityEngine.QualityLevel = {
     Fastest = 0,
     Fast = 1,

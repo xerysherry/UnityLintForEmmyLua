@@ -5,15 +5,21 @@
 ---       The index of the pass within the subshader (Read Only).
 UnityEngine.Rendering.PassIdentifier = {}
 
+--- @param lhs UnityEngine.Rendering.PassIdentifier 
+--- @param rhs UnityEngine.Rendering.PassIdentifier 
 --- @return boolean
 function UnityEngine.Rendering.PassIdentifier.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.PassIdentifier 
+--- @param rhs UnityEngine.Rendering.PassIdentifier 
 --- @return boolean
 function UnityEngine.Rendering.PassIdentifier.op_Inequality(lhs, rhs) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.Rendering.PassIdentifier:Equals(o) end
 
+--- @param rhs UnityEngine.Rendering.PassIdentifier 
 --- @return boolean
 function UnityEngine.Rendering.PassIdentifier:Equals(rhs) end
 

@@ -54,26 +54,37 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.ListView = {}
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:add_onItemChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:remove_onItemChosen(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:add_onSelectionChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:remove_onSelectionChanged(value) end
 
+--- @param value System.Collections.IList 
 function UnityEngine.UIElements.ListView:set_itemsSource(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:set_makeItem(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.ListView:set_bindItem(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.ListView:set_itemHeight(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.ListView:set_selectedIndex(value) end
 
+--- @param value UnityEngine.UIElements.SelectionType 
 function UnityEngine.UIElements.ListView:set_selectionType(value) end
 
+--- @param evt UnityEngine.UIElements.KeyDownEvent 
 function UnityEngine.UIElements.ListView:OnKeyDown(evt) end
 
 --- Scroll to a specific item index and make it visible.

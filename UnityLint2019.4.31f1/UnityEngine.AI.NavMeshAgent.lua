@@ -92,30 +92,43 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.AI.NavMeshAgent = {}
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_agentTypeID(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_walkableMask(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_areaMask(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_speed(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_angularSpeed(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_acceleration(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_updatePosition(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_updateRotation(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_updateUpAxis(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_radius(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_height(value) end
 
+--- @param value UnityEngine.AI.ObstacleAvoidanceType 
 function UnityEngine.AI.NavMeshAgent:set_obstacleAvoidanceType(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_avoidancePriority(value) end
 
 --- Sets or updates the destination thus triggering the calculation for a new path.
@@ -123,14 +136,19 @@ function UnityEngine.AI.NavMeshAgent:set_avoidancePriority(value) end
 --- @return boolean True if the destination was requested successfully, otherwise false.
 function UnityEngine.AI.NavMeshAgent:SetDestination(target) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.AI.NavMeshAgent:set_destination(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_stoppingDistance(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.AI.NavMeshAgent:set_velocity(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.AI.NavMeshAgent:set_nextPosition(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMeshAgent:set_baseOffset(value) end
 
 --- Enables or disables the current off-mesh link.
@@ -140,10 +158,13 @@ function UnityEngine.AI.NavMeshAgent:ActivateCurrentOffMeshLink(activated) end
 --- Completes the movement on the current OffMeshLink.
 function UnityEngine.AI.NavMeshAgent:CompleteOffMeshLink() end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_autoTraverseOffMeshLink(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_autoBraking(value) end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_autoRepath(value) end
 
 --- Warps agent to the provided position.
@@ -159,11 +180,13 @@ function UnityEngine.AI.NavMeshAgent:Move(offset) end
 function UnityEngine.AI.NavMeshAgent:Stop() end
 
 --- Stop movement of this agent along its current path.
+--- @param stopUpdates boolean 
 function UnityEngine.AI.NavMeshAgent:Stop(stopUpdates) end
 
 --- Resumes the movement along the current path after a pause.
 function UnityEngine.AI.NavMeshAgent:Resume() end
 
+--- @param value boolean 
 function UnityEngine.AI.NavMeshAgent:set_isStopped(value) end
 
 --- Clears the current path.
@@ -174,6 +197,7 @@ function UnityEngine.AI.NavMeshAgent:ResetPath() end
 --- @return boolean True if the path is succesfully assigned.
 function UnityEngine.AI.NavMeshAgent:SetPath(path) end
 
+--- @param value UnityEngine.AI.NavMeshPath 
 function UnityEngine.AI.NavMeshAgent:set_path(value) end
 
 --- Locate the closest NavMesh edge.

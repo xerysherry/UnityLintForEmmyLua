@@ -49,8 +49,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Tilemaps.Tilemap = {}
 
+--- @param value function 
 function UnityEngine.Tilemaps.Tilemap.add_tilemapTileChanged(value) end
 
+--- @param value function 
 function UnityEngine.Tilemaps.Tilemap.remove_tilemapTileChanged(value) end
 
 --- Sets the collider type of a.
@@ -163,18 +165,25 @@ function UnityEngine.Tilemaps.Tilemap:GetCellCenterLocal(position) end
 --- @return UnityEngine.Vector3 Center of the cell transformed into world space coordinates.
 function UnityEngine.Tilemaps.Tilemap:GetCellCenterWorld(position) end
 
+--- @param value number 
 function UnityEngine.Tilemaps.Tilemap:set_animationFrameRate(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Tilemaps.Tilemap:set_color(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.Tilemaps.Tilemap:set_origin(value) end
 
+--- @param value UnityEngine.Vector3Int 
 function UnityEngine.Tilemaps.Tilemap:set_size(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Tilemaps.Tilemap:set_tileAnchor(value) end
 
+--- @param value UnityEngine.Tilemaps.Tilemap.Orientation 
 function UnityEngine.Tilemaps.Tilemap:set_orientation(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Tilemaps.Tilemap:set_orientationMatrix(value) end
 
 --- Gets the.

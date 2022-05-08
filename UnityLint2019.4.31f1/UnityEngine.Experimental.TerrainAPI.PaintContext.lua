@@ -26,6 +26,12 @@
 UnityEngine.Experimental.TerrainAPI.PaintContext = {}
 
 --- Constructs a PaintContext that you can use to edit a texture on a Terrain, in the region defined by boundsInTerrainSpace and extraBorderPixels.
+--- @param terrain UnityEngine.Terrain 
+--- @param boundsInTerrainSpace UnityEngine.Rect 
+--- @param inputTextureWidth number 
+--- @param inputTextureHeight number 
+--- @param extraBorderPixels number 
+--- @param texelPadding boolean 
 --- @return UnityEngine.Experimental.TerrainAPI.PaintContext 
 function UnityEngine.Experimental.TerrainAPI.PaintContext.CreateFromBounds(terrain, boundsInTerrainSpace, inputTextureWidth, inputTextureHeight, extraBorderPixels, texelPadding) end
 

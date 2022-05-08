@@ -45,6 +45,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.GameObject = {}
 
+--- @param tag string 
 --- @return UnityEngine.GameObject
 function UnityEngine.GameObject.FindGameObjectWithTag(tag) end
 
@@ -68,6 +69,7 @@ function UnityEngine.GameObject.CreatePrimitive(type) end
 --- @return UnityEngine.GameObject 
 function UnityEngine.GameObject.FindWithTag(tag) end
 
+--- @param value string 
 function UnityEngine.GameObject:set_tag(value) end
 
 --- Is this game object tagged with tag ?
@@ -82,9 +84,12 @@ function UnityEngine.GameObject:CompareTag(tag) end
 function UnityEngine.GameObject:SendMessageUpwards(methodName, value, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
+--- @param methodName string 
+--- @param value System.Object 
 function UnityEngine.GameObject:SendMessageUpwards(methodName, value) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
+--- @param methodName string 
 function UnityEngine.GameObject:SendMessageUpwards(methodName) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
@@ -94,9 +99,12 @@ function UnityEngine.GameObject:SendMessageUpwards(methodName) end
 function UnityEngine.GameObject:SendMessage(methodName, value, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
+--- @param methodName string 
+--- @param value System.Object 
 function UnityEngine.GameObject:SendMessage(methodName, value) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
+--- @param methodName string 
 function UnityEngine.GameObject:SendMessage(methodName) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
@@ -106,11 +114,16 @@ function UnityEngine.GameObject:SendMessage(methodName) end
 function UnityEngine.GameObject:BroadcastMessage(methodName, parameter, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+--- @param methodName string 
+--- @param parameter System.Object 
 function UnityEngine.GameObject:BroadcastMessage(methodName, parameter) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+--- @param methodName string 
 function UnityEngine.GameObject:BroadcastMessage(methodName) end
 
+--- @param clip UnityEngine.Object 
+--- @param time number 
 function UnityEngine.GameObject:SampleAnimation(clip, time) end
 
 --- Adds a component class named className to the game object.
@@ -118,6 +131,7 @@ function UnityEngine.GameObject:SampleAnimation(clip, time) end
 --- @return UnityEngine.Component 
 function UnityEngine.GameObject:AddComponent(className) end
 
+--- @param animation UnityEngine.Object 
 function UnityEngine.GameObject:PlayAnimation(animation) end
 
 function UnityEngine.GameObject:StopAnimation() end
@@ -143,6 +157,7 @@ function UnityEngine.GameObject:GetComponent(type) end
 function UnityEngine.GameObject:GetComponentInChildren(type, includeInactive) end
 
 --- Returns the component of Type type in the GameObject or any of its children using depth first search.
+--- @param type System.Type 
 --- @return UnityEngine.Component A component of the matching type, if found.
 function UnityEngine.GameObject:GetComponentInChildren(type) end
 
@@ -183,6 +198,7 @@ function UnityEngine.GameObject:GetComponents(type, results) end
 function UnityEngine.GameObject:GetComponents(results) end
 
 --- Returns all components of Type type in the GameObject or any of its children.
+--- @param type System.Type 
 --- @return UnityEngine.Component[] 
 function UnityEngine.GameObject:GetComponentsInChildren(type) end
 
@@ -198,6 +214,8 @@ function UnityEngine.GameObject:GetComponentsInChildren(type, includeInactive) e
 function UnityEngine.GameObject:GetComponentsInChildren(includeInactive) end
 
 --- Returns all components of Type type in the GameObject or any of its children.
+--- @param includeInactive boolean 
+--- @param results UnityEngine.GameObject.T[] 
 function UnityEngine.GameObject:GetComponentsInChildren(includeInactive, results) end
 
 --- Returns all components of Type type in the GameObject or any of its children.
@@ -205,9 +223,11 @@ function UnityEngine.GameObject:GetComponentsInChildren(includeInactive, results
 function UnityEngine.GameObject:GetComponentsInChildren() end
 
 --- Returns all components of Type type in the GameObject or any of its children.
+--- @param results UnityEngine.GameObject.T[] 
 function UnityEngine.GameObject:GetComponentsInChildren(results) end
 
 --- Returns all components of Type type in the GameObject or any of its parents.
+--- @param type System.Type 
 --- @return UnityEngine.Component[] 
 function UnityEngine.GameObject:GetComponentsInParent(type) end
 
@@ -266,16 +286,20 @@ function UnityEngine.GameObject:AddComponent(componentType) end
 --- @return UnityEngine.GameObject.T 
 function UnityEngine.GameObject:AddComponent() end
 
+--- @param value number 
 function UnityEngine.GameObject:set_layer(value) end
 
+--- @param value boolean 
 function UnityEngine.GameObject:set_active(value) end
 
 --- ActivatesDeactivates the GameObject, depending on the given true or false/ value.
 --- @param value boolean Activate or deactivate the object, where true activates the GameObject and false deactivates the GameObject.
 function UnityEngine.GameObject:SetActive(value) end
 
+--- @param state boolean 
 function UnityEngine.GameObject:SetActiveRecursively(state) end
 
+--- @param value boolean 
 function UnityEngine.GameObject:set_isStatic(value) end
 
 ---  Generated By xerysherry

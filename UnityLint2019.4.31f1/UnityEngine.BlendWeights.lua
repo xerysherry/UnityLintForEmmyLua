@@ -1,3 +1,4 @@
+--- @class UnityEngine.BlendWeights
 UnityEngine.BlendWeights = {
 }
 

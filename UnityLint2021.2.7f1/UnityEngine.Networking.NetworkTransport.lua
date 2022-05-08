@@ -9,13 +9,18 @@ UnityEngine.Networking.NetworkTransport = {}
 function UnityEngine.Networking.NetworkTransport.DoesEndPointUsePlatformProtocols(endPoint) end
 
 --- Try to establish connection to other peer, where the peer is specified using a C# System.EndPoint.
+--- @param hostId number 
+--- @param endPoint System.Net.EndPoint 
+--- @param exceptionConnectionId number 
 --- @return number A unique connection identifier on success (otherwise zero).
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.ConnectEndPoint(hostId, endPoint, exceptionConnectionId) end
 
 --- Initializes the NetworkTransport. Should be called before any other operations on the NetworkTransport are done.
 function UnityEngine.Networking.NetworkTransport.Init() end
 
 --- Initializes the NetworkTransport. Should be called before any other operations on the NetworkTransport are done.
+--- @param config UnityEngine.Networking.GlobalConfig 
 function UnityEngine.Networking.NetworkTransport.Init(config) end
 
 --- Shut down the NetworkTransport.
@@ -26,6 +31,7 @@ function UnityEngine.Networking.NetworkTransport.Shutdown() end
 --- @return string The assetId of the game object's Prefab.
 function UnityEngine.Networking.NetworkTransport.GetAssetId(go) end
 
+--- @param id number 
 function UnityEngine.Networking.NetworkTransport.AddSceneId(id) end
 
 --- @return number
@@ -41,10 +47,17 @@ function UnityEngine.Networking.NetworkTransport.GetNextSceneId() end
 function UnityEngine.Networking.NetworkTransport.AddHostWithSimulator(topology, minTimeout, maxTimeout, port, ip) end
 
 --- Create a host and configure them to simulate Internet latency (works on Editor and development build only).
+--- @param topology UnityEngine.Networking.HostTopology 
+--- @param minTimeout number 
+--- @param maxTimeout number 
+--- @param port number 
 --- @return number Returns host ID just created.
 function UnityEngine.Networking.NetworkTransport.AddHostWithSimulator(topology, minTimeout, maxTimeout, port) end
 
 --- Create a host and configure them to simulate Internet latency (works on Editor and development build only).
+--- @param topology UnityEngine.Networking.HostTopology 
+--- @param minTimeout number 
+--- @param maxTimeout number 
 --- @return number Returns host ID just created.
 function UnityEngine.Networking.NetworkTransport.AddHostWithSimulator(topology, minTimeout, maxTimeout) end
 
@@ -56,22 +69,37 @@ function UnityEngine.Networking.NetworkTransport.AddHostWithSimulator(topology, 
 function UnityEngine.Networking.NetworkTransport.AddHost(topology, port, ip) end
 
 --- Creates a host based on Networking.HostTopology.
+--- @param topology UnityEngine.Networking.HostTopology 
+--- @param port number 
 --- @return number Returns the ID of the host that was created.
 function UnityEngine.Networking.NetworkTransport.AddHost(topology, port) end
 
 --- Creates a host based on Networking.HostTopology.
+--- @param topology UnityEngine.Networking.HostTopology 
 --- @return number Returns the ID of the host that was created.
 function UnityEngine.Networking.NetworkTransport.AddHost(topology) end
 
 --- Created web socket host.
+--- @param topology UnityEngine.Networking.HostTopology 
+--- @param port number 
+--- @param ip string 
 --- @return number Web socket host id.
 function UnityEngine.Networking.NetworkTransport.AddWebsocketHost(topology, port, ip) end
 
 --- Created web socket host.
+--- @param topology UnityEngine.Networking.HostTopology 
+--- @param port number 
 --- @return number Web socket host id.
 function UnityEngine.Networking.NetworkTransport.AddWebsocketHost(topology, port) end
 
 --- Create dedicated connection to Relay server.
+--- @param hostId number 
+--- @param address string 
+--- @param port number 
+--- @param network UnityEngine.Networking.Types.NetworkID 
+--- @param source UnityEngine.Networking.Types.SourceID 
+--- @param node UnityEngine.Networking.Types.NodeID 
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.ConnectAsNetworkHost(hostId, address, port, network, source, node) end
 
 --- This will disconnect the host and disband the group.
@@ -88,11 +116,31 @@ function UnityEngine.Networking.NetworkTransport.DisconnectNetworkHost(hostId) e
 function UnityEngine.Networking.NetworkTransport.ReceiveRelayEventFromHost(hostId) end
 
 --- Create a connection to another peer in the Relay group.
+--- @param hostId number 
+--- @param address string 
+--- @param port number 
+--- @param exceptionConnectionId number 
+--- @param relaySlotId number 
+--- @param network UnityEngine.Networking.Types.NetworkID 
+--- @param source UnityEngine.Networking.Types.SourceID 
+--- @param node UnityEngine.Networking.Types.NodeID 
+--- @param bytesPerSec number 
+--- @param bucketSizeFactor number 
 --- @return number A unique connection identifier on success (otherwise zero).
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.ConnectToNetworkPeer(hostId, address, port, exceptionConnectionId, relaySlotId, network, source, node, bytesPerSec, bucketSizeFactor) end
 
 --- Create a connection to another peer in the Relay group.
+--- @param hostId number 
+--- @param address string 
+--- @param port number 
+--- @param exceptionConnectionId number 
+--- @param relaySlotId number 
+--- @param network UnityEngine.Networking.Types.NetworkID 
+--- @param source UnityEngine.Networking.Types.SourceID 
+--- @param node UnityEngine.Networking.Types.NodeID 
 --- @return number A unique connection identifier on success (otherwise zero).
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.ConnectToNetworkPeer(hostId, address, port, exceptionConnectionId, relaySlotId, network, source, node) end
 
 --- Returns the number of unread messages in the read-queue.
@@ -116,10 +164,16 @@ function UnityEngine.Networking.NetworkTransport.GetIncomingMessageQueueSize(hos
 function UnityEngine.Networking.NetworkTransport.GetOutgoingMessageQueueSize(hostId) end
 
 --- Return the round trip time for the given connectionId.
+--- @param hostId number 
+--- @param connectionId number 
 --- @return number Current round trip time in ms.
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.GetCurrentRTT(hostId, connectionId) end
 
+--- @param hostId number 
+--- @param connectionId number 
 --- @return number
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.GetCurrentRtt(hostId, connectionId) end
 
 --- Returns how many incoming packets have been lost due transmitting (dropped by network).
@@ -290,10 +344,23 @@ function UnityEngine.Networking.NetworkTransport.GetRemotePacketReceivedRate(hos
 function UnityEngine.Networking.NetworkTransport.GetNetIOTimeuS() end
 
 --- Returns the connection parameters for the specified connectionId. These parameters can be sent to other users to establish a direct connection to this peer. If this peer is connected to the host via Relay, the Relay-related parameters are set.
+--- @param hostId number 
+--- @param connectionId number 
 --- @return string 
+--- @return System.Int32& 
+--- @return System.UInt64& 
+--- @return System.UInt16& 
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.GetConnectionInfo(hostId, connectionId) end
 
 --- Returns the connection parameters for the specified connectionId. These parameters can be sent to other users to establish a direct connection to this peer. If this peer is connected to the host via Relay, the Relay-related parameters are set.
+--- @param hostId number 
+--- @param connectionId number 
+--- @return System.String& 
+--- @return System.Int32& 
+--- @return UnityEngine.Networking.Types.NetworkID& 
+--- @return UnityEngine.Networking.Types.NodeID& 
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.GetConnectionInfo(hostId, connectionId) end
 
 --- Get a network timestamp. Can be used in your messages to investigate network delays together with Networking.GetRemoteDelayTimeMS.
@@ -336,7 +403,12 @@ function UnityEngine.Networking.NetworkTransport.FinishSendMulticast(hostId) end
 function UnityEngine.Networking.NetworkTransport.RemoveHost(hostId) end
 
 --- Tries to establish a connection to another peer.
+--- @param hostId number 
+--- @param address string 
+--- @param port number 
+--- @param exeptionConnectionId number 
 --- @return number A unique connection identifier on success (otherwise zero).
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.Connect(hostId, address, port, exeptionConnectionId) end
 
 --- Connect with simulated latency.
@@ -367,7 +439,13 @@ function UnityEngine.Networking.NetworkTransport.Disconnect(hostId, connectionId
 function UnityEngine.Networking.NetworkTransport.Send(hostId, connectionId, channelId, buffer, size) end
 
 --- Function is queueing but not sending messages.
+--- @param hostId number 
+--- @param connectionId number 
+--- @param channelId number 
+--- @param buffer number[] 
+--- @param size number 
 --- @return boolean True if success.
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.QueueMessageForSending(hostId, connectionId, channelId, buffer, size) end
 
 --- Sends messages, previously queued by NetworkTransport.QueueMessageForSending function.
@@ -400,6 +478,10 @@ function UnityEngine.Networking.NetworkTransport.Receive(buffer, bufferSize) end
 function UnityEngine.Networking.NetworkTransport.ReceiveFromHost(hostId, buffer, bufferSize) end
 
 --- Used to inform the profiler of network packet statistics.
+--- @param direction number 
+--- @param packetStatId number 
+--- @param numMsgs number 
+--- @param numBytes number 
 function UnityEngine.Networking.NetworkTransport.SetPacketStat(direction, packetStatId, numMsgs, numBytes) end
 
 --- This method allows you to specify that notifications callbacks should be called when Unity's networking can send more messages than defined in notificationLevel.
@@ -444,7 +526,10 @@ function UnityEngine.Networking.NetworkTransport.IsBroadcastDiscoveryRunning() e
 function UnityEngine.Networking.NetworkTransport.SetBroadcastCredentials(hostId, key, version, subversion) end
 
 --- After Networking.NetworkTransport.Receive() returns Networking.NetworkEventType.BroadcastEvent, this function will return the connection information of the broadcast sender. This information can then be used for connecting to the broadcast sender.
+--- @param hostId number 
 --- @return string 
+--- @return System.Int32& 
+--- @return System.Byte& 
 function UnityEngine.Networking.NetworkTransport.GetBroadcastConnectionInfo(hostId) end
 
 --- After Networking.NetworkTransport.Receive() returns Networking.NetworkEventType.BroadcastEvent, this function will return the connection information of the broadcast sender. This information can then be used for connecting to the broadcast sender.

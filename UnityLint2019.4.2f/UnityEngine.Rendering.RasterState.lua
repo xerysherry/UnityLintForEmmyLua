@@ -10,23 +10,33 @@
 ---       Scales the maximum Z slope.
 UnityEngine.Rendering.RasterState = {}
 
+--- @param left UnityEngine.Rendering.RasterState 
+--- @param right UnityEngine.Rendering.RasterState 
 --- @return boolean
 function UnityEngine.Rendering.RasterState.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.RasterState 
+--- @param right UnityEngine.Rendering.RasterState 
 --- @return boolean
 function UnityEngine.Rendering.RasterState.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.CullMode 
 function UnityEngine.Rendering.RasterState:set_cullingMode(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.RasterState:set_depthClip(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.RasterState:set_offsetUnits(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.RasterState:set_offsetFactor(value) end
 
+--- @param other UnityEngine.Rendering.RasterState 
 --- @return boolean
 function UnityEngine.Rendering.RasterState:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.RasterState:Equals(obj) end
 

@@ -56,24 +56,34 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.RectTransform = {}
 
+--- @param value function 
 function UnityEngine.RectTransform.add_reapplyDrivenProperties(value) end
 
+--- @param value function 
 function UnityEngine.RectTransform.remove_reapplyDrivenProperties(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_anchorMin(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_anchorMax(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_anchoredPosition(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_sizeDelta(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_pivot(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.RectTransform:set_anchoredPosition3D(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_offsetMin(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.RectTransform:set_offsetMax(value) end
 
 --- Force the recalculation of RectTransforms internal data.

@@ -70,6 +70,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Cloth = {}
 
+--- @param value number 
 function UnityEngine.Cloth:set_useContinuousCollision(value) end
 
 --- Fade the cloth simulation in or out.
@@ -78,6 +79,7 @@ function UnityEngine.Cloth:set_useContinuousCollision(value) end
 function UnityEngine.Cloth:SetEnabledFading(enabled, interpolationTime) end
 
 --- Fade the cloth simulation in or out.
+--- @param enabled boolean 
 function UnityEngine.Cloth:SetEnabledFading(enabled) end
 
 --- Get list of indices to be used when generating virtual particles.
@@ -104,50 +106,73 @@ function UnityEngine.Cloth:GetSelfAndInterCollisionIndices(indices) end
 --- @param indices number[] List of cloth particles indices to use for cloth self and/or inter collision.
 function UnityEngine.Cloth:SetSelfAndInterCollisionIndices(indices) end
 
+--- @param value UnityEngine.ClothSkinningCoefficient[] 
 function UnityEngine.Cloth:set_coefficients(value) end
 
+--- @param value UnityEngine.CapsuleCollider[] 
 function UnityEngine.Cloth:set_capsuleColliders(value) end
 
+--- @param value UnityEngine.ClothSphereColliderPair[] 
 function UnityEngine.Cloth:set_sphereColliders(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_sleepThreshold(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_bendingStiffness(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_stretchingStiffness(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_damping(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Cloth:set_externalAcceleration(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Cloth:set_randomAcceleration(value) end
 
+--- @param value boolean 
 function UnityEngine.Cloth:set_useGravity(value) end
 
+--- @param value boolean 
 function UnityEngine.Cloth:set_enabled(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_friction(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_collisionMassScale(value) end
 
+--- @param value boolean 
 function UnityEngine.Cloth:set_enableContinuousCollision(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_useVirtualParticles(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_worldVelocityScale(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_worldAccelerationScale(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_clothSolverFrequency(value) end
 
+--- @param value boolean 
 function UnityEngine.Cloth:set_solverFrequency(value) end
 
+--- @param value boolean 
 function UnityEngine.Cloth:set_useTethers(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_stiffnessFrequency(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_selfCollisionDistance(value) end
 
+--- @param value number 
 function UnityEngine.Cloth:set_selfCollisionStiffness(value) end
 
 --- Clear the pending transform changes from affecting the cloth simulation.

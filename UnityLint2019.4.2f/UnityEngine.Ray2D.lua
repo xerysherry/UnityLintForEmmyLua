@@ -5,8 +5,10 @@
 ---       The direction of the ray in world space.
 UnityEngine.Ray2D = {}
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Ray2D:set_origin(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Ray2D:set_direction(value) end
 
 --- Get a point that lies a given distance along a ray.
@@ -17,6 +19,7 @@ function UnityEngine.Ray2D:GetPoint(distance) end
 --- @return string
 function UnityEngine.Ray2D:ToString() end
 
+--- @param format string 
 --- @return string
 function UnityEngine.Ray2D:ToString(format) end
 

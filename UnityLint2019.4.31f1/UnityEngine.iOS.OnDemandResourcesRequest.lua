@@ -9,6 +9,7 @@
 --- @field allowSceneActivation boolean
 UnityEngine.iOS.OnDemandResourcesRequest = {}
 
+--- @param value number 
 function UnityEngine.iOS.OnDemandResourcesRequest:set_loadingPriority(value) end
 
 --- Gets file system's path to the resource available in On Demand Resources (ODR) request.

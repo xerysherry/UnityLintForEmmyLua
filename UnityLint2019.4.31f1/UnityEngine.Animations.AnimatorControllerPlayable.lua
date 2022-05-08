@@ -9,31 +9,48 @@ UnityEngine.Animations.AnimatorControllerPlayable = {}
 --- @return UnityEngine.Animations.AnimatorControllerPlayable A AnimatorControllerPlayable.
 function UnityEngine.Animations.AnimatorControllerPlayable.Create(graph, controller) end
 
+--- @param playable UnityEngine.Animations.AnimatorControllerPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Animations.AnimatorControllerPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Animations.AnimatorControllerPlayable
 function UnityEngine.Animations.AnimatorControllerPlayable.op_Explicit(playable) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateNameHash, layer, fixedTime) end
 
 --- Plays a state.
+--- @param stateName string 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateName) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateName, layer) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateName, layer, normalizedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateNameHash) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateNameHash, layer) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:Play(stateNameHash, layer, normalizedTime) end
 
 --- Returns true if the state exists in this layer, false otherwise.
@@ -45,70 +62,96 @@ function UnityEngine.Animations.AnimatorControllerPlayable:HasState(layerIndex, 
 --- @return UnityEngine.Playables.PlayableHandle
 function UnityEngine.Animations.AnimatorControllerPlayable:GetHandle() end
 
+--- @param handle UnityEngine.Playables.PlayableHandle 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetHandle(handle) end
 
+--- @param other UnityEngine.Animations.AnimatorControllerPlayable 
 --- @return boolean
 function UnityEngine.Animations.AnimatorControllerPlayable:Equals(other) end
 
 --- Returns the value of the given float parameter.
+--- @param name string 
 --- @return number The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetFloat(name) end
 
 --- Returns the value of the given float parameter.
+--- @param id number 
 --- @return number The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetFloat(id) end
 
 --- Send float values to the AnimatorController to affect transitions.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetFloat(name, value) end
 
 --- Send float values to the AnimatorController to affect transitions.
+--- @param id number 
+--- @param value number 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetFloat(id, value) end
 
 --- Returns the value of the given boolean parameter.
+--- @param name string 
 --- @return boolean The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetBool(name) end
 
 --- Returns the value of the given boolean parameter.
+--- @param id number 
 --- @return boolean The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetBool(id) end
 
 --- Sets the value of the given boolean parameter.
+--- @param name string 
+--- @param value boolean 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetBool(name, value) end
 
 --- Sets the value of the given boolean parameter.
+--- @param id number 
+--- @param value boolean 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetBool(id, value) end
 
 --- Returns the value of the given integer parameter.
+--- @param name string 
 --- @return number The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetInteger(name) end
 
 --- Returns the value of the given integer parameter.
+--- @param id number 
 --- @return number The value of the parameter.
 function UnityEngine.Animations.AnimatorControllerPlayable:GetInteger(id) end
 
 --- Sets the value of the given integer parameter.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetInteger(name, value) end
 
 --- Sets the value of the given integer parameter.
+--- @param id number 
+--- @param value number 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetInteger(id, value) end
 
 --- Sets the value of the given trigger parameter.
+--- @param name string 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetTrigger(name) end
 
 --- Sets the value of the given trigger parameter.
+--- @param id number 
 function UnityEngine.Animations.AnimatorControllerPlayable:SetTrigger(id) end
 
 --- Resets the value of the given trigger parameter.
+--- @param name string 
 function UnityEngine.Animations.AnimatorControllerPlayable:ResetTrigger(name) end
 
 --- Resets the value of the given trigger parameter.
+--- @param id number 
 function UnityEngine.Animations.AnimatorControllerPlayable:ResetTrigger(id) end
 
 --- Returns true if the parameter is controlled by a curve, false otherwise.
+--- @param name string 
 --- @return boolean True if the parameter is controlled by a curve, false otherwise.
 function UnityEngine.Animations.AnimatorControllerPlayable:IsParameterControlledByCurve(name) end
 
 --- Returns true if the parameter is controlled by a curve, false otherwise.
+--- @param id number 
 --- @return boolean True if the parameter is controlled by a curve, false otherwise.
 function UnityEngine.Animations.AnimatorControllerPlayable:IsParameterControlledByCurve(id) end
 
@@ -156,9 +199,13 @@ function UnityEngine.Animations.AnimatorControllerPlayable:GetAnimatorTransition
 function UnityEngine.Animations.AnimatorControllerPlayable:GetCurrentAnimatorClipInfo(layerIndex) end
 
 --- Returns an array of all the AnimatorClipInfo in the current state of the given layer.
+--- @param layerIndex number 
+--- @param clips UnityEngine.AnimatorClipInfo[] 
 function UnityEngine.Animations.AnimatorControllerPlayable:GetCurrentAnimatorClipInfo(layerIndex, clips) end
 
 --- Returns an array of all the AnimatorClipInfo in the next state of the given layer.
+--- @param layerIndex number 
+--- @param clips UnityEngine.AnimatorClipInfo[] 
 function UnityEngine.Animations.AnimatorControllerPlayable:GetNextAnimatorClipInfo(layerIndex, clips) end
 
 --- Returns the number of AnimatorClipInfo in the current state.
@@ -190,54 +237,99 @@ function UnityEngine.Animations.AnimatorControllerPlayable:GetParameterCount() e
 function UnityEngine.Animations.AnimatorControllerPlayable:GetParameter(index) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param transitionDuration number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateName, transitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param transitionDuration number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateName, transitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param transitionDuration number 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateName, transitionDuration, layer, fixedTime) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateNameHash, transitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateNameHash, transitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFadeInFixedTime(stateNameHash, transitionDuration, layer, fixedTime) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param transitionDuration number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateName, transitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param transitionDuration number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateName, transitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param transitionDuration number 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateName, transitionDuration, layer, normalizedTime) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateNameHash, transitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateNameHash, transitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateNameHash number 
+--- @param transitionDuration number 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:CrossFade(stateNameHash, transitionDuration, layer, normalizedTime) end
 
 --- Plays a state.
+--- @param stateName string 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateName) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateName, layer) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateName, layer, fixedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateNameHash) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
 function UnityEngine.Animations.AnimatorControllerPlayable:PlayInFixedTime(stateNameHash, layer) end
 
 ---  Generated By xerysherry

@@ -53,9 +53,13 @@ function UnityEngine.Rect.NormalizedToPoint(rectangle, normalizedRectCoordinates
 --- @return UnityEngine.Vector2 
 function UnityEngine.Rect.PointToNormalized(rectangle, point) end
 
+--- @param lhs UnityEngine.Rect 
+--- @param rhs UnityEngine.Rect 
 --- @return boolean
 function UnityEngine.Rect.op_Inequality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rect 
+--- @param rhs UnityEngine.Rect 
 --- @return boolean
 function UnityEngine.Rect.op_Equality(lhs, rhs) end
 
@@ -66,37 +70,52 @@ function UnityEngine.Rect.op_Equality(lhs, rhs) end
 --- @param height number 
 function UnityEngine.Rect:Set(x, y, width, height) end
 
+--- @param value number 
 function UnityEngine.Rect:set_x(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_y(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rect:set_position(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rect:set_center(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rect:set_min(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rect:set_max(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_width(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_height(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Rect:set_size(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_xMin(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_yMin(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_xMax(value) end
 
+--- @param value number 
 function UnityEngine.Rect:set_yMax(value) end
 
 --- Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+--- @param point UnityEngine.Vector2 
 --- @return boolean True if the point lies within the specified rectangle.
 function UnityEngine.Rect:Contains(point) end
 
 --- Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+--- @param point UnityEngine.Vector3 
 --- @return boolean True if the point lies within the specified rectangle.
 function UnityEngine.Rect:Contains(point) end
 
@@ -107,6 +126,7 @@ function UnityEngine.Rect:Contains(point) end
 function UnityEngine.Rect:Contains(point, allowInverse) end
 
 --- Returns true if the other rectangle overlaps this one. If allowInverse is present and true, the widths and heights of the Rects are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+--- @param other UnityEngine.Rect 
 --- @return boolean 
 function UnityEngine.Rect:Overlaps(other) end
 
@@ -119,9 +139,11 @@ function UnityEngine.Rect:Overlaps(other, allowInverse) end
 --- @return number
 function UnityEngine.Rect:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Rect:Equals(other) end
 
+--- @param other UnityEngine.Rect 
 --- @return boolean
 function UnityEngine.Rect:Equals(other) end
 
@@ -130,6 +152,7 @@ function UnityEngine.Rect:Equals(other) end
 function UnityEngine.Rect:ToString() end
 
 --- Returns a formatted string for this Rect.
+--- @param format string 
 --- @return string 
 function UnityEngine.Rect:ToString(format) end
 

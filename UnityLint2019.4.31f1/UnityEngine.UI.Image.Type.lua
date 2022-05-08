@@ -1,10 +1,4 @@
-UnityEngine.UI.Image.Type = {
-    Simple = 0,
-    Sliced = 1,
-    Tiled = 2,
-    Filled = 3,
-}
-
+--- @class UnityEngine.UI.Image.Type
 UnityEngine.UI.Image.Type = {
     Simple = 0,
     Sliced = 1,

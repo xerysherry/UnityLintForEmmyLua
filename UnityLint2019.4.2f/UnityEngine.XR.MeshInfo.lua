@@ -7,21 +7,30 @@
 ---       A hint that can be used to determine when this mesh should be processed.
 UnityEngine.XR.MeshInfo = {}
 
+--- @param lhs UnityEngine.XR.MeshInfo 
+--- @param rhs UnityEngine.XR.MeshInfo 
 --- @return boolean
 function UnityEngine.XR.MeshInfo.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.XR.MeshInfo 
+--- @param rhs UnityEngine.XR.MeshInfo 
 --- @return boolean
 function UnityEngine.XR.MeshInfo.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.XR.MeshId 
 function UnityEngine.XR.MeshInfo:set_MeshId(value) end
 
+--- @param value UnityEngine.XR.MeshChangeState 
 function UnityEngine.XR.MeshInfo:set_ChangeState(value) end
 
+--- @param value number 
 function UnityEngine.XR.MeshInfo:set_PriorityHint(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.MeshInfo:Equals(obj) end
 
+--- @param other UnityEngine.XR.MeshInfo 
 --- @return boolean
 function UnityEngine.XR.MeshInfo:Equals(other) end
 

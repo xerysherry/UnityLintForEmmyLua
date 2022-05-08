@@ -1,8 +1,10 @@
 --- @class UnityEngine.TextCore.Text.FastAction 
 UnityEngine.TextCore.Text.FastAction = {}
 
+--- @param rhs function 
 function UnityEngine.TextCore.Text.FastAction:Add(rhs) end
 
+--- @param rhs function 
 function UnityEngine.TextCore.Text.FastAction:Remove(rhs) end
 
 function UnityEngine.TextCore.Text.FastAction:Call() end

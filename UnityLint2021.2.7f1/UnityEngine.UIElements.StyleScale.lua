@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleScale = {}
 
+--- @param lhs UnityEngine.UIElements.StyleScale 
+--- @param rhs UnityEngine.UIElements.StyleScale 
 --- @return boolean
 function UnityEngine.UIElements.StyleScale.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleScale 
+--- @param rhs UnityEngine.UIElements.StyleScale 
 --- @return boolean
 function UnityEngine.UIElements.StyleScale.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleScale
 function UnityEngine.UIElements.StyleScale.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.Scale 
 --- @return UnityEngine.UIElements.StyleScale
 function UnityEngine.UIElements.StyleScale.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Scale 
 function UnityEngine.UIElements.StyleScale:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleScale:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleScale 
 --- @return boolean
 function UnityEngine.UIElements.StyleScale:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleScale:Equals(obj) end
 

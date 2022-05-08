@@ -19,10 +19,13 @@
 ---       Defer system gestures until the second swipe on specific edges.
 UnityEngine.iOS.Device = {}
 
+--- @param value boolean 
 function UnityEngine.iOS.Device.set_hideHomeButton(value) end
 
+--- @param value boolean 
 function UnityEngine.iOS.Device.set_wantsSoftwareDimming(value) end
 
+--- @param value UnityEngine.iOS.SystemGestureDeferMode 
 function UnityEngine.iOS.Device.set_deferSystemGesturesMode(value) end
 
 --- Set file flag to be excluded from iCloud/iTunes backup.

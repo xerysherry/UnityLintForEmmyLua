@@ -49,48 +49,70 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.GUISkin = {}
 
+--- @param value UnityEngine.Font 
 function UnityEngine.GUISkin:set_font(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_box(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_label(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_textField(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_textArea(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_button(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_toggle(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_window(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalSlider(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalSliderThumb(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalSlider(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalSliderThumb(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalScrollbar(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalScrollbarThumb(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalScrollbarLeftButton(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_horizontalScrollbarRightButton(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalScrollbar(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalScrollbarThumb(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalScrollbarUpButton(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_verticalScrollbarDownButton(value) end
 
+--- @param value UnityEngine.GUIStyle 
 function UnityEngine.GUISkin:set_scrollView(value) end
 
+--- @param value UnityEngine.GUIStyle[] 
 function UnityEngine.GUISkin:set_customStyles(value) end
 
 --- Get a named GUIStyle.

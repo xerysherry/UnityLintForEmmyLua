@@ -1,9 +1,13 @@
 --- @class UnityEngine.PhysicsScene Represents a single instance of a 3D physics Scene.
 UnityEngine.PhysicsScene = {}
 
+--- @param lhs UnityEngine.PhysicsScene 
+--- @param rhs UnityEngine.PhysicsScene 
 --- @return boolean
 function UnityEngine.PhysicsScene.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.PhysicsScene 
+--- @param rhs UnityEngine.PhysicsScene 
 --- @return boolean
 function UnityEngine.PhysicsScene.op_Inequality(lhs, rhs) end
 
@@ -13,9 +17,11 @@ function UnityEngine.PhysicsScene:ToString() end
 --- @return number
 function UnityEngine.PhysicsScene:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.PhysicsScene:Equals(other) end
 
+--- @param other UnityEngine.PhysicsScene 
 --- @return boolean
 function UnityEngine.PhysicsScene:Equals(other) end
 
@@ -138,7 +144,11 @@ function UnityEngine.PhysicsScene:OverlapSphere(position, radius, results, layer
 function UnityEngine.PhysicsScene:BoxCast(center, halfExtents, direction, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
 --- @return boolean True, if any intersections were found.
+--- @return UnityEngine.RaycastHit& 
 function UnityEngine.PhysicsScene:BoxCast(center, halfExtents, direction) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
@@ -152,6 +162,9 @@ function UnityEngine.PhysicsScene:BoxCast(center, halfExtents, direction) end
 function UnityEngine.PhysicsScene:OverlapBox(center, halfExtents, results, orientation, layerMask, queryTriggerInteraction) end
 
 --- Find all colliders touching or inside of the given box, and store them into the buffer.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param results UnityEngine.Collider[] 
 --- @return number The amount of colliders stored in results.
 function UnityEngine.PhysicsScene:OverlapBox(center, halfExtents, results) end
 
@@ -168,6 +181,10 @@ function UnityEngine.PhysicsScene:OverlapBox(center, halfExtents, results) end
 function UnityEngine.PhysicsScene:BoxCast(center, halfExtents, direction, results, orientation, maxDistance, layerMask, queryTriggerInteraction) end
 
 --- Casts the box along a ray and returns detailed information on what was hit.
+--- @param center UnityEngine.Vector3 
+--- @param halfExtents UnityEngine.Vector3 
+--- @param direction UnityEngine.Vector3 
+--- @param results UnityEngine.RaycastHit[] 
 --- @return number True, if any intersections were found.
 function UnityEngine.PhysicsScene:BoxCast(center, halfExtents, direction, results) end
 

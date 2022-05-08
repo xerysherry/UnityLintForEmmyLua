@@ -1,9 +1,13 @@
 --- @class UnityEngine.Experimental.AI.PolygonId Represents a compact identifier for the data of a NavMesh node.
 UnityEngine.Experimental.AI.PolygonId = {}
 
+--- @param x UnityEngine.Experimental.AI.PolygonId 
+--- @param y UnityEngine.Experimental.AI.PolygonId 
 --- @return boolean
 function UnityEngine.Experimental.AI.PolygonId.op_Equality(x, y) end
 
+--- @param x UnityEngine.Experimental.AI.PolygonId 
+--- @param y UnityEngine.Experimental.AI.PolygonId 
 --- @return boolean
 function UnityEngine.Experimental.AI.PolygonId.op_Inequality(x, y) end
 
@@ -16,10 +20,12 @@ function UnityEngine.Experimental.AI.PolygonId:IsNull() end
 function UnityEngine.Experimental.AI.PolygonId:GetHashCode() end
 
 --- Returns true if two PolygonId objects refer to the same NavMesh node.
+--- @param rhs UnityEngine.Experimental.AI.PolygonId 
 --- @return boolean 
 function UnityEngine.Experimental.AI.PolygonId:Equals(rhs) end
 
 --- Returns true if two PolygonId objects refer to the same NavMesh node.
+--- @param obj System.Object 
 --- @return boolean 
 function UnityEngine.Experimental.AI.PolygonId:Equals(obj) end
 

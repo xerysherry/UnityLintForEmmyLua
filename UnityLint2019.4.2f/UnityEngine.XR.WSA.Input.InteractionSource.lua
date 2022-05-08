@@ -23,9 +23,11 @@
 ---       Following the make and model nomenclature of cars, this would be a minor update to the model.
 UnityEngine.XR.WSA.Input.InteractionSource = {}
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.WSA.Input.InteractionSource:Equals(obj) end
 
+--- @param other UnityEngine.XR.WSA.Input.InteractionSource 
 --- @return boolean
 function UnityEngine.XR.WSA.Input.InteractionSource:Equals(other) end
 

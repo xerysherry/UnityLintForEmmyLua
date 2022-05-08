@@ -101,26 +101,37 @@ function UnityEngine.LineRenderer:SetColors(start, _end) end
 --- @param count number 
 function UnityEngine.LineRenderer:SetVertexCount(count) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_numPositions(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_startWidth(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_endWidth(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_widthMultiplier(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_numCornerVertices(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_numCapVertices(value) end
 
+--- @param value boolean 
 function UnityEngine.LineRenderer:set_useWorldSpace(value) end
 
+--- @param value boolean 
 function UnityEngine.LineRenderer:set_loop(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.LineRenderer:set_startColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.LineRenderer:set_endColor(value) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_positionCount(value) end
 
 --- Set the position of a vertex in the line.
@@ -133,12 +144,16 @@ function UnityEngine.LineRenderer:SetPosition(index, position) end
 --- @return UnityEngine.Vector3 The position at the specified index in the array.
 function UnityEngine.LineRenderer:GetPosition(index) end
 
+--- @param value number 
 function UnityEngine.LineRenderer:set_shadowBias(value) end
 
+--- @param value boolean 
 function UnityEngine.LineRenderer:set_generateLightingData(value) end
 
+--- @param value UnityEngine.LineTextureMode 
 function UnityEngine.LineRenderer:set_textureMode(value) end
 
+--- @param value UnityEngine.LineAlignment 
 function UnityEngine.LineRenderer:set_alignment(value) end
 
 --- Generates a simplified version of the original line by removing points that fall within the specified tolerance.
@@ -146,6 +161,8 @@ function UnityEngine.LineRenderer:set_alignment(value) end
 function UnityEngine.LineRenderer:Simplify(tolerance) end
 
 --- Creates a snapshot of LineRenderer and stores it in mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param useTransform boolean 
 function UnityEngine.LineRenderer:BakeMesh(mesh, useTransform) end
 
 --- Creates a snapshot of LineRenderer and stores it in mesh.
@@ -154,8 +171,10 @@ function UnityEngine.LineRenderer:BakeMesh(mesh, useTransform) end
 --- @param useTransform boolean Include the rotation and scale of the Transform in the baked mesh.
 function UnityEngine.LineRenderer:BakeMesh(mesh, camera, useTransform) end
 
+--- @param value UnityEngine.AnimationCurve 
 function UnityEngine.LineRenderer:set_widthCurve(value) end
 
+--- @param value UnityEngine.Gradient 
 function UnityEngine.LineRenderer:set_colorGradient(value) end
 
 --- Get the positions of all vertices in the line.

@@ -5,46 +5,73 @@
 ---       Should the object be hidden, saved with the Scene or modifiable by the user?
 UnityEngine.Object = {}
 
+--- @param exists UnityEngine.Object 
 --- @return boolean
 function UnityEngine.Object.op_Implicit(exists) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 --- @return UnityEngine.Object The instantiated clone.
 function UnityEngine.Object.Instantiate(original, position, rotation) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param parent UnityEngine.Transform 
 --- @return UnityEngine.Object The instantiated clone.
 function UnityEngine.Object.Instantiate(original, position, rotation, parent) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object 
 --- @return UnityEngine.Object The instantiated clone.
 function UnityEngine.Object.Instantiate(original) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object 
+--- @param parent UnityEngine.Transform 
 --- @return UnityEngine.Object The instantiated clone.
 function UnityEngine.Object.Instantiate(original, parent) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object 
+--- @param parent UnityEngine.Transform 
+--- @param instantiateInWorldSpace boolean 
 --- @return UnityEngine.Object The instantiated clone.
 function UnityEngine.Object.Instantiate(original, parent, instantiateInWorldSpace) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object.T 
 --- @return UnityEngine.Object.T The instantiated clone.
 function UnityEngine.Object.Instantiate(original) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object.T 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 --- @return UnityEngine.Object.T The instantiated clone.
 function UnityEngine.Object.Instantiate(original, position, rotation) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object.T 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param parent UnityEngine.Transform 
 --- @return UnityEngine.Object.T The instantiated clone.
 function UnityEngine.Object.Instantiate(original, position, rotation, parent) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object.T 
+--- @param parent UnityEngine.Transform 
 --- @return UnityEngine.Object.T The instantiated clone.
 function UnityEngine.Object.Instantiate(original, parent) end
 
 --- Clones the object original and returns the clone.
+--- @param original UnityEngine.Object.T 
+--- @param parent UnityEngine.Transform 
+--- @param worldPositionStays boolean 
 --- @return UnityEngine.Object.T The instantiated clone.
 function UnityEngine.Object.Instantiate(original, parent, worldPositionStays) end
 
@@ -54,6 +81,7 @@ function UnityEngine.Object.Instantiate(original, parent, worldPositionStays) en
 function UnityEngine.Object.Destroy(obj, t) end
 
 --- Removes a GameObject, component or asset.
+--- @param obj UnityEngine.Object 
 function UnityEngine.Object.Destroy(obj) end
 
 --- Destroys the object obj immediately. You are strongly recommended to use Destroy instead.
@@ -62,9 +90,11 @@ function UnityEngine.Object.Destroy(obj) end
 function UnityEngine.Object.DestroyImmediate(obj, allowDestroyingAssets) end
 
 --- Destroys the object obj immediately. You are strongly recommended to use Destroy instead.
+--- @param obj UnityEngine.Object 
 function UnityEngine.Object.DestroyImmediate(obj) end
 
 --- Gets a list of all loaded objects of Type type.
+--- @param type System.Type 
 --- @return UnityEngine.Object[] The array of objects found matching the type specified.
 function UnityEngine.Object.FindObjectsOfType(type) end
 
@@ -78,10 +108,14 @@ function UnityEngine.Object.FindObjectsOfType(type, includeInactive) end
 --- @param target UnityEngine.Object An Object not destroyed on Scene change.
 function UnityEngine.Object.DontDestroyOnLoad(target) end
 
+--- @param obj UnityEngine.Object 
+--- @param t number 
 function UnityEngine.Object.DestroyObject(obj, t) end
 
+--- @param obj UnityEngine.Object 
 function UnityEngine.Object.DestroyObject(obj) end
 
+--- @param type System.Type 
 --- @return UnityEngine.Object[]
 function UnityEngine.Object.FindSceneObjectsOfType(type) end
 
@@ -95,6 +129,7 @@ function UnityEngine.Object.FindObjectsOfTypeIncludingAssets(type) end
 function UnityEngine.Object.FindObjectsOfType() end
 
 --- Gets a list of all loaded objects of Type type.
+--- @param includeInactive boolean 
 --- @return UnityEngine.Object.T[] The array of objects found matching the type specified.
 function UnityEngine.Object.FindObjectsOfType(includeInactive) end
 
@@ -103,6 +138,7 @@ function UnityEngine.Object.FindObjectsOfType(includeInactive) end
 function UnityEngine.Object.FindObjectOfType() end
 
 --- Returns the first active loaded object of Type type.
+--- @param includeInactive boolean 
 --- @return UnityEngine.Object.T Object The first active loaded object that matches the specified type. It returns null if no Object matches the type.
 function UnityEngine.Object.FindObjectOfType(includeInactive) end
 
@@ -112,6 +148,7 @@ function UnityEngine.Object.FindObjectOfType(includeInactive) end
 function UnityEngine.Object.FindObjectsOfTypeAll(type) end
 
 --- Returns the first active loaded object of Type type.
+--- @param type System.Type 
 --- @return UnityEngine.Object Object The first active loaded object that matches the specified type. It returns null if no Object matches the type.
 function UnityEngine.Object.FindObjectOfType(type) end
 
@@ -121,9 +158,13 @@ function UnityEngine.Object.FindObjectOfType(type) end
 --- @return UnityEngine.Object Object The first active loaded object that matches the specified type. It returns null if no Object matches the type.
 function UnityEngine.Object.FindObjectOfType(type, includeInactive) end
 
+--- @param x UnityEngine.Object 
+--- @param y UnityEngine.Object 
 --- @return boolean
 function UnityEngine.Object.op_Equality(x, y) end
 
+--- @param x UnityEngine.Object 
+--- @param y UnityEngine.Object 
 --- @return boolean
 function UnityEngine.Object.op_Inequality(x, y) end
 
@@ -134,11 +175,14 @@ function UnityEngine.Object:GetInstanceID() end
 --- @return number
 function UnityEngine.Object:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Object:Equals(other) end
 
+--- @param value string 
 function UnityEngine.Object:set_name(value) end
 
+--- @param value UnityEngine.HideFlags 
 function UnityEngine.Object:set_hideFlags(value) end
 
 --- Returns the name of the object.

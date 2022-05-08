@@ -1,15 +1,21 @@
 --- @class UnityEngine.TrackedReference 
 UnityEngine.TrackedReference = {}
 
+--- @param x UnityEngine.TrackedReference 
+--- @param y UnityEngine.TrackedReference 
 --- @return boolean
 function UnityEngine.TrackedReference.op_Equality(x, y) end
 
+--- @param x UnityEngine.TrackedReference 
+--- @param y UnityEngine.TrackedReference 
 --- @return boolean
 function UnityEngine.TrackedReference.op_Inequality(x, y) end
 
+--- @param exists UnityEngine.TrackedReference 
 --- @return boolean
 function UnityEngine.TrackedReference.op_Implicit(exists) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.TrackedReference:Equals(o) end
 

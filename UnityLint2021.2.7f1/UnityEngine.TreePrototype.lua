@@ -7,12 +7,16 @@
 ---       The LOD index of a Tree LODGroup that Unity uses to generate a NavMesh. It uses this value only for Trees with a LODGroup, and ignores this value for regular Trees.
 UnityEngine.TreePrototype = {}
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.TreePrototype:set_prefab(value) end
 
+--- @param value number 
 function UnityEngine.TreePrototype:set_bendFactor(value) end
 
+--- @param value number 
 function UnityEngine.TreePrototype:set_navMeshLod(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.TreePrototype:Equals(obj) end
 

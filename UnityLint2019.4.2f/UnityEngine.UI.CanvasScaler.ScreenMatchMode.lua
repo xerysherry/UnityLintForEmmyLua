@@ -1,9 +1,4 @@
-UnityEngine.UI.CanvasScaler.ScreenMatchMode = {
-    MatchWidthOrHeight = 0,
-    Expand = 1,
-    Shrink = 2,
-}
-
+--- @class UnityEngine.UI.CanvasScaler.ScreenMatchMode
 UnityEngine.UI.CanvasScaler.ScreenMatchMode = {
     MatchWidthOrHeight = 0,
     Expand = 1,

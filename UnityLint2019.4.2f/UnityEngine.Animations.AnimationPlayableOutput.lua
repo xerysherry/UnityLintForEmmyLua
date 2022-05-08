@@ -9,9 +9,11 @@ UnityEngine.Animations.AnimationPlayableOutput = {}
 --- @return UnityEngine.Animations.AnimationPlayableOutput A new AnimationPlayableOutput attached to the PlayableGraph.
 function UnityEngine.Animations.AnimationPlayableOutput.Create(graph, name, target) end
 
+--- @param output UnityEngine.Animations.AnimationPlayableOutput 
 --- @return UnityEngine.Playables.PlayableOutput
 function UnityEngine.Animations.AnimationPlayableOutput.op_Implicit(output) end
 
+--- @param output UnityEngine.Playables.PlayableOutput 
 --- @return UnityEngine.Animations.AnimationPlayableOutput
 function UnityEngine.Animations.AnimationPlayableOutput.op_Explicit(output) end
 

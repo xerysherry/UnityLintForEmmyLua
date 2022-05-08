@@ -1,3 +1,4 @@
+--- @class UnityEngine.CalendarUnit
 UnityEngine.CalendarUnit = {
     Era = 0,
     Year = 1,

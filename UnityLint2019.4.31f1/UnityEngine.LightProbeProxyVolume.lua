@@ -47,26 +47,37 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.LightProbeProxyVolume = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.LightProbeProxyVolume:set_sizeCustom(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.LightProbeProxyVolume:set_originCustom(value) end
 
+--- @param value number 
 function UnityEngine.LightProbeProxyVolume:set_probeDensity(value) end
 
+--- @param value number 
 function UnityEngine.LightProbeProxyVolume:set_gridResolutionX(value) end
 
+--- @param value number 
 function UnityEngine.LightProbeProxyVolume:set_gridResolutionY(value) end
 
+--- @param value number 
 function UnityEngine.LightProbeProxyVolume:set_gridResolutionZ(value) end
 
+--- @param value UnityEngine.LightProbeProxyVolume.BoundingBoxMode 
 function UnityEngine.LightProbeProxyVolume:set_boundingBoxMode(value) end
 
+--- @param value UnityEngine.LightProbeProxyVolume.ResolutionMode 
 function UnityEngine.LightProbeProxyVolume:set_resolutionMode(value) end
 
+--- @param value UnityEngine.LightProbeProxyVolume.ProbePositionMode 
 function UnityEngine.LightProbeProxyVolume:set_probePositionMode(value) end
 
+--- @param value UnityEngine.LightProbeProxyVolume.RefreshMode 
 function UnityEngine.LightProbeProxyVolume:set_refreshMode(value) end
 
+--- @param value UnityEngine.LightProbeProxyVolume.QualityMode 
 function UnityEngine.LightProbeProxyVolume:set_qualityMode(value) end
 
 --- Triggers an update of the Light Probe Proxy Volume.

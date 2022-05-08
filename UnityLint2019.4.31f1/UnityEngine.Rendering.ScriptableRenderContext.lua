@@ -5,9 +5,13 @@ UnityEngine.Rendering.ScriptableRenderContext = {}
 --- @param cullingCamera UnityEngine.Camera Camera to emit the geometry for.
 function UnityEngine.Rendering.ScriptableRenderContext.EmitWorldGeometryForSceneView(cullingCamera) end
 
+--- @param left UnityEngine.Rendering.ScriptableRenderContext 
+--- @param right UnityEngine.Rendering.ScriptableRenderContext 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableRenderContext.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.ScriptableRenderContext 
+--- @param right UnityEngine.Rendering.ScriptableRenderContext 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableRenderContext.op_Inequality(left, right) end
 
@@ -35,6 +39,8 @@ function UnityEngine.Rendering.ScriptableRenderContext:BeginScopedRenderPass(wid
 function UnityEngine.Rendering.ScriptableRenderContext:BeginSubPass(colors, inputs, isDepthReadOnly) end
 
 --- Schedules the beginning of a new sub pass within a render pass. Render passes can never be standalone, they must always contain at least one sub pass. Only one sub pass can be active at any time.
+--- @param colors Unity.Collections.NativeArray`1 
+--- @param isDepthReadOnly boolean 
 function UnityEngine.Rendering.ScriptableRenderContext:BeginSubPass(colors, isDepthReadOnly) end
 
 --- Schedules the beginning of a new sub pass within a render pass. If you call this in a using-statement, Unity executes EndSubPass automatically when exiting the using-block.
@@ -47,6 +53,8 @@ function UnityEngine.Rendering.ScriptableRenderContext:BeginScopedSubPass(colors
 
 --- Schedules the beginning of a new sub pass within a render pass. If you call this in a using-statement, Unity executes EndSubPass automatically when exiting the using-block.
 --- Render passes can never be standalone, they must always contain at least one sub pass. Only one sub pass can be active at any time.
+--- @param colors Unity.Collections.NativeArray`1 
+--- @param isDepthReadOnly boolean 
 --- @return UnityEngine.Rendering.ScopedSubPass 
 function UnityEngine.Rendering.ScriptableRenderContext:BeginScopedSubPass(colors, isDepthReadOnly) end
 
@@ -60,12 +68,24 @@ function UnityEngine.Rendering.ScriptableRenderContext:EndRenderPass() end
 function UnityEngine.Rendering.ScriptableRenderContext:Submit() end
 
 --- Schedules the drawing of a set of visible objects, and optionally overrides the GPU's render state.
+--- @param cullingResults UnityEngine.Rendering.CullingResults 
+--- @param drawingSettings UnityEngine.Rendering.DrawingSettings& 
+--- @param filteringSettings UnityEngine.Rendering.FilteringSettings& 
 function UnityEngine.Rendering.ScriptableRenderContext:DrawRenderers(cullingResults, drawingSettings, filteringSettings) end
 
 --- Schedules the drawing of a set of visible objects, and optionally overrides the GPU's render state.
+--- @param cullingResults UnityEngine.Rendering.CullingResults 
+--- @param drawingSettings UnityEngine.Rendering.DrawingSettings& 
+--- @param filteringSettings UnityEngine.Rendering.FilteringSettings& 
+--- @param stateBlock UnityEngine.Rendering.RenderStateBlock& 
 function UnityEngine.Rendering.ScriptableRenderContext:DrawRenderers(cullingResults, drawingSettings, filteringSettings, stateBlock) end
 
 --- Schedules the drawing of a set of visible objects, and optionally overrides the GPU's render state.
+--- @param cullingResults UnityEngine.Rendering.CullingResults 
+--- @param drawingSettings UnityEngine.Rendering.DrawingSettings& 
+--- @param filteringSettings UnityEngine.Rendering.FilteringSettings& 
+--- @param renderTypes Unity.Collections.NativeArray`1 
+--- @param stateBlocks Unity.Collections.NativeArray`1 
 function UnityEngine.Rendering.ScriptableRenderContext:DrawRenderers(cullingResults, drawingSettings, filteringSettings, renderTypes, stateBlocks) end
 
 --- Schedules the drawing of shadow casters for a single Light.
@@ -82,6 +102,8 @@ function UnityEngine.Rendering.ScriptableRenderContext:ExecuteCommandBuffer(comm
 function UnityEngine.Rendering.ScriptableRenderContext:ExecuteCommandBufferAsync(commandBuffer, queueType) end
 
 --- Schedules the setup of Camera specific global Shader variables.
+--- @param camera UnityEngine.Camera 
+--- @param stereoSetup boolean 
 function UnityEngine.Rendering.ScriptableRenderContext:SetupCameraProperties(camera, stereoSetup) end
 
 --- Schedules the setup of Camera specific global Shader variables.
@@ -91,9 +113,12 @@ function UnityEngine.Rendering.ScriptableRenderContext:SetupCameraProperties(cam
 function UnityEngine.Rendering.ScriptableRenderContext:SetupCameraProperties(camera, stereoSetup, eye) end
 
 --- Schedule notification of completion of stereo rendering on a single frame.
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Rendering.ScriptableRenderContext:StereoEndRender(camera) end
 
 --- Schedule notification of completion of stereo rendering on a single frame.
+--- @param camera UnityEngine.Camera 
+--- @param eye number 
 function UnityEngine.Rendering.ScriptableRenderContext:StereoEndRender(camera, eye) end
 
 --- Schedule notification of completion of stereo rendering on a single frame.
@@ -103,6 +128,7 @@ function UnityEngine.Rendering.ScriptableRenderContext:StereoEndRender(camera, e
 function UnityEngine.Rendering.ScriptableRenderContext:StereoEndRender(camera, eye, isFinalPass) end
 
 --- Schedules a fine-grained beginning of stereo rendering on the ScriptableRenderContext.
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Rendering.ScriptableRenderContext:StartMultiEye(camera) end
 
 --- Schedules a fine-grained beginning of stereo rendering on the ScriptableRenderContext.
@@ -131,9 +157,11 @@ function UnityEngine.Rendering.ScriptableRenderContext:DrawGizmos(camera, gizmoS
 --- @return UnityEngine.Rendering.CullingResults Culling results.
 function UnityEngine.Rendering.ScriptableRenderContext:Cull(parameters) end
 
+--- @param other UnityEngine.Rendering.ScriptableRenderContext 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableRenderContext:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.ScriptableRenderContext:Equals(obj) end
 

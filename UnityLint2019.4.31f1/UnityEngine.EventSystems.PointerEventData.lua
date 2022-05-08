@@ -27,40 +27,58 @@
 --- @field hovered UnityEngine.GameObject[]
 UnityEngine.EventSystems.PointerEventData = {}
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.PointerEventData:set_pointerEnter(value) end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.PointerEventData:set_rawPointerPress(value) end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.PointerEventData:set_pointerDrag(value) end
 
+--- @param value UnityEngine.EventSystems.RaycastResult 
 function UnityEngine.EventSystems.PointerEventData:set_pointerCurrentRaycast(value) end
 
+--- @param value UnityEngine.EventSystems.RaycastResult 
 function UnityEngine.EventSystems.PointerEventData:set_pointerPressRaycast(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.PointerEventData:set_eligibleForClick(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.PointerEventData:set_pointerId(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.EventSystems.PointerEventData:set_position(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.EventSystems.PointerEventData:set_delta(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.EventSystems.PointerEventData:set_pressPosition(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.EventSystems.PointerEventData:set_worldPosition(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.EventSystems.PointerEventData:set_worldNormal(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.PointerEventData:set_clickTime(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.PointerEventData:set_clickCount(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.EventSystems.PointerEventData:set_scrollDelta(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.PointerEventData:set_useDragThreshold(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.PointerEventData:set_dragging(value) end
 
+--- @param value UnityEngine.EventSystems.PointerEventData.InputButton 
 function UnityEngine.EventSystems.PointerEventData:set_button(value) end
 
 --- @return boolean
@@ -69,6 +87,7 @@ function UnityEngine.EventSystems.PointerEventData:IsPointerMoving() end
 --- @return boolean
 function UnityEngine.EventSystems.PointerEventData:IsScrolling() end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.PointerEventData:set_pointerPress(value) end
 
 --- @return string

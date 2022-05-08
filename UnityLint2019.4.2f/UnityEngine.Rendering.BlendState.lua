@@ -23,35 +23,51 @@
 ---       Blend state for render target 7.
 UnityEngine.Rendering.BlendState = {}
 
+--- @param left UnityEngine.Rendering.BlendState 
+--- @param right UnityEngine.Rendering.BlendState 
 --- @return boolean
 function UnityEngine.Rendering.BlendState.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.BlendState 
+--- @param right UnityEngine.Rendering.BlendState 
 --- @return boolean
 function UnityEngine.Rendering.BlendState.op_Inequality(left, right) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.BlendState:set_separateMRTBlendStates(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.BlendState:set_alphaToMask(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState0(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState1(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState2(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState3(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState4(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState5(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState6(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetBlendState 
 function UnityEngine.Rendering.BlendState:set_blendState7(value) end
 
+--- @param other UnityEngine.Rendering.BlendState 
 --- @return boolean
 function UnityEngine.Rendering.BlendState:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.BlendState:Equals(obj) end
 

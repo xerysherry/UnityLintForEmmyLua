@@ -27,12 +27,24 @@ function UnityEngine.GraphicsBuffer:SetData(data) end
 function UnityEngine.GraphicsBuffer:SetData(data) end
 
 --- Set the buffer with values from an array.
+--- @param data table 
+--- @param managedBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, managedBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data UnityEngine.GraphicsBuffer.T[] 
+--- @param managedBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, managedBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data Unity.Collections.NativeArray`1 
+--- @param nativeBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, nativeBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Retrieve a native (underlying graphics API) pointer to the buffer.

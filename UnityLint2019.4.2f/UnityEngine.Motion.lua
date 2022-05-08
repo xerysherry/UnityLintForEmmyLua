@@ -11,6 +11,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Motion = {}
 
+--- @param val boolean 
 --- @return boolean
 function UnityEngine.Motion:ValidateIfRetargetable(val) end
 

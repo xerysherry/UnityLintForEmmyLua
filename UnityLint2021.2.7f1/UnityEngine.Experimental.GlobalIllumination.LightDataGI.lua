@@ -18,24 +18,38 @@
 UnityEngine.Experimental.GlobalIllumination.LightDataGI = {}
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.DirectionalLight& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.PointLight& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.SpotLight& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.RectangleLight& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.DiscLight& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.SpotLightBoxShape& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.
+--- @param light UnityEngine.Experimental.GlobalIllumination.SpotLightPyramidShape& 
+--- @param cookie UnityEngine.Experimental.GlobalIllumination.Cookie& 
 function UnityEngine.Experimental.GlobalIllumination.LightDataGI:Init(light, cookie) end
 
 --- Initialize the struct with the parameters from the given light type.

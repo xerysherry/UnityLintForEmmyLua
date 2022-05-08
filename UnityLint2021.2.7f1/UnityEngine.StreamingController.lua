@@ -23,6 +23,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.StreamingController = {}
 
+--- @param value number 
 function UnityEngine.StreamingController:set_streamingMipmapBias(value) end
 
 --- Initiate preloading of streaming data for this camera.

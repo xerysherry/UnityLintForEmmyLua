@@ -19,17 +19,24 @@ UnityEngine.UIElements.Angle = {}
 --- @return UnityEngine.UIElements.Angle The created angle.
 function UnityEngine.UIElements.Angle.Degrees(value) end
 
+--- @param value number 
 --- @return UnityEngine.UIElements.Angle
 function UnityEngine.UIElements.Angle.op_Implicit(value) end
 
+--- @param lhs UnityEngine.UIElements.Angle 
+--- @param rhs UnityEngine.UIElements.Angle 
 --- @return boolean
 function UnityEngine.UIElements.Angle.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Angle 
+--- @param rhs UnityEngine.UIElements.Angle 
 --- @return boolean
 function UnityEngine.UIElements.Angle.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.UIElements.Angle:set_value(value) end
 
+--- @param value UnityEngine.UIElements.AngleUnit 
 function UnityEngine.UIElements.Angle:set_unit(value) end
 
 --- 
@@ -38,9 +45,11 @@ function UnityEngine.UIElements.Angle:set_unit(value) end
 --- @return number 
 function UnityEngine.UIElements.Angle:ToDegrees() end
 
+--- @param other UnityEngine.UIElements.Angle 
 --- @return boolean
 function UnityEngine.UIElements.Angle:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Angle:Equals(obj) end
 

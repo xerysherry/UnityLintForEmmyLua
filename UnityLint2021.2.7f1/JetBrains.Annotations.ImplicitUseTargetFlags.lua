@@ -1,3 +1,4 @@
+--- @class JetBrains.Annotations.ImplicitUseTargetFlags
 JetBrains.Annotations.ImplicitUseTargetFlags = {
     Default = 1,
     Itself = 1,

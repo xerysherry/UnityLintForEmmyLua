@@ -10,9 +10,12 @@
 UnityEngine.XR.WSA.HolographicSettings = {}
 
 --- Sets a point in 3d space that is the focal point of the Scene for the user for this frame. This helps improve the visual fidelity of content around this point. This must be set every frame.
+--- @param position UnityEngine.Vector3 
 function UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position) end
 
 --- Sets a point in 3d space that is the focal point of the Scene for the user for this frame. This helps improve the visual fidelity of content around this point. This must be set every frame.
+--- @param position UnityEngine.Vector3 
+--- @param normal UnityEngine.Vector3 
 function UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal) end
 
 --- Sets a point in 3d space that is the focal point of the Scene for the user for this frame. This helps improve the visual fidelity of content around this point. This must be set every frame.
@@ -21,8 +24,10 @@ function UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, 
 --- @param velocity UnityEngine.Vector3 A vector that describes how the focus point is moving in the Scene at this point in time. This allows the HoloLens to compensate for both your head movement and the movement of the object in the Scene.
 function UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal, velocity) end
 
+--- @param value boolean 
 function UnityEngine.XR.WSA.HolographicSettings.set_IsContentProtectionEnabled(value) end
 
+--- @param value UnityEngine.XR.WSA.HolographicSettings.HolographicReprojectionMode 
 function UnityEngine.XR.WSA.HolographicSettings.set_ReprojectionMode(value) end
 
 --- Option to allow developers to achieve higher framerate at the cost of high latency.  By default this option is off.

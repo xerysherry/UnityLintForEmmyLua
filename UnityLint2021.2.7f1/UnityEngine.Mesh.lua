@@ -57,14 +57,17 @@
 UnityEngine.Mesh = {}
 
 --- Gets a snapshot of Mesh data for read-only access.
+--- @param mesh UnityEngine.Mesh 
 --- @return UnityEngine.Mesh.MeshDataArray Returns a MeshDataArray containing read-only MeshData structs. See Mesh.MeshDataArray and Mesh.MeshData.
 function UnityEngine.Mesh.AcquireReadOnlyMeshData(mesh) end
 
 --- Gets a snapshot of Mesh data for read-only access.
+--- @param meshes UnityEngine.Mesh[] 
 --- @return UnityEngine.Mesh.MeshDataArray Returns a MeshDataArray containing read-only MeshData structs. See Mesh.MeshDataArray and Mesh.MeshData.
 function UnityEngine.Mesh.AcquireReadOnlyMeshData(meshes) end
 
 --- Gets a snapshot of Mesh data for read-only access.
+--- @param meshes UnityEngine.Mesh[] 
 --- @return UnityEngine.Mesh.MeshDataArray Returns a MeshDataArray containing read-only MeshData structs. See Mesh.MeshDataArray and Mesh.MeshData.
 function UnityEngine.Mesh.AcquireReadOnlyMeshData(meshes) end
 
@@ -74,16 +77,27 @@ function UnityEngine.Mesh.AcquireReadOnlyMeshData(meshes) end
 function UnityEngine.Mesh.AllocateWritableMeshData(meshCount) end
 
 --- Applies data defined in MeshData structs to Mesh objects.
+--- @param data UnityEngine.Mesh.MeshDataArray 
+--- @param mesh UnityEngine.Mesh 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh.ApplyAndDisposeWritableMeshData(data, mesh, flags) end
 
 --- Applies data defined in MeshData structs to Mesh objects.
+--- @param data UnityEngine.Mesh.MeshDataArray 
+--- @param meshes UnityEngine.Mesh[] 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh.ApplyAndDisposeWritableMeshData(data, meshes, flags) end
 
 --- Applies data defined in MeshData structs to Mesh objects.
+--- @param data UnityEngine.Mesh.MeshDataArray 
+--- @param meshes UnityEngine.Mesh[] 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh.ApplyAndDisposeWritableMeshData(data, meshes, flags) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv1(value) end
 
+--- @param value UnityEngine.Rendering.IndexFormat 
 function UnityEngine.Mesh:set_indexFormat(value) end
 
 --- Sets the index buffer size and format.
@@ -135,8 +149,10 @@ function UnityEngine.Mesh:GetNativeVertexBufferPtr(index) end
 --- @return System.IntPtr Pointer to the underlying graphics API index buffer.
 function UnityEngine.Mesh:GetNativeIndexBufferPtr() end
 
+--- @param value UnityEngine.GraphicsBuffer.Target 
 function UnityEngine.Mesh:set_vertexBufferTarget(value) end
 
+--- @param value UnityEngine.GraphicsBuffer.Target 
 function UnityEngine.Mesh:set_indexBufferTarget(value) end
 
 --- Clears all blend shapes from Mesh.
@@ -192,8 +208,10 @@ function UnityEngine.Mesh:GetAllBoneWeights() end
 --- @return Unity.Collections.NativeArray`1 Returns the number of non-zero bone weights for each vertex.
 function UnityEngine.Mesh:GetBonesPerVertex() end
 
+--- @param value UnityEngine.Matrix4x4[] 
 function UnityEngine.Mesh:set_bindposes(value) end
 
+--- @param value number 
 function UnityEngine.Mesh:set_subMeshCount(value) end
 
 --- Sets the information about a sub-mesh of the Mesh.
@@ -207,6 +225,7 @@ function UnityEngine.Mesh:SetSubMesh(index, desc, flags) end
 --- @return UnityEngine.Rendering.SubMeshDescriptor Sub-mesh data.
 function UnityEngine.Mesh:GetSubMesh(index) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Mesh:set_bounds(value) end
 
 --- Notify Renderer components of mesh geometry change.
@@ -217,30 +236,43 @@ function UnityEngine.Mesh:MarkModified() end
 --- @return number Average of triangle area / uv area.
 function UnityEngine.Mesh:GetUVDistributionMetric(uvSetIndex) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Mesh:set_vertices(value) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Mesh:set_normals(value) end
 
+--- @param value UnityEngine.Vector4[] 
 function UnityEngine.Mesh:set_tangents(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv2(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv3(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv4(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv5(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv6(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv7(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv8(value) end
 
+--- @param value UnityEngine.Color[] 
 function UnityEngine.Mesh:set_colors(value) end
 
+--- @param value UnityEngine.Color32[] 
 function UnityEngine.Mesh:set_colors32(value) end
 
 --- Gets the vertex positions of the Mesh.
@@ -252,6 +284,9 @@ function UnityEngine.Mesh:GetVertices(vertices) end
 function UnityEngine.Mesh:SetVertices(inVertices) end
 
 --- Assigns a new vertex positions array.
+--- @param inVertices UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetVertices(inVertices, start, length) end
 
 --- Sets the vertex positions of the Mesh, using a part of the input array.
@@ -266,6 +301,9 @@ function UnityEngine.Mesh:SetVertices(inVertices, start, length, flags) end
 function UnityEngine.Mesh:SetVertices(inVertices) end
 
 --- Assigns a new vertex positions array.
+--- @param inVertices UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetVertices(inVertices, start, length) end
 
 --- Sets the vertex positions of the Mesh, using a part of the input array.
@@ -280,6 +318,9 @@ function UnityEngine.Mesh:SetVertices(inVertices, start, length, flags) end
 function UnityEngine.Mesh:SetVertices(inVertices) end
 
 --- Assigns a new vertex positions array.
+--- @param inVertices Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetVertices(inVertices, start, length) end
 
 --- Sets the vertex positions of the Mesh, using a part of the input array.
@@ -298,6 +339,9 @@ function UnityEngine.Mesh:GetNormals(normals) end
 function UnityEngine.Mesh:SetNormals(inNormals) end
 
 --- Set the normals of the Mesh.
+--- @param inNormals UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetNormals(inNormals, start, length) end
 
 --- Sets the vertex normals of the Mesh, using a part of the input array.
@@ -312,6 +356,9 @@ function UnityEngine.Mesh:SetNormals(inNormals, start, length, flags) end
 function UnityEngine.Mesh:SetNormals(inNormals) end
 
 --- Set the normals of the Mesh.
+--- @param inNormals UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetNormals(inNormals, start, length) end
 
 --- Sets the vertex normals of the Mesh, using a part of the input array.
@@ -326,6 +373,9 @@ function UnityEngine.Mesh:SetNormals(inNormals, start, length, flags) end
 function UnityEngine.Mesh:SetNormals(inNormals) end
 
 --- Set the normals of the Mesh.
+--- @param inNormals Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetNormals(inNormals, start, length) end
 
 --- Sets the vertex normals of the Mesh, using a part of the input array.
@@ -344,6 +394,9 @@ function UnityEngine.Mesh:GetTangents(tangents) end
 function UnityEngine.Mesh:SetTangents(inTangents) end
 
 --- Set the tangents of the Mesh.
+--- @param inTangents UnityEngine.Vector4[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetTangents(inTangents, start, length) end
 
 --- Sets the tangents of the Mesh, using a part of the input array.
@@ -358,6 +411,9 @@ function UnityEngine.Mesh:SetTangents(inTangents, start, length, flags) end
 function UnityEngine.Mesh:SetTangents(inTangents) end
 
 --- Set the tangents of the Mesh.
+--- @param inTangents UnityEngine.Vector4[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetTangents(inTangents, start, length) end
 
 --- Sets the tangents of the Mesh, using a part of the input array.
@@ -372,6 +428,9 @@ function UnityEngine.Mesh:SetTangents(inTangents, start, length, flags) end
 function UnityEngine.Mesh:SetTangents(inTangents) end
 
 --- Set the tangents of the Mesh.
+--- @param inTangents Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetTangents(inTangents, start, length) end
 
 --- Sets the tangents of the Mesh, using a part of the input array.
@@ -390,6 +449,9 @@ function UnityEngine.Mesh:GetColors(colors) end
 function UnityEngine.Mesh:SetColors(inColors) end
 
 --- Set the per-vertex colors of the Mesh.
+--- @param inColors UnityEngine.Color[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetColors(inColors, start, length) end
 
 --- Sets the per-vertex colors of the Mesh, using a part of the input array.
@@ -404,6 +466,9 @@ function UnityEngine.Mesh:SetColors(inColors, start, length, flags) end
 function UnityEngine.Mesh:SetColors(inColors) end
 
 --- Set the per-vertex colors of the Mesh.
+--- @param inColors UnityEngine.Color[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetColors(inColors, start, length) end
 
 --- Sets the per-vertex colors of the Mesh, using a part of the input array.
@@ -422,6 +487,9 @@ function UnityEngine.Mesh:GetColors(colors) end
 function UnityEngine.Mesh:SetColors(inColors) end
 
 --- Set the per-vertex colors of the Mesh.
+--- @param inColors UnityEngine.Color32[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetColors(inColors, start, length) end
 
 --- Sets the per-vertex colors of the Mesh, using a part of the input array.
@@ -436,6 +504,9 @@ function UnityEngine.Mesh:SetColors(inColors, start, length, flags) end
 function UnityEngine.Mesh:SetColors(inColors) end
 
 --- Set the per-vertex colors of the Mesh.
+--- @param inColors UnityEngine.Color32[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetColors(inColors, start, length) end
 
 --- Sets the per-vertex colors of the Mesh, using a part of the input array.
@@ -450,6 +521,9 @@ function UnityEngine.Mesh:SetColors(inColors, start, length, flags) end
 function UnityEngine.Mesh:SetColors(inColors) end
 
 --- Set the per-vertex colors of the Mesh.
+--- @param inColors Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetColors(inColors, start, length) end
 
 --- Sets the per-vertex colors of the Mesh, using a part of the input array.
@@ -475,6 +549,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs) end
 function UnityEngine.Mesh:SetUVs(channel, uvs) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector2[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -486,6 +564,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length, flags) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -497,6 +579,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length, flags) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector4[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -523,6 +609,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs) end
 function UnityEngine.Mesh:SetUVs(channel, uvs) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector2[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -534,6 +624,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length, flags) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector3[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -545,6 +639,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length, flags) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs UnityEngine.Vector4[] 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -561,6 +659,10 @@ function UnityEngine.Mesh:SetUVs(channel, uvs, start, length, flags) end
 function UnityEngine.Mesh:SetUVs(channel, uvs) end
 
 --- Sets the UVs of the Mesh.
+--- @param channel number 
+--- @param uvs Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 function UnityEngine.Mesh:SetUVs(channel, uvs, start, length) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -646,17 +748,23 @@ function UnityEngine.Mesh:GetVertexBuffer(index) end
 --- @return UnityEngine.GraphicsBuffer The mesh index buffer as a GraphicsBuffer.
 function UnityEngine.Mesh:GetIndexBuffer() end
 
+--- @param value number[] 
 function UnityEngine.Mesh:set_triangles(value) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param submesh number 
 --- @return number[] 
 function UnityEngine.Mesh:GetTriangles(submesh) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param submesh number 
+--- @param applyBaseVertex boolean 
 --- @return number[] 
 function UnityEngine.Mesh:GetTriangles(submesh, applyBaseVertex) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:GetTriangles(triangles, submesh) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
@@ -672,6 +780,7 @@ function UnityEngine.Mesh:GetTriangles(triangles, submesh, applyBaseVertex) end
 function UnityEngine.Mesh:GetTriangles(triangles, submesh, applyBaseVertex) end
 
 --- Fetches the index list for the specified sub-mesh.
+--- @param submesh number 
 --- @return number[] Array with face indices.
 function UnityEngine.Mesh:GetIndices(submesh) end
 
@@ -682,6 +791,8 @@ function UnityEngine.Mesh:GetIndices(submesh) end
 function UnityEngine.Mesh:GetIndices(submesh, applyBaseVertex) end
 
 --- Fetches the index list for the specified sub-mesh.
+--- @param indices number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:GetIndices(indices, submesh) end
 
 --- Use this method overload if you control the life cycle of the list passed in and you want to avoid allocating a new array with every access.
@@ -736,9 +847,14 @@ function UnityEngine.Mesh:GetIndexCount(submesh) end
 function UnityEngine.Mesh:GetBaseVertex(submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds) end
 
 --- Sets the triangle list for the sub-mesh.
@@ -778,9 +894,14 @@ function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds, base
 function UnityEngine.Mesh:SetTriangles(triangles, trianglesStart, trianglesLength, submesh, calculateBounds, baseVertex) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds) end
 
 --- Sets the triangle list for the sub-mesh.
@@ -820,9 +941,16 @@ function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds, base
 function UnityEngine.Mesh:SetTriangles(triangles, trianglesStart, trianglesLength, submesh, calculateBounds, baseVertex) end
 
 --- Sets the index buffer for the sub-mesh.
+--- @param indices number[] 
+--- @param topology UnityEngine.MeshTopology 
+--- @param submesh number 
 function UnityEngine.Mesh:SetIndices(indices, topology, submesh) end
 
 --- Sets the index buffer for the sub-mesh.
+--- @param indices number[] 
+--- @param topology UnityEngine.MeshTopology 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetIndices(indices, topology, submesh, calculateBounds) end
 
 --- Sets the index buffer for the sub-mesh.
@@ -933,6 +1061,8 @@ function UnityEngine.Mesh:SetIndices(indices, indicesStart, indicesLength, topol
 function UnityEngine.Mesh:SetSubMeshes(desc, start, count, flags) end
 
 --- Sets information defining all sub-meshes in this Mesh, replacing any existing sub-meshes.
+--- @param desc UnityEngine.Rendering.SubMeshDescriptor[] 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh:SetSubMeshes(desc, flags) end
 
 --- Sets information defining all sub-meshes in this Mesh, replacing any existing sub-meshes.
@@ -943,6 +1073,8 @@ function UnityEngine.Mesh:SetSubMeshes(desc, flags) end
 function UnityEngine.Mesh:SetSubMeshes(desc, start, count, flags) end
 
 --- Sets information defining all sub-meshes in this Mesh, replacing any existing sub-meshes.
+--- @param desc UnityEngine.Rendering.SubMeshDescriptor[] 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh:SetSubMeshes(desc, flags) end
 
 --- Sets information defining all sub-meshes in this Mesh, replacing any existing sub-meshes.
@@ -953,6 +1085,8 @@ function UnityEngine.Mesh:SetSubMeshes(desc, flags) end
 function UnityEngine.Mesh:SetSubMeshes(desc, start, count, flags) end
 
 --- Sets information defining all sub-meshes in this Mesh, replacing any existing sub-meshes.
+--- @param desc Unity.Collections.NativeArray`1 
+--- @param flags UnityEngine.Rendering.MeshUpdateFlags 
 function UnityEngine.Mesh:SetSubMeshes(desc, flags) end
 
 --- Gets the bind poses of the Mesh.
@@ -963,6 +1097,7 @@ function UnityEngine.Mesh:GetBindposes(bindposes) end
 --- @param boneWeights UnityEngine.BoneWeight[] A list of BoneWeight structs to populate.
 function UnityEngine.Mesh:GetBoneWeights(boneWeights) end
 
+--- @param value UnityEngine.BoneWeight[] 
 function UnityEngine.Mesh:set_boneWeights(value) end
 
 --- Clears all vertex data and all triangle indices.
@@ -1031,12 +1166,18 @@ function UnityEngine.Mesh:GetTopology(submesh) end
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes, useMatrices, hasLightmapData) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
+--- @param mergeSubMeshes boolean 
+--- @param useMatrices boolean 
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes, useMatrices) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
+--- @param mergeSubMeshes boolean 
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
 function UnityEngine.Mesh:CombineMeshes(combine) end
 
 ---  Generated By xerysherry

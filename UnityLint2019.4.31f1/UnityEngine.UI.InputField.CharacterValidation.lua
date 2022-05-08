@@ -1,12 +1,4 @@
-UnityEngine.UI.InputField.CharacterValidation = {
-    None = 0,
-    Integer = 1,
-    Decimal = 2,
-    Alphanumeric = 3,
-    Name = 4,
-    EmailAddress = 5,
-}
-
+--- @class UnityEngine.UI.InputField.CharacterValidation
 UnityEngine.UI.InputField.CharacterValidation = {
     None = 0,
     Integer = 1,

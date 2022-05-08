@@ -18,18 +18,27 @@
 --- @field cancelHandler function
 UnityEngine.EventSystems.ExecuteEvents = {}
 
+--- @param data UnityEngine.EventSystems.BaseEventData 
 --- @return UnityEngine.EventSystems.ExecuteEvents.T
 function UnityEngine.EventSystems.ExecuteEvents.ValidateEventData(data) end
 
+--- @param target UnityEngine.GameObject 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
+--- @param functor function 
 --- @return boolean
 function UnityEngine.EventSystems.ExecuteEvents.Execute(target, eventData, functor) end
 
+--- @param root UnityEngine.GameObject 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
+--- @param callbackFunction function 
 --- @return UnityEngine.GameObject
 function UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy(root, eventData, callbackFunction) end
 
+--- @param go UnityEngine.GameObject 
 --- @return boolean
 function UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent(go) end
 
+--- @param root UnityEngine.GameObject 
 --- @return UnityEngine.GameObject
 function UnityEngine.EventSystems.ExecuteEvents.GetEventHandler(root) end
 

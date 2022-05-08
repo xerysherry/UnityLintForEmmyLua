@@ -9,29 +9,41 @@
 ---       The positional adjustment that affects the vertical advance of the glyph.
 UnityEngine.TextCore.LowLevel.GlyphValueRecord = {}
 
+--- @param a UnityEngine.TextCore.LowLevel.GlyphValueRecord 
+--- @param b UnityEngine.TextCore.LowLevel.GlyphValueRecord 
 --- @return UnityEngine.TextCore.LowLevel.GlyphValueRecord
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord.op_Addition(a, b) end
 
+--- @param lhs UnityEngine.TextCore.LowLevel.GlyphValueRecord 
+--- @param rhs UnityEngine.TextCore.LowLevel.GlyphValueRecord 
 --- @return boolean
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.TextCore.LowLevel.GlyphValueRecord 
+--- @param rhs UnityEngine.TextCore.LowLevel.GlyphValueRecord 
 --- @return boolean
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:set_xPlacement(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:set_yPlacement(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:set_xAdvance(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:set_yAdvance(value) end
 
 --- @return number
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:Equals(obj) end
 
+--- @param other UnityEngine.TextCore.LowLevel.GlyphValueRecord 
 --- @return boolean
 function UnityEngine.TextCore.LowLevel.GlyphValueRecord:Equals(other) end
 

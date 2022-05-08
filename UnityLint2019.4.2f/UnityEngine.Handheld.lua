@@ -12,20 +12,27 @@ UnityEngine.Handheld = {}
 function UnityEngine.Handheld.PlayFullScreenMovie(path, bgColor, controlMode, scalingMode) end
 
 --- Plays a full-screen movie.
+--- @param path string 
+--- @param bgColor UnityEngine.Color 
+--- @param controlMode UnityEngine.FullScreenMovieControlMode 
 --- @return boolean 
 function UnityEngine.Handheld.PlayFullScreenMovie(path, bgColor, controlMode) end
 
 --- Plays a full-screen movie.
+--- @param path string 
+--- @param bgColor UnityEngine.Color 
 --- @return boolean 
 function UnityEngine.Handheld.PlayFullScreenMovie(path, bgColor) end
 
 --- Plays a full-screen movie.
+--- @param path string 
 --- @return boolean 
 function UnityEngine.Handheld.PlayFullScreenMovie(path) end
 
 --- Triggers device vibration.
 function UnityEngine.Handheld.Vibrate() end
 
+--- @param value boolean 
 function UnityEngine.Handheld.set_use32BitDisplayBuffer(value) end
 
 --- Sets the desired activity indicator style.

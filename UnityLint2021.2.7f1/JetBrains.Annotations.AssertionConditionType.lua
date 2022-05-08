@@ -1,3 +1,4 @@
+--- @class JetBrains.Annotations.AssertionConditionType
 JetBrains.Annotations.AssertionConditionType = {
     IS_TRUE = 0,
     IS_FALSE = 1,

@@ -1,18 +1,4 @@
-UnityEngine.ADBannerView.Layout = {
-    Top = 0,
-    Bottom = 1,
-    TopLeft = 0,
-    TopRight = 4,
-    TopCenter = 8,
-    BottomLeft = 1,
-    BottomRight = 5,
-    BottomCenter = 9,
-    CenterLeft = 2,
-    CenterRight = 6,
-    Center = 10,
-    Manual = -1,
-}
-
+--- @class UnityEngine.ADBannerView.Layout
 UnityEngine.ADBannerView.Layout = {
     Top = 0,
     Bottom = 1,

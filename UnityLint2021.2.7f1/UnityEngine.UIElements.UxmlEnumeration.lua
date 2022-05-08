@@ -8,6 +8,7 @@
 ---        
 UnityEngine.UIElements.UxmlEnumeration = {}
 
+--- @param value System.Collections.Generic.IEnumerable`1 
 function UnityEngine.UIElements.UxmlEnumeration:set_values(value) end
 
 --- 

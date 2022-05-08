@@ -27,8 +27,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.TouchInputModule = {}
 
+--- @param value boolean 
 function UnityEngine.EventSystems.TouchInputModule:set_allowActivationOnStandalone(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.TouchInputModule:set_forceModuleActive(value) end
 
 function UnityEngine.EventSystems.TouchInputModule:UpdateModule() end

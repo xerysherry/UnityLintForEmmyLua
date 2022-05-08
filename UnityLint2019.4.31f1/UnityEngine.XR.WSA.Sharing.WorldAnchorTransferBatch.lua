@@ -10,9 +10,15 @@ UnityEngine.XR.WSA.Sharing.WorldAnchorTransferBatch = {}
 function UnityEngine.XR.WSA.Sharing.WorldAnchorTransferBatch.ExportAsync(transferBatch, onDataAvailable, onCompleted) end
 
 --- Imports the provided bytes into a WorldAnchorTransferBatch.
+--- @param serializedData number[] 
+--- @param onComplete function 
 function UnityEngine.XR.WSA.Sharing.WorldAnchorTransferBatch.ImportAsync(serializedData, onComplete) end
 
 --- Imports the provided bytes into a WorldAnchorTransferBatch.
+--- @param serializedData number[] 
+--- @param offset number 
+--- @param length number 
+--- @param onComplete function 
 function UnityEngine.XR.WSA.Sharing.WorldAnchorTransferBatch.ImportAsync(serializedData, offset, length, onComplete) end
 
 --- Adds a WorldAnchor to the batch with the specified identifier.

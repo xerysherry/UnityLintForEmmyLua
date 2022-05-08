@@ -46,10 +46,13 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.WheelJoint2D = {}
 
+--- @param value UnityEngine.JointSuspension2D 
 function UnityEngine.WheelJoint2D:set_suspension(value) end
 
+--- @param value boolean 
 function UnityEngine.WheelJoint2D:set_useMotor(value) end
 
+--- @param value UnityEngine.JointMotor2D 
 function UnityEngine.WheelJoint2D:set_motor(value) end
 
 --- Gets the motor torque of the joint given the specified timestep.

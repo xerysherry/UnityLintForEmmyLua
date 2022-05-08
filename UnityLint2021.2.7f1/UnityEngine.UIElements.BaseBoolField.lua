@@ -49,6 +49,7 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.BaseBoolField = {}
 
+--- @param value string 
 function UnityEngine.UIElements.BaseBoolField:set_text(value) end
 
 --- 

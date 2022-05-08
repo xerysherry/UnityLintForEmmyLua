@@ -12,6 +12,9 @@ function Unity.Collections.LowLevel.Unsafe.NativeSliceUnsafeUtility.GetAtomicSaf
 function Unity.Collections.LowLevel.Unsafe.NativeSliceUnsafeUtility.SetAtomicSafetyHandle(slice, safety) end
 
 --- ConvertExistingDataToNativeSlice.
+--- @param dataPointer System.Void* 
+--- @param stride number 
+--- @param length number 
 --- @return Unity.Collections.NativeSlice`1 
 function Unity.Collections.LowLevel.Unsafe.NativeSliceUnsafeUtility.ConvertExistingDataToNativeSlice(dataPointer, stride, length) end
 

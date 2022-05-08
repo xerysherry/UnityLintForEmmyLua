@@ -98,100 +98,148 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.LightingSettings = {}
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_bakedGI(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_realtimeGI(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_realtimeEnvironmentLighting(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_autoGenerate(value) end
 
+--- @param value UnityEngine.MixedLightingMode 
 function UnityEngine.LightingSettings:set_mixedBakeMode(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_albedoBoost(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_indirectScale(value) end
 
+--- @param value UnityEngine.LightingSettings.Lightmapper 
 function UnityEngine.LightingSettings:set_lightmapper(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_lightmapMaxSize(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_lightmapResolution(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_lightmapPadding(value) end
 
+--- @param value UnityEngine.LightmapCompression 
 function UnityEngine.LightingSettings:set_lightmapCompression(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_compressLightmaps(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_ao(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_aoMaxDistance(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_aoExponentIndirect(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_aoExponentDirect(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_extractAO(value) end
 
+--- @param value UnityEngine.LightmapsMode 
 function UnityEngine.LightingSettings:set_directionalityMode(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_exportTrainingData(value) end
 
+--- @param value string 
 function UnityEngine.LightingSettings:set_trainingDataDestination(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_indirectResolution(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_finalGather(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_finalGatherRayCount(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_finalGatherFiltering(value) end
 
+--- @param value UnityEngine.LightingSettings.Sampling 
 function UnityEngine.LightingSettings:set_sampling(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_directSampleCount(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_indirectSampleCount(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_bounces(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_maxBounces(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_russianRouletteStartBounce(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_minBounces(value) end
 
+--- @param value boolean 
 function UnityEngine.LightingSettings:set_prioritizeView(value) end
 
+--- @param value UnityEngine.LightingSettings.FilterMode 
 function UnityEngine.LightingSettings:set_filteringMode(value) end
 
+--- @param value UnityEngine.LightingSettings.DenoiserType 
 function UnityEngine.LightingSettings:set_denoiserTypeDirect(value) end
 
+--- @param value UnityEngine.LightingSettings.DenoiserType 
 function UnityEngine.LightingSettings:set_denoiserTypeIndirect(value) end
 
+--- @param value UnityEngine.LightingSettings.DenoiserType 
 function UnityEngine.LightingSettings:set_denoiserTypeAO(value) end
 
+--- @param value UnityEngine.LightingSettings.FilterType 
 function UnityEngine.LightingSettings:set_filterTypeDirect(value) end
 
+--- @param value UnityEngine.LightingSettings.FilterType 
 function UnityEngine.LightingSettings:set_filterTypeIndirect(value) end
 
+--- @param value UnityEngine.LightingSettings.FilterType 
 function UnityEngine.LightingSettings:set_filterTypeAO(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringGaussRadiusDirect(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringGaussRadiusIndirect(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringGaussRadiusAO(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringAtrousPositionSigmaDirect(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringAtrousPositionSigmaIndirect(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_filteringAtrousPositionSigmaAO(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_environmentSampleCount(value) end
 
+--- @param value number 
 function UnityEngine.LightingSettings:set_lightProbeSampleCountMultiplier(value) end
 
 ---  Generated By xerysherry

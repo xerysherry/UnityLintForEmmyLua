@@ -61,10 +61,13 @@ function UnityEngine.GL.MultiTexCoord2(unit, x, y) end
 --- @param c UnityEngine.Color 
 function UnityEngine.GL.Color(c) end
 
+--- @param value boolean 
 function UnityEngine.GL.set_wireframe(value) end
 
+--- @param value boolean 
 function UnityEngine.GL.set_sRGBWrite(value) end
 
+--- @param value boolean 
 function UnityEngine.GL.set_invertCulling(value) end
 
 --- Sends queued-up commands in the driver's command buffer to the GPU.
@@ -73,6 +76,7 @@ function UnityEngine.GL.Flush() end
 --- Resolves the render target for subsequent operations sampling from it.
 function UnityEngine.GL.RenderTargetBarrier() end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.GL.set_modelview(value) end
 
 --- Sets the current model matrix to the one specified.
@@ -80,8 +84,10 @@ function UnityEngine.GL.set_modelview(value) end
 function UnityEngine.GL.MultMatrix(m) end
 
 --- Send a user-defined event to a native code plugin.
+--- @param eventID number 
 function UnityEngine.GL.IssuePluginEvent(eventID) end
 
+--- @param revertBackFaces boolean 
 function UnityEngine.GL.SetRevertBackfacing(revertBackFaces) end
 
 --- Saves the model, view and projection matrices to the top of the matrix stack.
@@ -120,6 +126,8 @@ function UnityEngine.GL.GetGPUProjectionMatrix(proj, renderIntoTexture) end
 function UnityEngine.GL.LoadPixelMatrix(left, right, bottom, top) end
 
 --- Send a user-defined event to a native code plugin.
+--- @param callback System.IntPtr 
+--- @param eventID number 
 function UnityEngine.GL.IssuePluginEvent(callback, eventID) end
 
 --- Begin drawing 3D primitives.
@@ -139,6 +147,9 @@ function UnityEngine.GL.End() end
 function UnityEngine.GL.Clear(clearDepth, clearColor, backgroundColor, depth) end
 
 --- Clear the current render buffer.
+--- @param clearDepth boolean 
+--- @param clearColor boolean 
+--- @param backgroundColor UnityEngine.Color 
 function UnityEngine.GL.Clear(clearDepth, clearColor, backgroundColor) end
 
 --- Set the rendering viewport.

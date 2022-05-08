@@ -109,10 +109,13 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Video.VideoPlayer = {}
 
+--- @param value UnityEngine.Video.VideoTimeReference 
 function UnityEngine.Video.VideoPlayer:set_timeReference(value) end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_externalReferenceTime(value) end
 
+--- @param value boolean 
 function UnityEngine.Video.VideoPlayer:set_skipOnDrop(value) end
 
 --- Returns the language code, if any, for the specified track.
@@ -130,6 +133,7 @@ function UnityEngine.Video.VideoPlayer:GetAudioChannelCount(trackIndex) end
 --- @return number The sampling rate in Hertz.
 function UnityEngine.Video.VideoPlayer:GetAudioSampleRate(trackIndex) end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_controlledAudioTrackCount(value) end
 
 --- Enable/disable audio track decoding. Only effective when the VideoPlayer is not currently playing.
@@ -142,6 +146,7 @@ function UnityEngine.Video.VideoPlayer:EnableAudioTrack(trackIndex, enabled) end
 --- @return boolean Returns true if decoding for the specified audio track is enabled.
 function UnityEngine.Video.VideoPlayer:IsAudioTrackEnabled(trackIndex) end
 
+--- @param value UnityEngine.Video.VideoAudioOutputMode 
 function UnityEngine.Video.VideoPlayer:set_audioOutputMode(value) end
 
 --- Return the direct-output volume for specified track.
@@ -174,67 +179,97 @@ function UnityEngine.Video.VideoPlayer:GetTargetAudioSource(trackIndex) end
 --- @param source UnityEngine.AudioSource AudioSource to associate with the audio track.
 function UnityEngine.Video.VideoPlayer:SetTargetAudioSource(trackIndex, source) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_prepareCompleted(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_prepareCompleted(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_loopPointReached(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_loopPointReached(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_started(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_started(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_frameDropped(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_frameDropped(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_errorReceived(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_errorReceived(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_seekCompleted(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_seekCompleted(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_clockResyncOccurred(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_clockResyncOccurred(value) end
 
+--- @param value boolean 
 function UnityEngine.Video.VideoPlayer:set_sendFrameReadyEvents(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:add_frameReady(value) end
 
+--- @param value function 
 function UnityEngine.Video.VideoPlayer:remove_frameReady(value) end
 
+--- @param value UnityEngine.Video.VideoSource 
 function UnityEngine.Video.VideoPlayer:set_source(value) end
 
+--- @param value string 
 function UnityEngine.Video.VideoPlayer:set_url(value) end
 
+--- @param value UnityEngine.Video.VideoClip 
 function UnityEngine.Video.VideoPlayer:set_clip(value) end
 
+--- @param value UnityEngine.Video.VideoRenderMode 
 function UnityEngine.Video.VideoPlayer:set_renderMode(value) end
 
+--- @param value UnityEngine.Camera 
 function UnityEngine.Video.VideoPlayer:set_targetCamera(value) end
 
+--- @param value UnityEngine.RenderTexture 
 function UnityEngine.Video.VideoPlayer:set_targetTexture(value) end
 
+--- @param value UnityEngine.Renderer 
 function UnityEngine.Video.VideoPlayer:set_targetMaterialRenderer(value) end
 
+--- @param value string 
 function UnityEngine.Video.VideoPlayer:set_targetMaterialProperty(value) end
 
+--- @param value UnityEngine.Video.VideoAspectRatio 
 function UnityEngine.Video.VideoPlayer:set_aspectRatio(value) end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_targetCameraAlpha(value) end
 
+--- @param value UnityEngine.Video.Video3DLayout 
 function UnityEngine.Video.VideoPlayer:set_targetCamera3DLayout(value) end
 
 --- Initiates playback engine preparation.
 function UnityEngine.Video.VideoPlayer:Prepare() end
 
+--- @param value boolean 
 function UnityEngine.Video.VideoPlayer:set_waitForFirstFrame(value) end
 
+--- @param value boolean 
 function UnityEngine.Video.VideoPlayer:set_playOnAwake(value) end
 
 --- Starts playback.
@@ -246,17 +281,22 @@ function UnityEngine.Video.VideoPlayer:Pause() end
 --- Stops the playback and sets the current time to 0.
 function UnityEngine.Video.VideoPlayer:Stop() end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_time(value) end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_frame(value) end
 
 --- Advances the current time by one frame immediately.
 function UnityEngine.Video.VideoPlayer:StepForward() end
 
+--- @param value number 
 function UnityEngine.Video.VideoPlayer:set_playbackSpeed(value) end
 
+--- @param value boolean 
 function UnityEngine.Video.VideoPlayer:set_isLooping(value) end
 
+--- @param value UnityEngine.Video.VideoTimeSource 
 function UnityEngine.Video.VideoPlayer:set_timeSource(value) end
 
 ---  Generated By xerysherry

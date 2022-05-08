@@ -15,46 +15,69 @@ function UnityEngine.TextCore.LowLevel.FontEngine.InitializeFontEngine() end
 function UnityEngine.TextCore.LowLevel.FontEngine.DestroyFontEngine() end
 
 --- Load a source font file.
+--- @param filePath string 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(filePath) end
 
 --- Load a source font file.
+--- @param filePath string 
+--- @param pointSize number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(filePath, pointSize) end
 
 --- Load a source font file.
+--- @param filePath string 
+--- @param pointSize number 
+--- @param faceIndex number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(filePath, pointSize, faceIndex) end
 
 --- Load a source font file.
+--- @param sourceFontFile number[] 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(sourceFontFile) end
 
 --- Load a source font file.
+--- @param sourceFontFile number[] 
+--- @param pointSize number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(sourceFontFile, pointSize) end
 
 --- Load a source font file.
+--- @param sourceFontFile number[] 
+--- @param pointSize number 
+--- @param faceIndex number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(sourceFontFile, pointSize, faceIndex) end
 
 --- Load a source font file.
+--- @param font UnityEngine.Font 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(font) end
 
 --- Load a source font file.
+--- @param font UnityEngine.Font 
+--- @param pointSize number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(font, pointSize) end
 
 --- Load a source font file.
+--- @param font UnityEngine.Font 
+--- @param pointSize number 
+--- @param faceIndex number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(font, pointSize, faceIndex) end
 
 --- Load a source font file.
+--- @param familyName string 
+--- @param styleName string 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(familyName, styleName) end
 
 --- Load a source font file.
+--- @param familyName string 
+--- @param styleName string 
+--- @param pointSize number 
 --- @return UnityEngine.TextCore.LowLevel.FontEngineError A value of zero (0) if the font face was loaded successfully.
 function UnityEngine.TextCore.LowLevel.FontEngine.LoadFontFace(familyName, styleName, pointSize) end
 
@@ -90,7 +113,10 @@ function UnityEngine.TextCore.LowLevel.FontEngine.GetFontFaces() end
 function UnityEngine.TextCore.LowLevel.FontEngine.TryGetGlyphIndex(unicode) end
 
 --- Try loading a glyph for the given unicode value. If available, populates the glyph and returns true. Otherwise returns false and populates the glyph with the .notdef / missing glyph data.
+--- @param unicode number 
+--- @param flags UnityEngine.TextCore.LowLevel.GlyphLoadFlags 
 --- @return boolean Returns true if a glyph exists for the given unicode value. Otherwise returns false.
+--- @return UnityEngine.TextCore.Glyph& 
 function UnityEngine.TextCore.LowLevel.FontEngine.TryGetGlyphWithUnicodeValue(unicode, flags) end
 
 --- Try loading the glyph for the given index value and if available populate the glyph.

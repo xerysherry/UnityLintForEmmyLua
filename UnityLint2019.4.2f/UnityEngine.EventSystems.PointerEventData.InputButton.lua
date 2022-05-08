@@ -1,9 +1,4 @@
-UnityEngine.EventSystems.PointerEventData.InputButton = {
-    Left = 0,
-    Right = 1,
-    Middle = 2,
-}
-
+--- @class UnityEngine.EventSystems.PointerEventData.InputButton
 UnityEngine.EventSystems.PointerEventData.InputButton = {
     Left = 0,
     Right = 1,

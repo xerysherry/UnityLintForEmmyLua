@@ -2,6 +2,7 @@
 UnityEngine.TerrainExtensions = {}
 
 --- Schedules an update of the albedo and emissive Textures of a system that contains the Terrain.
+--- @param terrain UnityEngine.Terrain 
 function UnityEngine.TerrainExtensions.UpdateGIMaterials(terrain) end
 
 --- Schedules an update of the albedo and emissive Textures of a system that contains the Terrain.

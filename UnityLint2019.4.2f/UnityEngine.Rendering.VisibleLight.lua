@@ -19,31 +19,45 @@
 ---       Light intersects far clipping plane.
 UnityEngine.Rendering.VisibleLight = {}
 
+--- @param left UnityEngine.Rendering.VisibleLight 
+--- @param right UnityEngine.Rendering.VisibleLight 
 --- @return boolean
 function UnityEngine.Rendering.VisibleLight.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.VisibleLight 
+--- @param right UnityEngine.Rendering.VisibleLight 
 --- @return boolean
 function UnityEngine.Rendering.VisibleLight.op_Inequality(left, right) end
 
+--- @param value UnityEngine.LightType 
 function UnityEngine.Rendering.VisibleLight:set_lightType(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Rendering.VisibleLight:set_finalColor(value) end
 
+--- @param value UnityEngine.Rect 
 function UnityEngine.Rendering.VisibleLight:set_screenRect(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Rendering.VisibleLight:set_localToWorldMatrix(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VisibleLight:set_range(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VisibleLight:set_spotAngle(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.VisibleLight:set_intersectsNearPlane(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.VisibleLight:set_intersectsFarPlane(value) end
 
+--- @param other UnityEngine.Rendering.VisibleLight 
 --- @return boolean
 function UnityEngine.Rendering.VisibleLight:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.VisibleLight:Equals(obj) end
 

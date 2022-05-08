@@ -1,3 +1,4 @@
+--- @class UnityEngineInternal.GITextureType
 UnityEngineInternal.GITextureType = {
     Charting = 0,
     Albedo = 1,

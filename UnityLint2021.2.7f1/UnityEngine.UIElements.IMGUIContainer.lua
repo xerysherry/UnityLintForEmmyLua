@@ -54,10 +54,13 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.IMGUIContainer = {}
 
+--- @param value function 
 function UnityEngine.UIElements.IMGUIContainer:set_onGUIHandler(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.IMGUIContainer:set_cullingEnabled(value) end
 
+--- @param value UnityEngine.UIElements.ContextType 
 function UnityEngine.UIElements.IMGUIContainer:set_contextType(value) end
 
 --- 
@@ -65,6 +68,7 @@ function UnityEngine.UIElements.IMGUIContainer:set_contextType(value) end
 ---  
 function UnityEngine.UIElements.IMGUIContainer:MarkDirtyLayout() end
 
+--- @param evt UnityEngine.UIElements.EventBase 
 function UnityEngine.UIElements.IMGUIContainer:HandleEvent(evt) end
 
 --- 

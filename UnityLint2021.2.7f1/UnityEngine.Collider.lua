@@ -37,10 +37,13 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Collider = {}
 
+--- @param value boolean 
 function UnityEngine.Collider:set_enabled(value) end
 
+--- @param value boolean 
 function UnityEngine.Collider:set_isTrigger(value) end
 
+--- @param value number 
 function UnityEngine.Collider:set_contactOffset(value) end
 
 --- Returns a point on the collider that is closest to a given location.
@@ -48,10 +51,13 @@ function UnityEngine.Collider:set_contactOffset(value) end
 --- @return UnityEngine.Vector3 The point on the collider that is closest to the specified location.
 function UnityEngine.Collider:ClosestPoint(position) end
 
+--- @param value boolean 
 function UnityEngine.Collider:set_hasModifiableContacts(value) end
 
+--- @param value UnityEngine.PhysicMaterial 
 function UnityEngine.Collider:set_sharedMaterial(value) end
 
+--- @param value UnityEngine.PhysicMaterial 
 function UnityEngine.Collider:set_material(value) end
 
 --- Casts a Ray that ignores all Colliders except this one.

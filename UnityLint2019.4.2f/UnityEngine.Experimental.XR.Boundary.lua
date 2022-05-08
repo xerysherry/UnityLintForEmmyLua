@@ -4,16 +4,23 @@
 UnityEngine.Experimental.XR.Boundary = {}
 
 --- @return boolean
+--- @return UnityEngine.Vector3& 
 function UnityEngine.Experimental.XR.Boundary.TryGetDimensions() end
 
+--- @param boundaryType UnityEngine.Experimental.XR.Boundary.Type 
 --- @return boolean
+--- @return UnityEngine.Vector3& 
 function UnityEngine.Experimental.XR.Boundary.TryGetDimensions(boundaryType) end
 
+--- @param value boolean 
 function UnityEngine.Experimental.XR.Boundary.set_visible(value) end
 
+--- @param geometry UnityEngine.Vector3[] 
 --- @return boolean
 function UnityEngine.Experimental.XR.Boundary.TryGetGeometry(geometry) end
 
+--- @param geometry UnityEngine.Vector3[] 
+--- @param boundaryType UnityEngine.Experimental.XR.Boundary.Type 
 --- @return boolean
 function UnityEngine.Experimental.XR.Boundary.TryGetGeometry(geometry, boundaryType) end
 

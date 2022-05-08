@@ -4,10 +4,12 @@
 UnityEngine.ScriptableObject = {}
 
 --- Creates an instance of a scriptable object.
+--- @param className string 
 --- @return UnityEngine.ScriptableObject The created ScriptableObject.
 function UnityEngine.ScriptableObject.CreateInstance(className) end
 
 --- Creates an instance of a scriptable object.
+--- @param type System.Type 
 --- @return UnityEngine.ScriptableObject The created ScriptableObject.
 function UnityEngine.ScriptableObject.CreateInstance(type) end
 

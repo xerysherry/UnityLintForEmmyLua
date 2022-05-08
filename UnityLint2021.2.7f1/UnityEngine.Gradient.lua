@@ -12,10 +12,13 @@ UnityEngine.Gradient = {}
 --- @return UnityEngine.Color 
 function UnityEngine.Gradient:Evaluate(time) end
 
+--- @param value UnityEngine.GradientColorKey[] 
 function UnityEngine.Gradient:set_colorKeys(value) end
 
+--- @param value UnityEngine.GradientAlphaKey[] 
 function UnityEngine.Gradient:set_alphaKeys(value) end
 
+--- @param value UnityEngine.GradientMode 
 function UnityEngine.Gradient:set_mode(value) end
 
 --- Setup Gradient with an array of color keys and alpha keys.
@@ -23,9 +26,11 @@ function UnityEngine.Gradient:set_mode(value) end
 --- @param alphaKeys UnityEngine.GradientAlphaKey[] Alpha keys of the gradient (maximum 8 alpha keys).
 function UnityEngine.Gradient:SetKeys(colorKeys, alphaKeys) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.Gradient:Equals(o) end
 
+--- @param other UnityEngine.Gradient 
 --- @return boolean
 function UnityEngine.Gradient:Equals(other) end
 

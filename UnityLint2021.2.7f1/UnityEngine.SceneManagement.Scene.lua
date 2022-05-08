@@ -15,9 +15,13 @@
 --- @field isSubScene boolean
 UnityEngine.SceneManagement.Scene = {}
 
+--- @param lhs UnityEngine.SceneManagement.Scene 
+--- @param rhs UnityEngine.SceneManagement.Scene 
 --- @return boolean
 function UnityEngine.SceneManagement.Scene.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.SceneManagement.Scene 
+--- @param rhs UnityEngine.SceneManagement.Scene 
 --- @return boolean
 function UnityEngine.SceneManagement.Scene.op_Inequality(lhs, rhs) end
 
@@ -26,8 +30,10 @@ function UnityEngine.SceneManagement.Scene.op_Inequality(lhs, rhs) end
 --- @return boolean Whether this is a valid Scene.
 function UnityEngine.SceneManagement.Scene:IsValid() end
 
+--- @param value string 
 function UnityEngine.SceneManagement.Scene:set_name(value) end
 
+--- @param value boolean 
 function UnityEngine.SceneManagement.Scene:set_isSubScene(value) end
 
 --- Returns all the root game objects in the Scene.
@@ -41,6 +47,7 @@ function UnityEngine.SceneManagement.Scene:GetRootGameObjects(rootGameObjects) e
 --- @return number
 function UnityEngine.SceneManagement.Scene:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.SceneManagement.Scene:Equals(other) end
 

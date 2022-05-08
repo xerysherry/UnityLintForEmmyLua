@@ -70,18 +70,27 @@ function UnityEngine.Hash128.Compute(val) end
 --- @return UnityEngine.Hash128 The 128-bit hash.
 function UnityEngine.Hash128.Compute(data, size) end
 
+--- @param hash1 UnityEngine.Hash128 
+--- @param hash2 UnityEngine.Hash128 
 --- @return boolean
 function UnityEngine.Hash128.op_Equality(hash1, hash2) end
 
+--- @param hash1 UnityEngine.Hash128 
+--- @param hash2 UnityEngine.Hash128 
 --- @return boolean
 function UnityEngine.Hash128.op_Inequality(hash1, hash2) end
 
+--- @param x UnityEngine.Hash128 
+--- @param y UnityEngine.Hash128 
 --- @return boolean
 function UnityEngine.Hash128.op_LessThan(x, y) end
 
+--- @param x UnityEngine.Hash128 
+--- @param y UnityEngine.Hash128 
 --- @return boolean
 function UnityEngine.Hash128.op_GreaterThan(x, y) end
 
+--- @param rhs UnityEngine.Hash128 
 --- @return number
 function UnityEngine.Hash128:CompareTo(rhs) end
 
@@ -140,15 +149,18 @@ function UnityEngine.Hash128:Append(val) end
 --- @param size number Data size in bytes.
 function UnityEngine.Hash128:Append(data, size) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Hash128:Equals(obj) end
 
+--- @param obj UnityEngine.Hash128 
 --- @return boolean
 function UnityEngine.Hash128:Equals(obj) end
 
 --- @return number
 function UnityEngine.Hash128:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return number
 function UnityEngine.Hash128:CompareTo(obj) end
 

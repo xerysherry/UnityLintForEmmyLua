@@ -21,8 +21,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.XR.WSA.WorldAnchor = {}
 
+--- @param value function 
 function UnityEngine.XR.WSA.WorldAnchor:add_OnTrackingChanged(value) end
 
+--- @param value function 
 function UnityEngine.XR.WSA.WorldAnchor:remove_OnTrackingChanged(value) end
 
 --- Assigns the <a href="https:msdn.microsoft.comen-uslibrarywindowsappswindows.perception.spatial.spatialanchor.aspx">Windows.Perception.Spatial.SpatialAnchor<a> COM pointer maintained by this WorldAnchor.

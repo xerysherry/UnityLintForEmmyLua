@@ -8,8 +8,10 @@
 --- @field styleClosingTagArray number[]
 UnityEngine.TextCore.Text.TextStyle = {}
 
+--- @param value string 
 function UnityEngine.TextCore.Text.TextStyle:set_name(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.Text.TextStyle:set_hashCode(value) end
 
 function UnityEngine.TextCore.Text.TextStyle:RefreshStyle() end

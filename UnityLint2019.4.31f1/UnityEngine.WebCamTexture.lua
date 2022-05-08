@@ -41,6 +41,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.WebCamTexture = {}
 
+--- @param value System.Nullable`1 
 function UnityEngine.WebCamTexture:set_autoFocusPoint(value) end
 
 --- Starts the camera.
@@ -52,12 +53,16 @@ function UnityEngine.WebCamTexture:Pause() end
 --- Stops the camera.
 function UnityEngine.WebCamTexture:Stop() end
 
+--- @param value string 
 function UnityEngine.WebCamTexture:set_deviceName(value) end
 
+--- @param value number 
 function UnityEngine.WebCamTexture:set_requestedFPS(value) end
 
+--- @param value number 
 function UnityEngine.WebCamTexture:set_requestedWidth(value) end
 
+--- @param value number 
 function UnityEngine.WebCamTexture:set_requestedHeight(value) end
 
 --- Returns pixel color at coordinates (x, y).

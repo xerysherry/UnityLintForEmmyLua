@@ -30,8 +30,10 @@ UnityEngine.HDROutputSettings = {}
 --- @param paperWhite number The brightness of paper white in nits.
 function UnityEngine.HDROutputSettings.SetPaperWhiteInNits(paperWhite) end
 
+--- @param value boolean 
 function UnityEngine.HDROutputSettings:set_automaticHDRTonemapping(value) end
 
+--- @param value number 
 function UnityEngine.HDROutputSettings:set_paperWhiteNits(value) end
 
 --- Use this function to request a change in the HDR Output Mode and in the value of HDROutputSettings.active.

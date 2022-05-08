@@ -30,10 +30,13 @@ UnityEngine.Experimental.Audio.AudioSampleProvider = {}
 --- Release internal resources. Inherited from IDisposable.
 function UnityEngine.Experimental.Audio.AudioSampleProvider:Dispose() end
 
+--- @param value number 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:set_freeSampleFrameCountLowThreshold(value) end
 
+--- @param value boolean 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:set_enableSampleFramesAvailableEvents(value) end
 
+--- @param value boolean 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:set_enableSilencePadding(value) end
 
 --- Consume sample frames from the internal buffer.
@@ -41,12 +44,16 @@ function UnityEngine.Experimental.Audio.AudioSampleProvider:set_enableSilencePad
 --- @return number How many sample frames were written into the buffer passed in.
 function UnityEngine.Experimental.Audio.AudioSampleProvider:ConsumeSampleFrames(sampleFrames) end
 
+--- @param value function 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:add_sampleFramesAvailable(value) end
 
+--- @param value function 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:remove_sampleFramesAvailable(value) end
 
+--- @param value function 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:add_sampleFramesOverflow(value) end
 
+--- @param value function 
 function UnityEngine.Experimental.Audio.AudioSampleProvider:remove_sampleFramesOverflow(value) end
 
 --- Set the native event handler for events emitted when the number of available sample frames crosses the threshold.

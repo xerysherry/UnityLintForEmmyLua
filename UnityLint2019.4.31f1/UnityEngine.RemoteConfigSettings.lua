@@ -1,16 +1,23 @@
 --- @class UnityEngine.RemoteConfigSettings 
 UnityEngine.RemoteConfigSettings = {}
 
+--- @param name string 
+--- @param param System.Object 
+--- @param ver number 
+--- @param prefix string 
 --- @return boolean
 function UnityEngine.RemoteConfigSettings.QueueConfig(name, param, ver, prefix) end
 
 --- @return boolean
 function UnityEngine.RemoteConfigSettings.SendDeviceInfoInConfigRequest() end
 
+--- @param tag string 
 function UnityEngine.RemoteConfigSettings.AddSessionTag(tag) end
 
+--- @param value function 
 function UnityEngine.RemoteConfigSettings:add_Updated(value) end
 
+--- @param value function 
 function UnityEngine.RemoteConfigSettings:remove_Updated(value) end
 
 function UnityEngine.RemoteConfigSettings:Dispose() end
@@ -20,36 +27,52 @@ function UnityEngine.RemoteConfigSettings:ForceUpdate() end
 --- @return boolean
 function UnityEngine.RemoteConfigSettings:WasLastUpdatedFromServer() end
 
+--- @param key string 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetInt(key) end
 
+--- @param key string 
+--- @param defaultValue number 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetInt(key, defaultValue) end
 
+--- @param key string 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetLong(key) end
 
+--- @param key string 
+--- @param defaultValue number 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetLong(key, defaultValue) end
 
+--- @param key string 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetFloat(key) end
 
+--- @param key string 
+--- @param defaultValue number 
 --- @return number
 function UnityEngine.RemoteConfigSettings:GetFloat(key, defaultValue) end
 
+--- @param key string 
 --- @return string
 function UnityEngine.RemoteConfigSettings:GetString(key) end
 
+--- @param key string 
+--- @param defaultValue string 
 --- @return string
 function UnityEngine.RemoteConfigSettings:GetString(key, defaultValue) end
 
+--- @param key string 
 --- @return boolean
 function UnityEngine.RemoteConfigSettings:GetBool(key) end
 
+--- @param key string 
+--- @param defaultValue boolean 
 --- @return boolean
 function UnityEngine.RemoteConfigSettings:GetBool(key, defaultValue) end
 
+--- @param key string 
 --- @return boolean
 function UnityEngine.RemoteConfigSettings:HasKey(key) end
 
@@ -59,15 +82,21 @@ function UnityEngine.RemoteConfigSettings:GetCount() end
 --- @return string[]
 function UnityEngine.RemoteConfigSettings:GetKeys() end
 
+--- @param key string 
 --- @return UnityEngine.RemoteConfigSettings.T
 function UnityEngine.RemoteConfigSettings:GetObject(key) end
 
+--- @param type System.Type 
+--- @param key string 
 --- @return System.Object
 function UnityEngine.RemoteConfigSettings:GetObject(type, key) end
 
+--- @param key string 
+--- @param defaultValue System.Object 
 --- @return System.Object
 function UnityEngine.RemoteConfigSettings:GetObject(key, defaultValue) end
 
+--- @param key string 
 --- @return System.Collections.Generic.IDictionary`2
 function UnityEngine.RemoteConfigSettings:GetDictionary(key) end
 

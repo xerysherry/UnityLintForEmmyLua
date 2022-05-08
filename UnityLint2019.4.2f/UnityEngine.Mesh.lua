@@ -160,6 +160,7 @@ function UnityEngine.Mesh:GetBindposes(bindposes) end
 --- @param boneWeights UnityEngine.BoneWeight[] A list of bone weights to populate.
 function UnityEngine.Mesh:GetBoneWeights(boneWeights) end
 
+--- @param value UnityEngine.BoneWeight[] 
 function UnityEngine.Mesh:set_boneWeights(value) end
 
 --- Clears all vertex data and all triangle indices.
@@ -207,12 +208,18 @@ function UnityEngine.Mesh:GetTopology(submesh) end
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes, useMatrices, hasLightmapData) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
+--- @param mergeSubMeshes boolean 
+--- @param useMatrices boolean 
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes, useMatrices) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
+--- @param mergeSubMeshes boolean 
 function UnityEngine.Mesh:CombineMeshes(combine, mergeSubMeshes) end
 
 --- Combines several Meshes into this Mesh.
+--- @param combine UnityEngine.CombineInstance[] 
 function UnityEngine.Mesh:CombineMeshes(combine) end
 
 --- Sets the UVs of the Mesh, using a part of the input array.
@@ -326,17 +333,23 @@ function UnityEngine.Mesh:SetVertexBufferData(data, dataStart, meshBufferStart, 
 --- @param flags UnityEngine.Rendering.MeshUpdateFlags Flags controlling the function behavior, see MeshUpdateFlags.
 function UnityEngine.Mesh:SetVertexBufferData(data, dataStart, meshBufferStart, count, stream, flags) end
 
+--- @param value number[] 
 function UnityEngine.Mesh:set_triangles(value) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param submesh number 
 --- @return number[] 
 function UnityEngine.Mesh:GetTriangles(submesh) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param submesh number 
+--- @param applyBaseVertex boolean 
 --- @return number[] 
 function UnityEngine.Mesh:GetTriangles(submesh, applyBaseVertex) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:GetTriangles(triangles, submesh) end
 
 --- Fetches the triangle list for the specified sub-mesh on this object.
@@ -352,6 +365,7 @@ function UnityEngine.Mesh:GetTriangles(triangles, submesh, applyBaseVertex) end
 function UnityEngine.Mesh:GetTriangles(triangles, submesh, applyBaseVertex) end
 
 --- Fetches the index list for the specified sub-mesh.
+--- @param submesh number 
 --- @return number[] Array with face indices.
 function UnityEngine.Mesh:GetIndices(submesh) end
 
@@ -362,6 +376,8 @@ function UnityEngine.Mesh:GetIndices(submesh) end
 function UnityEngine.Mesh:GetIndices(submesh, applyBaseVertex) end
 
 --- Fetches the index list for the specified sub-mesh.
+--- @param indices number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:GetIndices(indices, submesh) end
 
 --- Use this method overload if you control the life cycle of the list passed in and you want to avoid allocating a new array with every access.
@@ -416,9 +432,14 @@ function UnityEngine.Mesh:GetIndexCount(submesh) end
 function UnityEngine.Mesh:GetBaseVertex(submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds) end
 
 --- Sets the triangle list for the sub-mesh.
@@ -458,9 +479,14 @@ function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds, base
 function UnityEngine.Mesh:SetTriangles(triangles, trianglesStart, trianglesLength, submesh, calculateBounds, baseVertex) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh) end
 
 --- Sets the triangle list for the sub-mesh.
+--- @param triangles number[] 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds) end
 
 --- Sets the triangle list for the sub-mesh.
@@ -500,29 +526,46 @@ function UnityEngine.Mesh:SetTriangles(triangles, submesh, calculateBounds, base
 function UnityEngine.Mesh:SetTriangles(triangles, trianglesStart, trianglesLength, submesh, calculateBounds, baseVertex) end
 
 --- Sets the index buffer for the sub-mesh.
+--- @param indices number[] 
+--- @param topology UnityEngine.MeshTopology 
+--- @param submesh number 
 function UnityEngine.Mesh:SetIndices(indices, topology, submesh) end
 
 --- Sets the index buffer for the sub-mesh.
+--- @param indices number[] 
+--- @param topology UnityEngine.MeshTopology 
+--- @param submesh number 
+--- @param calculateBounds boolean 
 function UnityEngine.Mesh:SetIndices(indices, topology, submesh, calculateBounds) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv2(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv3(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv4(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv5(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv6(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv7(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv8(value) end
 
+--- @param value UnityEngine.Color[] 
 function UnityEngine.Mesh:set_colors(value) end
 
+--- @param value UnityEngine.Color32[] 
 function UnityEngine.Mesh:set_colors32(value) end
 
 --- Gets the vertex positions of the Mesh.
@@ -727,8 +770,10 @@ function UnityEngine.Mesh:GetAllBoneWeights() end
 --- @return Unity.Collections.NativeArray`1 
 function UnityEngine.Mesh:GetBonesPerVertex() end
 
+--- @param value UnityEngine.Matrix4x4[] 
 function UnityEngine.Mesh:set_bindposes(value) end
 
+--- @param value number 
 function UnityEngine.Mesh:set_subMeshCount(value) end
 
 --- Sets the information about a sub-mesh of the Mesh.
@@ -742,6 +787,7 @@ function UnityEngine.Mesh:SetSubMesh(index, desc, flags) end
 --- @return UnityEngine.Rendering.SubMeshDescriptor Sub-mesh data.
 function UnityEngine.Mesh:GetSubMesh(index) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Mesh:set_bounds(value) end
 
 --- Notify Renderer components of mesh geometry change.
@@ -752,14 +798,19 @@ function UnityEngine.Mesh:MarkModified() end
 --- @return number Average of triangle area / uv area.
 function UnityEngine.Mesh:GetUVDistributionMetric(uvSetIndex) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Mesh:set_vertices(value) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Mesh:set_normals(value) end
 
+--- @param value UnityEngine.Vector4[] 
 function UnityEngine.Mesh:set_tangents(value) end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.Mesh:set_uv1(value) end
 
+--- @param value UnityEngine.Rendering.IndexFormat 
 function UnityEngine.Mesh:set_indexFormat(value) end
 
 --- Sets the index buffer size and format.
@@ -793,6 +844,7 @@ function UnityEngine.Mesh:GetVertexAttributeDimension(attr) end
 function UnityEngine.Mesh:GetVertexAttributeFormat(attr) end
 
 --- Retrieves a native (underlying graphics API) pointer to the vertex buffer.
+--- @param index number 
 --- @return System.IntPtr Pointer to the underlying graphics API vertex buffer.
 function UnityEngine.Mesh:GetNativeVertexBufferPtr(index) end
 

@@ -5,6 +5,7 @@
 ---       The null direction. This is usually used when the focus stays on the same element.
 UnityEngine.UIElements.FocusChangeDirection = {}
 
+--- @param fcd UnityEngine.UIElements.FocusChangeDirection 
 --- @return number
 function UnityEngine.UIElements.FocusChangeDirection.op_Implicit(fcd) end
 

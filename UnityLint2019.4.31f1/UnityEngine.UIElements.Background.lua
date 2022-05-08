@@ -15,19 +15,27 @@ function UnityEngine.UIElements.Background.FromTexture2D(t) end
 --- @return UnityEngine.UIElements.Background A new background object.
 function UnityEngine.UIElements.Background.FromVectorImage(vi) end
 
+--- @param lhs UnityEngine.UIElements.Background 
+--- @param rhs UnityEngine.UIElements.Background 
 --- @return boolean
 function UnityEngine.UIElements.Background.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Background 
+--- @param rhs UnityEngine.UIElements.Background 
 --- @return boolean
 function UnityEngine.UIElements.Background.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.Texture2D 
 function UnityEngine.UIElements.Background:set_texture(value) end
 
+--- @param value UnityEngine.UIElements.VectorImage 
 function UnityEngine.UIElements.Background:set_vectorImage(value) end
 
+--- @param other UnityEngine.UIElements.Background 
 --- @return boolean
 function UnityEngine.UIElements.Background:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Background:Equals(obj) end
 

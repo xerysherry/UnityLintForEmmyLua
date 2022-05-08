@@ -1,3 +1,4 @@
+--- @class UnityEngine.iPhoneGeneration
 UnityEngine.iPhoneGeneration = {
     Unknown = 0,
     iPhone = 1,

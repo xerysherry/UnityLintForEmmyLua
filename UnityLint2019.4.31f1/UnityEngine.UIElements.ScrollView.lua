@@ -61,14 +61,19 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.ScrollView = {}
 
+--- @param value boolean 
 function UnityEngine.UIElements.ScrollView:set_showHorizontal(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.ScrollView:set_showVertical(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UIElements.ScrollView:set_scrollOffset(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.ScrollView:set_horizontalPageSize(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.ScrollView:set_verticalPageSize(value) end
 
 --- Scroll to a specific child element.

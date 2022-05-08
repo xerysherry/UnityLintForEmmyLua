@@ -46,6 +46,7 @@ function UnityEngine.Vector2Int.Max(lhs, rhs) end
 --- @return UnityEngine.Vector2Int 
 function UnityEngine.Vector2Int.Scale(a, b) end
 
+--- @param v UnityEngine.Vector2Int 
 --- @return UnityEngine.Vector2
 function UnityEngine.Vector2Int.op_Implicit(v) end
 
@@ -69,12 +70,17 @@ function UnityEngine.Vector2Int.CeilToInt(v) end
 --- @return UnityEngine.Vector2Int 
 function UnityEngine.Vector2Int.RoundToInt(v) end
 
+--- @param v UnityEngine.Vector2Int 
 --- @return UnityEngine.Vector2Int
 function UnityEngine.Vector2Int.op_UnaryNegation(v) end
 
+--- @param a UnityEngine.Vector2Int 
+--- @param b UnityEngine.Vector2Int 
 --- @return UnityEngine.Vector2Int
 function UnityEngine.Vector2Int.op_Addition(a, b) end
 
+--- @param a UnityEngine.Vector2Int 
+--- @param b UnityEngine.Vector2Int 
 --- @return UnityEngine.Vector2Int
 function UnityEngine.Vector2Int.op_Subtraction(a, b) end
 
@@ -96,17 +102,25 @@ function UnityEngine.Vector2Int.op_Multiply(a, b) end
 --- @return UnityEngine.Vector2Int 
 function UnityEngine.Vector2Int.op_Multiply(a, b) end
 
+--- @param a UnityEngine.Vector2Int 
+--- @param b number 
 --- @return UnityEngine.Vector2Int
 function UnityEngine.Vector2Int.op_Division(a, b) end
 
+--- @param lhs UnityEngine.Vector2Int 
+--- @param rhs UnityEngine.Vector2Int 
 --- @return boolean
 function UnityEngine.Vector2Int.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Vector2Int 
+--- @param rhs UnityEngine.Vector2Int 
 --- @return boolean
 function UnityEngine.Vector2Int.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.Vector2Int:set_x(value) end
 
+--- @param value number 
 function UnityEngine.Vector2Int:set_y(value) end
 
 --- Set x and y components of an existing Vector2Int.
@@ -114,6 +128,8 @@ function UnityEngine.Vector2Int:set_y(value) end
 --- @param y number 
 function UnityEngine.Vector2Int:Set(x, y) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Vector2Int:set_Item(index, value) end
 
 --- Multiplies every component of this vector by the same component of scale.
@@ -144,6 +160,7 @@ function UnityEngine.Vector2Int:GetHashCode() end
 function UnityEngine.Vector2Int:ToString() end
 
 --- Returns a formatted string for this vector.
+--- @param format string 
 --- @return string 
 function UnityEngine.Vector2Int:ToString(format) end
 

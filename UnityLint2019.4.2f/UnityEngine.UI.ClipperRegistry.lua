@@ -2,8 +2,10 @@
 --- @field instance UnityEngine.UI.ClipperRegistry
 UnityEngine.UI.ClipperRegistry = {}
 
+--- @param c UnityEngine.UI.IClipper 
 function UnityEngine.UI.ClipperRegistry.Register(c) end
 
+--- @param c UnityEngine.UI.IClipper 
 function UnityEngine.UI.ClipperRegistry.Unregister(c) end
 
 function UnityEngine.UI.ClipperRegistry:Cull() end

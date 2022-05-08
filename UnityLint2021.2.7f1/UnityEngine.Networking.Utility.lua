@@ -3,6 +3,7 @@
 ---       This property is deprecated and does not need to be set or referenced.
 UnityEngine.Networking.Utility = {}
 
+--- @param value boolean 
 function UnityEngine.Networking.Utility.set_useRandomSourceID(value) end
 
 --- Utility function to get the client's SourceID for unique identification.

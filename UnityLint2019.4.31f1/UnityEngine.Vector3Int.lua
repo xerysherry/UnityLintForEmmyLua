@@ -48,6 +48,7 @@ function UnityEngine.Vector3Int.Max(lhs, rhs) end
 --- @return UnityEngine.Vector3Int 
 function UnityEngine.Vector3Int.Scale(a, b) end
 
+--- @param v UnityEngine.Vector3Int 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3Int.op_Implicit(v) end
 
@@ -71,9 +72,13 @@ function UnityEngine.Vector3Int.CeilToInt(v) end
 --- @return UnityEngine.Vector3Int 
 function UnityEngine.Vector3Int.RoundToInt(v) end
 
+--- @param a UnityEngine.Vector3Int 
+--- @param b UnityEngine.Vector3Int 
 --- @return UnityEngine.Vector3Int
 function UnityEngine.Vector3Int.op_Addition(a, b) end
 
+--- @param a UnityEngine.Vector3Int 
+--- @param b UnityEngine.Vector3Int 
 --- @return UnityEngine.Vector3Int
 function UnityEngine.Vector3Int.op_Subtraction(a, b) end
 
@@ -83,6 +88,7 @@ function UnityEngine.Vector3Int.op_Subtraction(a, b) end
 --- @return UnityEngine.Vector3Int 
 function UnityEngine.Vector3Int.op_Multiply(a, b) end
 
+--- @param a UnityEngine.Vector3Int 
 --- @return UnityEngine.Vector3Int
 function UnityEngine.Vector3Int.op_UnaryNegation(a) end
 
@@ -98,19 +104,28 @@ function UnityEngine.Vector3Int.op_Multiply(a, b) end
 --- @return UnityEngine.Vector3Int 
 function UnityEngine.Vector3Int.op_Multiply(a, b) end
 
+--- @param a UnityEngine.Vector3Int 
+--- @param b number 
 --- @return UnityEngine.Vector3Int
 function UnityEngine.Vector3Int.op_Division(a, b) end
 
+--- @param lhs UnityEngine.Vector3Int 
+--- @param rhs UnityEngine.Vector3Int 
 --- @return boolean
 function UnityEngine.Vector3Int.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Vector3Int 
+--- @param rhs UnityEngine.Vector3Int 
 --- @return boolean
 function UnityEngine.Vector3Int.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.Vector3Int:set_x(value) end
 
+--- @param value number 
 function UnityEngine.Vector3Int:set_y(value) end
 
+--- @param value number 
 function UnityEngine.Vector3Int:set_z(value) end
 
 --- Set x, y and z components of an existing Vector3Int.
@@ -119,6 +134,8 @@ function UnityEngine.Vector3Int:set_z(value) end
 --- @param z number 
 function UnityEngine.Vector3Int:Set(x, y, z) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Vector3Int:set_Item(index, value) end
 
 --- Multiplies every component of this vector by the same component of scale.

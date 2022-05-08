@@ -17,7 +17,9 @@ function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.PinGCObjectAndGetAddres
 --- Keeps a strong GC reference to the object and pins it. The object is guranteed to not move its memory location in a moving GC. Returns the address of the first element of the array.
 --- 
 --- See Also: UnsafeUtility.ReleaseGCObject.
+--- @param target table 
 --- @return System.Void* 
+--- @return System.UInt64& 
 function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.PinGCArrayAndGetDataAddress(target) end
 
 --- Releases a GC Object Handle, previously aquired by UnsafeUtility.PinGCObjectAndGetAddress.
@@ -97,6 +99,7 @@ function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.MemClear(destination, s
 function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.MemCmp(ptr1, ptr2, size) end
 
 --- Size of struct.
+--- @param type System.Type 
 --- @return number Size of struct.
 function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf(type) end
 
@@ -133,6 +136,8 @@ function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AlignOf() end
 function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.CopyPtrToStructure(ptr) end
 
 --- Copies sizeof(T) bytes from input to ptr.
+--- @param input Unity.Collections.LowLevel.Unsafe.T& 
+--- @param ptr System.Void* 
 function Unity.Collections.LowLevel.Unsafe.UnsafeUtility.CopyStructureToPtr(input, ptr) end
 
 --- Read array element.

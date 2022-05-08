@@ -1,9 +1,4 @@
-UnityEngine.UI.ContentSizeFitter.FitMode = {
-    Unconstrained = 0,
-    MinSize = 1,
-    PreferredSize = 2,
-}
-
+--- @class UnityEngine.UI.ContentSizeFitter.FitMode
 UnityEngine.UI.ContentSizeFitter.FitMode = {
     Unconstrained = 0,
     MinSize = 1,

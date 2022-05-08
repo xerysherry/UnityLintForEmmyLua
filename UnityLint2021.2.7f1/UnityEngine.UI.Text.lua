@@ -60,37 +60,52 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.Text = {}
 
+--- @param anchor UnityEngine.TextAnchor 
 --- @return UnityEngine.Vector2
 function UnityEngine.UI.Text.GetTextAnchorPivot(anchor) end
 
 function UnityEngine.UI.Text:FontTextureChanged() end
 
+--- @param value UnityEngine.Font 
 function UnityEngine.UI.Text:set_font(value) end
 
+--- @param value string 
 function UnityEngine.UI.Text:set_text(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Text:set_supportRichText(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Text:set_resizeTextForBestFit(value) end
 
+--- @param value number 
 function UnityEngine.UI.Text:set_resizeTextMinSize(value) end
 
+--- @param value number 
 function UnityEngine.UI.Text:set_resizeTextMaxSize(value) end
 
+--- @param value UnityEngine.TextAnchor 
 function UnityEngine.UI.Text:set_alignment(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Text:set_alignByGeometry(value) end
 
+--- @param value number 
 function UnityEngine.UI.Text:set_fontSize(value) end
 
+--- @param value UnityEngine.HorizontalWrapMode 
 function UnityEngine.UI.Text:set_horizontalOverflow(value) end
 
+--- @param value UnityEngine.VerticalWrapMode 
 function UnityEngine.UI.Text:set_verticalOverflow(value) end
 
+--- @param value number 
 function UnityEngine.UI.Text:set_lineSpacing(value) end
 
+--- @param value UnityEngine.FontStyle 
 function UnityEngine.UI.Text:set_fontStyle(value) end
 
+--- @param extents UnityEngine.Vector2 
 --- @return UnityEngine.TextGenerationSettings
 function UnityEngine.UI.Text:GetGenerationSettings(extents) end
 

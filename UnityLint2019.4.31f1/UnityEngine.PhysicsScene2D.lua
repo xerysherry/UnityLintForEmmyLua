@@ -2,6 +2,9 @@
 UnityEngine.PhysicsScene2D = {}
 
 --- Checks a Collider against Colliders in the PhysicsScene2D, returning all intersections.
+--- @param collider UnityEngine.Collider2D 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number Returns the number of results placed in the results array.
 function UnityEngine.PhysicsScene2D.OverlapCollider(collider, results, layerMask) end
 
@@ -19,9 +22,13 @@ function UnityEngine.PhysicsScene2D.OverlapCollider(collider, contactFilter, res
 --- @return number Returns the number of results placed in the results list.
 function UnityEngine.PhysicsScene2D.OverlapCollider(collider, contactFilter, results) end
 
+--- @param lhs UnityEngine.PhysicsScene2D 
+--- @param rhs UnityEngine.PhysicsScene2D 
 --- @return boolean
 function UnityEngine.PhysicsScene2D.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.PhysicsScene2D 
+--- @param rhs UnityEngine.PhysicsScene2D 
 --- @return boolean
 function UnityEngine.PhysicsScene2D.op_Inequality(lhs, rhs) end
 
@@ -33,14 +40,24 @@ function UnityEngine.PhysicsScene2D.op_Inequality(lhs, rhs) end
 function UnityEngine.PhysicsScene2D:OverlapPoint(point, contactFilter, results) end
 
 --- Checks a circle against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the circle.
 function UnityEngine.PhysicsScene2D:OverlapCircle(point, radius, layerMask) end
 
 --- Checks a circle against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.Collider2D The collider overlapping the circle.
 function UnityEngine.PhysicsScene2D:OverlapCircle(point, radius, contactFilter) end
 
 --- Checks a circle against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param radius number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number The collider overlapping the circle.
 function UnityEngine.PhysicsScene2D:OverlapCircle(point, radius, results, layerMask) end
 
@@ -61,14 +78,27 @@ function UnityEngine.PhysicsScene2D:OverlapCircle(point, radius, contactFilter, 
 function UnityEngine.PhysicsScene2D:OverlapCircle(point, radius, contactFilter, results) end
 
 --- Checks a box against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the box.
 function UnityEngine.PhysicsScene2D:OverlapBox(point, size, angle, layerMask) end
 
 --- Checks a box against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.Collider2D The collider overlapping the box.
 function UnityEngine.PhysicsScene2D:OverlapBox(point, size, angle, contactFilter) end
 
 --- Checks a box against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number The collider overlapping the box.
 function UnityEngine.PhysicsScene2D:OverlapBox(point, size, angle, results, layerMask) end
 
@@ -91,14 +121,24 @@ function UnityEngine.PhysicsScene2D:OverlapBox(point, size, angle, contactFilter
 function UnityEngine.PhysicsScene2D:OverlapBox(point, size, angle, contactFilter, results) end
 
 --- Checks an area (non-rotated box) against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the area.
 function UnityEngine.PhysicsScene2D:OverlapArea(pointA, pointB, layerMask) end
 
 --- Checks an area (non-rotated box) against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.Collider2D The collider overlapping the area.
 function UnityEngine.PhysicsScene2D:OverlapArea(pointA, pointB, contactFilter) end
 
 --- Checks an area (non-rotated box) against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param pointA UnityEngine.Vector2 
+--- @param pointB UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number The collider overlapping the area.
 function UnityEngine.PhysicsScene2D:OverlapArea(pointA, pointB, results, layerMask) end
 
@@ -119,14 +159,30 @@ function UnityEngine.PhysicsScene2D:OverlapArea(pointA, pointB, contactFilter, r
 function UnityEngine.PhysicsScene2D:OverlapArea(pointA, pointB, contactFilter, results) end
 
 --- Checks a capsule against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the capsule.
 function UnityEngine.PhysicsScene2D:OverlapCapsule(point, size, direction, angle, layerMask) end
 
 --- Checks a capsule against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.Collider2D The collider overlapping the capsule.
 function UnityEngine.PhysicsScene2D:OverlapCapsule(point, size, direction, angle, contactFilter) end
 
 --- Checks a capsule against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param direction UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number The collider overlapping the capsule.
 function UnityEngine.PhysicsScene2D:OverlapCapsule(point, size, direction, angle, results, layerMask) end
 
@@ -156,9 +212,11 @@ function UnityEngine.PhysicsScene2D:ToString() end
 --- @return number
 function UnityEngine.PhysicsScene2D:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.PhysicsScene2D:Equals(other) end
 
+--- @param other UnityEngine.PhysicsScene2D 
 --- @return boolean
 function UnityEngine.PhysicsScene2D:Equals(other) end
 
@@ -176,14 +234,24 @@ function UnityEngine.PhysicsScene2D:IsEmpty() end
 function UnityEngine.PhysicsScene2D:Simulate(step) end
 
 --- Casts a line segment against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:Linecast(start, _end, layerMask) end
 
 --- Casts a line segment against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:Linecast(start, _end, contactFilter) end
 
 --- Casts a line segment against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param start UnityEngine.Vector2 
+--- @param _end UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number The cast results returned.
 function UnityEngine.PhysicsScene2D:Linecast(start, _end, results, layerMask) end
 
@@ -204,14 +272,27 @@ function UnityEngine.PhysicsScene2D:Linecast(start, _end, contactFilter, results
 function UnityEngine.PhysicsScene2D:Linecast(start, _end, contactFilter, results) end
 
 --- Casts a ray against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:Raycast(origin, direction, distance, layerMask) end
 
 --- Casts a ray against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:Raycast(origin, direction, distance, contactFilter) end
 
 --- Casts a ray against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number The cast results returned.
 function UnityEngine.PhysicsScene2D:Raycast(origin, direction, distance, results, layerMask) end
 
@@ -234,14 +315,30 @@ function UnityEngine.PhysicsScene2D:Raycast(origin, direction, distance, contact
 function UnityEngine.PhysicsScene2D:Raycast(origin, direction, distance, contactFilter, results) end
 
 --- Casts a circle against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:CircleCast(origin, radius, direction, distance, layerMask) end
 
 --- Casts a circle against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:CircleCast(origin, radius, direction, distance, contactFilter) end
 
 --- Casts a circle against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param radius number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number The cast results returned.
 function UnityEngine.PhysicsScene2D:CircleCast(origin, radius, direction, distance, results, layerMask) end
 
@@ -266,14 +363,33 @@ function UnityEngine.PhysicsScene2D:CircleCast(origin, radius, direction, distan
 function UnityEngine.PhysicsScene2D:CircleCast(origin, radius, direction, distance, contactFilter, results) end
 
 --- Casts a box against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:BoxCast(origin, size, angle, direction, distance, layerMask) end
 
 --- Casts a box against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:BoxCast(origin, size, angle, direction, distance, contactFilter) end
 
 --- Casts a box against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number The cast results returned.
 function UnityEngine.PhysicsScene2D:BoxCast(origin, size, angle, direction, distance, results, layerMask) end
 
@@ -300,14 +416,36 @@ function UnityEngine.PhysicsScene2D:BoxCast(origin, size, angle, direction, dist
 function UnityEngine.PhysicsScene2D:BoxCast(origin, size, angle, direction, distance, contactFilter, results) end
 
 --- Casts a capsule against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param layerMask number 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, layerMask) end
 
 --- Casts a capsule against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.RaycastHit2D The cast results returned.
 function UnityEngine.PhysicsScene2D:CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, contactFilter) end
 
 --- Casts a capsule against colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param origin UnityEngine.Vector2 
+--- @param size UnityEngine.Vector2 
+--- @param capsuleDirection UnityEngine.CapsuleDirection2D 
+--- @param angle number 
+--- @param direction UnityEngine.Vector2 
+--- @param distance number 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param layerMask number 
 --- @return number The cast results returned.
 function UnityEngine.PhysicsScene2D:CapsuleCast(origin, size, capsuleDirection, angle, direction, distance, results, layerMask) end
 
@@ -351,14 +489,21 @@ function UnityEngine.PhysicsScene2D:GetRayIntersection(ray, distance, layerMask)
 function UnityEngine.PhysicsScene2D:GetRayIntersection(ray, distance, results, layerMask) end
 
 --- Checks a point against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param layerMask number 
 --- @return UnityEngine.Collider2D The collider overlapping the point.
 function UnityEngine.PhysicsScene2D:OverlapPoint(point, layerMask) end
 
 --- Checks a point against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
 --- @return UnityEngine.Collider2D The collider overlapping the point.
 function UnityEngine.PhysicsScene2D:OverlapPoint(point, contactFilter) end
 
 --- Checks a point against Colliders in the PhysicsScene2D, returning the first intersection only.
+--- @param point UnityEngine.Vector2 
+--- @param results UnityEngine.Collider2D[] 
+--- @param layerMask number 
 --- @return number The collider overlapping the point.
 function UnityEngine.PhysicsScene2D:OverlapPoint(point, results, layerMask) end
 

@@ -13,15 +13,21 @@
 ---        
 UnityEngine.UIElements.TextShadow = {}
 
+--- @param style1 UnityEngine.UIElements.TextShadow 
+--- @param style2 UnityEngine.UIElements.TextShadow 
 --- @return boolean
 function UnityEngine.UIElements.TextShadow.op_Equality(style1, style2) end
 
+--- @param style1 UnityEngine.UIElements.TextShadow 
+--- @param style2 UnityEngine.UIElements.TextShadow 
 --- @return boolean
 function UnityEngine.UIElements.TextShadow.op_Inequality(style1, style2) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.TextShadow:Equals(obj) end
 
+--- @param other UnityEngine.UIElements.TextShadow 
 --- @return boolean
 function UnityEngine.UIElements.TextShadow:Equals(other) end
 

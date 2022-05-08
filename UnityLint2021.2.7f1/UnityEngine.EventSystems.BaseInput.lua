@@ -31,25 +31,33 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.BaseInput = {}
 
+--- @param value UnityEngine.IMECompositionMode 
 function UnityEngine.EventSystems.BaseInput:set_imeCompositionMode(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.EventSystems.BaseInput:set_compositionCursorPos(value) end
 
+--- @param button number 
 --- @return boolean
 function UnityEngine.EventSystems.BaseInput:GetMouseButtonDown(button) end
 
+--- @param button number 
 --- @return boolean
 function UnityEngine.EventSystems.BaseInput:GetMouseButtonUp(button) end
 
+--- @param button number 
 --- @return boolean
 function UnityEngine.EventSystems.BaseInput:GetMouseButton(button) end
 
+--- @param index number 
 --- @return UnityEngine.Touch
 function UnityEngine.EventSystems.BaseInput:GetTouch(index) end
 
+--- @param axisName string 
 --- @return number
 function UnityEngine.EventSystems.BaseInput:GetAxisRaw(axisName) end
 
+--- @param buttonName string 
 --- @return boolean
 function UnityEngine.EventSystems.BaseInput:GetButtonDown(buttonName) end
 

@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.Text.AtlasPopulationMode
 UnityEngine.TextCore.Text.AtlasPopulationMode = {
     Static = 0,
     Dynamic = 1,

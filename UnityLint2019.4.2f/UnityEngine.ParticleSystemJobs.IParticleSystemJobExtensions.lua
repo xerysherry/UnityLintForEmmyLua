@@ -1,12 +1,23 @@
 --- @class UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions 
 UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions = {}
 
+--- @param jobData UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.T 
+--- @param ps UnityEngine.ParticleSystem 
+--- @param dependsOn Unity.Jobs.JobHandle 
 --- @return Unity.Jobs.JobHandle
 function UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.Schedule(jobData, ps, dependsOn) end
 
+--- @param jobData UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.T 
+--- @param ps UnityEngine.ParticleSystem 
+--- @param minIndicesPerJobCount number 
+--- @param dependsOn Unity.Jobs.JobHandle 
 --- @return Unity.Jobs.JobHandle
 function UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.Schedule(jobData, ps, minIndicesPerJobCount, dependsOn) end
 
+--- @param jobData UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.T 
+--- @param ps UnityEngine.ParticleSystem 
+--- @param innerLoopBatchCount number 
+--- @param dependsOn Unity.Jobs.JobHandle 
 --- @return Unity.Jobs.JobHandle
 function UnityEngine.ParticleSystemJobs.IParticleSystemJobExtensions.ScheduleBatch(jobData, ps, innerLoopBatchCount, dependsOn) end
 

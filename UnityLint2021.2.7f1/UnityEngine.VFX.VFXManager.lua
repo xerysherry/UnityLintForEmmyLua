@@ -8,8 +8,10 @@ UnityEngine.VFX.VFXManager = {}
 --- @return UnityEngine.VFX.VisualEffect[]
 function UnityEngine.VFX.VFXManager.GetComponents() end
 
+--- @param value number 
 function UnityEngine.VFX.VFXManager.set_fixedTimeStep(value) end
 
+--- @param value number 
 function UnityEngine.VFX.VFXManager.set_maxDeltaTime(value) end
 
 --- Use this method to prepare and process per-Camera VFX commands for this frame.
@@ -17,6 +19,7 @@ function UnityEngine.VFX.VFXManager.set_maxDeltaTime(value) end
 function UnityEngine.VFX.VFXManager.ProcessCamera(cam) end
 
 --- Use this method to prepare per-Camera VFX commands for this frame.
+--- @param cam UnityEngine.Camera 
 function UnityEngine.VFX.VFXManager.PrepareCamera(cam) end
 
 --- Use this method to prepare per-Camera VFX commands for this frame.
@@ -25,6 +28,8 @@ function UnityEngine.VFX.VFXManager.PrepareCamera(cam) end
 function UnityEngine.VFX.VFXManager.PrepareCamera(cam, camXRSettings) end
 
 --- Use this method to process per-Camera VFX commands for the current frame.
+--- @param cam UnityEngine.Camera 
+--- @param cmd UnityEngine.Rendering.CommandBuffer 
 function UnityEngine.VFX.VFXManager.ProcessCameraCommand(cam, cmd) end
 
 --- Use this method to process per-Camera VFX commands for the current frame.

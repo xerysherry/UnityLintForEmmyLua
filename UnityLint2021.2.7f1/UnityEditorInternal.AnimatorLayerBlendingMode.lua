@@ -1,3 +1,4 @@
+--- @class UnityEditorInternal.AnimatorLayerBlendingMode
 UnityEditorInternal.AnimatorLayerBlendingMode = {
     Override = -1,
     Additive = -1,

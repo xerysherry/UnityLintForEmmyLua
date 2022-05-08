@@ -1,3 +1,4 @@
+--- @class UnityEngine.XR.WSA.RemoteDeviceVersion
 UnityEngine.XR.WSA.RemoteDeviceVersion = {
     V1 = 0,
     V2 = 1,

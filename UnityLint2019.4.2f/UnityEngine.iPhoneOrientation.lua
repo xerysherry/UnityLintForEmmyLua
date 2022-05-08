@@ -1,3 +1,4 @@
+--- @class UnityEngine.iPhoneOrientation
 UnityEngine.iPhoneOrientation = {
     Unknown = 0,
     Portrait = 1,

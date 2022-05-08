@@ -56,28 +56,40 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.WheelCollider = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.WheelCollider:set_center(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_radius(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_suspensionDistance(value) end
 
+--- @param value UnityEngine.JointSpring 
 function UnityEngine.WheelCollider:set_suspensionSpring(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_forceAppPointDistance(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_mass(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_wheelDampingRate(value) end
 
+--- @param value UnityEngine.WheelFrictionCurve 
 function UnityEngine.WheelCollider:set_forwardFriction(value) end
 
+--- @param value UnityEngine.WheelFrictionCurve 
 function UnityEngine.WheelCollider:set_sidewaysFriction(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_motorTorque(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_brakeTorque(value) end
 
+--- @param value number 
 function UnityEngine.WheelCollider:set_steerAngle(value) end
 
 --- Configure vehicle sub-stepping parameters.

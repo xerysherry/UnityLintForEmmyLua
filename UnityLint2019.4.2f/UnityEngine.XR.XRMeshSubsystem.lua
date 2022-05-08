@@ -19,6 +19,7 @@ function UnityEngine.XR.XRMeshSubsystem:TryGetMeshInfos(meshInfosOut) end
 --- @param onMeshGenerationComplete function The delegate to invoke when the generation completes.
 function UnityEngine.XR.XRMeshSubsystem:GenerateMeshAsync(meshId, mesh, meshCollider, attributes, onMeshGenerationComplete) end
 
+--- @param value number 
 function UnityEngine.XR.XRMeshSubsystem:set_meshDensity(value) end
 
 --- Set the bounding volume to restrict the space in which Unity generates and tracks Meshes.

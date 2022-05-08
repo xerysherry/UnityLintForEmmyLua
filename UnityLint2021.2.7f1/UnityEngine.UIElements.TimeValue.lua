@@ -12,22 +12,31 @@
 ---        
 UnityEngine.UIElements.TimeValue = {}
 
+--- @param value number 
 --- @return UnityEngine.UIElements.TimeValue
 function UnityEngine.UIElements.TimeValue.op_Implicit(value) end
 
+--- @param lhs UnityEngine.UIElements.TimeValue 
+--- @param rhs UnityEngine.UIElements.TimeValue 
 --- @return boolean
 function UnityEngine.UIElements.TimeValue.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.TimeValue 
+--- @param rhs UnityEngine.UIElements.TimeValue 
 --- @return boolean
 function UnityEngine.UIElements.TimeValue.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.UIElements.TimeValue:set_value(value) end
 
+--- @param value UnityEngine.UIElements.TimeUnit 
 function UnityEngine.UIElements.TimeValue:set_unit(value) end
 
+--- @param other UnityEngine.UIElements.TimeValue 
 --- @return boolean
 function UnityEngine.UIElements.TimeValue:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.TimeValue:Equals(obj) end
 

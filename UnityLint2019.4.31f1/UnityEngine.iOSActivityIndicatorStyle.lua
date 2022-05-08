@@ -1,3 +1,4 @@
+--- @class UnityEngine.iOSActivityIndicatorStyle
 UnityEngine.iOSActivityIndicatorStyle = {
     DontShow = 0,
     WhiteLarge = 1,

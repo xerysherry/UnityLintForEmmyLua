@@ -1,7 +1,9 @@
 --- @class UnityEngine.Rendering.VirtualTexturing.EditorHelpers 
 UnityEngine.Rendering.VirtualTexturing.EditorHelpers = {}
 
+--- @param textures UnityEngine.Texture[] 
 --- @return boolean
+--- @return System.String& 
 function UnityEngine.Rendering.VirtualTexturing.EditorHelpers.ValidateTextureStack(textures) end
 
 --- @return UnityEngine.Experimental.Rendering.GraphicsFormat[]

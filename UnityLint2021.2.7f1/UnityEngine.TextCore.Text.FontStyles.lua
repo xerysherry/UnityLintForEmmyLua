@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.Text.FontStyles
 UnityEngine.TextCore.Text.FontStyles = {
     Normal = 0,
     Bold = 1,

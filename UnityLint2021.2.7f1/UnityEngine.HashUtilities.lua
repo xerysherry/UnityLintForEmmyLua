@@ -12,6 +12,8 @@ function UnityEngine.HashUtilities.AppendHash(inHash, outHash) end
 function UnityEngine.HashUtilities.QuantisedMatrixHash(value, hash) end
 
 --- Compute a Hash128 of a Vector3.
+--- @param value UnityEngine.Vector3& 
+--- @param hash UnityEngine.Hash128& 
 function UnityEngine.HashUtilities.QuantisedVectorHash(value, hash) end
 
 --- Compute a 128 bit hash based on a value. the type of the value must be a value type.

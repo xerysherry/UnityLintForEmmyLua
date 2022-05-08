@@ -9,18 +9,24 @@
 ---       The type of the shader keyword (Read Only).
 UnityEngine.Rendering.LocalKeyword = {}
 
+--- @param lhs UnityEngine.Rendering.LocalKeyword 
+--- @param rhs UnityEngine.Rendering.LocalKeyword 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeyword.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.LocalKeyword 
+--- @param rhs UnityEngine.Rendering.LocalKeyword 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeyword.op_Inequality(lhs, rhs) end
 
 --- @return string
 function UnityEngine.Rendering.LocalKeyword:ToString() end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeyword:Equals(o) end
 
+--- @param rhs UnityEngine.Rendering.LocalKeyword 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeyword:Equals(rhs) end
 

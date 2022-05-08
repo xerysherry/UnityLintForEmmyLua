@@ -41,22 +41,31 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.ParentConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.ParentConstraint:set_weight(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.ParentConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.ParentConstraint:set_locked(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.ParentConstraint:set_translationAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.ParentConstraint:set_rotationAtRest(value) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Animations.ParentConstraint:set_translationOffsets(value) end
 
+--- @param value UnityEngine.Vector3[] 
 function UnityEngine.Animations.ParentConstraint:set_rotationOffsets(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.ParentConstraint:set_translationAxis(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.ParentConstraint:set_rotationAxis(value) end
 
 --- Gets the rotation offset associated with a source by index.

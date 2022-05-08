@@ -1,21 +1,33 @@
 --- @class Unity.Collections.NativeSliceExtensions 
 Unity.Collections.NativeSliceExtensions = {}
 
+--- @param thisArray Unity.Collections.NativeArray`1 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisArray) end
 
+--- @param thisArray Unity.Collections.NativeArray`1 
+--- @param start number 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisArray, start) end
 
+--- @param thisArray Unity.Collections.NativeArray`1 
+--- @param start number 
+--- @param length number 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisArray, start, length) end
 
+--- @param thisSlice Unity.Collections.NativeSlice`1 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisSlice) end
 
+--- @param thisSlice Unity.Collections.NativeSlice`1 
+--- @param start number 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisSlice, start) end
 
+--- @param thisSlice Unity.Collections.NativeSlice`1 
+--- @param start number 
+--- @param length number 
 --- @return Unity.Collections.NativeSlice`1
 function Unity.Collections.NativeSliceExtensions.Slice(thisSlice, start, length) end
 

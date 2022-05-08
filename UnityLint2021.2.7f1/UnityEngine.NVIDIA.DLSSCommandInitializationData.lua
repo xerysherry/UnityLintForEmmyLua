@@ -13,16 +13,22 @@
 ---       Bit mask containing feature flags to be used for DLSS.
 UnityEngine.NVIDIA.DLSSCommandInitializationData = {}
 
+--- @param value number 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_inputRTWidth(value) end
 
+--- @param value number 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_inputRTHeight(value) end
 
+--- @param value number 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_outputRTWidth(value) end
 
+--- @param value number 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_outputRTHeight(value) end
 
+--- @param value UnityEngine.NVIDIA.DLSSQuality 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_quality(value) end
 
+--- @param value UnityEngine.NVIDIA.DLSSFeatureFlags 
 function UnityEngine.NVIDIA.DLSSCommandInitializationData:set_featureFlags(value) end
 
 --- Helper function. Controls the feature flags used by DLSS. See Also: NVIDIA.DLSSFeatureFlags.

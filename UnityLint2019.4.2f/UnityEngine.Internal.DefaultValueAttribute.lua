@@ -3,6 +3,7 @@
 --- @field TypeId System.Object
 UnityEngine.Internal.DefaultValueAttribute = {}
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Internal.DefaultValueAttribute:Equals(obj) end
 

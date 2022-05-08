@@ -16,14 +16,20 @@
 ---        
 UnityEngine.UIElements.TimerState = {}
 
+--- @param state1 UnityEngine.UIElements.TimerState 
+--- @param state2 UnityEngine.UIElements.TimerState 
 --- @return boolean
 function UnityEngine.UIElements.TimerState.op_Equality(state1, state2) end
 
+--- @param state1 UnityEngine.UIElements.TimerState 
+--- @param state2 UnityEngine.UIElements.TimerState 
 --- @return boolean
 function UnityEngine.UIElements.TimerState.op_Inequality(state1, state2) end
 
+--- @param value number 
 function UnityEngine.UIElements.TimerState:set_start(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.TimerState:set_now(value) end
 
 --- 

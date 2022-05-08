@@ -140,6 +140,8 @@ function UnityEngine.AndroidJNI.ToFloatArray(array) end
 function UnityEngine.AndroidJNI.ToDoubleArray(array) end
 
 --- Converts a managed array of System.IntPtr, representing Java objects, to a Java array of <tt>java.lang.Object</tt>.
+--- @param array System.IntPtr[] 
+--- @param arrayClass System.IntPtr 
 --- @return System.IntPtr 
 function UnityEngine.AndroidJNI.ToObjectArray(array, arrayClass) end
 

@@ -1,3 +1,4 @@
+--- @class UnityEngine.TextCore.LowLevel.FontFeatureLookupFlags
 UnityEngine.TextCore.LowLevel.FontFeatureLookupFlags = {
     None = 0,
     IgnoreLigatures = 4,

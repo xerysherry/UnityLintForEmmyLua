@@ -72,14 +72,18 @@ function UnityEngine.AI.NavMesh.GetAreaFromName(areaName) end
 --- @return UnityEngine.AI.NavMeshTriangulation 
 function UnityEngine.AI.NavMesh.CalculateTriangulation() end
 
+--- @return table 
+--- @return table 
 function UnityEngine.AI.NavMesh.Triangulate() end
 
 function UnityEngine.AI.NavMesh.AddOffMeshLinks() end
 
 function UnityEngine.AI.NavMesh.RestoreNavMesh() end
 
+--- @param value number 
 function UnityEngine.AI.NavMesh.set_avoidancePredictionTime(value) end
 
+--- @param value number 
 function UnityEngine.AI.NavMesh.set_pathfindingIterationsPerFrame(value) end
 
 --- Adds the specified NavMeshData to the game.

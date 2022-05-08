@@ -12,28 +12,39 @@
 ---        
 UnityEngine.UIElements.StyleBackground = {}
 
+--- @param lhs UnityEngine.UIElements.StyleBackground 
+--- @param rhs UnityEngine.UIElements.StyleBackground 
 --- @return boolean
 function UnityEngine.UIElements.StyleBackground.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleBackground 
+--- @param rhs UnityEngine.UIElements.StyleBackground 
 --- @return boolean
 function UnityEngine.UIElements.StyleBackground.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleBackground
 function UnityEngine.UIElements.StyleBackground.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.Background 
 --- @return UnityEngine.UIElements.StyleBackground
 function UnityEngine.UIElements.StyleBackground.op_Implicit(v) end
 
+--- @param v UnityEngine.Texture2D 
 --- @return UnityEngine.UIElements.StyleBackground
 function UnityEngine.UIElements.StyleBackground.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Background 
 function UnityEngine.UIElements.StyleBackground:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleBackground:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleBackground 
 --- @return boolean
 function UnityEngine.UIElements.StyleBackground:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleBackground:Equals(obj) end
 

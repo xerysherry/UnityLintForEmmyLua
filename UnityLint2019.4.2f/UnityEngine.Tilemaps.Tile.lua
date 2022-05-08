@@ -14,16 +14,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Tilemaps.Tile = {}
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.Tilemaps.Tile:set_sprite(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Tilemaps.Tile:set_color(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Tilemaps.Tile:set_transform(value) end
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.Tilemaps.Tile:set_gameObject(value) end
 
+--- @param value UnityEngine.Tilemaps.TileFlags 
 function UnityEngine.Tilemaps.Tile:set_flags(value) end
 
+--- @param value UnityEngine.Tilemaps.Tile.ColliderType 
 function UnityEngine.Tilemaps.Tile:set_colliderType(value) end
 
 --- Retrieves the tile rendering data for the Tile.

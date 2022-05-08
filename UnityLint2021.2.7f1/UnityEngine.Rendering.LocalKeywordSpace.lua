@@ -7,9 +7,13 @@
 ---       The number of local shader keywords in this local keyword space. (Read Only)
 UnityEngine.Rendering.LocalKeywordSpace = {}
 
+--- @param lhs UnityEngine.Rendering.LocalKeywordSpace 
+--- @param rhs UnityEngine.Rendering.LocalKeywordSpace 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeywordSpace.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.LocalKeywordSpace 
+--- @param rhs UnityEngine.Rendering.LocalKeywordSpace 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeywordSpace.op_Inequality(lhs, rhs) end
 
@@ -18,9 +22,11 @@ function UnityEngine.Rendering.LocalKeywordSpace.op_Inequality(lhs, rhs) end
 --- @return UnityEngine.Rendering.LocalKeyword Returns a valid Rendering.LocalKeyword if it's present in the keyword space. Otherwise, returns an invalid Rendering.LocalKeyword.
 function UnityEngine.Rendering.LocalKeywordSpace:FindKeyword(name) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeywordSpace:Equals(o) end
 
+--- @param rhs UnityEngine.Rendering.LocalKeywordSpace 
 --- @return boolean
 function UnityEngine.Rendering.LocalKeywordSpace:Equals(rhs) end
 

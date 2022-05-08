@@ -26,6 +26,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.Mask = {}
 
+--- @param value boolean 
 function UnityEngine.UI.Mask:set_showMaskGraphic(value) end
 
 --- @return boolean
@@ -33,9 +34,12 @@ function UnityEngine.UI.Mask:MaskEnabled() end
 
 function UnityEngine.UI.Mask:OnSiblingGraphicEnabledDisabled() end
 
+--- @param sp UnityEngine.Vector2 
+--- @param eventCamera UnityEngine.Camera 
 --- @return boolean
 function UnityEngine.UI.Mask:IsRaycastLocationValid(sp, eventCamera) end
 
+--- @param baseMaterial UnityEngine.Material 
 --- @return UnityEngine.Material
 function UnityEngine.UI.Mask:GetModifiedMaterial(baseMaterial) end
 

@@ -13,21 +13,30 @@ UnityEngine.UIElements.Translate = {}
 --- @return UnityEngine.UIElements.Translate 
 function UnityEngine.UIElements.Translate.None() end
 
+--- @param lhs UnityEngine.UIElements.Translate 
+--- @param rhs UnityEngine.UIElements.Translate 
 --- @return boolean
 function UnityEngine.UIElements.Translate.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Translate 
+--- @param rhs UnityEngine.UIElements.Translate 
 --- @return boolean
 function UnityEngine.UIElements.Translate.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.UIElements.Length 
 function UnityEngine.UIElements.Translate:set_x(value) end
 
+--- @param value UnityEngine.UIElements.Length 
 function UnityEngine.UIElements.Translate:set_y(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.Translate:set_z(value) end
 
+--- @param other UnityEngine.UIElements.Translate 
 --- @return boolean
 function UnityEngine.UIElements.Translate:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Translate:Equals(obj) end
 

@@ -1,9 +1,13 @@
 --- @class UnityEngine.Serialization.UnitySurrogateSelector 
 UnityEngine.Serialization.UnitySurrogateSelector = {}
 
+--- @param type System.Type 
+--- @param context System.Runtime.Serialization.StreamingContext 
 --- @return System.Runtime.Serialization.ISerializationSurrogate
+--- @return System.Runtime.Serialization.ISurrogateSelector& 
 function UnityEngine.Serialization.UnitySurrogateSelector:GetSurrogate(type, context) end
 
+--- @param selector System.Runtime.Serialization.ISurrogateSelector 
 function UnityEngine.Serialization.UnitySurrogateSelector:ChainSelector(selector) end
 
 --- @return System.Runtime.Serialization.ISurrogateSelector

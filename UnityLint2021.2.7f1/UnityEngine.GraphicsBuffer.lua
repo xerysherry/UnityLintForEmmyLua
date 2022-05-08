@@ -55,15 +55,28 @@ function UnityEngine.GraphicsBuffer:SetData(data) end
 function UnityEngine.GraphicsBuffer:SetData(data) end
 
 --- Set the buffer with values from an array.
+--- @param data table 
+--- @param managedBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, managedBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data UnityEngine.GraphicsBuffer.T[] 
+--- @param managedBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, managedBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data Unity.Collections.NativeArray`1 
+--- @param nativeBufferStartIndex number 
+--- @param graphicsBufferStartIndex number 
+--- @param count number 
 function UnityEngine.GraphicsBuffer:SetData(data, nativeBufferStartIndex, graphicsBufferStartIndex, count) end
 
 --- Read data values from the buffer into an array. The array can only use <a href="https:docs.microsoft.comen-usdotnetframeworkinteropblittable-and-non-blittable-types">blittable<a> types.
+--- @param data table 
 function UnityEngine.GraphicsBuffer:GetData(data) end
 
 --- Read data values from the buffer into an array. The array can only use <a href="https:docs.microsoft.comen-usdotnetframeworkinteropblittable-and-non-blittable-types">blittable<a> types.
@@ -77,6 +90,7 @@ function UnityEngine.GraphicsBuffer:GetData(data, managedBufferStartIndex, compu
 --- @return System.IntPtr Pointer to the underlying graphics API buffer.
 function UnityEngine.GraphicsBuffer:GetNativeBufferPtr() end
 
+--- @param value string 
 function UnityEngine.GraphicsBuffer:set_name(value) end
 
 --- Sets counter value of append/consume buffer.

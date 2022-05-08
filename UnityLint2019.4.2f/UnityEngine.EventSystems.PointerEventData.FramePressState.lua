@@ -1,10 +1,4 @@
-UnityEngine.EventSystems.PointerEventData.FramePressState = {
-    Pressed = 0,
-    Released = 1,
-    PressedAndReleased = 2,
-    NotChanged = 3,
-}
-
+--- @class UnityEngine.EventSystems.PointerEventData.FramePressState
 UnityEngine.EventSystems.PointerEventData.FramePressState = {
     Pressed = 0,
     Released = 1,

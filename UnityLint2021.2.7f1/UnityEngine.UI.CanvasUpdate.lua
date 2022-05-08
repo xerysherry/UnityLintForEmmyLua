@@ -1,3 +1,4 @@
+--- @class UnityEngine.UI.CanvasUpdate
 UnityEngine.UI.CanvasUpdate = {
     Prelayout = 0,
     Layout = 1,

@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleFontDefinition = {}
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleFontDefinition
 function UnityEngine.UIElements.StyleFontDefinition.op_Implicit(keyword) end
 
+--- @param f UnityEngine.UIElements.FontDefinition 
 --- @return UnityEngine.UIElements.StyleFontDefinition
 function UnityEngine.UIElements.StyleFontDefinition.op_Implicit(f) end
 
+--- @param left UnityEngine.UIElements.StyleFontDefinition 
+--- @param right UnityEngine.UIElements.StyleFontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.StyleFontDefinition.op_Equality(left, right) end
 
+--- @param left UnityEngine.UIElements.StyleFontDefinition 
+--- @param right UnityEngine.UIElements.StyleFontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.StyleFontDefinition.op_Inequality(left, right) end
 
+--- @param value UnityEngine.UIElements.FontDefinition 
 function UnityEngine.UIElements.StyleFontDefinition:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleFontDefinition:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleFontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.StyleFontDefinition:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleFontDefinition:Equals(obj) end
 

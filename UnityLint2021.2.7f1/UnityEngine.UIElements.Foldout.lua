@@ -62,8 +62,10 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.Foldout = {}
 
+--- @param value string 
 function UnityEngine.UIElements.Foldout:set_text(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.Foldout:set_value(value) end
 
 --- 

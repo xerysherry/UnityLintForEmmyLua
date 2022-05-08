@@ -40,6 +40,7 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.TextElement = {}
 
+--- @param value string 
 function UnityEngine.UIElements.TextElement:set_text(value) end
 
 --- Computes the size needed to display a text string based on element style values such as font, font-size, word-wrap, and so on.

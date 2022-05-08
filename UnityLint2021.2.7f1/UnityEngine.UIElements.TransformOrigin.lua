@@ -13,21 +13,30 @@ UnityEngine.UIElements.TransformOrigin = {}
 --- @return UnityEngine.UIElements.TransformOrigin 
 function UnityEngine.UIElements.TransformOrigin.Initial() end
 
+--- @param lhs UnityEngine.UIElements.TransformOrigin 
+--- @param rhs UnityEngine.UIElements.TransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.TransformOrigin.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.TransformOrigin 
+--- @param rhs UnityEngine.UIElements.TransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.TransformOrigin.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.UIElements.Length 
 function UnityEngine.UIElements.TransformOrigin:set_x(value) end
 
+--- @param value UnityEngine.UIElements.Length 
 function UnityEngine.UIElements.TransformOrigin:set_y(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.TransformOrigin:set_z(value) end
 
+--- @param other UnityEngine.UIElements.TransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.TransformOrigin:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.TransformOrigin:Equals(obj) end
 

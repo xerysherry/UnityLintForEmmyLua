@@ -1,9 +1,13 @@
 --- @class UnityEngine.XR.Bone A tracked bone on the device at an XR.XRNode in the XR input subsystem.
 UnityEngine.XR.Bone = {}
 
+--- @param a UnityEngine.XR.Bone 
+--- @param b UnityEngine.XR.Bone 
 --- @return boolean
 function UnityEngine.XR.Bone.op_Equality(a, b) end
 
+--- @param a UnityEngine.XR.Bone 
+--- @param b UnityEngine.XR.Bone 
 --- @return boolean
 function UnityEngine.XR.Bone.op_Inequality(a, b) end
 
@@ -27,9 +31,11 @@ function UnityEngine.XR.Bone:TryGetParentBone() end
 --- @return boolean true if bone can be queried for child bones; otherwise false.
 function UnityEngine.XR.Bone:TryGetChildBones(childBones) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.Bone:Equals(obj) end
 
+--- @param other UnityEngine.XR.Bone 
 --- @return boolean
 function UnityEngine.XR.Bone:Equals(other) end
 

@@ -5,15 +5,21 @@
 ---       The type of this usage feature; used internally to map to an input feature on a device.
 UnityEngine.XR.InputFeatureUsage = {}
 
+--- @param a UnityEngine.XR.InputFeatureUsage 
+--- @param b UnityEngine.XR.InputFeatureUsage 
 --- @return boolean
 function UnityEngine.XR.InputFeatureUsage.op_Equality(a, b) end
 
+--- @param a UnityEngine.XR.InputFeatureUsage 
+--- @param b UnityEngine.XR.InputFeatureUsage 
 --- @return boolean
 function UnityEngine.XR.InputFeatureUsage.op_Inequality(a, b) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.InputFeatureUsage:Equals(obj) end
 
+--- @param other UnityEngine.XR.InputFeatureUsage 
 --- @return boolean
 function UnityEngine.XR.InputFeatureUsage:Equals(other) end
 

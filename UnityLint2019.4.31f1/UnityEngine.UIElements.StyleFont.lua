@@ -5,25 +5,35 @@
 ---       The style keyword.
 UnityEngine.UIElements.StyleFont = {}
 
+--- @param lhs UnityEngine.UIElements.StyleFont 
+--- @param rhs UnityEngine.UIElements.StyleFont 
 --- @return boolean
 function UnityEngine.UIElements.StyleFont.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleFont 
+--- @param rhs UnityEngine.UIElements.StyleFont 
 --- @return boolean
 function UnityEngine.UIElements.StyleFont.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleFont
 function UnityEngine.UIElements.StyleFont.op_Implicit(keyword) end
 
+--- @param v UnityEngine.Font 
 --- @return UnityEngine.UIElements.StyleFont
 function UnityEngine.UIElements.StyleFont.op_Implicit(v) end
 
+--- @param value UnityEngine.Font 
 function UnityEngine.UIElements.StyleFont:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleFont:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleFont 
 --- @return boolean
 function UnityEngine.UIElements.StyleFont:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleFont:Equals(obj) end
 

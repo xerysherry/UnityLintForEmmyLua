@@ -26,22 +26,30 @@ function UnityEngine.UIElements.FontDefinition.FromFont(f) end
 --- @return UnityEngine.UIElements.FontDefinition A new FontDefinition object.
 function UnityEngine.UIElements.FontDefinition.FromSDFFont(f) end
 
+--- @param left UnityEngine.UIElements.FontDefinition 
+--- @param right UnityEngine.UIElements.FontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.FontDefinition.op_Equality(left, right) end
 
+--- @param left UnityEngine.UIElements.FontDefinition 
+--- @param right UnityEngine.UIElements.FontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.FontDefinition.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Font 
 function UnityEngine.UIElements.FontDefinition:set_font(value) end
 
+--- @param value UnityEngine.TextCore.Text.FontAsset 
 function UnityEngine.UIElements.FontDefinition:set_fontAsset(value) end
 
 --- @return string
 function UnityEngine.UIElements.FontDefinition:ToString() end
 
+--- @param other UnityEngine.UIElements.FontDefinition 
 --- @return boolean
 function UnityEngine.UIElements.FontDefinition:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.FontDefinition:Equals(obj) end
 

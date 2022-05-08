@@ -10,9 +10,11 @@ UnityEngine.Audio.AudioPlayableOutput = {}
 --- @return UnityEngine.Audio.AudioPlayableOutput A new AudioPlayableOutput attached to the PlayableGraph.
 function UnityEngine.Audio.AudioPlayableOutput.Create(graph, name, target) end
 
+--- @param output UnityEngine.Audio.AudioPlayableOutput 
 --- @return UnityEngine.Playables.PlayableOutput
 function UnityEngine.Audio.AudioPlayableOutput.op_Implicit(output) end
 
+--- @param output UnityEngine.Playables.PlayableOutput 
 --- @return UnityEngine.Audio.AudioPlayableOutput
 function UnityEngine.Audio.AudioPlayableOutput.op_Explicit(output) end
 
@@ -22,6 +24,7 @@ function UnityEngine.Audio.AudioPlayableOutput:GetHandle() end
 --- @return UnityEngine.AudioSource
 function UnityEngine.Audio.AudioPlayableOutput:GetTarget() end
 
+--- @param value UnityEngine.AudioSource 
 function UnityEngine.Audio.AudioPlayableOutput:SetTarget(value) end
 
 --- Gets the state of output playback when seeking.

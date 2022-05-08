@@ -58,14 +58,19 @@ function UnityEngine.Collider2D:Raycast(direction, contactFilter, results, dista
 --- @return UnityEngine.Vector2 A point on the perimeter of this Collider that is closest to the specified position.
 function UnityEngine.Collider2D:ClosestPoint(position) end
 
+--- @param value number 
 function UnityEngine.Collider2D:set_density(value) end
 
+--- @param value boolean 
 function UnityEngine.Collider2D:set_isTrigger(value) end
 
+--- @param value boolean 
 function UnityEngine.Collider2D:set_usedByEffector(value) end
 
+--- @param value boolean 
 function UnityEngine.Collider2D:set_usedByComposite(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Collider2D:set_offset(value) end
 
 --- Creates a planar Mesh that is identical to the area defined by the Collider2D geometry.
@@ -78,6 +83,7 @@ function UnityEngine.Collider2D:CreateMesh(useBodyPosition, useBodyRotation) end
 --- @return number A hash value that uniquely identifies the configured geometry of the Collider2D.
 function UnityEngine.Collider2D:GetShapeHash() end
 
+--- @param value UnityEngine.PhysicsMaterial2D 
 function UnityEngine.Collider2D:set_sharedMaterial(value) end
 
 --- Check whether this collider is touching the collider or not.
@@ -172,10 +178,15 @@ function UnityEngine.Collider2D:GetContacts(contactFilter, colliders) end
 function UnityEngine.Collider2D:GetContacts(contactFilter, colliders) end
 
 --- Casts the Collider shape into the Scene starting at the Collider position ignoring the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Cast(direction, results) end
 
 --- Casts the Collider shape into the Scene starting at the Collider position ignoring the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Cast(direction, results, distance) end
 
@@ -188,10 +199,17 @@ function UnityEngine.Collider2D:Cast(direction, results, distance) end
 function UnityEngine.Collider2D:Cast(direction, results, distance, ignoreSiblingColliders) end
 
 --- Casts the Collider shape into the Scene starting at the Collider position ignoring the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Cast(direction, contactFilter, results) end
 
 --- Casts the Collider shape into the Scene starting at the Collider position ignoring the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Cast(direction, contactFilter, results, distance) end
 
@@ -214,26 +232,49 @@ function UnityEngine.Collider2D:Cast(direction, contactFilter, results, distance
 function UnityEngine.Collider2D:Cast(direction, contactFilter, results, distance, ignoreSiblingColliders) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, results) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, results, distance) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, results, distance, layerMask) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, results, distance, layerMask, minDepth) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param results UnityEngine.RaycastHit2D[] 
+--- @param distance number 
+--- @param layerMask number 
+--- @param minDepth number 
+--- @param maxDepth number 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, results, distance, layerMask, minDepth, maxDepth) end
 
 --- Casts a ray into the Scene that starts at the Collider position and ignores the Collider itself.
+--- @param direction UnityEngine.Vector2 
+--- @param contactFilter UnityEngine.ContactFilter2D 
+--- @param results UnityEngine.RaycastHit2D[] 
 --- @return number The number of results returned.
 function UnityEngine.Collider2D:Raycast(direction, contactFilter, results) end
 

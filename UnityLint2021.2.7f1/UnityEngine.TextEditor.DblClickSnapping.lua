@@ -1,8 +1,4 @@
-UnityEngine.TextEditor.DblClickSnapping = {
-    WORDS = 0,
-    PARAGRAPHS = 1,
-}
-
+--- @class UnityEngine.TextEditor.DblClickSnapping
 UnityEngine.TextEditor.DblClickSnapping = {
     WORDS = 0,
     PARAGRAPHS = 1,

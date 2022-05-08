@@ -1,18 +1,40 @@
 --- @class UnityEngine.Analytics.ContinuousEvent 
 UnityEngine.Analytics.ContinuousEvent = {}
 
+--- @param metricName string 
+--- @param del function 
 --- @return UnityEngine.Analytics.AnalyticsResult
 function UnityEngine.Analytics.ContinuousEvent.RegisterCollector(metricName, del) end
 
+--- @param eventName string 
+--- @param count number 
+--- @param data UnityEngine.Analytics.ContinuousEvent.T[] 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult
 function UnityEngine.Analytics.ContinuousEvent.SetEventHistogramThresholds(eventName, count, data, ver, prefix) end
 
+--- @param eventName string 
+--- @param count number 
+--- @param data UnityEngine.Analytics.ContinuousEvent.T[] 
 --- @return UnityEngine.Analytics.AnalyticsResult
 function UnityEngine.Analytics.ContinuousEvent.SetCustomEventHistogramThresholds(eventName, count, data) end
 
+--- @param customEventName string 
+--- @param metricName string 
+--- @param interval number 
+--- @param period number 
+--- @param enabled boolean 
 --- @return UnityEngine.Analytics.AnalyticsResult
 function UnityEngine.Analytics.ContinuousEvent.ConfigureCustomEvent(customEventName, metricName, interval, period, enabled) end
 
+--- @param eventName string 
+--- @param metricName string 
+--- @param interval number 
+--- @param period number 
+--- @param enabled boolean 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult
 function UnityEngine.Analytics.ContinuousEvent.ConfigureEvent(eventName, metricName, interval, period, enabled, ver, prefix) end
 

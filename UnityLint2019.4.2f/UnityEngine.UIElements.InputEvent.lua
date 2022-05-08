@@ -19,6 +19,8 @@
 UnityEngine.UIElements.InputEvent = {}
 
 --- Gets an event from the event pool and initializes it with the given values. Use this function instead of creating new events. Events obtained using this method need to be released back to the pool. You can use `Dispose()` to release them.
+--- @param previousData string 
+--- @param newData string 
 --- @return UnityEngine.UIElements.InputEvent An initialized event.
 function UnityEngine.UIElements.InputEvent.GetPooled(previousData, newData) end
 

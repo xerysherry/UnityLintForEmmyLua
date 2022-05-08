@@ -53,6 +53,12 @@
 UnityEngine.Texture2D = {}
 
 --- Creates Unity Texture out of externally created native texture object.
+--- @param width number 
+--- @param height number 
+--- @param format UnityEngine.TextureFormat 
+--- @param mipChain boolean 
+--- @param linear boolean 
+--- @param nativeTex System.IntPtr 
 --- @return UnityEngine.Texture2D 
 function UnityEngine.Texture2D.CreateExternalTexture(width, height, format, mipChain, linear, nativeTex) end
 
@@ -65,9 +71,12 @@ function UnityEngine.Texture2D.CreateExternalTexture(width, height, format, mipC
 function UnityEngine.Texture2D.GenerateAtlas(sizes, padding, atlasSize, results) end
 
 --- Packs multiple Textures into a texture atlas.
+--- @param textures UnityEngine.Texture2D[] 
+--- @param padding number 
 --- @return UnityEngine.Rect[] An array of rectangles containing the UV coordinates in the atlas for each input texture, or null if packing fails.
 function UnityEngine.Texture2D:PackTextures(textures, padding) end
 
+--- @param value boolean 
 function UnityEngine.Texture2D:set_alphaIsTransparency(value) end
 
 --- Sets pixel color at coordinates (x,y).
@@ -77,6 +86,10 @@ function UnityEngine.Texture2D:set_alphaIsTransparency(value) end
 function UnityEngine.Texture2D:SetPixel(x, y, color) end
 
 --- Sets pixel color at coordinates (x,y).
+--- @param x number 
+--- @param y number 
+--- @param color UnityEngine.Color 
+--- @param mipLevel number 
 function UnityEngine.Texture2D:SetPixel(x, y, color, mipLevel) end
 
 --- Set a block of pixel colors.
@@ -89,6 +102,11 @@ function UnityEngine.Texture2D:SetPixel(x, y, color, mipLevel) end
 function UnityEngine.Texture2D:SetPixels(x, y, blockWidth, blockHeight, colors, miplevel) end
 
 --- Set a block of pixel colors.
+--- @param x number 
+--- @param y number 
+--- @param blockWidth number 
+--- @param blockHeight number 
+--- @param colors UnityEngine.Color[] 
 function UnityEngine.Texture2D:SetPixels(x, y, blockWidth, blockHeight, colors) end
 
 --- Set a block of pixel colors.
@@ -97,6 +115,7 @@ function UnityEngine.Texture2D:SetPixels(x, y, blockWidth, blockHeight, colors) 
 function UnityEngine.Texture2D:SetPixels(colors, miplevel) end
 
 --- Set a block of pixel colors.
+--- @param colors UnityEngine.Color[] 
 function UnityEngine.Texture2D:SetPixels(colors) end
 
 --- Returns pixel color at coordinates (x, y).
@@ -106,6 +125,9 @@ function UnityEngine.Texture2D:SetPixels(colors) end
 function UnityEngine.Texture2D:GetPixel(x, y) end
 
 --- Returns pixel color at coordinates (x, y).
+--- @param x number 
+--- @param y number 
+--- @param mipLevel number 
 --- @return UnityEngine.Color 
 function UnityEngine.Texture2D:GetPixel(x, y, mipLevel) end
 
@@ -116,6 +138,9 @@ function UnityEngine.Texture2D:GetPixel(x, y, mipLevel) end
 function UnityEngine.Texture2D:GetPixelBilinear(u, v) end
 
 --- Returns filtered pixel color at normalized coordinates (u, v).
+--- @param u number 
+--- @param v number 
+--- @param mipLevel number 
 --- @return UnityEngine.Color 
 function UnityEngine.Texture2D:GetPixelBilinear(u, v, mipLevel) end
 
@@ -125,9 +150,11 @@ function UnityEngine.Texture2D:GetPixelBilinear(u, v, mipLevel) end
 function UnityEngine.Texture2D:LoadRawTextureData(data, size) end
 
 --- Fills texture pixels with raw preformatted data.
+--- @param data number[] 
 function UnityEngine.Texture2D:LoadRawTextureData(data) end
 
 --- Fills texture pixels with raw preformatted data.
+--- @param data Unity.Collections.NativeArray`1 
 function UnityEngine.Texture2D:LoadRawTextureData(data) end
 
 --- Set pixel values from raw preformatted data.
@@ -152,6 +179,7 @@ function UnityEngine.Texture2D:GetRawTextureData() end
 function UnityEngine.Texture2D:Apply(updateMipmaps, makeNoLongerReadable) end
 
 --- Actually apply all previous SetPixel and SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.Texture2D:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixel and SetPixels changes.
@@ -179,6 +207,9 @@ function UnityEngine.Texture2D:Resize(width, height, format, hasMipMap) end
 function UnityEngine.Texture2D:ReadPixels(source, destX, destY, recalculateMipMaps) end
 
 --- Read pixels from screen into the saved texture data.
+--- @param source UnityEngine.Rect 
+--- @param destX number 
+--- @param destY number 
 function UnityEngine.Texture2D:ReadPixels(source, destX, destY) end
 
 --- Set a block of pixel colors.
@@ -187,6 +218,7 @@ function UnityEngine.Texture2D:ReadPixels(source, destX, destY) end
 function UnityEngine.Texture2D:SetPixels32(colors, miplevel) end
 
 --- Set a block of pixel colors.
+--- @param colors UnityEngine.Color32[] 
 function UnityEngine.Texture2D:SetPixels32(colors) end
 
 --- Set a block of pixel colors.
@@ -199,6 +231,11 @@ function UnityEngine.Texture2D:SetPixels32(colors) end
 function UnityEngine.Texture2D:SetPixels32(x, y, blockWidth, blockHeight, colors, miplevel) end
 
 --- Set a block of pixel colors.
+--- @param x number 
+--- @param y number 
+--- @param blockWidth number 
+--- @param blockHeight number 
+--- @param colors UnityEngine.Color32[] 
 function UnityEngine.Texture2D:SetPixels32(x, y, blockWidth, blockHeight, colors) end
 
 --- Get the pixel colors from the texture.
@@ -214,8 +251,10 @@ function UnityEngine.Texture2D:GetPixels() end
 --- @param highQuality boolean 
 function UnityEngine.Texture2D:Compress(highQuality) end
 
+--- @param value number 
 function UnityEngine.Texture2D:set_requestedMipmapLevel(value) end
 
+--- @param value number 
 function UnityEngine.Texture2D:set_minimumMipmapLevel(value) end
 
 --- Resets the requestedMipmapLevel field.
@@ -247,6 +286,10 @@ function UnityEngine.Texture2D:GetRawTextureData() end
 function UnityEngine.Texture2D:GetPixels(x, y, blockWidth, blockHeight, miplevel) end
 
 --- Get the pixel colors from the texture.
+--- @param x number 
+--- @param y number 
+--- @param blockWidth number 
+--- @param blockHeight number 
 --- @return UnityEngine.Color[] The array of all pixels in the mipmap level of the texture.
 function UnityEngine.Texture2D:GetPixels(x, y, blockWidth, blockHeight) end
 
@@ -268,6 +311,9 @@ function UnityEngine.Texture2D:GetPixels32() end
 function UnityEngine.Texture2D:PackTextures(textures, padding, maximumAtlasSize, makeNoLongerReadable) end
 
 --- Packs multiple Textures into a texture atlas.
+--- @param textures UnityEngine.Texture2D[] 
+--- @param padding number 
+--- @param maximumAtlasSize number 
 --- @return UnityEngine.Rect[] An array of rectangles containing the UV coordinates in the atlas for each input texture, or null if packing fails.
 function UnityEngine.Texture2D:PackTextures(textures, padding, maximumAtlasSize) end
 

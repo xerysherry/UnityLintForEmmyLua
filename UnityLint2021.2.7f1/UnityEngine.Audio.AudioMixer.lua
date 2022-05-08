@@ -7,6 +7,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Audio.AudioMixer = {}
 
+--- @param value UnityEngine.Audio.AudioMixerGroup 
 function UnityEngine.Audio.AudioMixer:set_outputAudioMixerGroup(value) end
 
 --- The name must be an exact match.
@@ -25,6 +26,7 @@ function UnityEngine.Audio.AudioMixer:FindMatchingGroups(subPath) end
 --- @param timeToReach number Relative time after which the mixture should be reached from any current state.
 function UnityEngine.Audio.AudioMixer:TransitionToSnapshots(snapshots, weights, timeToReach) end
 
+--- @param value UnityEngine.Audio.AudioMixerUpdateMode 
 function UnityEngine.Audio.AudioMixer:set_updateMode(value) end
 
 --- Sets the value of the exposed parameter specified. When a parameter is exposed, it is not controlled by mixer snapshots and can therefore only be changed via this function.

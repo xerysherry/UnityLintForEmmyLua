@@ -11,10 +11,13 @@
 ---       Return true if the element can be focused.
 UnityEngine.UIElements.Focusable = {}
 
+--- @param value boolean 
 function UnityEngine.UIElements.Focusable:set_focusable(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.Focusable:set_tabIndex(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.Focusable:set_delegatesFocus(value) end
 
 --- Attempt to give the focus to this element.

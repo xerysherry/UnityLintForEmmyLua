@@ -13,6 +13,7 @@ UnityEngine.LocationService = {}
 function UnityEngine.LocationService:Start(desiredAccuracyInMeters, updateDistanceInMeters) end
 
 --- Starts location service updates.  Last location coordinates could be.
+--- @param desiredAccuracyInMeters number 
 function UnityEngine.LocationService:Start(desiredAccuracyInMeters) end
 
 --- Starts location service updates.  Last location coordinates could be.

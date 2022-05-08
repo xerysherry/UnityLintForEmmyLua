@@ -6,6 +6,7 @@
 --- @field name string Human-friendly display name.
 UnityEngine.DisplayInfo = {}
 
+--- @param other UnityEngine.DisplayInfo 
 --- @return boolean
 function UnityEngine.DisplayInfo:Equals(other) end
 

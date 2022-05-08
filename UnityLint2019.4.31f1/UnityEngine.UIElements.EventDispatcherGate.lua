@@ -1,18 +1,24 @@
 --- @class UnityEngine.UIElements.EventDispatcherGate Gates control when the dispatcher processes events.
 UnityEngine.UIElements.EventDispatcherGate = {}
 
+--- @param left UnityEngine.UIElements.EventDispatcherGate 
+--- @param right UnityEngine.UIElements.EventDispatcherGate 
 --- @return boolean
 function UnityEngine.UIElements.EventDispatcherGate.op_Equality(left, right) end
 
+--- @param left UnityEngine.UIElements.EventDispatcherGate 
+--- @param right UnityEngine.UIElements.EventDispatcherGate 
 --- @return boolean
 function UnityEngine.UIElements.EventDispatcherGate.op_Inequality(left, right) end
 
 --- Implementation of IDisposable.Dispose. Opens the gate. If all gates are open, events in the queue are processed.
 function UnityEngine.UIElements.EventDispatcherGate:Dispose() end
 
+--- @param other UnityEngine.UIElements.EventDispatcherGate 
 --- @return boolean
 function UnityEngine.UIElements.EventDispatcherGate:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.EventDispatcherGate:Equals(obj) end
 

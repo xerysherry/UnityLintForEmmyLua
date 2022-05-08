@@ -29,6 +29,7 @@ function UnityEngine.XR.XRMeshSubsystem:GenerateMeshAsync(meshId, mesh, meshColl
 --- @param options UnityEngine.XR.MeshGenerationOptions The mesh generation options.
 function UnityEngine.XR.XRMeshSubsystem:GenerateMeshAsync(meshId, mesh, meshCollider, attributes, onMeshGenerationComplete, options) end
 
+--- @param value number 
 function UnityEngine.XR.XRMeshSubsystem:set_meshDensity(value) end
 
 --- Set the bounding volume to restrict the space in which Unity generates and tracks Meshes.

@@ -13,6 +13,7 @@
 --- @field displayIndex number
 UnityEngine.EventSystems.RaycastResult = {}
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.EventSystems.RaycastResult:set_gameObject(value) end
 
 function UnityEngine.EventSystems.RaycastResult:Clear() end

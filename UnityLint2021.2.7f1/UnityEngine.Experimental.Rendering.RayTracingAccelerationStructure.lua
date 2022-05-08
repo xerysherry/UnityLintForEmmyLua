@@ -18,12 +18,26 @@ function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:Upda
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:Build(relativeOrigin) end
 
 --- Updates the transforms of all instances in this RayTracingAccelerationStructure.
+--- @param relativeOrigin UnityEngine.Vector3 
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:Update(relativeOrigin) end
 
 --- Adds a ray tracing instance associated with a Renderer to this RayTracingAccelerationStructure.
+--- @param targetRenderer UnityEngine.Renderer 
+--- @param subMeshMask boolean[] 
+--- @param subMeshTransparencyFlags boolean[] 
+--- @param enableTriangleCulling boolean 
+--- @param frontTriangleCounterClockwise boolean 
+--- @param mask number 
+--- @param id number 
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:AddInstance(targetRenderer, subMeshMask, subMeshTransparencyFlags, enableTriangleCulling, frontTriangleCounterClockwise, mask, id) end
 
 --- Adds a ray tracing instance associated with a Renderer to this RayTracingAccelerationStructure.
+--- @param targetRenderer UnityEngine.Renderer 
+--- @param subMeshFlags UnityEngine.Experimental.Rendering.RayTracingSubMeshFlags[] 
+--- @param enableTriangleCulling boolean 
+--- @param frontTriangleCounterClockwise boolean 
+--- @param mask number 
+--- @param id number 
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:AddInstance(targetRenderer, subMeshFlags, enableTriangleCulling, frontTriangleCounterClockwise, mask, id) end
 
 --- Removes a ray tracing instance associated with a Renderer from this RayTracingAccelerationStructure.
@@ -31,9 +45,28 @@ function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:AddI
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:RemoveInstance(targetRenderer) end
 
 --- Adds a ray tracing instance associated with a Renderer to this RayTracingAccelerationStructure.
+--- @param aabbBuffer UnityEngine.GraphicsBuffer 
+--- @param numElements number 
+--- @param material UnityEngine.Material 
+--- @param isCutOff boolean 
+--- @param enableTriangleCulling boolean 
+--- @param frontTriangleCounterClockwise boolean 
+--- @param mask number 
+--- @param reuseBounds boolean 
+--- @param id number 
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:AddInstance(aabbBuffer, numElements, material, isCutOff, enableTriangleCulling, frontTriangleCounterClockwise, mask, reuseBounds, id) end
 
 --- Adds a ray tracing instance associated with a Renderer to this RayTracingAccelerationStructure.
+--- @param aabbBuffer UnityEngine.GraphicsBuffer 
+--- @param numElements number 
+--- @param material UnityEngine.Material 
+--- @param instanceTransform UnityEngine.Matrix4x4 
+--- @param isCutOff boolean 
+--- @param enableTriangleCulling boolean 
+--- @param frontTriangleCounterClockwise boolean 
+--- @param mask number 
+--- @param reuseBounds boolean 
+--- @param id number 
 function UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure:AddInstance(aabbBuffer, numElements, material, instanceTransform, isCutOff, enableTriangleCulling, frontTriangleCounterClockwise, mask, reuseBounds, id) end
 
 --- Updates the transform of the instance associated with the Renderer passed as argument.

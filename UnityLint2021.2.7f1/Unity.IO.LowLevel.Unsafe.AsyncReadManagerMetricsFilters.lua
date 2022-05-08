@@ -2,33 +2,43 @@
 Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters = {}
 
 --- Set TypeID filters on an existing SummaryMetricsFilters instance.
+--- @param _typeIDs number[] 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetTypeIDFilter(_typeIDs) end
 
 --- Set ProcessingState filters on an existing SummaryMetricsFilters instance.
+--- @param _states Unity.IO.LowLevel.Unsafe.ProcessingState[] 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetStateFilter(_states) end
 
 --- Set FileReadType filters on an existing SummaryMetricsFilters instance.
+--- @param _readTypes Unity.IO.LowLevel.Unsafe.FileReadType[] 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetReadTypeFilter(_readTypes) end
 
 --- Set Priority filters on an existing SummaryMetricsFilters instance.
+--- @param _priorityLevels Unity.IO.LowLevel.Unsafe.Priority[] 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetPriorityFilter(_priorityLevels) end
 
 --- Set AssetLoadingSubsystem filters on an existing SummaryMetricsFilters instance.
+--- @param _subsystems Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem[] 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetSubsystemFilter(_subsystems) end
 
 --- Set TypeID filters on an existing SummaryMetricsFilters instance.
+--- @param _typeID number 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetTypeIDFilter(_typeID) end
 
 --- Set ProcessingState filters on an existing SummaryMetricsFilters instance.
+--- @param _state Unity.IO.LowLevel.Unsafe.ProcessingState 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetStateFilter(_state) end
 
 --- Set FileReadType filters on an existing SummaryMetricsFilters instance.
+--- @param _readType Unity.IO.LowLevel.Unsafe.FileReadType 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetReadTypeFilter(_readType) end
 
 --- Set Priority filters on an existing SummaryMetricsFilters instance.
+--- @param _priorityLevel Unity.IO.LowLevel.Unsafe.Priority 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetPriorityFilter(_priorityLevel) end
 
 --- Set AssetLoadingSubsystem filters on an existing SummaryMetricsFilters instance.
+--- @param _subsystem Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters:SetSubsystemFilter(_subsystem) end
 
 --- Remove the TypeID filters from an existing SummaryMetricsFilters instance.

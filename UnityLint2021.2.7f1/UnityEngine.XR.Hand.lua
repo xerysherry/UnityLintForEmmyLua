@@ -1,9 +1,13 @@
 --- @class UnityEngine.XR.Hand A tracked hand on the device at an XR.XRNode in the XR input subsystem.
 UnityEngine.XR.Hand = {}
 
+--- @param a UnityEngine.XR.Hand 
+--- @param b UnityEngine.XR.Hand 
 --- @return boolean
 function UnityEngine.XR.Hand.op_Equality(a, b) end
 
+--- @param a UnityEngine.XR.Hand 
+--- @param b UnityEngine.XR.Hand 
 --- @return boolean
 function UnityEngine.XR.Hand.op_Inequality(a, b) end
 
@@ -18,9 +22,11 @@ function UnityEngine.XR.Hand:TryGetRootBone() end
 --- @return boolean true if hand can be queried for this finger; otherwise false.
 function UnityEngine.XR.Hand:TryGetFingerBones(finger, bonesOut) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.Hand:Equals(obj) end
 
+--- @param other UnityEngine.XR.Hand 
 --- @return boolean
 function UnityEngine.XR.Hand:Equals(other) end
 

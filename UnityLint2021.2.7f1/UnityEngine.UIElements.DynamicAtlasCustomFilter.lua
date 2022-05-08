@@ -6,12 +6,20 @@
 --- @field Target System.Object
 UnityEngine.UIElements.DynamicAtlasCustomFilter = {}
 
+--- @param texture UnityEngine.Texture2D 
+--- @param filtersToApply UnityEngine.UIElements.DynamicAtlasFilters& 
 --- @return boolean
 function UnityEngine.UIElements.DynamicAtlasCustomFilter:Invoke(texture, filtersToApply) end
 
+--- @param texture UnityEngine.Texture2D 
+--- @param filtersToApply UnityEngine.UIElements.DynamicAtlasFilters& 
+--- @param callback function 
+--- @param object System.Object 
 --- @return System.IAsyncResult
 function UnityEngine.UIElements.DynamicAtlasCustomFilter:BeginInvoke(texture, filtersToApply, callback, object) end
 
+--- @param filtersToApply UnityEngine.UIElements.DynamicAtlasFilters& 
+--- @param result System.IAsyncResult 
 --- @return boolean
 function UnityEngine.UIElements.DynamicAtlasCustomFilter:EndInvoke(filtersToApply, result) end
 

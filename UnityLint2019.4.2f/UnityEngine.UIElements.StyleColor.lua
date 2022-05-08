@@ -5,31 +5,45 @@
 ---       The style keyword.
 UnityEngine.UIElements.StyleColor = {}
 
+--- @param lhs UnityEngine.UIElements.StyleColor 
+--- @param rhs UnityEngine.UIElements.StyleColor 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleColor 
+--- @param rhs UnityEngine.UIElements.StyleColor 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor.op_Inequality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleColor 
+--- @param rhs UnityEngine.Color 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleColor 
+--- @param rhs UnityEngine.Color 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleColor
 function UnityEngine.UIElements.StyleColor.op_Implicit(keyword) end
 
+--- @param v UnityEngine.Color 
 --- @return UnityEngine.UIElements.StyleColor
 function UnityEngine.UIElements.StyleColor.op_Implicit(v) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UIElements.StyleColor:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleColor:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleColor 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleColor:Equals(obj) end
 

@@ -1,3 +1,4 @@
+--- @class UnityEngine.Experimental.Rendering.GraphicsJobsSyncPoint
 UnityEngine.Experimental.Rendering.GraphicsJobsSyncPoint = {
     EndOfFrame = 0,
     AfterScriptUpdate = 1,

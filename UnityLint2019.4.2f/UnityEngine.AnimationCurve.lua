@@ -38,6 +38,7 @@ function UnityEngine.AnimationCurve.EaseInOut(timeStart, valueStart, timeEnd, va
 --- @return number The value of the curve, at the point in time specified.
 function UnityEngine.AnimationCurve:Evaluate(time) end
 
+--- @param value UnityEngine.Keyframe[] 
 function UnityEngine.AnimationCurve:set_keys(value) end
 
 --- Add a new key to the curve.
@@ -66,13 +67,17 @@ function UnityEngine.AnimationCurve:RemoveKey(index) end
 --- @param weight number The smoothing weight to apply to the keyframe's tangents.
 function UnityEngine.AnimationCurve:SmoothTangents(index, weight) end
 
+--- @param value UnityEngine.WrapMode 
 function UnityEngine.AnimationCurve:set_preWrapMode(value) end
 
+--- @param value UnityEngine.WrapMode 
 function UnityEngine.AnimationCurve:set_postWrapMode(value) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.AnimationCurve:Equals(o) end
 
+--- @param other UnityEngine.AnimationCurve 
 --- @return boolean
 function UnityEngine.AnimationCurve:Equals(other) end
 

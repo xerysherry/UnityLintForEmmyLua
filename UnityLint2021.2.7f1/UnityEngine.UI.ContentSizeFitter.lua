@@ -25,8 +25,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.ContentSizeFitter = {}
 
+--- @param value UnityEngine.UI.ContentSizeFitter.FitMode 
 function UnityEngine.UI.ContentSizeFitter:set_horizontalFit(value) end
 
+--- @param value UnityEngine.UI.ContentSizeFitter.FitMode 
 function UnityEngine.UI.ContentSizeFitter:set_verticalFit(value) end
 
 function UnityEngine.UI.ContentSizeFitter:SetLayoutHorizontal() end

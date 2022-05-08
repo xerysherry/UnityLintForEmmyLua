@@ -52,6 +52,16 @@ UnityEngine.CanvasRenderer = {}
 function UnityEngine.CanvasRenderer.SplitUIVertexStreams(verts, positions, colors, uv0S, uv1S, normals, tangents, indices) end
 
 --- Given a list of UIVertex, split the stream into it's component types.
+--- @param verts UnityEngine.UIVertex[] 
+--- @param positions UnityEngine.Vector3[] 
+--- @param colors UnityEngine.Color32[] 
+--- @param uv0S UnityEngine.Vector2[] 
+--- @param uv1S UnityEngine.Vector2[] 
+--- @param uv2S UnityEngine.Vector2[] 
+--- @param uv3S UnityEngine.Vector2[] 
+--- @param normals UnityEngine.Vector3[] 
+--- @param tangents UnityEngine.Vector4[] 
+--- @param indices number[] 
 function UnityEngine.CanvasRenderer.SplitUIVertexStreams(verts, positions, colors, uv0S, uv1S, uv2S, uv3S, normals, tangents, indices) end
 
 --- Convert a set of vertex components into a stream of UIVertex.
@@ -66,6 +76,16 @@ function UnityEngine.CanvasRenderer.SplitUIVertexStreams(verts, positions, color
 function UnityEngine.CanvasRenderer.CreateUIVertexStream(verts, positions, colors, uv0S, uv1S, normals, tangents, indices) end
 
 --- Convert a set of vertex components into a stream of UIVertex.
+--- @param verts UnityEngine.UIVertex[] 
+--- @param positions UnityEngine.Vector3[] 
+--- @param colors UnityEngine.Color32[] 
+--- @param uv0S UnityEngine.Vector2[] 
+--- @param uv1S UnityEngine.Vector2[] 
+--- @param uv2S UnityEngine.Vector2[] 
+--- @param uv3S UnityEngine.Vector2[] 
+--- @param normals UnityEngine.Vector3[] 
+--- @param tangents UnityEngine.Vector4[] 
+--- @param indices number[] 
 function UnityEngine.CanvasRenderer.CreateUIVertexStream(verts, positions, colors, uv0S, uv1S, uv2S, uv3S, normals, tangents, indices) end
 
 --- Take the Vertex steam and split it corrisponding arrays (positions, colors, uv0s, uv1s, normals and tangents).
@@ -79,22 +99,39 @@ function UnityEngine.CanvasRenderer.CreateUIVertexStream(verts, positions, color
 function UnityEngine.CanvasRenderer.AddUIVertexStream(verts, positions, colors, uv0S, uv1S, normals, tangents) end
 
 --- Take the Vertex steam and split it corrisponding arrays (positions, colors, uv0s, uv1s, normals and tangents).
+--- @param verts UnityEngine.UIVertex[] 
+--- @param positions UnityEngine.Vector3[] 
+--- @param colors UnityEngine.Color32[] 
+--- @param uv0S UnityEngine.Vector2[] 
+--- @param uv1S UnityEngine.Vector2[] 
+--- @param uv2S UnityEngine.Vector2[] 
+--- @param uv3S UnityEngine.Vector2[] 
+--- @param normals UnityEngine.Vector3[] 
+--- @param tangents UnityEngine.Vector4[] 
 function UnityEngine.CanvasRenderer.AddUIVertexStream(verts, positions, colors, uv0S, uv1S, uv2S, uv3S, normals, tangents) end
 
+--- @param value function 
 function UnityEngine.CanvasRenderer.add_onRequestRebuild(value) end
 
+--- @param value function 
 function UnityEngine.CanvasRenderer.remove_onRequestRebuild(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasRenderer:set_hasPopInstruction(value) end
 
+--- @param value number 
 function UnityEngine.CanvasRenderer:set_materialCount(value) end
 
+--- @param value number 
 function UnityEngine.CanvasRenderer:set_popMaterialCount(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasRenderer:set_cullTransparentMesh(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasRenderer:set_cull(value) end
 
+--- @param value boolean 
 function UnityEngine.CanvasRenderer:set_isMask(value) end
 
 --- Set the color of the renderer. Will be multiplied with the UIVertex color and the Canvas color.
@@ -114,6 +151,8 @@ function UnityEngine.CanvasRenderer:DisableRectClipping() end
 
 --- Set the material for the canvas renderer. If a texture is specified then it will be used as the 'MainTex' instead of the material's 'MainTex'.
 --- See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.
+--- @param material UnityEngine.Material 
+--- @param index number 
 function UnityEngine.CanvasRenderer:SetMaterial(material, index) end
 
 --- Gets the current Material assigned to the CanvasRenderer.
@@ -160,6 +199,8 @@ function UnityEngine.CanvasRenderer:GetInheritedAlpha() end
 
 --- Set the material for the canvas renderer. If a texture is specified then it will be used as the 'MainTex' instead of the material's 'MainTex'.
 --- See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.
+--- @param material UnityEngine.Material 
+--- @param texture UnityEngine.Texture 
 function UnityEngine.CanvasRenderer:SetMaterial(material, texture) end
 
 --- Gets the current Material assigned to the CanvasRenderer.
@@ -167,6 +208,7 @@ function UnityEngine.CanvasRenderer:SetMaterial(material, texture) end
 function UnityEngine.CanvasRenderer:GetMaterial() end
 
 --- Set the vertices for the UIRenderer.
+--- @param vertices UnityEngine.UIVertex[] 
 function UnityEngine.CanvasRenderer:SetVertices(vertices) end
 
 --- Set the vertices for the UIRenderer.

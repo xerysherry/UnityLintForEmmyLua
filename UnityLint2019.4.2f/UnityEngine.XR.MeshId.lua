@@ -3,9 +3,13 @@
 ---       Represents an invalid id.
 UnityEngine.XR.MeshId = {}
 
+--- @param id1 UnityEngine.XR.MeshId 
+--- @param id2 UnityEngine.XR.MeshId 
 --- @return boolean
 function UnityEngine.XR.MeshId.op_Equality(id1, id2) end
 
+--- @param id1 UnityEngine.XR.MeshId 
+--- @param id2 UnityEngine.XR.MeshId 
 --- @return boolean
 function UnityEngine.XR.MeshId.op_Inequality(id1, id2) end
 
@@ -16,9 +20,11 @@ function UnityEngine.XR.MeshId:ToString() end
 --- @return number
 function UnityEngine.XR.MeshId:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.MeshId:Equals(obj) end
 
+--- @param other UnityEngine.XR.MeshId 
 --- @return boolean
 function UnityEngine.XR.MeshId:Equals(other) end
 

@@ -34,20 +34,28 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.EventSystems.StandaloneInputModule = {}
 
+--- @param value boolean 
 function UnityEngine.EventSystems.StandaloneInputModule:set_allowActivationOnMobileDevice(value) end
 
+--- @param value boolean 
 function UnityEngine.EventSystems.StandaloneInputModule:set_forceModuleActive(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.StandaloneInputModule:set_inputActionsPerSecond(value) end
 
+--- @param value number 
 function UnityEngine.EventSystems.StandaloneInputModule:set_repeatDelay(value) end
 
+--- @param value string 
 function UnityEngine.EventSystems.StandaloneInputModule:set_horizontalAxis(value) end
 
+--- @param value string 
 function UnityEngine.EventSystems.StandaloneInputModule:set_verticalAxis(value) end
 
+--- @param value string 
 function UnityEngine.EventSystems.StandaloneInputModule:set_submitButton(value) end
 
+--- @param value string 
 function UnityEngine.EventSystems.StandaloneInputModule:set_cancelButton(value) end
 
 function UnityEngine.EventSystems.StandaloneInputModule:UpdateModule() end

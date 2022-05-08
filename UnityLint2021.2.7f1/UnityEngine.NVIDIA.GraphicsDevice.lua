@@ -10,6 +10,7 @@ UnityEngine.NVIDIA.GraphicsDevice = {}
 function UnityEngine.NVIDIA.GraphicsDevice.CreateGraphicsDevice() end
 
 --- Creates the main API object. Call this method only once in your application.
+--- @param projectID string 
 --- @return UnityEngine.NVIDIA.GraphicsDevice The Device API object to access NVIDIA features. If you call this function again, the function returns the same device, regardless of whether you pass in a different projectID.
 function UnityEngine.NVIDIA.GraphicsDevice.CreateGraphicsDevice(projectID) end
 

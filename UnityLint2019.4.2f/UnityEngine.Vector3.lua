@@ -34,9 +34,13 @@
 --- @field z number Z component of the vector.
 UnityEngine.Vector3 = {}
 
+--- @param from UnityEngine.Vector3 
+--- @param to UnityEngine.Vector3 
 --- @return number
 function UnityEngine.Vector3.AngleBetween(from, to) end
 
+--- @param excludeThis UnityEngine.Vector3 
+--- @param fromThat UnityEngine.Vector3 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3.Exclude(excludeThis, fromThat) end
 
@@ -95,10 +99,19 @@ function UnityEngine.Vector3.LerpUnclamped(a, b, t) end
 function UnityEngine.Vector3.MoveTowards(current, target, maxDistanceDelta) end
 
 --- Gradually changes a vector towards a desired goal over time.
+--- @param current UnityEngine.Vector3 
+--- @param target UnityEngine.Vector3 
+--- @param currentVelocity UnityEngine.Vector3& 
+--- @param smoothTime number 
+--- @param maxSpeed number 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Vector3.SmoothDamp(current, target, currentVelocity, smoothTime, maxSpeed) end
 
 --- Gradually changes a vector towards a desired goal over time.
+--- @param current UnityEngine.Vector3 
+--- @param target UnityEngine.Vector3 
+--- @param currentVelocity UnityEngine.Vector3& 
+--- @param smoothTime number 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Vector3.SmoothDamp(current, target, currentVelocity, smoothTime) end
 
@@ -148,6 +161,8 @@ function UnityEngine.Vector3.Dot(lhs, rhs) end
 function UnityEngine.Vector3.Project(vector, onNormal) end
 
 --- Projects a vector onto a plane defined by a normal orthogonal to the plane.
+--- @param vector UnityEngine.Vector3 
+--- @param planeNormal UnityEngine.Vector3 
 --- @return UnityEngine.Vector3 The location of the vector on the plane.
 function UnityEngine.Vector3.ProjectOnPlane(vector, planeNormal) end
 
@@ -176,9 +191,11 @@ function UnityEngine.Vector3.Distance(a, b) end
 --- @return UnityEngine.Vector3 
 function UnityEngine.Vector3.ClampMagnitude(vector, maxLength) end
 
+--- @param vector UnityEngine.Vector3 
 --- @return number
 function UnityEngine.Vector3.Magnitude(vector) end
 
+--- @param vector UnityEngine.Vector3 
 --- @return number
 function UnityEngine.Vector3.SqrMagnitude(vector) end
 
@@ -194,12 +211,17 @@ function UnityEngine.Vector3.Min(lhs, rhs) end
 --- @return UnityEngine.Vector3 
 function UnityEngine.Vector3.Max(lhs, rhs) end
 
+--- @param a UnityEngine.Vector3 
+--- @param b UnityEngine.Vector3 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3.op_Addition(a, b) end
 
+--- @param a UnityEngine.Vector3 
+--- @param b UnityEngine.Vector3 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3.op_Subtraction(a, b) end
 
+--- @param a UnityEngine.Vector3 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3.op_UnaryNegation(a) end
 
@@ -215,12 +237,18 @@ function UnityEngine.Vector3.op_Multiply(a, d) end
 --- @return UnityEngine.Vector3 
 function UnityEngine.Vector3.op_Multiply(d, a) end
 
+--- @param a UnityEngine.Vector3 
+--- @param d number 
 --- @return UnityEngine.Vector3
 function UnityEngine.Vector3.op_Division(a, d) end
 
+--- @param lhs UnityEngine.Vector3 
+--- @param rhs UnityEngine.Vector3 
 --- @return boolean
 function UnityEngine.Vector3.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Vector3 
+--- @param rhs UnityEngine.Vector3 
 --- @return boolean
 function UnityEngine.Vector3.op_Inequality(lhs, rhs) end
 
@@ -229,6 +257,8 @@ function UnityEngine.Vector3.op_Inequality(lhs, rhs) end
 --- @return string 
 function UnityEngine.Vector3:ToString(format) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Vector3:set_Item(index, value) end
 
 --- Set x, y and z components of an existing Vector3.

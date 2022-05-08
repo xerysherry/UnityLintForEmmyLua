@@ -1,3 +1,4 @@
+--- @class UnityEditorInternal.AnimatorControllerParameterType
 UnityEditorInternal.AnimatorControllerParameterType = {
     Float = -1,
     Int = -1,

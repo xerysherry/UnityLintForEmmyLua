@@ -1,6 +1,7 @@
 --- @class UnityEngine.SubsystemsImplementation.Extensions.SubsystemDescriptorExtensions 
 UnityEngine.SubsystemsImplementation.Extensions.SubsystemDescriptorExtensions = {}
 
+--- @param descriptor UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2 
 --- @return UnityEngine.SubsystemsImplementation.SubsystemProxy`2
 function UnityEngine.SubsystemsImplementation.Extensions.SubsystemDescriptorExtensions.CreateProxy(descriptor) end
 

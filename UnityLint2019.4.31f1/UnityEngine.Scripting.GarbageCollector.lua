@@ -7,12 +7,16 @@
 ---       The target duration of a collection step when performing incremental garbage collection.
 UnityEngine.Scripting.GarbageCollector = {}
 
+--- @param value function 
 function UnityEngine.Scripting.GarbageCollector.add_GCModeChanged(value) end
 
+--- @param value function 
 function UnityEngine.Scripting.GarbageCollector.remove_GCModeChanged(value) end
 
+--- @param value UnityEngine.Scripting.GarbageCollector.Mode 
 function UnityEngine.Scripting.GarbageCollector.set_GCMode(value) end
 
+--- @param value number 
 function UnityEngine.Scripting.GarbageCollector.set_incrementalTimeSliceNanoseconds(value) end
 
 --- Perform incremental garbage collection for the duration specified by the nanoseconds parameter.

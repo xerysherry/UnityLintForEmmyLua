@@ -9,12 +9,21 @@
 UnityEngine.Debug = {}
 
 --- Draws a line between specified start and end points.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param color UnityEngine.Color 
+--- @param duration number 
 function UnityEngine.Debug.DrawLine(start, _end, color, duration) end
 
 --- Draws a line between specified start and end points.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
+--- @param color UnityEngine.Color 
 function UnityEngine.Debug.DrawLine(start, _end, color) end
 
 --- Draws a line between specified start and end points.
+--- @param start UnityEngine.Vector3 
+--- @param _end UnityEngine.Vector3 
 function UnityEngine.Debug.DrawLine(start, _end) end
 
 --- Draws a line between specified start and end points.
@@ -26,12 +35,21 @@ function UnityEngine.Debug.DrawLine(start, _end) end
 function UnityEngine.Debug.DrawLine(start, _end, color, duration, depthTest) end
 
 --- Draws a line from start to start + dir in world coordinates.
+--- @param start UnityEngine.Vector3 
+--- @param dir UnityEngine.Vector3 
+--- @param color UnityEngine.Color 
+--- @param duration number 
 function UnityEngine.Debug.DrawRay(start, dir, color, duration) end
 
 --- Draws a line from start to start + dir in world coordinates.
+--- @param start UnityEngine.Vector3 
+--- @param dir UnityEngine.Vector3 
+--- @param color UnityEngine.Color 
 function UnityEngine.Debug.DrawRay(start, dir, color) end
 
 --- Draws a line from start to start + dir in world coordinates.
+--- @param start UnityEngine.Vector3 
+--- @param dir UnityEngine.Vector3 
 function UnityEngine.Debug.DrawRay(start, dir) end
 
 --- Draws a line from start to start + dir in world coordinates.
@@ -55,6 +73,7 @@ function UnityEngine.Debug.DebugBreak() end
 function UnityEngine.Debug.ExtractStackTraceNoAlloc(buffer, bufferMax, projectFolder) end
 
 --- Logs a message to the Unity Console.
+--- @param message System.Object 
 function UnityEngine.Debug.Log(message) end
 
 --- Logs a message to the Unity Console.
@@ -63,15 +82,26 @@ function UnityEngine.Debug.Log(message) end
 function UnityEngine.Debug.Log(message, context) end
 
 --- Logs a formatted message to the Unity Console.
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogFormat(format, args) end
 
 --- Logs a formatted message to the Unity Console.
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogFormat(context, format, args) end
 
 --- Logs a formatted message to the Unity Console.
+--- @param logType UnityEngine.LogType 
+--- @param logOptions UnityEngine.LogOption 
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogFormat(logType, logOptions, context, format, args) end
 
 --- A variant of Debug.Log that logs an error message to the console.
+--- @param message System.Object 
 function UnityEngine.Debug.LogError(message) end
 
 --- A variant of Debug.Log that logs an error message to the console.
@@ -80,23 +110,33 @@ function UnityEngine.Debug.LogError(message) end
 function UnityEngine.Debug.LogError(message, context) end
 
 --- Logs a formatted error message to the Unity console.
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogErrorFormat(format, args) end
 
 --- Logs a formatted error message to the Unity console.
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogErrorFormat(context, format, args) end
 
 --- Clears errors from the developer console.
 function UnityEngine.Debug.ClearDeveloperConsole() end
 
+--- @param value boolean 
 function UnityEngine.Debug.set_developerConsoleVisible(value) end
 
 --- A variant of Debug.Log that logs an error message to the console.
+--- @param exception System.Exception 
 function UnityEngine.Debug.LogException(exception) end
 
 --- A variant of Debug.Log that logs an error message to the console.
+--- @param exception System.Exception 
+--- @param context UnityEngine.Object 
 function UnityEngine.Debug.LogException(exception, context) end
 
 --- A variant of Debug.Log that logs a warning message to the console.
+--- @param message System.Object 
 function UnityEngine.Debug.LogWarning(message) end
 
 --- A variant of Debug.Log that logs a warning message to the console.
@@ -105,36 +145,62 @@ function UnityEngine.Debug.LogWarning(message) end
 function UnityEngine.Debug.LogWarning(message, context) end
 
 --- Logs a formatted warning message to the Unity Console.
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogWarningFormat(format, args) end
 
 --- Logs a formatted warning message to the Unity Console.
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogWarningFormat(context, format, args) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
 function UnityEngine.Debug.Assert(condition) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param context UnityEngine.Object 
 function UnityEngine.Debug.Assert(condition, context) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param message System.Object 
 function UnityEngine.Debug.Assert(condition, message) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param message string 
 function UnityEngine.Debug.Assert(condition, message) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param message System.Object 
+--- @param context UnityEngine.Object 
 function UnityEngine.Debug.Assert(condition, message, context) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param message string 
+--- @param context UnityEngine.Object 
 function UnityEngine.Debug.Assert(condition, message, context) end
 
 --- Assert a condition and logs a formatted error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.AssertFormat(condition, format, args) end
 
 --- Assert a condition and logs a formatted error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.AssertFormat(condition, context, format, args) end
 
 --- A variant of Debug.Log that logs an assertion message to the console.
+--- @param message System.Object 
 function UnityEngine.Debug.LogAssertion(message) end
 
 --- A variant of Debug.Log that logs an assertion message to the console.
@@ -143,12 +209,20 @@ function UnityEngine.Debug.LogAssertion(message) end
 function UnityEngine.Debug.LogAssertion(message, context) end
 
 --- Logs a formatted assertion message to the Unity console.
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogAssertionFormat(format, args) end
 
 --- Logs a formatted assertion message to the Unity console.
+--- @param context UnityEngine.Object 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.LogAssertionFormat(context, format, args) end
 
 --- Assert a condition and logs an error message to the Unity console on failure.
+--- @param condition boolean 
+--- @param format string 
+--- @param args System.Object[] 
 function UnityEngine.Debug.Assert(condition, format, args) end
 
 ---  Generated By xerysherry

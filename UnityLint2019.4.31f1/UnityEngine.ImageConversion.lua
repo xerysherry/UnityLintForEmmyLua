@@ -3,6 +3,7 @@
 ---       Enables legacy PNG runtime import behavior.
 UnityEngine.ImageConversion = {}
 
+--- @param value boolean 
 function UnityEngine.ImageConversion.set_EnableLegacyPngGammaRuntimeLoadBehavior(value) end
 
 --- Encodes the specified texture in TGA format.
@@ -22,6 +23,7 @@ function UnityEngine.ImageConversion.EncodeToPNG(tex) end
 function UnityEngine.ImageConversion.EncodeToJPG(tex, quality) end
 
 --- Encodes this texture into JPG format.
+--- @param tex UnityEngine.Texture2D 
 --- @return number[] 
 function UnityEngine.ImageConversion.EncodeToJPG(tex) end
 
@@ -32,14 +34,20 @@ function UnityEngine.ImageConversion.EncodeToJPG(tex) end
 function UnityEngine.ImageConversion.EncodeToEXR(tex, flags) end
 
 --- Encodes this texture into the EXR format.
+--- @param tex UnityEngine.Texture2D 
 --- @return number[] 
 function UnityEngine.ImageConversion.EncodeToEXR(tex) end
 
 --- Loads PNG/JPG (or supported format) image byte array into a texture.
+--- @param tex UnityEngine.Texture2D 
+--- @param data number[] 
+--- @param markNonReadable boolean 
 --- @return boolean Returns true if the data can be loaded, false otherwise.
 function UnityEngine.ImageConversion.LoadImage(tex, data, markNonReadable) end
 
 --- Loads PNG/JPG (or supported format) image byte array into a texture.
+--- @param tex UnityEngine.Texture2D 
+--- @param data number[] 
 --- @return boolean Returns true if the data can be loaded, false otherwise.
 function UnityEngine.ImageConversion.LoadImage(tex, data) end
 

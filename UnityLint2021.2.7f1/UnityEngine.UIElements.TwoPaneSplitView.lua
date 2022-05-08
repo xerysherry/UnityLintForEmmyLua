@@ -59,10 +59,13 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.TwoPaneSplitView = {}
 
+--- @param value number 
 function UnityEngine.UIElements.TwoPaneSplitView:set_fixedPaneIndex(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.TwoPaneSplitView:set_fixedPaneInitialDimension(value) end
 
+--- @param value UnityEngine.UIElements.TwoPaneSplitViewOrientation 
 function UnityEngine.UIElements.TwoPaneSplitView:set_orientation(value) end
 
 --- 

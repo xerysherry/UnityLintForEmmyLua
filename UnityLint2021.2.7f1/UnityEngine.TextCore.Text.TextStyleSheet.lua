@@ -3,9 +3,11 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.TextCore.Text.TextStyleSheet = {}
 
+--- @param hashCode number 
 --- @return UnityEngine.TextCore.Text.TextStyle
 function UnityEngine.TextCore.Text.TextStyleSheet:GetStyle(hashCode) end
 
+--- @param name string 
 --- @return UnityEngine.TextCore.Text.TextStyle
 function UnityEngine.TextCore.Text.TextStyleSheet:GetStyle(name) end
 

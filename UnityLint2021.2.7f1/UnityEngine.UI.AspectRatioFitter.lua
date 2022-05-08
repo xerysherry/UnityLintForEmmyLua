@@ -25,8 +25,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.AspectRatioFitter = {}
 
+--- @param value UnityEngine.UI.AspectRatioFitter.AspectMode 
 function UnityEngine.UI.AspectRatioFitter:set_aspectMode(value) end
 
+--- @param value number 
 function UnityEngine.UI.AspectRatioFitter:set_aspectRatio(value) end
 
 function UnityEngine.UI.AspectRatioFitter:SetLayoutHorizontal() end

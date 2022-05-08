@@ -1,3 +1,4 @@
+--- @class UnityEngine.VR.VRDeviceType
 UnityEngine.VR.VRDeviceType = {
     None = 0,
     Stereo = 1,

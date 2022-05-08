@@ -25,6 +25,9 @@
 --- @field CategoryVirtualTexturing number Virtual Texturing system Profiler category.
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility = {}
 
+--- @param name System.Char* 
+--- @param nameLen number 
+--- @param colorIndex Unity.Profiling.ProfilerCategoryColor 
 --- @return number
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.CreateCategory(name, nameLen, colorIndex) end
 
@@ -40,17 +43,37 @@ function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.GetCategoryByName
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.GetCategoryDescription(categoryId) end
 
 --- Constructs a new Profiler marker handle for code instrumentation.
+--- @param name string 
+--- @param categoryId number 
+--- @param flags Unity.Profiling.LowLevel.MarkerFlags 
+--- @param metadataCount number 
 --- @return System.IntPtr Returns the marker native handle.
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.CreateMarker(name, categoryId, flags, metadataCount) end
 
 --- Constructs a new Profiler marker handle for code instrumentation.
+--- @param name System.Char* 
+--- @param nameLen number 
+--- @param categoryId number 
+--- @param flags Unity.Profiling.LowLevel.MarkerFlags 
+--- @param metadataCount number 
 --- @return System.IntPtr Returns the marker native handle.
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.CreateMarker(name, nameLen, categoryId, flags, metadataCount) end
 
 --- Set Profiler marker metadata name and type.
+--- @param markerPtr System.IntPtr 
+--- @param index number 
+--- @param name string 
+--- @param type number 
+--- @param unit number 
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.SetMarkerMetadata(markerPtr, index, name, type, unit) end
 
 --- Set Profiler marker metadata name and type.
+--- @param markerPtr System.IntPtr 
+--- @param index number 
+--- @param name System.Char* 
+--- @param nameLen number 
+--- @param type number 
+--- @param unit number 
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.SetMarkerMetadata(markerPtr, index, name, nameLen, type, unit) end
 
 --- Starts profiling a piece of code marked with a custom name that the markerPtr handle has defined.
@@ -73,12 +96,30 @@ function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.EndSample(markerP
 --- @param metadata System.Void* Unsafe pointer to the ProfilerMarkerData array.
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.SingleSampleWithMetadata(markerPtr, metadataCount, metadata) end
 
+--- @param name string 
+--- @param categoryId number 
+--- @param flags Unity.Profiling.LowLevel.MarkerFlags 
+--- @param dataType number 
+--- @param dataUnit number 
+--- @param dataSize number 
+--- @param counterOptions Unity.Profiling.ProfilerCounterOptions 
 --- @return System.Void*
+--- @return System.IntPtr& 
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.CreateCounterValue(name, categoryId, flags, dataType, dataUnit, dataSize, counterOptions) end
 
+--- @param name System.Char* 
+--- @param nameLen number 
+--- @param categoryId number 
+--- @param flags Unity.Profiling.LowLevel.MarkerFlags 
+--- @param dataType number 
+--- @param dataUnit number 
+--- @param dataSize number 
+--- @param counterOptions Unity.Profiling.ProfilerCounterOptions 
 --- @return System.Void*
+--- @return System.IntPtr& 
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.CreateCounterValue(name, nameLen, categoryId, flags, dataType, dataUnit, dataSize, counterOptions) end
 
+--- @param counterValuePtr System.Void* 
 function Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.FlushCounterValue(counterValuePtr) end
 
 --- Create a new Profiler flow identifier.

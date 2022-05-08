@@ -24,6 +24,7 @@ function UnityEngine.iOS.NotificationServices.ClearLocalNotifications() end
 function UnityEngine.iOS.NotificationServices.ClearRemoteNotifications() end
 
 --- Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.
+--- @param notificationTypes UnityEngine.iOS.NotificationType 
 function UnityEngine.iOS.NotificationServices.RegisterForNotifications(notificationTypes) end
 
 --- Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.

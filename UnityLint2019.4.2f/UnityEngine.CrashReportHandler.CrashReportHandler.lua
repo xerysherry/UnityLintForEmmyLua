@@ -5,8 +5,10 @@
 ---       The Performance Reporting service will keep a buffer of up to the last X log messages (Debug.Log, etc) to send along with crash reports.  The default is 10 log messages, the max is 50. Set this to 0 to disable capture of logs with your crash reports.
 UnityEngine.CrashReportHandler.CrashReportHandler = {}
 
+--- @param value boolean 
 function UnityEngine.CrashReportHandler.CrashReportHandler.set_enableCaptureExceptions(value) end
 
+--- @param value number 
 function UnityEngine.CrashReportHandler.CrashReportHandler.set_logBufferSize(value) end
 
 --- Get a custom crash report metadata field that has been set.

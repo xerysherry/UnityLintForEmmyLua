@@ -3,6 +3,8 @@
 ---       Returns an invalid Playable.
 UnityEngine.Playables.Playable = {}
 
+--- @param graph UnityEngine.Playables.PlayableGraph 
+--- @param inputCount number 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Playables.Playable.Create(graph, inputCount) end
 
@@ -15,6 +17,7 @@ function UnityEngine.Playables.Playable:IsPlayableOfType() end
 --- @return System.Type
 function UnityEngine.Playables.Playable:GetPlayableType() end
 
+--- @param other UnityEngine.Playables.Playable 
 --- @return boolean
 function UnityEngine.Playables.Playable:Equals(other) end
 

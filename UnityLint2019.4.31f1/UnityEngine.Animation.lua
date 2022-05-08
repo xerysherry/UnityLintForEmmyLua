@@ -38,16 +38,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animation = {}
 
+--- @param value boolean 
 function UnityEngine.Animation:set_animateOnlyIfVisible(value) end
 
+--- @param value UnityEngine.AnimationCullingType 
 function UnityEngine.Animation:set_cullingType(value) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Animation:set_localBounds(value) end
 
+--- @param value UnityEngine.AnimationClip 
 function UnityEngine.Animation:set_clip(value) end
 
+--- @param value boolean 
 function UnityEngine.Animation:set_playAutomatically(value) end
 
+--- @param value UnityEngine.WrapMode 
 function UnityEngine.Animation:set_wrapMode(value) end
 
 --- Stops all playing animations that were started with this Animation.
@@ -77,14 +83,18 @@ function UnityEngine.Animation:IsPlaying(name) end
 function UnityEngine.Animation:Play() end
 
 --- Plays an animation without blending.
+--- @param mode UnityEngine.PlayMode 
 --- @return boolean 
 function UnityEngine.Animation:Play(mode) end
 
 --- Plays an animation without blending.
+--- @param animation string 
+--- @param mode UnityEngine.PlayMode 
 --- @return boolean 
 function UnityEngine.Animation:Play(animation, mode) end
 
 --- Plays an animation without blending.
+--- @param animation string 
 --- @return boolean 
 function UnityEngine.Animation:Play(animation) end
 
@@ -95,9 +105,12 @@ function UnityEngine.Animation:Play(animation) end
 function UnityEngine.Animation:CrossFade(animation, fadeLength, mode) end
 
 --- Fades the animation with name animation in over a period of time seconds and fades other animations out.
+--- @param animation string 
+--- @param fadeLength number 
 function UnityEngine.Animation:CrossFade(animation, fadeLength) end
 
 --- Fades the animation with name animation in over a period of time seconds and fades other animations out.
+--- @param animation string 
 function UnityEngine.Animation:CrossFade(animation) end
 
 --- Blends the animation named animation towards targetWeight over the next time seconds.
@@ -107,9 +120,12 @@ function UnityEngine.Animation:CrossFade(animation) end
 function UnityEngine.Animation:Blend(animation, targetWeight, fadeLength) end
 
 --- Blends the animation named animation towards targetWeight over the next time seconds.
+--- @param animation string 
+--- @param targetWeight number 
 function UnityEngine.Animation:Blend(animation, targetWeight) end
 
 --- Blends the animation named animation towards targetWeight over the next time seconds.
+--- @param animation string 
 function UnityEngine.Animation:Blend(animation) end
 
 --- Cross fades an animation after previous animations has finished playing.
@@ -121,14 +137,20 @@ function UnityEngine.Animation:Blend(animation) end
 function UnityEngine.Animation:CrossFadeQueued(animation, fadeLength, queue, mode) end
 
 --- Cross fades an animation after previous animations has finished playing.
+--- @param animation string 
+--- @param fadeLength number 
+--- @param queue UnityEngine.QueueMode 
 --- @return UnityEngine.AnimationState 
 function UnityEngine.Animation:CrossFadeQueued(animation, fadeLength, queue) end
 
 --- Cross fades an animation after previous animations has finished playing.
+--- @param animation string 
+--- @param fadeLength number 
 --- @return UnityEngine.AnimationState 
 function UnityEngine.Animation:CrossFadeQueued(animation, fadeLength) end
 
 --- Cross fades an animation after previous animations has finished playing.
+--- @param animation string 
 --- @return UnityEngine.AnimationState 
 function UnityEngine.Animation:CrossFadeQueued(animation) end
 
@@ -140,10 +162,13 @@ function UnityEngine.Animation:CrossFadeQueued(animation) end
 function UnityEngine.Animation:PlayQueued(animation, queue, mode) end
 
 --- Plays an animation after previous animations has finished playing.
+--- @param animation string 
+--- @param queue UnityEngine.QueueMode 
 --- @return UnityEngine.AnimationState 
 function UnityEngine.Animation:PlayQueued(animation, queue) end
 
 --- Plays an animation after previous animations has finished playing.
+--- @param animation string 
 --- @return UnityEngine.AnimationState 
 function UnityEngine.Animation:PlayQueued(animation) end
 
@@ -153,9 +178,18 @@ function UnityEngine.Animation:PlayQueued(animation) end
 function UnityEngine.Animation:AddClip(clip, newName) end
 
 --- Adds a clip to the animation with name newName.
+--- @param clip UnityEngine.AnimationClip 
+--- @param newName string 
+--- @param firstFrame number 
+--- @param lastFrame number 
+--- @param addLoopFrame boolean 
 function UnityEngine.Animation:AddClip(clip, newName, firstFrame, lastFrame, addLoopFrame) end
 
 --- Adds a clip to the animation with name newName.
+--- @param clip UnityEngine.AnimationClip 
+--- @param newName string 
+--- @param firstFrame number 
+--- @param lastFrame number 
 function UnityEngine.Animation:AddClip(clip, newName, firstFrame, lastFrame) end
 
 --- Remove clip from the animation list.
@@ -171,21 +205,27 @@ function UnityEngine.Animation:RemoveClip(clipName) end
 function UnityEngine.Animation:GetClipCount() end
 
 --- Plays an animation without blending.
+--- @param mode UnityEngine.AnimationPlayMode 
 --- @return boolean 
 function UnityEngine.Animation:Play(mode) end
 
 --- Plays an animation without blending.
+--- @param animation string 
+--- @param mode UnityEngine.AnimationPlayMode 
 --- @return boolean 
 function UnityEngine.Animation:Play(animation, mode) end
 
+--- @param layer number 
 function UnityEngine.Animation:SyncLayer(layer) end
 
 --- @return System.Collections.IEnumerator
 function UnityEngine.Animation:GetEnumerator() end
 
+--- @param name string 
 --- @return UnityEngine.AnimationClip
 function UnityEngine.Animation:GetClip(name) end
 
+--- @param value boolean 
 function UnityEngine.Animation:set_animatePhysics(value) end
 
 ---  Generated By xerysherry

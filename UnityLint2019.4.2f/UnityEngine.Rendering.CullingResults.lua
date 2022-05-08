@@ -13,9 +13,13 @@
 ---       Gets the number of per-object light and reflection probe indices.
 UnityEngine.Rendering.CullingResults = {}
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Inequality(left, right) end
 
@@ -24,19 +28,23 @@ function UnityEngine.Rendering.CullingResults.op_Inequality(left, right) end
 function UnityEngine.Rendering.CullingResults:FillLightAndReflectionProbeIndices(computeBuffer) end
 
 --- If a RenderPipeline sorts or otherwise modifies the VisibleLight list, an index remap will be necessary to properly make use of per-object light lists.
+--- @param allocator Unity.Collections.Allocator 
 --- @return Unity.Collections.NativeArray`1 Array of indices that map from VisibleLight indices to internal per-object light list indices.
 function UnityEngine.Rendering.CullingResults:GetLightIndexMap(allocator) end
 
 --- If a RenderPipeline sorts or otherwise modifies the VisibleLight list, an index remap will be necessary to properly make use of per-object light lists.
 --- If an element of the array is set to -1, the light corresponding to that element will be disabled.
+--- @param lightIndexMap Unity.Collections.NativeArray`1 
 function UnityEngine.Rendering.CullingResults:SetLightIndexMap(lightIndexMap) end
 
 --- If a RenderPipeline sorts or otherwise modifies the VisibleReflectionProbe list, an index remap will be necessary to properly make use of per-object reflection probe lists.
+--- @param allocator Unity.Collections.Allocator 
 --- @return Unity.Collections.NativeArray`1 Array of indices that map from VisibleReflectionProbe indices to internal per-object reflection probe list indices.
 function UnityEngine.Rendering.CullingResults:GetReflectionProbeIndexMap(allocator) end
 
 --- If a RenderPipeline sorts or otherwise modifies the VisibleReflectionProbe list, an index remap will be necessary to properly make use of per-object reflection probe lists.
 --- If an element of the array is set to -1, the reflection probe corresponding to that element will be disabled.
+--- @param lightIndexMap Unity.Collections.NativeArray`1 
 function UnityEngine.Rendering.CullingResults:SetReflectionProbeIndexMap(lightIndexMap) end
 
 --- Returns the bounding box that encapsulates the visible shadow casters.  Can be used to, for instance, dynamically adjust cascade ranges.
@@ -76,9 +84,11 @@ function UnityEngine.Rendering.CullingResults:ComputePointShadowMatricesAndCulli
 --- @return UnityEngine.Rendering.ShadowSplitData& The computed cascade data.
 function UnityEngine.Rendering.CullingResults:ComputeDirectionalShadowMatricesAndCullingPrimitives(activeLightIndex, splitIndex, splitCount, splitRatio, shadowResolution, shadowNearPlaneOffset) end
 
+--- @param other UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(obj) end
 

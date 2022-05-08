@@ -29,28 +29,40 @@
 ---       A RectInt.PositionCollection that contains all positions within the RectInt.
 UnityEngine.RectInt = {}
 
+--- @param value number 
 function UnityEngine.RectInt:set_x(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_y(value) end
 
+--- @param value UnityEngine.Vector2Int 
 function UnityEngine.RectInt:set_min(value) end
 
+--- @param value UnityEngine.Vector2Int 
 function UnityEngine.RectInt:set_max(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_width(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_height(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_xMin(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_yMin(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_xMax(value) end
 
+--- @param value number 
 function UnityEngine.RectInt:set_yMax(value) end
 
+--- @param value UnityEngine.Vector2Int 
 function UnityEngine.RectInt:set_position(value) end
 
+--- @param value UnityEngine.Vector2Int 
 function UnityEngine.RectInt:set_size(value) end
 
 --- Sets the bounds to the min and max value of the rect.

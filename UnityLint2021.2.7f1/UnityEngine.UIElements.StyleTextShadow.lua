@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleTextShadow = {}
 
+--- @param lhs UnityEngine.UIElements.StyleTextShadow 
+--- @param rhs UnityEngine.UIElements.StyleTextShadow 
 --- @return boolean
 function UnityEngine.UIElements.StyleTextShadow.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleTextShadow 
+--- @param rhs UnityEngine.UIElements.StyleTextShadow 
 --- @return boolean
 function UnityEngine.UIElements.StyleTextShadow.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleTextShadow
 function UnityEngine.UIElements.StyleTextShadow.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.TextShadow 
 --- @return UnityEngine.UIElements.StyleTextShadow
 function UnityEngine.UIElements.StyleTextShadow.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.TextShadow 
 function UnityEngine.UIElements.StyleTextShadow:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleTextShadow:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleTextShadow 
 --- @return boolean
 function UnityEngine.UIElements.StyleTextShadow:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleTextShadow:Equals(obj) end
 

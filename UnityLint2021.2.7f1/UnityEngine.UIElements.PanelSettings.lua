@@ -78,34 +78,49 @@
 ---        
 UnityEngine.UIElements.PanelSettings = {}
 
+--- @param value UnityEngine.UIElements.ThemeStyleSheet 
 function UnityEngine.UIElements.PanelSettings:set_themeStyleSheet(value) end
 
+--- @param value UnityEngine.RenderTexture 
 function UnityEngine.UIElements.PanelSettings:set_targetTexture(value) end
 
+--- @param value UnityEngine.UIElements.PanelScaleMode 
 function UnityEngine.UIElements.PanelSettings:set_scaleMode(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_scale(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_referenceDpi(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_fallbackDpi(value) end
 
+--- @param value UnityEngine.Vector2Int 
 function UnityEngine.UIElements.PanelSettings:set_referenceResolution(value) end
 
+--- @param value UnityEngine.UIElements.PanelScreenMatchMode 
 function UnityEngine.UIElements.PanelSettings:set_screenMatchMode(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_match(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_sortingOrder(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.PanelSettings:set_targetDisplay(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.PanelSettings:set_clearDepthStencil(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.PanelSettings:set_clearColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.UIElements.PanelSettings:set_colorClearValue(value) end
 
+--- @param value UnityEngine.UIElements.DynamicAtlasSettings 
 function UnityEngine.UIElements.PanelSettings:set_dynamicAtlasSettings(value) end
 
 --- 

@@ -48,12 +48,16 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.HingeJoint2D = {}
 
+--- @param value boolean 
 function UnityEngine.HingeJoint2D:set_useMotor(value) end
 
+--- @param value boolean 
 function UnityEngine.HingeJoint2D:set_useLimits(value) end
 
+--- @param value UnityEngine.JointMotor2D 
 function UnityEngine.HingeJoint2D:set_motor(value) end
 
+--- @param value UnityEngine.JointAngleLimits2D 
 function UnityEngine.HingeJoint2D:set_limits(value) end
 
 --- Gets the motor torque of the joint given the specified timestep.

@@ -1,9 +1,4 @@
-UnityEngine.UI.ScrollRect.ScrollbarVisibility = {
-    Permanent = 0,
-    AutoHide = 1,
-    AutoHideAndExpandViewport = 2,
-}
-
+--- @class UnityEngine.UI.ScrollRect.ScrollbarVisibility
 UnityEngine.UI.ScrollRect.ScrollbarVisibility = {
     Permanent = 0,
     AutoHide = 1,

@@ -70,6 +70,10 @@ function UnityEngine.Experimental.TerrainAPI.TerrainPaintUtility.EndPaintHoles(c
 function UnityEngine.Experimental.TerrainAPI.TerrainPaintUtility.CollectNormals(terrain, boundsInTerrainSpace, extraBorderPixels) end
 
 --- Helper function to set up a PaintContext for modifying the alphamap of one or more Terrain tiles.
+--- @param terrain UnityEngine.Terrain 
+--- @param boundsInTerrainSpace UnityEngine.Rect 
+--- @param inputLayer UnityEngine.TerrainLayer 
+--- @param extraBorderPixels number 
 --- @return UnityEngine.Experimental.TerrainAPI.PaintContext PaintContext containing the combined alphamap data for the specified region.
 function UnityEngine.Experimental.TerrainAPI.TerrainPaintUtility.BeginPaintTexture(terrain, boundsInTerrainSpace, inputLayer, extraBorderPixels) end
 

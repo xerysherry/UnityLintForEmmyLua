@@ -17,6 +17,7 @@
 --- @field otherPosition UnityEngine.Vector3 World-space position of the second collider in this contact pair as seen by the solver.
 UnityEngine.ModifiableContactPair = {}
 
+--- @param value UnityEngine.ModifiableMassProperties 
 function UnityEngine.ModifiableContactPair:set_massProperties(value) end
 
 --- Get the location of a particular contact point in this contact pair.

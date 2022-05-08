@@ -24,20 +24,28 @@
 --- @field running boolean
 UnityEngine.XR.XRDisplaySubsystem = {}
 
+--- @param value function 
 function UnityEngine.XR.XRDisplaySubsystem.add_displayFocusChanged(value) end
 
+--- @param value function 
 function UnityEngine.XR.XRDisplaySubsystem.remove_displayFocusChanged(value) end
 
+--- @param value boolean 
 function UnityEngine.XR.XRDisplaySubsystem:set_singlePassRenderingDisabled(value) end
 
+--- @param value boolean 
 function UnityEngine.XR.XRDisplaySubsystem:set_contentProtectionEnabled(value) end
 
+--- @param value number 
 function UnityEngine.XR.XRDisplaySubsystem:set_zNear(value) end
 
+--- @param value number 
 function UnityEngine.XR.XRDisplaySubsystem:set_zFar(value) end
 
+--- @param value boolean 
 function UnityEngine.XR.XRDisplaySubsystem:set_sRGB(value) end
 
+--- @param value UnityEngine.XR.XRDisplaySubsystem.ReprojectionMode 
 function UnityEngine.XR.XRDisplaySubsystem:set_reprojectionMode(value) end
 
 --- Sets a point in 3D space that acts as the focal point of the Scene for this frame. This helps to improve the visual fidelity of content around this point. You must set this value every frame.
@@ -49,6 +57,7 @@ function UnityEngine.XR.XRDisplaySubsystem:set_reprojectionMode(value) end
 --- @param velocity UnityEngine.Vector3 A vector that describes how the focus point moves in the Scene at this point in time. This allows the device to compensate for both your head movement and the movement of the object in the Scene.
 function UnityEngine.XR.XRDisplaySubsystem:SetFocusPlane(point, normal, velocity) end
 
+--- @param value boolean 
 function UnityEngine.XR.XRDisplaySubsystem:set_disableLegacyRenderer(value) end
 
 --- The number of XRRenderPass entries for this XR Display.
@@ -88,6 +97,7 @@ function UnityEngine.XR.XRDisplaySubsystem:TryGetFramePresentCount() end
 
 --- Retrieves the refresh rate of the display as reported by the XR Plugin.
 --- @return boolean Returns true if the display refresh rate is available. Returns false if that rate is unavailable.
+--- @return System.Single& 
 function UnityEngine.XR.XRDisplaySubsystem:TryGetDisplayRefreshRate() end
 
 --- Retrieves the motion-to-photon value as reported by the XR Plugin.
@@ -109,7 +119,9 @@ function UnityEngine.XR.XRDisplaySubsystem:GetPreferredMirrorBlitMode() end
 function UnityEngine.XR.XRDisplaySubsystem:SetPreferredMirrorBlitMode(blitMode) end
 
 --- Get a mirror view blit operation descriptor from the current display subsystem.
+--- @param mirrorRt UnityEngine.RenderTexture 
 --- @return boolean Return true if information is retrieved successfully, false otherwise.
+--- @return UnityEngine.XR.XRMirrorViewBlitDesc& 
 function UnityEngine.XR.XRDisplaySubsystem:GetMirrorViewBlitDesc(mirrorRt) end
 
 --- Get a mirror view blit operation descriptor from the current display subsystem.
@@ -120,6 +132,8 @@ function UnityEngine.XR.XRDisplaySubsystem:GetMirrorViewBlitDesc(mirrorRt) end
 function UnityEngine.XR.XRDisplaySubsystem:GetMirrorViewBlitDesc(mirrorRt, mode) end
 
 --- This function records the display subsystem's native blit event to the target command buffer. This function is typically called by a scriptable rendering pipeline.
+--- @param cmd UnityEngine.Rendering.CommandBuffer 
+--- @param allowGraphicsStateInvalidate boolean 
 --- @return boolean Returns true if native blit event is successfully recorded. Returns false otherwise.
 function UnityEngine.XR.XRDisplaySubsystem:AddGraphicsThreadMirrorViewBlit(cmd, allowGraphicsStateInvalidate) end
 

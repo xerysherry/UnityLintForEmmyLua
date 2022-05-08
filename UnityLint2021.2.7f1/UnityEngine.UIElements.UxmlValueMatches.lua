@@ -8,6 +8,7 @@
 ---        
 UnityEngine.UIElements.UxmlValueMatches = {}
 
+--- @param value string 
 function UnityEngine.UIElements.UxmlValueMatches:set_regex(value) end
 
 --- 

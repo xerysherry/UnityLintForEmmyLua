@@ -93,12 +93,15 @@ function UnityEngine.Playables.PlayableExtensions.SetPropagateSetTime(playable, 
 --- @return boolean True if time propagation is enabled.
 function UnityEngine.Playables.PlayableExtensions.GetPropagateSetTime(playable) end
 
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
 --- @return boolean
 function UnityEngine.Playables.PlayableExtensions.CanChangeInputs(playable) end
 
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
 --- @return boolean
 function UnityEngine.Playables.PlayableExtensions.CanSetWeights(playable) end
 
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
 --- @return boolean
 function UnityEngine.Playables.PlayableExtensions.CanDestroy(playable) end
 
@@ -135,9 +138,15 @@ function UnityEngine.Playables.PlayableExtensions.GetInput(playable, inputPort) 
 function UnityEngine.Playables.PlayableExtensions.GetOutput(playable, outputPort) end
 
 --- Changes the weight of the Playable connected to the current Playable.
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
+--- @param inputIndex number 
+--- @param weight number 
 function UnityEngine.Playables.PlayableExtensions.SetInputWeight(playable, inputIndex, weight) end
 
 --- Changes the weight of the Playable connected to the current Playable.
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
+--- @param input UnityEngine.Playables.PlayableExtensions.V 
+--- @param weight number 
 function UnityEngine.Playables.PlayableExtensions.SetInputWeight(playable, input, weight) end
 
 --- Returns the weight of the Playable connected at the given input port index.
@@ -147,6 +156,10 @@ function UnityEngine.Playables.PlayableExtensions.SetInputWeight(playable, input
 function UnityEngine.Playables.PlayableExtensions.GetInputWeight(playable, inputIndex) end
 
 --- Connect the output port of a Playable to one of the input ports.
+--- @param playable UnityEngine.Playables.PlayableExtensions.U 
+--- @param inputIndex number 
+--- @param sourcePlayable UnityEngine.Playables.PlayableExtensions.V 
+--- @param sourceOutputIndex number 
 function UnityEngine.Playables.PlayableExtensions.ConnectInput(playable, inputIndex, sourcePlayable, sourceOutputIndex) end
 
 --- Connect the output port of a Playable to one of the input ports.

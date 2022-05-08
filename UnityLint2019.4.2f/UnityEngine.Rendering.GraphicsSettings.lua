@@ -25,18 +25,25 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Rendering.GraphicsSettings = {}
 
+--- @param value UnityEngine.TransparencySortMode 
 function UnityEngine.Rendering.GraphicsSettings.set_transparencySortMode(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rendering.GraphicsSettings.set_transparencySortAxis(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_realtimeDirectRectangularAreaLights(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_lightsUseLinearIntensity(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_lightsUseColorTemperature(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_useScriptableRenderPipelineBatching(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.GraphicsSettings.set_logWhenShaderIsCompiled(value) end
 
 --- Returns true if shader define was set when compiling shaders for current GraphicsTier.
@@ -50,8 +57,10 @@ function UnityEngine.Rendering.GraphicsSettings.HasShaderDefine(tier, defineHash
 --- @return boolean 
 function UnityEngine.Rendering.GraphicsSettings.HasShaderDefine(defineHash) end
 
+--- @param value UnityEngine.Rendering.RenderPipelineAsset 
 function UnityEngine.Rendering.GraphicsSettings.set_renderPipelineAsset(value) end
 
+--- @param value UnityEngine.Rendering.RenderPipelineAsset 
 function UnityEngine.Rendering.GraphicsSettings.set_defaultRenderPipeline(value) end
 
 --- Set built-in shader mode.

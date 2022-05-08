@@ -9,12 +9,16 @@
 ---       True if the bounds exclude max.
 UnityEngine.UIElements.UxmlValueBounds = {}
 
+--- @param value string 
 function UnityEngine.UIElements.UxmlValueBounds:set_min(value) end
 
+--- @param value string 
 function UnityEngine.UIElements.UxmlValueBounds:set_max(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.UxmlValueBounds:set_excludeMin(value) end
 
+--- @param value boolean 
 function UnityEngine.UIElements.UxmlValueBounds:set_excludeMax(value) end
 
 --- Indicates whether the current UxmlValueBounds object is equal to another object of the same type.

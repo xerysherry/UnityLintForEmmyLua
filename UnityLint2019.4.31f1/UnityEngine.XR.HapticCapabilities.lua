@@ -13,15 +13,21 @@
 ---       The optimal buffer size an InputDevice expects to be sent via InputDevice.SendHapticBuffer in order to provide a continuous rumble between individual frames.
 UnityEngine.XR.HapticCapabilities = {}
 
+--- @param a UnityEngine.XR.HapticCapabilities 
+--- @param b UnityEngine.XR.HapticCapabilities 
 --- @return boolean
 function UnityEngine.XR.HapticCapabilities.op_Equality(a, b) end
 
+--- @param a UnityEngine.XR.HapticCapabilities 
+--- @param b UnityEngine.XR.HapticCapabilities 
 --- @return boolean
 function UnityEngine.XR.HapticCapabilities.op_Inequality(a, b) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.XR.HapticCapabilities:Equals(obj) end
 
+--- @param other UnityEngine.XR.HapticCapabilities 
 --- @return boolean
 function UnityEngine.XR.HapticCapabilities:Equals(other) end
 

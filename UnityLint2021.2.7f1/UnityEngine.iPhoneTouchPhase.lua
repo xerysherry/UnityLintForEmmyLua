@@ -1,3 +1,4 @@
+--- @class UnityEngine.iPhoneTouchPhase
 UnityEngine.iPhoneTouchPhase = {
     Began = 0,
     Moved = 1,

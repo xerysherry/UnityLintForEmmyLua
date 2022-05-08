@@ -17,6 +17,7 @@
 ---       Gets or sets the current cache in which AssetBundles should be cached.
 UnityEngine.Caching = {}
 
+--- @param value boolean 
 function UnityEngine.Caching.set_compressionEnabled(value) end
 
 --- Removes all AssetBundle content that has been cached by the current application.
@@ -51,14 +52,19 @@ function UnityEngine.Caching.ClearAllCachedVersions(assetBundleName) end
 function UnityEngine.Caching.GetCachedVersions(assetBundleName, outCachedVersions) end
 
 --- Checks if an AssetBundle is cached.
+--- @param url string 
+--- @param version number 
 --- @return boolean True if an AssetBundle matching the url and version parameters has previously been loaded using UnityWebRequestAssetBundle.GetAssetBundle() and is currently stored in the cache. Returns false if the AssetBundle is not in cache, either because it has been flushed from the cache or was never loaded using the Caching API.
 function UnityEngine.Caching.IsVersionCached(url, version) end
 
 --- Checks if an AssetBundle is cached.
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
 --- @return boolean True if an AssetBundle matching the url and version parameters has previously been loaded using UnityWebRequestAssetBundle.GetAssetBundle() and is currently stored in the cache. Returns false if the AssetBundle is not in cache, either because it has been flushed from the cache or was never loaded using the Caching API.
 function UnityEngine.Caching.IsVersionCached(url, hash) end
 
 --- Checks if an AssetBundle is cached.
+--- @param cachedBundle UnityEngine.CachedAssetBundle 
 --- @return boolean True if an AssetBundle matching the url and version parameters has previously been loaded using UnityWebRequestAssetBundle.GetAssetBundle() and is currently stored in the cache. Returns false if the AssetBundle is not in cache, either because it has been flushed from the cache or was never loaded using the Caching API.
 function UnityEngine.Caching.IsVersionCached(cachedBundle) end
 
@@ -69,30 +75,46 @@ function UnityEngine.Caching.IsVersionCached(cachedBundle) end
 function UnityEngine.Caching.MarkAsUsed(url, version) end
 
 --- Bumps the timestamp of a cached file to be the current time.
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
 --- @return boolean 
 function UnityEngine.Caching.MarkAsUsed(url, hash) end
 
 --- Bumps the timestamp of a cached file to be the current time.
+--- @param cachedBundle UnityEngine.CachedAssetBundle 
 --- @return boolean 
 function UnityEngine.Caching.MarkAsUsed(cachedBundle) end
 
+--- @param url string 
+--- @param version number 
 function UnityEngine.Caching.SetNoBackupFlag(url, version) end
 
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
 function UnityEngine.Caching.SetNoBackupFlag(url, hash) end
 
+--- @param cachedBundle UnityEngine.CachedAssetBundle 
 function UnityEngine.Caching.SetNoBackupFlag(cachedBundle) end
 
+--- @param url string 
+--- @param version number 
 function UnityEngine.Caching.ResetNoBackupFlag(url, version) end
 
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
 function UnityEngine.Caching.ResetNoBackupFlag(url, hash) end
 
+--- @param cachedBundle UnityEngine.CachedAssetBundle 
 function UnityEngine.Caching.ResetNoBackupFlag(cachedBundle) end
 
+--- @param url string 
 --- @return number
 function UnityEngine.Caching.GetVersionFromCache(url) end
 
+--- @param value number 
 function UnityEngine.Caching.set_maximumAvailableDiskSpace(value) end
 
+--- @param value number 
 function UnityEngine.Caching.set_expirationDelay(value) end
 
 --- Add a cache with the given path.
@@ -129,6 +151,7 @@ function UnityEngine.Caching.MoveCacheBefore(src, dst) end
 --- @param dst UnityEngine.Cache The Cache which should come before the source Cache in the cache list.
 function UnityEngine.Caching.MoveCacheAfter(src, dst) end
 
+--- @param value UnityEngine.Cache 
 function UnityEngine.Caching.set_currentCacheForWriting(value) end
 
 --- @return boolean

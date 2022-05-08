@@ -17,34 +17,48 @@
 ---       Index of fourth bone.
 UnityEngine.BoneWeight = {}
 
+--- @param lhs UnityEngine.BoneWeight 
+--- @param rhs UnityEngine.BoneWeight 
 --- @return boolean
 function UnityEngine.BoneWeight.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.BoneWeight 
+--- @param rhs UnityEngine.BoneWeight 
 --- @return boolean
 function UnityEngine.BoneWeight.op_Inequality(lhs, rhs) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_weight0(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_weight1(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_weight2(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_weight3(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_boneIndex0(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_boneIndex1(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_boneIndex2(value) end
 
+--- @param value number 
 function UnityEngine.BoneWeight:set_boneIndex3(value) end
 
 --- @return number
 function UnityEngine.BoneWeight:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.BoneWeight:Equals(other) end
 
+--- @param other UnityEngine.BoneWeight 
 --- @return boolean
 function UnityEngine.BoneWeight:Equals(other) end
 

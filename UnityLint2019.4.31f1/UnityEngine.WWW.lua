@@ -38,6 +38,7 @@
 UnityEngine.WWW = {}
 
 --- Escapes characters in a string to ensure they are URL-friendly.
+--- @param s string 
 --- @return string 
 function UnityEngine.WWW.EscapeURL(s) end
 
@@ -48,6 +49,7 @@ function UnityEngine.WWW.EscapeURL(s) end
 function UnityEngine.WWW.EscapeURL(s, e) end
 
 --- Converts URL-friendly escape sequences back to normal text.
+--- @param s string 
 --- @return string 
 function UnityEngine.WWW.UnEscapeURL(s) end
 
@@ -58,28 +60,43 @@ function UnityEngine.WWW.UnEscapeURL(s) end
 function UnityEngine.WWW.UnEscapeURL(s, e) end
 
 --- Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
+--- @param url string 
+--- @param version number 
 --- @return UnityEngine.WWW A WWW instance, which can be used to access the data once the load/download operation is completed.
 function UnityEngine.WWW.LoadFromCacheOrDownload(url, version) end
 
 --- Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
+--- @param url string 
+--- @param version number 
+--- @param crc number 
 --- @return UnityEngine.WWW A WWW instance, which can be used to access the data once the load/download operation is completed.
 function UnityEngine.WWW.LoadFromCacheOrDownload(url, version, crc) end
 
 --- Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
 --- @return UnityEngine.WWW A WWW instance, which can be used to access the data once the load/download operation is completed.
 function UnityEngine.WWW.LoadFromCacheOrDownload(url, hash) end
 
 --- Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
+--- @param url string 
+--- @param hash UnityEngine.Hash128 
+--- @param crc number 
 --- @return UnityEngine.WWW A WWW instance, which can be used to access the data once the load/download operation is completed.
 function UnityEngine.WWW.LoadFromCacheOrDownload(url, hash, crc) end
 
 --- Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
+--- @param url string 
+--- @param cachedBundle UnityEngine.CachedAssetBundle 
+--- @param crc number 
 --- @return UnityEngine.WWW A WWW instance, which can be used to access the data once the load/download operation is completed.
 function UnityEngine.WWW.LoadFromCacheOrDownload(url, cachedBundle, crc) end
 
 --- Replaces the contents of an existing Texture2D with an image from the downloaded data.
+--- @param texture UnityEngine.Texture2D 
 function UnityEngine.WWW:LoadImageIntoTexture(texture) end
 
+--- @param value UnityEngine.ThreadPriority 
 function UnityEngine.WWW:set_threadPriority(value) end
 
 --- Disposes of an existing WWW object.
@@ -90,10 +107,13 @@ function UnityEngine.WWW:Dispose() end
 function UnityEngine.WWW:GetAudioClip() end
 
 --- OBSOLETE. Use UnityWebRequestMultimedia.GetAudioClip().
+--- @param threeD boolean 
 --- @return UnityEngine.AudioClip 
 function UnityEngine.WWW:GetAudioClip(threeD) end
 
 --- OBSOLETE. Use UnityWebRequestMultimedia.GetAudioClip().
+--- @param threeD boolean 
+--- @param stream boolean 
 --- @return UnityEngine.AudioClip 
 function UnityEngine.WWW:GetAudioClip(threeD, stream) end
 
@@ -109,6 +129,7 @@ function UnityEngine.WWW:GetAudioClip(threeD, stream, audioType) end
 function UnityEngine.WWW:GetAudioClipCompressed() end
 
 --- OBSOLETE. Use UnityWebRequestMultimedia.GetAudioClip().
+--- @param threeD boolean 
 --- @return UnityEngine.AudioClip 
 function UnityEngine.WWW:GetAudioClipCompressed(threeD) end
 

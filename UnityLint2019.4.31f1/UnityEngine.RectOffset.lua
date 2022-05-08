@@ -16,12 +16,16 @@ UnityEngine.RectOffset = {}
 --- @return string
 function UnityEngine.RectOffset:ToString() end
 
+--- @param value number 
 function UnityEngine.RectOffset:set_left(value) end
 
+--- @param value number 
 function UnityEngine.RectOffset:set_right(value) end
 
+--- @param value number 
 function UnityEngine.RectOffset:set_top(value) end
 
+--- @param value number 
 function UnityEngine.RectOffset:set_bottom(value) end
 
 --- Add the border offsets to a rect.

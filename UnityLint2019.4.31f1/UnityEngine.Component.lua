@@ -52,6 +52,7 @@ function UnityEngine.Component:TryGetComponent(type) end
 
 --- Gets the component of the specified type, if it exists.
 --- @return boolean Returns true if the component is found, false otherwise.
+--- @return UnityEngine.T& 
 function UnityEngine.Component:TryGetComponent() end
 
 --- Returns the component of Type type if the game object has one attached, null if it doesn't.
@@ -60,6 +61,8 @@ function UnityEngine.Component:TryGetComponent() end
 function UnityEngine.Component:GetComponent(type) end
 
 --- Returns the component of Type type in the GameObject or any of its children using depth first search.
+--- @param t System.Type 
+--- @param includeInactive boolean 
 --- @return UnityEngine.Component A component of the matching type, if found.
 function UnityEngine.Component:GetComponentInChildren(t, includeInactive) end
 
@@ -84,6 +87,7 @@ function UnityEngine.Component:GetComponentInChildren() end
 function UnityEngine.Component:GetComponentsInChildren(t, includeInactive) end
 
 --- Returns all components of Type type in the GameObject or any of its children. Works recursively.
+--- @param t System.Type 
 --- @return UnityEngine.Component[] 
 function UnityEngine.Component:GetComponentsInChildren(t) end
 
@@ -93,6 +97,8 @@ function UnityEngine.Component:GetComponentsInChildren(t) end
 function UnityEngine.Component:GetComponentsInChildren(includeInactive) end
 
 --- Returns all components of Type type in the GameObject or any of its children. Works recursively.
+--- @param includeInactive boolean 
+--- @param result UnityEngine.Component.T[] 
 function UnityEngine.Component:GetComponentsInChildren(includeInactive, result) end
 
 --- Generic version of this method.
@@ -100,6 +106,7 @@ function UnityEngine.Component:GetComponentsInChildren(includeInactive, result) 
 function UnityEngine.Component:GetComponentsInChildren() end
 
 --- Returns all components of Type type in the GameObject or any of its children. Works recursively.
+--- @param results UnityEngine.Component.T[] 
 function UnityEngine.Component:GetComponentsInChildren(results) end
 
 --- Returns the component of Type type in the GameObject or any of its parents.
@@ -118,6 +125,7 @@ function UnityEngine.Component:GetComponentInParent() end
 function UnityEngine.Component:GetComponentsInParent(t, includeInactive) end
 
 --- Returns all components of Type type in the GameObject or any of its parents.
+--- @param t System.Type 
 --- @return UnityEngine.Component[] 
 function UnityEngine.Component:GetComponentsInParent(t) end
 
@@ -127,6 +135,8 @@ function UnityEngine.Component:GetComponentsInParent(t) end
 function UnityEngine.Component:GetComponentsInParent(includeInactive) end
 
 --- Returns all components of Type type in the GameObject or any of its parents.
+--- @param includeInactive boolean 
+--- @param results UnityEngine.Component.T[] 
 function UnityEngine.Component:GetComponentsInParent(includeInactive, results) end
 
 --- Returns all components of Type type in the GameObject or any of its parents.
@@ -139,11 +149,15 @@ function UnityEngine.Component:GetComponentsInParent() end
 function UnityEngine.Component:GetComponents(type) end
 
 --- Returns all components of Type type in the GameObject.
+--- @param type System.Type 
+--- @param results UnityEngine.Component[] 
 function UnityEngine.Component:GetComponents(type, results) end
 
 --- Returns all components of Type type in the GameObject.
+--- @param results UnityEngine.Component.T[] 
 function UnityEngine.Component:GetComponents(results) end
 
+--- @param value string 
 function UnityEngine.Component:set_tag(value) end
 
 --- Generic version of this method.
@@ -162,18 +176,26 @@ function UnityEngine.Component:CompareTag(tag) end
 function UnityEngine.Component:SendMessageUpwards(methodName, value, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
+--- @param methodName string 
+--- @param value System.Object 
 function UnityEngine.Component:SendMessageUpwards(methodName, value) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
+--- @param methodName string 
 function UnityEngine.Component:SendMessageUpwards(methodName) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
+--- @param methodName string 
+--- @param options UnityEngine.SendMessageOptions 
 function UnityEngine.Component:SendMessageUpwards(methodName, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
+--- @param methodName string 
+--- @param value System.Object 
 function UnityEngine.Component:SendMessage(methodName, value) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
+--- @param methodName string 
 function UnityEngine.Component:SendMessage(methodName) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
@@ -183,6 +205,8 @@ function UnityEngine.Component:SendMessage(methodName) end
 function UnityEngine.Component:SendMessage(methodName, value, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object.
+--- @param methodName string 
+--- @param options UnityEngine.SendMessageOptions 
 function UnityEngine.Component:SendMessage(methodName, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
@@ -192,12 +216,17 @@ function UnityEngine.Component:SendMessage(methodName, options) end
 function UnityEngine.Component:BroadcastMessage(methodName, parameter, options) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+--- @param methodName string 
+--- @param parameter System.Object 
 function UnityEngine.Component:BroadcastMessage(methodName, parameter) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+--- @param methodName string 
 function UnityEngine.Component:BroadcastMessage(methodName) end
 
 --- Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+--- @param methodName string 
+--- @param options UnityEngine.SendMessageOptions 
 function UnityEngine.Component:BroadcastMessage(methodName, options) end
 
 ---  Generated By xerysherry

@@ -1,6 +1,7 @@
 --- @class UnityEngine.GUILayer 
 UnityEngine.GUILayer = {}
 
+--- @param screenPosition UnityEngine.Vector3 
 --- @return UnityEngine.GUIElement
 function UnityEngine.GUILayer:HitTest(screenPosition) end
 

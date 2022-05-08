@@ -39,42 +39,61 @@
 ---       The width of the tab character.
 UnityEngine.TextCore.FaceInfo = {}
 
+--- @param value string 
 function UnityEngine.TextCore.FaceInfo:set_familyName(value) end
 
+--- @param value string 
 function UnityEngine.TextCore.FaceInfo:set_styleName(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_pointSize(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_scale(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_lineHeight(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_ascentLine(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_capLine(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_meanLine(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_baseline(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_descentLine(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_superscriptOffset(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_superscriptSize(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_subscriptOffset(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_subscriptSize(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_underlineOffset(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_underlineThickness(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_strikethroughOffset(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_strikethroughThickness(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.FaceInfo:set_tabWidth(value) end
 
 --- Compares the information in this FaceInfo structure with the information in the given FaceInfo structure to determine whether they have the same values.

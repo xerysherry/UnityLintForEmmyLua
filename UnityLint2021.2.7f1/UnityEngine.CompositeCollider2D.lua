@@ -48,14 +48,19 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.CompositeCollider2D = {}
 
+--- @param value UnityEngine.CompositeCollider2D.GeometryType 
 function UnityEngine.CompositeCollider2D:set_geometryType(value) end
 
+--- @param value UnityEngine.CompositeCollider2D.GenerationType 
 function UnityEngine.CompositeCollider2D:set_generationType(value) end
 
+--- @param value number 
 function UnityEngine.CompositeCollider2D:set_vertexDistance(value) end
 
+--- @param value number 
 function UnityEngine.CompositeCollider2D:set_edgeRadius(value) end
 
+--- @param value number 
 function UnityEngine.CompositeCollider2D:set_offsetDistance(value) end
 
 --- Regenerates the Composite Collider geometry.

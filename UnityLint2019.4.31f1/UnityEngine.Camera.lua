@@ -161,6 +161,7 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Camera = {}
 
+--- @param cur UnityEngine.Camera 
 function UnityEngine.Camera.SetupCurrent(cur) end
 
 --- 
@@ -189,6 +190,8 @@ function UnityEngine.Camera.FocalLengthToFieldOfView(focalLength, sensorSize) en
 function UnityEngine.Camera.FieldOfViewToFocalLength(fieldOfView, sensorSize) end
 
 --- Converts the horizontal field of view (FOV) to the vertical FOV, based on the value of the aspect ratio parameter.
+--- @param horizontalFieldOfView number 
+--- @param aspectRatio number 
 --- @return number 
 function UnityEngine.Camera.HorizontalToVerticalFieldOfView(horizontalFieldOfView, aspectRatio) end
 
@@ -254,12 +257,16 @@ function UnityEngine.Camera:GetCommandBuffers(evt) end
 
 --- Get culling parameters for a camera.
 --- @return boolean Flag indicating whether culling parameters are valid.
+--- @return UnityEngine.Rendering.ScriptableCullingParameters& 
 function UnityEngine.Camera:TryGetCullingParameters() end
 
 --- Get culling parameters for a camera.
+--- @param stereoAware boolean 
 --- @return boolean Flag indicating whether culling parameters are valid.
+--- @return UnityEngine.Rendering.ScriptableCullingParameters& 
 function UnityEngine.Camera:TryGetCullingParameters(stereoAware) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_isOrthoGraphic(value) end
 
 --- @return number
@@ -270,17 +277,22 @@ function UnityEngine.Camera:GetScreenHeight() end
 
 function UnityEngine.Camera:DoClear() end
 
+--- @param value number 
 function UnityEngine.Camera:set_near(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_far(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_fov(value) end
 
 --- Reset to the default field of view.
 function UnityEngine.Camera:ResetFieldOfView() end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_hdr(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_stereoMirrorMode(value) end
 
 --- Set custom view matrices for both eyes.
@@ -308,14 +320,20 @@ function UnityEngine.Camera:ResetProjectionMatrix() end
 function UnityEngine.Camera:CalculateObliqueMatrix(clipPlane) end
 
 --- Transforms position from world space into screen space.
+--- @param position UnityEngine.Vector3 
+--- @param eye UnityEngine.Camera.MonoOrStereoscopicEye 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Camera:WorldToScreenPoint(position, eye) end
 
 --- Transforms position from world space into viewport space.
+--- @param position UnityEngine.Vector3 
+--- @param eye UnityEngine.Camera.MonoOrStereoscopicEye 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Camera:WorldToViewportPoint(position, eye) end
 
 --- Transforms position from viewport space into world space.
+--- @param position UnityEngine.Vector3 
+--- @param eye UnityEngine.Camera.MonoOrStereoscopicEye 
 --- @return UnityEngine.Vector3 The 3d vector in World space.
 function UnityEngine.Camera:ViewportToWorldPoint(position, eye) end
 
@@ -326,10 +344,12 @@ function UnityEngine.Camera:ViewportToWorldPoint(position, eye) end
 function UnityEngine.Camera:ScreenToWorldPoint(position, eye) end
 
 --- Transforms position from world space into screen space.
+--- @param position UnityEngine.Vector3 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Camera:WorldToScreenPoint(position) end
 
 --- Transforms position from world space into viewport space.
+--- @param position UnityEngine.Vector3 
 --- @return UnityEngine.Vector3 
 function UnityEngine.Camera:WorldToViewportPoint(position) end
 
@@ -339,6 +359,7 @@ function UnityEngine.Camera:WorldToViewportPoint(position) end
 function UnityEngine.Camera:ViewportToWorldPoint(position) end
 
 --- Transforms a point from screen space into world space, where world space is defined as the coordinate system at the very top of your game's hierarchy.
+--- @param position UnityEngine.Vector3 
 --- @return UnityEngine.Vector3 The worldspace point created by converting the screen space point at the provided distance z from the camera plane.
 function UnityEngine.Camera:ScreenToWorldPoint(position) end
 
@@ -353,18 +374,24 @@ function UnityEngine.Camera:ScreenToViewportPoint(position) end
 function UnityEngine.Camera:ViewportToScreenPoint(position) end
 
 --- Returns a ray going from camera through a viewport point.
+--- @param pos UnityEngine.Vector3 
+--- @param eye UnityEngine.Camera.MonoOrStereoscopicEye 
 --- @return UnityEngine.Ray 
 function UnityEngine.Camera:ViewportPointToRay(pos, eye) end
 
 --- Returns a ray going from camera through a viewport point.
+--- @param pos UnityEngine.Vector3 
 --- @return UnityEngine.Ray 
 function UnityEngine.Camera:ViewportPointToRay(pos) end
 
 --- Returns a ray going from camera through a screen point.
+--- @param pos UnityEngine.Vector3 
+--- @param eye UnityEngine.Camera.MonoOrStereoscopicEye 
 --- @return UnityEngine.Ray 
 function UnityEngine.Camera:ScreenPointToRay(pos, eye) end
 
 --- Returns a ray going from camera through a screen point.
+--- @param pos UnityEngine.Vector3 
 --- @return UnityEngine.Ray 
 function UnityEngine.Camera:ScreenPointToRay(pos) end
 
@@ -375,12 +402,16 @@ function UnityEngine.Camera:ScreenPointToRay(pos) end
 --- @param outCorners UnityEngine.Vector3[] Output array for the frustum corner vectors. Cannot be null and length must be >= 4.
 function UnityEngine.Camera:CalculateFrustumCorners(viewport, z, eye, outCorners) end
 
+--- @param value UnityEngine.SceneManagement.Scene 
 function UnityEngine.Camera:set_scene(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_stereoSeparation(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_stereoConvergence(value) end
 
+--- @param value UnityEngine.StereoTargetEyeMask 
 function UnityEngine.Camera:set_stereoTargetEye(value) end
 
 --- Gets the non-jittered projection matrix of a specific left or right stereoscopic eye.
@@ -425,6 +456,7 @@ function UnityEngine.Camera:ResetStereoViewMatrices() end
 function UnityEngine.Camera:RenderToCubemap(cubemap, faceMask) end
 
 --- Render into a static cubemap from this camera.
+--- @param cubemap UnityEngine.Cubemap 
 --- @return boolean False if rendering fails, else true.
 function UnityEngine.Camera:RenderToCubemap(cubemap) end
 
@@ -435,20 +467,26 @@ function UnityEngine.Camera:RenderToCubemap(cubemap) end
 function UnityEngine.Camera:RenderToCubemap(cubemap, faceMask) end
 
 --- Render into a static cubemap from this camera.
+--- @param cubemap UnityEngine.RenderTexture 
 --- @return boolean False if rendering fails, else true.
 function UnityEngine.Camera:RenderToCubemap(cubemap) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Camera:set_cullingMatrix(value) end
 
 --- Make culling queries reflect the camera's built in parameters.
 function UnityEngine.Camera:ResetCullingMatrix() end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Camera:set_backgroundColor(value) end
 
+--- @param value UnityEngine.CameraClearFlags 
 function UnityEngine.Camera:set_clearFlags(value) end
 
+--- @param value UnityEngine.DepthTextureMode 
 function UnityEngine.Camera:set_depthTextureMode(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_clearStencilAfterLightingPass(value) end
 
 --- Make the camera render with shader replacement.
@@ -459,14 +497,19 @@ function UnityEngine.Camera:SetReplacementShader(shader, replacementTag) end
 --- Remove shader replacement from camera.
 function UnityEngine.Camera:ResetReplacementShader() end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_usePhysicalProperties(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Camera:set_sensorSize(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.Camera:set_lensShift(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_focalLength(value) end
 
+--- @param value UnityEngine.Camera.GateFitMode 
 function UnityEngine.Camera:set_gateFit(value) end
 
 --- 
@@ -483,12 +526,16 @@ function UnityEngine.Camera:GetGateFittedFieldOfView() end
 --- @return UnityEngine.Vector2 Returns the effective lens shift value.
 function UnityEngine.Camera:GetGateFittedLensShift() end
 
+--- @param value UnityEngine.Rect 
 function UnityEngine.Camera:set_rect(value) end
 
+--- @param value UnityEngine.Rect 
 function UnityEngine.Camera:set_pixelRect(value) end
 
+--- @param value UnityEngine.RenderTexture 
 function UnityEngine.Camera:set_targetTexture(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_targetDisplay(value) end
 
 --- Sets the Camera to render to the chosen buffers of one or more RenderTextures.
@@ -501,68 +548,94 @@ function UnityEngine.Camera:SetTargetBuffers(colorBuffer, depthBuffer) end
 --- @param depthBuffer UnityEngine.RenderBuffer The RenderBuffer to which depth information will be rendered.
 function UnityEngine.Camera:SetTargetBuffers(colorBuffer, depthBuffer) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Camera:set_worldToCameraMatrix(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Camera:set_projectionMatrix(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Camera:set_nonJitteredProjectionMatrix(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_useJitteredProjectionMatrixForTransparentRendering(value) end
 
 --- Make the rendering position reflect the camera's position in the Scene.
 function UnityEngine.Camera:ResetWorldToCameraMatrix() end
 
+--- @param value number 
 function UnityEngine.Camera:set_nearClipPlane(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_farClipPlane(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_fieldOfView(value) end
 
+--- @param value UnityEngine.RenderingPath 
 function UnityEngine.Camera:set_renderingPath(value) end
 
 --- Revert all camera parameters to default.
 function UnityEngine.Camera:Reset() end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_allowHDR(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_allowMSAA(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_allowDynamicResolution(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_forceIntoRenderTexture(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_orthographicSize(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_orthographic(value) end
 
+--- @param value UnityEngine.Rendering.OpaqueSortMode 
 function UnityEngine.Camera:set_opaqueSortMode(value) end
 
+--- @param value UnityEngine.TransparencySortMode 
 function UnityEngine.Camera:set_transparencySortMode(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Camera:set_transparencySortAxis(value) end
 
 --- Resets this Camera's transparency sort settings to the default. Default transparency settings are taken from GraphicsSettings instead of directly from this Camera.
 function UnityEngine.Camera:ResetTransparencySortSettings() end
 
+--- @param value number 
 function UnityEngine.Camera:set_depth(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_aspect(value) end
 
 --- Revert the aspect ratio to the screen's aspect ratio.
 function UnityEngine.Camera:ResetAspect() end
 
+--- @param value number 
 function UnityEngine.Camera:set_cullingMask(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_eventMask(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_layerCullSpherical(value) end
 
+--- @param value UnityEngine.CameraType 
 function UnityEngine.Camera:set_cameraType(value) end
 
+--- @param value number 
 function UnityEngine.Camera:set_overrideSceneCullingMask(value) end
 
+--- @param value number[] 
 function UnityEngine.Camera:set_layerCullDistances(value) end
 
+--- @param value boolean 
 function UnityEngine.Camera:set_useOcclusionCulling(value) end
 
 ---  Generated By xerysherry

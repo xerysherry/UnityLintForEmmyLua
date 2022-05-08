@@ -1,11 +1,4 @@
-UnityEngine.UI.Navigation.Mode = {
-    None = 0,
-    Horizontal = 1,
-    Vertical = 2,
-    Automatic = 3,
-    Explicit = 4,
-}
-
+--- @class UnityEngine.UI.Navigation.Mode
 UnityEngine.UI.Navigation.Mode = {
     None = 0,
     Horizontal = 1,

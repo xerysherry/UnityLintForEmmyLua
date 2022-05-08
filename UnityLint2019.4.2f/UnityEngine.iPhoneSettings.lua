@@ -12,8 +12,11 @@
 --- @field locationServiceEnabledByUser boolean
 UnityEngine.iPhoneSettings = {}
 
+--- @param desiredAccuracyInMeters number 
+--- @param updateDistanceInMeters number 
 function UnityEngine.iPhoneSettings.StartLocationServiceUpdates(desiredAccuracyInMeters, updateDistanceInMeters) end
 
+--- @param desiredAccuracyInMeters number 
 function UnityEngine.iPhoneSettings.StartLocationServiceUpdates(desiredAccuracyInMeters) end
 
 function UnityEngine.iPhoneSettings.StartLocationServiceUpdates() end

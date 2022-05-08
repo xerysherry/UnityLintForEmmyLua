@@ -13,8 +13,10 @@ UnityEngine.Plane = {}
 --- @return UnityEngine.Plane The translated plane.
 function UnityEngine.Plane.Translate(plane, translation) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Plane:set_normal(value) end
 
+--- @param value number 
 function UnityEngine.Plane:set_distance(value) end
 
 --- Sets a plane using a point that lies within it along with a normal to orient it.
@@ -65,9 +67,12 @@ function UnityEngine.Plane:Raycast(ray) end
 --- @return string
 function UnityEngine.Plane:ToString() end
 
+--- @param format string 
 --- @return string
 function UnityEngine.Plane:ToString(format) end
 
+--- @param format string 
+--- @param formatProvider System.IFormatProvider 
 --- @return string
 function UnityEngine.Plane:ToString(format, formatProvider) end
 

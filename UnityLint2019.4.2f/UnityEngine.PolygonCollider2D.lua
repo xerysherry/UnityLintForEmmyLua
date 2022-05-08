@@ -39,14 +39,17 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.PolygonCollider2D = {}
 
+--- @param value boolean 
 function UnityEngine.PolygonCollider2D:set_autoTiling(value) end
 
 --- Return the total number of points in the polygon in all paths.
 --- @return number 
 function UnityEngine.PolygonCollider2D:GetTotalPointCount() end
 
+--- @param value UnityEngine.Vector2[] 
 function UnityEngine.PolygonCollider2D:set_points(value) end
 
+--- @param value number 
 function UnityEngine.PolygonCollider2D:set_pathCount(value) end
 
 --- Gets a path from the Collider by its index.
@@ -71,9 +74,12 @@ function UnityEngine.PolygonCollider2D:GetPath(index, points) end
 function UnityEngine.PolygonCollider2D:SetPath(index, points) end
 
 --- Creates as regular primitive polygon with the specified number of sides.
+--- @param sides number 
 function UnityEngine.PolygonCollider2D:CreatePrimitive(sides) end
 
 --- Creates as regular primitive polygon with the specified number of sides.
+--- @param sides number 
+--- @param scale UnityEngine.Vector2 
 function UnityEngine.PolygonCollider2D:CreatePrimitive(sides, scale) end
 
 --- Creates as regular primitive polygon with the specified number of sides.

@@ -1,10 +1,4 @@
-UnityEngine.UI.GraphicRaycaster.BlockingObjects = {
-    None = 0,
-    TwoD = 1,
-    ThreeD = 2,
-    All = 3,
-}
-
+--- @class UnityEngine.UI.GraphicRaycaster.BlockingObjects
 UnityEngine.UI.GraphicRaycaster.BlockingObjects = {
     None = 0,
     TwoD = 1,

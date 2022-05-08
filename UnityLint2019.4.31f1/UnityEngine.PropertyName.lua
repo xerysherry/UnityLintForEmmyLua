@@ -13,15 +13,21 @@ UnityEngine.PropertyName = {}
 --- @return boolean 
 function UnityEngine.PropertyName.IsNullOrEmpty(prop) end
 
+--- @param lhs UnityEngine.PropertyName 
+--- @param rhs UnityEngine.PropertyName 
 --- @return boolean
 function UnityEngine.PropertyName.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.PropertyName 
+--- @param rhs UnityEngine.PropertyName 
 --- @return boolean
 function UnityEngine.PropertyName.op_Inequality(lhs, rhs) end
 
+--- @param name string 
 --- @return UnityEngine.PropertyName
 function UnityEngine.PropertyName.op_Implicit(name) end
 
+--- @param id number 
 --- @return UnityEngine.PropertyName
 function UnityEngine.PropertyName.op_Implicit(id) end
 

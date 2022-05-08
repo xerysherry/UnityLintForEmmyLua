@@ -34,6 +34,10 @@
 UnityEngine.Cubemap = {}
 
 --- Creates a Unity cubemap out of externally created native cubemap object.
+--- @param width number 
+--- @param format UnityEngine.TextureFormat 
+--- @param mipmap boolean 
+--- @param nativeTex System.IntPtr 
 --- @return UnityEngine.Cubemap 
 function UnityEngine.Cubemap.CreateExternalTexture(width, format, mipmap, nativeTex) end
 
@@ -55,6 +59,7 @@ function UnityEngine.Cubemap:SmoothEdges() end
 function UnityEngine.Cubemap:GetPixels(face, miplevel) end
 
 --- Returns pixel colors of a cubemap face.
+--- @param face UnityEngine.CubemapFace 
 --- @return UnityEngine.Color[] 
 function UnityEngine.Cubemap:GetPixels(face) end
 
@@ -65,8 +70,11 @@ function UnityEngine.Cubemap:GetPixels(face) end
 function UnityEngine.Cubemap:SetPixels(colors, face, miplevel) end
 
 --- Sets pixel colors of a cubemap face.
+--- @param colors UnityEngine.Color[] 
+--- @param face UnityEngine.CubemapFace 
 function UnityEngine.Cubemap:SetPixels(colors, face) end
 
+--- @param value number 
 function UnityEngine.Cubemap:set_requestedMipmapLevel(value) end
 
 --- Resets the requestedMipmapLevel field.
@@ -77,9 +85,17 @@ function UnityEngine.Cubemap:ClearRequestedMipmapLevel() end
 function UnityEngine.Cubemap:IsRequestedMipmapLevelLoaded() end
 
 --- Set pixel values from raw preformatted data.
+--- @param data UnityEngine.Cubemap.T[] 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param sourceDataStartIndex number 
 function UnityEngine.Cubemap:SetPixelData(data, mipLevel, face, sourceDataStartIndex) end
 
 --- Set pixel values from raw preformatted data.
+--- @param data Unity.Collections.NativeArray`1 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param sourceDataStartIndex number 
 function UnityEngine.Cubemap:SetPixelData(data, mipLevel, face, sourceDataStartIndex) end
 
 --- Sets pixel color at coordinates (face, x, y).
@@ -102,6 +118,7 @@ function UnityEngine.Cubemap:GetPixel(face, x, y) end
 function UnityEngine.Cubemap:Apply(updateMipmaps, makeNoLongerReadable) end
 
 --- Actually apply all previous SetPixel and SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.Cubemap:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixel and SetPixels changes.

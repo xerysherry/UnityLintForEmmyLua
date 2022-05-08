@@ -37,6 +37,7 @@
 --- @field m33 number
 UnityEngine.Matrix4x4 = {}
 
+--- @param m UnityEngine.Matrix4x4 
 --- @return number
 function UnityEngine.Matrix4x4.Determinant(m) end
 
@@ -53,9 +54,11 @@ function UnityEngine.Matrix4x4.TRS(pos, q, s) end
 --- @return boolean Returns true and a valid result if the function succeeds, false and a copy of the input matrix if the function fails.
 function UnityEngine.Matrix4x4.Inverse3DAffine(input, result) end
 
+--- @param m UnityEngine.Matrix4x4 
 --- @return UnityEngine.Matrix4x4
 function UnityEngine.Matrix4x4.Inverse(m) end
 
+--- @param m UnityEngine.Matrix4x4 
 --- @return UnityEngine.Matrix4x4
 function UnityEngine.Matrix4x4.Transpose(m) end
 
@@ -85,10 +88,17 @@ function UnityEngine.Matrix4x4.Perspective(fov, aspect, zNear, zFar) end
 function UnityEngine.Matrix4x4.LookAt(from, to, up) end
 
 --- This function returns a projection matrix with viewing frustum that has a near plane defined by the coordinates that were passed in.
+--- @param left number 
+--- @param right number 
+--- @param bottom number 
+--- @param top number 
+--- @param zNear number 
+--- @param zFar number 
 --- @return UnityEngine.Matrix4x4 A projection matrix with a viewing frustum defined by the plane coordinates passed in.
 function UnityEngine.Matrix4x4.Frustum(left, right, bottom, top, zNear, zFar) end
 
 --- This function returns a projection matrix with viewing frustum that has a near plane defined by the coordinates that were passed in.
+--- @param fp UnityEngine.FrustumPlanes 
 --- @return UnityEngine.Matrix4x4 A projection matrix with a viewing frustum defined by the plane coordinates passed in.
 function UnityEngine.Matrix4x4.Frustum(fp) end
 
@@ -104,9 +114,13 @@ function UnityEngine.Matrix4x4.op_Multiply(lhs, rhs) end
 --- @return UnityEngine.Vector4 
 function UnityEngine.Matrix4x4.op_Multiply(lhs, vector) end
 
+--- @param lhs UnityEngine.Matrix4x4 
+--- @param rhs UnityEngine.Matrix4x4 
 --- @return boolean
 function UnityEngine.Matrix4x4.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Matrix4x4 
+--- @param rhs UnityEngine.Matrix4x4 
 --- @return boolean
 function UnityEngine.Matrix4x4.op_Inequality(lhs, rhs) end
 
@@ -135,16 +149,23 @@ function UnityEngine.Matrix4x4:ValidTRS() end
 --- @param s UnityEngine.Vector3 
 function UnityEngine.Matrix4x4:SetTRS(pos, q, s) end
 
+--- @param row number 
+--- @param column number 
+--- @param value number 
 function UnityEngine.Matrix4x4:set_Item(row, column, value) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Matrix4x4:set_Item(index, value) end
 
 --- @return number
 function UnityEngine.Matrix4x4:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Matrix4x4:Equals(other) end
 
+--- @param other UnityEngine.Matrix4x4 
 --- @return boolean
 function UnityEngine.Matrix4x4:Equals(other) end
 

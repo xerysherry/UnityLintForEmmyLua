@@ -19,10 +19,13 @@ UnityEngine.Networking.HostTopology = {}
 --- @return UnityEngine.Networking.ConnectionConfig Connection config.
 function UnityEngine.Networking.HostTopology:GetSpecialConnectionConfig(i) end
 
+--- @param value number 
 function UnityEngine.Networking.HostTopology:set_ReceivedMessagePoolSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.HostTopology:set_SentMessagePoolSize(value) end
 
+--- @param value number 
 function UnityEngine.Networking.HostTopology:set_MessagePoolSizeGrowthFactor(value) end
 
 --- Add special connection to topology (for example if you need to keep connection to standalone chat server you will need to use this function). Returned id should be use as one of parameters (with ip and port) to establish connection to this server.

@@ -1,9 +1,4 @@
-UnityEngine.UI.InputField.LineType = {
-    SingleLine = 0,
-    MultiLineSubmit = 1,
-    MultiLineNewline = 2,
-}
-
+--- @class UnityEngine.UI.InputField.LineType
 UnityEngine.UI.InputField.LineType = {
     SingleLine = 0,
     MultiLineSubmit = 1,

@@ -2,18 +2,24 @@
 --- @field Null UnityEngine.Playables.PlayableOutputHandle
 UnityEngine.Playables.PlayableOutputHandle = {}
 
+--- @param lhs UnityEngine.Playables.PlayableOutputHandle 
+--- @param rhs UnityEngine.Playables.PlayableOutputHandle 
 --- @return boolean
 function UnityEngine.Playables.PlayableOutputHandle.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Playables.PlayableOutputHandle 
+--- @param rhs UnityEngine.Playables.PlayableOutputHandle 
 --- @return boolean
 function UnityEngine.Playables.PlayableOutputHandle.op_Inequality(lhs, rhs) end
 
 --- @return number
 function UnityEngine.Playables.PlayableOutputHandle:GetHashCode() end
 
+--- @param p System.Object 
 --- @return boolean
 function UnityEngine.Playables.PlayableOutputHandle:Equals(p) end
 
+--- @param other UnityEngine.Playables.PlayableOutputHandle 
 --- @return boolean
 function UnityEngine.Playables.PlayableOutputHandle:Equals(other) end
 

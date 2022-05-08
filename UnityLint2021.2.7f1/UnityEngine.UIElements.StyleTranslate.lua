@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleTranslate = {}
 
+--- @param lhs UnityEngine.UIElements.StyleTranslate 
+--- @param rhs UnityEngine.UIElements.StyleTranslate 
 --- @return boolean
 function UnityEngine.UIElements.StyleTranslate.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleTranslate 
+--- @param rhs UnityEngine.UIElements.StyleTranslate 
 --- @return boolean
 function UnityEngine.UIElements.StyleTranslate.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleTranslate
 function UnityEngine.UIElements.StyleTranslate.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.Translate 
 --- @return UnityEngine.UIElements.StyleTranslate
 function UnityEngine.UIElements.StyleTranslate.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Translate 
 function UnityEngine.UIElements.StyleTranslate:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleTranslate:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleTranslate 
 --- @return boolean
 function UnityEngine.UIElements.StyleTranslate:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleTranslate:Equals(obj) end
 

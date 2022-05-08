@@ -3,6 +3,7 @@
 ---       The list of values the attribute can take.
 UnityEngine.UIElements.UxmlEnumeration = {}
 
+--- @param value System.Collections.Generic.IEnumerable`1 
 function UnityEngine.UIElements.UxmlEnumeration:set_values(value) end
 
 --- Indicates whether the current UxmlEnumeration object is equal to another object of the same type.

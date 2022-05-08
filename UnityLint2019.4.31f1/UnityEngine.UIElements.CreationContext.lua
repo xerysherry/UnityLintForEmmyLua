@@ -5,15 +5,21 @@
 --- @field slotInsertionPoints table<string, UnityEngine.UIElements.VisualElement>
 UnityEngine.UIElements.CreationContext = {}
 
+--- @param context1 UnityEngine.UIElements.CreationContext 
+--- @param context2 UnityEngine.UIElements.CreationContext 
 --- @return boolean
 function UnityEngine.UIElements.CreationContext.op_Equality(context1, context2) end
 
+--- @param context1 UnityEngine.UIElements.CreationContext 
+--- @param context2 UnityEngine.UIElements.CreationContext 
 --- @return boolean
 function UnityEngine.UIElements.CreationContext.op_Inequality(context1, context2) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.CreationContext:Equals(obj) end
 
+--- @param other UnityEngine.UIElements.CreationContext 
 --- @return boolean
 function UnityEngine.UIElements.CreationContext:Equals(other) end
 

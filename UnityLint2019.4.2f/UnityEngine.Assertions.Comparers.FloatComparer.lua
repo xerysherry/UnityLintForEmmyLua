@@ -17,9 +17,12 @@ function UnityEngine.Assertions.Comparers.FloatComparer.AreEqual(expected, actua
 --- @return boolean Result of the comparison.
 function UnityEngine.Assertions.Comparers.FloatComparer.AreEqualRelative(expected, actual, error) end
 
+--- @param a number 
+--- @param b number 
 --- @return boolean
 function UnityEngine.Assertions.Comparers.FloatComparer:Equals(a, b) end
 
+--- @param obj number 
 --- @return number
 function UnityEngine.Assertions.Comparers.FloatComparer:GetHashCode(obj) end
 

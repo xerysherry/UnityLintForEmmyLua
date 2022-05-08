@@ -24,30 +24,43 @@
 --- @field usePrototypeMesh boolean
 UnityEngine.DetailPrototype = {}
 
+--- @param value UnityEngine.GameObject 
 function UnityEngine.DetailPrototype:set_prototype(value) end
 
+--- @param value UnityEngine.Texture2D 
 function UnityEngine.DetailPrototype:set_prototypeTexture(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_minWidth(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_maxWidth(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_minHeight(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_maxHeight(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_noiseSpread(value) end
 
+--- @param value number 
 function UnityEngine.DetailPrototype:set_bendFactor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.DetailPrototype:set_healthyColor(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.DetailPrototype:set_dryColor(value) end
 
+--- @param value UnityEngine.DetailRenderMode 
 function UnityEngine.DetailPrototype:set_renderMode(value) end
 
+--- @param value boolean 
 function UnityEngine.DetailPrototype:set_usePrototypeMesh(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.DetailPrototype:Equals(obj) end
 

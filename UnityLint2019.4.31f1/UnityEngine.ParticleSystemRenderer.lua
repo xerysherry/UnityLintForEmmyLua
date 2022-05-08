@@ -114,40 +114,58 @@ function UnityEngine.ParticleSystemRenderer:AreVertexStreamsEnabled(streams) end
 --- @return UnityEngine.ParticleSystemVertexStreams The subset of the queried streams that are actually enabled.
 function UnityEngine.ParticleSystemRenderer:GetEnabledVertexStreams(streams) end
 
+--- @param value UnityEngine.ParticleSystemRenderSpace 
 function UnityEngine.ParticleSystemRenderer:set_alignment(value) end
 
+--- @param value UnityEngine.ParticleSystemRenderMode 
 function UnityEngine.ParticleSystemRenderer:set_renderMode(value) end
 
+--- @param value UnityEngine.ParticleSystemSortMode 
 function UnityEngine.ParticleSystemRenderer:set_sortMode(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_lengthScale(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_velocityScale(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_cameraVelocityScale(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_normalDirection(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_shadowBias(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_sortingFudge(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_minParticleSize(value) end
 
+--- @param value number 
 function UnityEngine.ParticleSystemRenderer:set_maxParticleSize(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ParticleSystemRenderer:set_pivot(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ParticleSystemRenderer:set_flip(value) end
 
+--- @param value UnityEngine.SpriteMaskInteraction 
 function UnityEngine.ParticleSystemRenderer:set_maskInteraction(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.ParticleSystemRenderer:set_trailMaterial(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystemRenderer:set_enableGPUInstancing(value) end
 
+--- @param value boolean 
 function UnityEngine.ParticleSystemRenderer:set_allowRoll(value) end
 
+--- @param value UnityEngine.Mesh 
 function UnityEngine.ParticleSystemRenderer:set_mesh(value) end
 
 --- Get the array of Meshes to be used as particles.
@@ -161,9 +179,12 @@ function UnityEngine.ParticleSystemRenderer:GetMeshes(meshes) end
 function UnityEngine.ParticleSystemRenderer:SetMeshes(meshes, size) end
 
 --- Set an array of Meshes to use as particles when the ParticleSystemRenderer.renderMode is set to ParticleSystemRenderMode.Mesh.
+--- @param meshes UnityEngine.Mesh[] 
 function UnityEngine.ParticleSystemRenderer:SetMeshes(meshes) end
 
 --- Creates a snapshot of ParticleSystemRenderer and stores it in mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param useTransform boolean 
 function UnityEngine.ParticleSystemRenderer:BakeMesh(mesh, useTransform) end
 
 --- Creates a snapshot of ParticleSystemRenderer and stores it in mesh.
@@ -173,6 +194,8 @@ function UnityEngine.ParticleSystemRenderer:BakeMesh(mesh, useTransform) end
 function UnityEngine.ParticleSystemRenderer:BakeMesh(mesh, camera, useTransform) end
 
 --- Creates a snapshot of ParticleSystem Trails and stores them in mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param useTransform boolean 
 function UnityEngine.ParticleSystemRenderer:BakeTrailsMesh(mesh, useTransform) end
 
 --- Creates a snapshot of ParticleSystem Trails and stores them in mesh.

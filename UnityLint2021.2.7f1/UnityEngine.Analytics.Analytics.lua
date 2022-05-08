@@ -17,16 +17,20 @@
 ---       Controls whether the Analytics service is enabled at runtime.
 UnityEngine.Analytics.Analytics = {}
 
+--- @param value boolean 
 function UnityEngine.Analytics.Analytics.set_initializeOnStartup(value) end
 
 --- Resume Analytics initialization.
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.ResumeInitialization() end
 
+--- @param value boolean 
 function UnityEngine.Analytics.Analytics.set_limitUserTracking(value) end
 
+--- @param value boolean 
 function UnityEngine.Analytics.Analytics.set_deviceStatsEnabled(value) end
 
+--- @param value boolean 
 function UnityEngine.Analytics.Analytics.set_enabled(value) end
 
 --- Attempts to flush immediately all queued analytics events to the network and filesystem cache if possible (optional).
@@ -49,10 +53,18 @@ function UnityEngine.Analytics.Analytics.SetUserGender(gender) end
 function UnityEngine.Analytics.Analytics.SetUserBirthYear(birthYear) end
 
 --- Tracking Monetization (optional).
+--- @param productId string 
+--- @param amount System.Decimal 
+--- @param currency string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.Transaction(productId, amount, currency) end
 
 --- Tracking Monetization (optional).
+--- @param productId string 
+--- @param amount System.Decimal 
+--- @param currency string 
+--- @param receiptPurchaseData string 
+--- @param signature string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.Transaction(productId, amount, currency, receiptPurchaseData, signature) end
 
@@ -95,22 +107,45 @@ function UnityEngine.Analytics.Analytics.EnableCustomEvent(customEventName, enab
 function UnityEngine.Analytics.Analytics.IsCustomEventEnabled(customEventName) end
 
 --- This API is used for registering a Runtime Analytics event. Note: This API is for internal use only and is likely change in the future. Do not use in user code.
+--- @param eventName string 
+--- @param maxEventPerHour number 
+--- @param maxItems number 
+--- @param vendorKey string 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.RegisterEvent(eventName, maxEventPerHour, maxItems, vendorKey, prefix) end
 
 --- This API is used for registering a Runtime Analytics event. Note: This API is for internal use only and is likely change in the future. Do not use in user code.
+--- @param eventName string 
+--- @param maxEventPerHour number 
+--- @param maxItems number 
+--- @param vendorKey string 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.RegisterEvent(eventName, maxEventPerHour, maxItems, vendorKey, ver, prefix) end
 
 --- This API is used to send a Runtime Analytics event. Note: This API is for internal use only and is likely change in the future. Do not use in user code.
+--- @param eventName string 
+--- @param parameters System.Object 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.SendEvent(eventName, parameters, ver, prefix) end
 
 --- Use this API to set the event end point URL. Note: This API is for internal use only and is likely change in the future. Do not use in user code.
+--- @param eventName string 
+--- @param endPoint string 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.SetEventEndPoint(eventName, endPoint, ver, prefix) end
 
 --- Use this API to set the event priority. Note: This API is for internal use only and is likely change in the future. Do not use in user code.
+--- @param eventName string 
+--- @param eventPriority UnityEngine.Analytics.AnalyticsEventPriority 
+--- @param ver number 
+--- @param prefix string 
 --- @return UnityEngine.Analytics.AnalyticsResult 
 function UnityEngine.Analytics.Analytics.SetEventPriority(eventName, eventPriority, ver, prefix) end
 

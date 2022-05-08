@@ -6,15 +6,31 @@ UnityEngine.UIElements.DropdownMenu = {}
 function UnityEngine.UIElements.DropdownMenu:MenuItems() end
 
 --- Add an item that will execute an action in the drop-down menu. The item is added at the end of the current item list.
+--- @param actionName string 
+--- @param action function 
+--- @param actionStatusCallback function 
+--- @param userData System.Object 
 function UnityEngine.UIElements.DropdownMenu:AppendAction(actionName, action, actionStatusCallback, userData) end
 
 --- Add an item that will execute an action in the drop-down menu. The item is added at the end of the current item list.
+--- @param actionName string 
+--- @param action function 
+--- @param status UnityEngine.UIElements.DropdownMenuAction.Status 
 function UnityEngine.UIElements.DropdownMenu:AppendAction(actionName, action, status) end
 
 --- Add an item that will execute an action in the drop-down menu. The item is added at the end of the specified index in the list.
+--- @param atIndex number 
+--- @param actionName string 
+--- @param action function 
+--- @param actionStatusCallback function 
+--- @param userData System.Object 
 function UnityEngine.UIElements.DropdownMenu:InsertAction(atIndex, actionName, action, actionStatusCallback, userData) end
 
 --- Add an item that will execute an action in the drop-down menu. The item is added at the end of the specified index in the list.
+--- @param atIndex number 
+--- @param actionName string 
+--- @param action function 
+--- @param status UnityEngine.UIElements.DropdownMenuAction.Status 
 function UnityEngine.UIElements.DropdownMenu:InsertAction(atIndex, actionName, action, status) end
 
 --- Add a separator line in the menu. The separator is added at the end of the current item list.
@@ -22,6 +38,8 @@ function UnityEngine.UIElements.DropdownMenu:InsertAction(atIndex, actionName, a
 function UnityEngine.UIElements.DropdownMenu:AppendSeparator(subMenuPath) end
 
 --- Add a separator line in the menu. The separator is added at the end of the specified index in the list.
+--- @param subMenuPath string 
+--- @param atIndex number 
 function UnityEngine.UIElements.DropdownMenu:InsertSeparator(subMenuPath, atIndex) end
 
 --- Remove the menu item at index.

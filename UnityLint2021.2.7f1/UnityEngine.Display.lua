@@ -30,8 +30,10 @@ function UnityEngine.Display.MultiDisplayLicense() end
 --- @return UnityEngine.Vector3 
 function UnityEngine.Display.RelativeMouseAt(inputMouseCoordinates) end
 
+--- @param value function 
 function UnityEngine.Display.add_onDisplaysUpdated(value) end
 
+--- @param value function 
 function UnityEngine.Display.remove_onDisplaysUpdated(value) end
 
 --- Activate an external display. Eg. Secondary Monitors connected to the System.

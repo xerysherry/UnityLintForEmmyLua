@@ -16,21 +16,30 @@
 ---        
 UnityEngine.UIElements.ManipulatorActivationFilter = {}
 
+--- @param filter1 UnityEngine.UIElements.ManipulatorActivationFilter 
+--- @param filter2 UnityEngine.UIElements.ManipulatorActivationFilter 
 --- @return boolean
 function UnityEngine.UIElements.ManipulatorActivationFilter.op_Equality(filter1, filter2) end
 
+--- @param filter1 UnityEngine.UIElements.ManipulatorActivationFilter 
+--- @param filter2 UnityEngine.UIElements.ManipulatorActivationFilter 
 --- @return boolean
 function UnityEngine.UIElements.ManipulatorActivationFilter.op_Inequality(filter1, filter2) end
 
+--- @param value UnityEngine.UIElements.MouseButton 
 function UnityEngine.UIElements.ManipulatorActivationFilter:set_button(value) end
 
+--- @param value UnityEngine.EventModifiers 
 function UnityEngine.UIElements.ManipulatorActivationFilter:set_modifiers(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.ManipulatorActivationFilter:set_clickCount(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.ManipulatorActivationFilter:Equals(obj) end
 
+--- @param other UnityEngine.UIElements.ManipulatorActivationFilter 
 --- @return boolean
 function UnityEngine.UIElements.ManipulatorActivationFilter:Equals(other) end
 

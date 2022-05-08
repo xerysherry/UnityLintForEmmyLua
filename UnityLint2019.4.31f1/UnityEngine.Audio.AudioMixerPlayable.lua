@@ -1,18 +1,24 @@
 --- @class UnityEngine.Audio.AudioMixerPlayable An implementation of IPlayable that controls an audio mixer.
 UnityEngine.Audio.AudioMixerPlayable = {}
 
+--- @param graph UnityEngine.Playables.PlayableGraph 
+--- @param inputCount number 
+--- @param normalizeInputVolumes boolean 
 --- @return UnityEngine.Audio.AudioMixerPlayable
 function UnityEngine.Audio.AudioMixerPlayable.Create(graph, inputCount, normalizeInputVolumes) end
 
+--- @param playable UnityEngine.Audio.AudioMixerPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Audio.AudioMixerPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Audio.AudioMixerPlayable
 function UnityEngine.Audio.AudioMixerPlayable.op_Explicit(playable) end
 
 --- @return UnityEngine.Playables.PlayableHandle
 function UnityEngine.Audio.AudioMixerPlayable:GetHandle() end
 
+--- @param other UnityEngine.Audio.AudioMixerPlayable 
 --- @return boolean
 function UnityEngine.Audio.AudioMixerPlayable:Equals(other) end
 

@@ -25,16 +25,23 @@
 ---       What to do with the contents of the buffer if the stencil test passes, but the depth test fails for back-facing geometry.
 UnityEngine.Rendering.StencilState = {}
 
+--- @param left UnityEngine.Rendering.StencilState 
+--- @param right UnityEngine.Rendering.StencilState 
 --- @return boolean
 function UnityEngine.Rendering.StencilState.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.StencilState 
+--- @param right UnityEngine.Rendering.StencilState 
 --- @return boolean
 function UnityEngine.Rendering.StencilState.op_Inequality(left, right) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.StencilState:set_enabled(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.StencilState:set_readMask(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.StencilState:set_writeMask(value) end
 
 --- The function used to compare the reference value to the current contents of the buffer.
@@ -53,25 +60,35 @@ function UnityEngine.Rendering.StencilState:SetFailOperation(value) end
 --- @param value UnityEngine.Rendering.StencilOp The value to set.
 function UnityEngine.Rendering.StencilState:SetZFailOperation(value) end
 
+--- @param value UnityEngine.Rendering.CompareFunction 
 function UnityEngine.Rendering.StencilState:set_compareFunctionFront(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_passOperationFront(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_failOperationFront(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_zFailOperationFront(value) end
 
+--- @param value UnityEngine.Rendering.CompareFunction 
 function UnityEngine.Rendering.StencilState:set_compareFunctionBack(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_passOperationBack(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_failOperationBack(value) end
 
+--- @param value UnityEngine.Rendering.StencilOp 
 function UnityEngine.Rendering.StencilState:set_zFailOperationBack(value) end
 
+--- @param other UnityEngine.Rendering.StencilState 
 --- @return boolean
 function UnityEngine.Rendering.StencilState:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.StencilState:Equals(obj) end
 

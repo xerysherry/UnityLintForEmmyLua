@@ -35,12 +35,24 @@ function UnityEngine.ComputeBuffer:SetData(data) end
 function UnityEngine.ComputeBuffer:SetData(data) end
 
 --- Set the buffer with values from an array.
+--- @param data table 
+--- @param managedBufferStartIndex number 
+--- @param computeBufferStartIndex number 
+--- @param count number 
 function UnityEngine.ComputeBuffer:SetData(data, managedBufferStartIndex, computeBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data UnityEngine.ComputeBuffer.T[] 
+--- @param managedBufferStartIndex number 
+--- @param computeBufferStartIndex number 
+--- @param count number 
 function UnityEngine.ComputeBuffer:SetData(data, managedBufferStartIndex, computeBufferStartIndex, count) end
 
 --- Set the buffer with values from an array.
+--- @param data Unity.Collections.NativeArray`1 
+--- @param nativeBufferStartIndex number 
+--- @param computeBufferStartIndex number 
+--- @param count number 
 function UnityEngine.ComputeBuffer:SetData(data, nativeBufferStartIndex, computeBufferStartIndex, count) end
 
 --- Read data values from the buffer into an array. The array can only use <a href="https:docs.microsoft.comen-usdotnetframeworkinteropblittable-and-non-blittable-types">blittable<a> types.
@@ -64,6 +76,7 @@ function UnityEngine.ComputeBuffer:BeginWrite(computeBufferStartIndex, count) en
 --- @param countWritten number Number of elements written to the buffer. Counted from the first element.
 function UnityEngine.ComputeBuffer:EndWrite(countWritten) end
 
+--- @param value string 
 function UnityEngine.ComputeBuffer:set_name(value) end
 
 --- Sets counter value of append/consume buffer.

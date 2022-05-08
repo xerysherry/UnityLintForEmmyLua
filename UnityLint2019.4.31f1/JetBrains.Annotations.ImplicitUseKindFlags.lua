@@ -1,3 +1,4 @@
+--- @class JetBrains.Annotations.ImplicitUseKindFlags
 JetBrains.Annotations.ImplicitUseKindFlags = {
     Default = 7,
     Access = 1,

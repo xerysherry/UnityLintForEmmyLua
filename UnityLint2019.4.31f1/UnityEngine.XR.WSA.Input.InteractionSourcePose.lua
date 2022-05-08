@@ -5,6 +5,7 @@ UnityEngine.XR.WSA.Input.InteractionSourcePose = {}
 
 --- Gets the position of the interaction source, assuming the backing data is valid.
 --- @return boolean This method returns true when the Vector3 passed in was filled out correctly, and false if otherwise.
+--- @return UnityEngine.Vector3& 
 function UnityEngine.XR.WSA.Input.InteractionSourcePose:TryGetPosition() end
 
 --- Gets the position of the interaction source, assuming the backing data is valid.
@@ -14,7 +15,9 @@ function UnityEngine.XR.WSA.Input.InteractionSourcePose:TryGetPosition() end
 function UnityEngine.XR.WSA.Input.InteractionSourcePose:TryGetPosition(node) end
 
 --- Gets the rotation of the interaction source, assuming the backing data is valid.
+--- @param node UnityEngine.XR.WSA.Input.InteractionSourceNode 
 --- @return boolean This method returns true if the Quaternion passed in was filled out correctly, and false if otherwise.
+--- @return UnityEngine.Quaternion& 
 function UnityEngine.XR.WSA.Input.InteractionSourcePose:TryGetRotation(node) end
 
 --- Gets the forward vector of the interaction source, assuming rotation is valid.

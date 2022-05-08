@@ -6,9 +6,11 @@
 --- @field a number Alpha component of the color.
 UnityEngine.Color32 = {}
 
+--- @param c UnityEngine.Color 
 --- @return UnityEngine.Color32
 function UnityEngine.Color32.op_Implicit(c) end
 
+--- @param c UnityEngine.Color32 
 --- @return UnityEngine.Color
 function UnityEngine.Color32.op_Implicit(c) end
 
@@ -26,6 +28,8 @@ function UnityEngine.Color32.Lerp(a, b, t) end
 --- @return UnityEngine.Color32 
 function UnityEngine.Color32.LerpUnclamped(a, b, t) end
 
+--- @param index number 
+--- @param value number 
 function UnityEngine.Color32:set_Item(index, value) end
 
 --- Returns a nicely formatted string of this color.

@@ -92,6 +92,8 @@ UnityEngine.AudioSource = {}
 function UnityEngine.AudioSource.GamepadSpeakerSupportsOutputType(outputType) end
 
 --- Plays an AudioClip at a given position in world space.
+--- @param clip UnityEngine.AudioClip 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.AudioSource.PlayClipAtPoint(clip, position) end
 
 --- Plays an AudioClip at a given position in world space.
@@ -100,20 +102,28 @@ function UnityEngine.AudioSource.PlayClipAtPoint(clip, position) end
 --- @param volume number Playback volume.
 function UnityEngine.AudioSource.PlayClipAtPoint(clip, position, volume) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_panLevel(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_pan(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_volume(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_pitch(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_time(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_timeSamples(value) end
 
+--- @param value UnityEngine.AudioClip 
 function UnityEngine.AudioSource:set_clip(value) end
 
+--- @param value UnityEngine.Audio.AudioMixerGroup 
 function UnityEngine.AudioSource:set_outputAudioMixerGroup(value) end
 
 --- Enable playing of audio source though a specfic gamepad.
@@ -125,15 +135,21 @@ function UnityEngine.AudioSource:PlayOnGamepad(slot) end
 --- @return boolean Returns true if successful.
 function UnityEngine.AudioSource:DisableGamepadOutput() end
 
+--- @param slot number 
+--- @param mixLevel number 
 --- @return boolean
 function UnityEngine.AudioSource:SetGamepadSpeakerMixLevel(slot, mixLevel) end
 
+--- @param slot number 
 --- @return boolean
 function UnityEngine.AudioSource:SetGamepadSpeakerMixLevelDefault(slot) end
 
+--- @param slot number 
+--- @param restricted boolean 
 --- @return boolean
 function UnityEngine.AudioSource:SetGamepadSpeakerRestrictedAudio(slot, restricted) end
 
+--- @param value UnityEngine.GamepadSpeakerOutputType 
 function UnityEngine.AudioSource:set_gamepadSpeakerOutputType(value) end
 
 --- Plays the clip.
@@ -152,6 +168,7 @@ function UnityEngine.AudioSource:PlayDelayed(delay) end
 function UnityEngine.AudioSource:PlayScheduled(time) end
 
 --- Plays an AudioClip, and scales the AudioSource volume by volumeScale.
+--- @param clip UnityEngine.AudioClip 
 function UnityEngine.AudioSource:PlayOneShot(clip) end
 
 --- Plays an AudioClip, and scales the AudioSource volume by volumeScale.
@@ -176,22 +193,31 @@ function UnityEngine.AudioSource:Pause() end
 --- Unpause the paused playback of this AudioSource.
 function UnityEngine.AudioSource:UnPause() end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_loop(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_ignoreListenerVolume(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_playOnAwake(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_ignoreListenerPause(value) end
 
+--- @param value UnityEngine.AudioVelocityUpdateMode 
 function UnityEngine.AudioSource:set_velocityUpdateMode(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_panStereo(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_spatialBlend(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_spatialize(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_spatializePostEffects(value) end
 
 --- Set the custom curve for the given AudioSourceCurveType.
@@ -204,26 +230,37 @@ function UnityEngine.AudioSource:SetCustomCurve(type, curve) end
 --- @return UnityEngine.AnimationCurve The custom AnimationCurve corresponding to the given curve type.
 function UnityEngine.AudioSource:GetCustomCurve(type) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_reverbZoneMix(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_bypassEffects(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_bypassListenerEffects(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_bypassReverbZones(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_dopplerLevel(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_spread(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_priority(value) end
 
+--- @param value boolean 
 function UnityEngine.AudioSource:set_mute(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_minDistance(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_maxDistance(value) end
 
+--- @param value UnityEngine.AudioRolloffMode 
 function UnityEngine.AudioSource:set_rolloffMode(value) end
 
 --- Deprecated Version. Returns a block of the currently playing source's output data.
@@ -250,10 +287,13 @@ function UnityEngine.AudioSource:GetSpectrumData(numSamples, channel, window) en
 --- @param window UnityEngine.FFTWindow The FFTWindow type to use when sampling.
 function UnityEngine.AudioSource:GetSpectrumData(samples, channel, window) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_minVolume(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_maxVolume(value) end
 
+--- @param value number 
 function UnityEngine.AudioSource:set_rolloffFactor(value) end
 
 --- Sets a user-defined parameter of a custom spatializer effect that is attached to an AudioSource.

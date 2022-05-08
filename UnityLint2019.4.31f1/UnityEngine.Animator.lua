@@ -125,10 +125,13 @@ function UnityEngine.Animator:Rebind() end
 --- Apply the default Root Motion.
 function UnityEngine.Animator:ApplyBuiltinRootMotion() end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_logWarnings(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_fireEvents(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_keepAnimatorControllerStateOnDisable(value) end
 
 --- Gets the value of a vector parameter.
@@ -171,6 +174,7 @@ function UnityEngine.Animator:SetQuaternion(name, value) end
 --- @param value UnityEngine.Quaternion The new value for the parameter.
 function UnityEngine.Animator:SetQuaternion(id, value) end
 
+--- @param value UnityEngine.AnimatorCullingMode 
 function UnityEngine.Animator:set_cullingMode(value) end
 
 --- Sets the animator in playback mode.
@@ -179,6 +183,7 @@ function UnityEngine.Animator:StartPlayback() end
 --- Stops the animator playback mode. When playback stops, the avatar resumes getting control from game logic.
 function UnityEngine.Animator:StopPlayback() end
 
+--- @param value number 
 function UnityEngine.Animator:set_playbackTime(value) end
 
 --- Sets the animator in recording mode, and allocates a circular buffer of size frameCount.
@@ -188,10 +193,13 @@ function UnityEngine.Animator:StartRecording(frameCount) end
 --- Stops animator record mode.
 function UnityEngine.Animator:StopRecording() end
 
+--- @param value number 
 function UnityEngine.Animator:set_recorderStartTime(value) end
 
+--- @param value number 
 function UnityEngine.Animator:set_recorderStopTime(value) end
 
+--- @param value UnityEngine.RuntimeAnimatorController 
 function UnityEngine.Animator:set_runtimeAnimatorController(value) end
 
 --- Returns true if the state exists in this layer, false otherwise.
@@ -200,8 +208,10 @@ function UnityEngine.Animator:set_runtimeAnimatorController(value) end
 --- @return boolean True if the state exists in this layer, false otherwise.
 function UnityEngine.Animator:HasState(layerIndex, stateID) end
 
+--- @param value UnityEngine.Avatar 
 function UnityEngine.Animator:set_avatar(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_layersAffectMassCenter(value) end
 
 --- Fills clips with the list of all the AnimatorClipInfo in the next state of the given layer.
@@ -219,12 +229,24 @@ function UnityEngine.Animator:IsInTransition(layerIndex) end
 --- @return UnityEngine.AnimatorControllerParameter 
 function UnityEngine.Animator:GetParameter(index) end
 
+--- @param value number 
 function UnityEngine.Animator:set_feetPivotActive(value) end
 
 --- Automatically adjust the GameObject position and rotation.
+--- @param matchPosition UnityEngine.Vector3 
+--- @param matchRotation UnityEngine.Quaternion 
+--- @param targetBodyPart UnityEngine.AvatarTarget 
+--- @param weightMask UnityEngine.MatchTargetWeightMask 
+--- @param startNormalizedTime number 
 function UnityEngine.Animator:MatchTarget(matchPosition, matchRotation, targetBodyPart, weightMask, startNormalizedTime) end
 
 --- Automatically adjust the GameObject position and rotation.
+--- @param matchPosition UnityEngine.Vector3 
+--- @param matchRotation UnityEngine.Quaternion 
+--- @param targetBodyPart UnityEngine.AvatarTarget 
+--- @param weightMask UnityEngine.MatchTargetWeightMask 
+--- @param startNormalizedTime number 
+--- @param targetNormalizedTime number 
 function UnityEngine.Animator:MatchTarget(matchPosition, matchRotation, targetBodyPart, weightMask, startNormalizedTime, targetNormalizedTime) end
 
 --- Automatically adjust the GameObject position and rotation.
@@ -244,95 +266,177 @@ function UnityEngine.Animator:InterruptMatchTarget() end
 --- @param completeMatch boolean 
 function UnityEngine.Animator:InterruptMatchTarget(completeMatch) end
 
+--- @param value number 
 function UnityEngine.Animator:set_speed(value) end
 
+--- @param normalizedTime number 
 function UnityEngine.Animator:ForceStateNormalizedTime(normalizedTime) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param fixedTransitionDuration number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateName, fixedTransitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateName, fixedTransitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
+--- @param fixedTimeOffset number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateName, fixedTransitionDuration, layer, fixedTimeOffset) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateName string 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
+--- @param fixedTimeOffset number 
+--- @param normalizedTransitionTime number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateName, fixedTransitionDuration, layer, fixedTimeOffset, normalizedTransitionTime) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateHashName number 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
+--- @param fixedTimeOffset number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateHashName, fixedTransitionDuration, layer, fixedTimeOffset) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateHashName number 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateHashName, fixedTransitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateHashName number 
+--- @param fixedTransitionDuration number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateHashName, fixedTransitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using times in seconds.
+--- @param stateHashName number 
+--- @param fixedTransitionDuration number 
+--- @param layer number 
+--- @param fixedTimeOffset number 
+--- @param normalizedTransitionTime number 
 function UnityEngine.Animator:CrossFadeInFixedTime(stateHashName, fixedTransitionDuration, layer, fixedTimeOffset, normalizedTransitionTime) end
 
 --- Forces a write of the default values stored in the animator.
 function UnityEngine.Animator:WriteDefaultValues() end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
+--- @param normalizedTimeOffset number 
 function UnityEngine.Animator:CrossFade(stateName, normalizedTransitionDuration, layer, normalizedTimeOffset) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
 function UnityEngine.Animator:CrossFade(stateName, normalizedTransitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param normalizedTransitionDuration number 
 function UnityEngine.Animator:CrossFade(stateName, normalizedTransitionDuration) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateName string 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
+--- @param normalizedTimeOffset number 
+--- @param normalizedTransitionTime number 
 function UnityEngine.Animator:CrossFade(stateName, normalizedTransitionDuration, layer, normalizedTimeOffset, normalizedTransitionTime) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateHashName number 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
+--- @param normalizedTimeOffset number 
+--- @param normalizedTransitionTime number 
 function UnityEngine.Animator:CrossFade(stateHashName, normalizedTransitionDuration, layer, normalizedTimeOffset, normalizedTransitionTime) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateHashName number 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
+--- @param normalizedTimeOffset number 
 function UnityEngine.Animator:CrossFade(stateHashName, normalizedTransitionDuration, layer, normalizedTimeOffset) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateHashName number 
+--- @param normalizedTransitionDuration number 
+--- @param layer number 
 function UnityEngine.Animator:CrossFade(stateHashName, normalizedTransitionDuration, layer) end
 
 --- Creates a crossfade from the current state to any other state using normalized times.
+--- @param stateHashName number 
+--- @param normalizedTransitionDuration number 
 function UnityEngine.Animator:CrossFade(stateHashName, normalizedTransitionDuration) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
 function UnityEngine.Animator:PlayInFixedTime(stateName, layer) end
 
 --- Plays a state.
+--- @param stateName string 
 function UnityEngine.Animator:PlayInFixedTime(stateName) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animator:PlayInFixedTime(stateName, layer, fixedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
+--- @param fixedTime number 
 function UnityEngine.Animator:PlayInFixedTime(stateNameHash, layer, fixedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
 function UnityEngine.Animator:PlayInFixedTime(stateNameHash, layer) end
 
 --- Plays a state.
+--- @param stateNameHash number 
 function UnityEngine.Animator:PlayInFixedTime(stateNameHash) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
 function UnityEngine.Animator:Play(stateName, layer) end
 
 --- Plays a state.
+--- @param stateName string 
 function UnityEngine.Animator:Play(stateName) end
 
 --- Plays a state.
+--- @param stateName string 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animator:Play(stateName, layer, normalizedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
+--- @param normalizedTime number 
 function UnityEngine.Animator:Play(stateNameHash, layer, normalizedTime) end
 
 --- Plays a state.
+--- @param stateNameHash number 
+--- @param layer number 
 function UnityEngine.Animator:Play(stateNameHash, layer) end
 
 --- Plays a state.
+--- @param stateNameHash number 
 function UnityEngine.Animator:Play(stateNameHash) end
 
 --- Sets an AvatarTarget and a targetNormalizedTime for the current state.
@@ -405,15 +509,25 @@ function UnityEngine.Animator:SetIKHintPositionWeight(hint, value) end
 function UnityEngine.Animator:SetLookAtPosition(lookAtPosition) end
 
 --- Set look at weights.
+--- @param weight number 
 function UnityEngine.Animator:SetLookAtWeight(weight) end
 
 --- Set look at weights.
+--- @param weight number 
+--- @param bodyWeight number 
 function UnityEngine.Animator:SetLookAtWeight(weight, bodyWeight) end
 
 --- Set look at weights.
+--- @param weight number 
+--- @param bodyWeight number 
+--- @param headWeight number 
 function UnityEngine.Animator:SetLookAtWeight(weight, bodyWeight, headWeight) end
 
 --- Set look at weights.
+--- @param weight number 
+--- @param bodyWeight number 
+--- @param headWeight number 
+--- @param eyesWeight number 
 function UnityEngine.Animator:SetLookAtWeight(weight, bodyWeight, headWeight, eyesWeight) end
 
 --- Set look at weights.
@@ -438,9 +552,12 @@ function UnityEngine.Animator:GetBehaviour() end
 function UnityEngine.Animator:GetBehaviours() end
 
 --- Returns all StateMachineBehaviour that match type T or are derived from T. Returns null if none are found.
+--- @param fullPathHash number 
+--- @param layerIndex number 
 --- @return UnityEngine.StateMachineBehaviour[] 
 function UnityEngine.Animator:GetBehaviours(fullPathHash, layerIndex) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_stabilizeFeet(value) end
 
 --- Returns the layer name.
@@ -516,87 +633,127 @@ function UnityEngine.Animator:GetNextAnimationClipState(layerIndex) end
 function UnityEngine.Animator:Stop() end
 
 --- Returns the value of the given float parameter.
+--- @param name string 
 --- @return number The value of the parameter.
 function UnityEngine.Animator:GetFloat(name) end
 
 --- Returns the value of the given float parameter.
+--- @param id number 
 --- @return number The value of the parameter.
 function UnityEngine.Animator:GetFloat(id) end
 
 --- Send float values to the Animator to affect transitions.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Animator:SetFloat(name, value) end
 
 --- Send float values to the Animator to affect transitions.
+--- @param name string 
+--- @param value number 
+--- @param dampTime number 
+--- @param deltaTime number 
 function UnityEngine.Animator:SetFloat(name, value, dampTime, deltaTime) end
 
 --- Send float values to the Animator to affect transitions.
+--- @param id number 
+--- @param value number 
 function UnityEngine.Animator:SetFloat(id, value) end
 
 --- Send float values to the Animator to affect transitions.
+--- @param id number 
+--- @param value number 
+--- @param dampTime number 
+--- @param deltaTime number 
 function UnityEngine.Animator:SetFloat(id, value, dampTime, deltaTime) end
 
 --- Returns the value of the given boolean parameter.
+--- @param name string 
 --- @return boolean The value of the parameter.
 function UnityEngine.Animator:GetBool(name) end
 
 --- Returns the value of the given boolean parameter.
+--- @param id number 
 --- @return boolean The value of the parameter.
 function UnityEngine.Animator:GetBool(id) end
 
 --- Sets the value of the given boolean parameter.
+--- @param name string 
+--- @param value boolean 
 function UnityEngine.Animator:SetBool(name, value) end
 
 --- Sets the value of the given boolean parameter.
+--- @param id number 
+--- @param value boolean 
 function UnityEngine.Animator:SetBool(id, value) end
 
 --- Returns the value of the given integer parameter.
+--- @param name string 
 --- @return number The value of the parameter.
 function UnityEngine.Animator:GetInteger(name) end
 
 --- Returns the value of the given integer parameter.
+--- @param id number 
 --- @return number The value of the parameter.
 function UnityEngine.Animator:GetInteger(id) end
 
 --- Sets the value of the given integer parameter.
+--- @param name string 
+--- @param value number 
 function UnityEngine.Animator:SetInteger(name, value) end
 
 --- Sets the value of the given integer parameter.
+--- @param id number 
+--- @param value number 
 function UnityEngine.Animator:SetInteger(id, value) end
 
 --- Sets the value of the given trigger parameter.
+--- @param name string 
 function UnityEngine.Animator:SetTrigger(name) end
 
 --- Sets the value of the given trigger parameter.
+--- @param id number 
 function UnityEngine.Animator:SetTrigger(id) end
 
 --- Resets the value of the given trigger parameter.
+--- @param name string 
 function UnityEngine.Animator:ResetTrigger(name) end
 
 --- Resets the value of the given trigger parameter.
+--- @param id number 
 function UnityEngine.Animator:ResetTrigger(id) end
 
 --- Returns true if the parameter is controlled by a curve, false otherwise.
+--- @param name string 
 --- @return boolean True if the parameter is controlled by a curve, false otherwise.
 function UnityEngine.Animator:IsParameterControlledByCurve(name) end
 
 --- Returns true if the parameter is controlled by a curve, false otherwise.
+--- @param id number 
 --- @return boolean True if the parameter is controlled by a curve, false otherwise.
 function UnityEngine.Animator:IsParameterControlledByCurve(id) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animator:set_rootPosition(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Animator:set_rootRotation(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_applyRootMotion(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_linearVelocityBlending(value) end
 
+--- @param value boolean 
 function UnityEngine.Animator:set_animatePhysics(value) end
 
+--- @param value UnityEngine.AnimatorUpdateMode 
 function UnityEngine.Animator:set_updateMode(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animator:set_bodyPosition(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Animator:set_bodyRotation(value) end
 
 --- Gets the position of an IK goal.

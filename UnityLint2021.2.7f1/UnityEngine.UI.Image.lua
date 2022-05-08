@@ -60,34 +60,48 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.Image = {}
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.Image:set_sprite(value) end
 
 function UnityEngine.UI.Image:DisableSpriteOptimizations() end
 
+--- @param value UnityEngine.Sprite 
 function UnityEngine.UI.Image:set_overrideSprite(value) end
 
+--- @param value UnityEngine.UI.Image.Type 
 function UnityEngine.UI.Image:set_type(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Image:set_preserveAspect(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Image:set_fillCenter(value) end
 
+--- @param value UnityEngine.UI.Image.FillMethod 
 function UnityEngine.UI.Image:set_fillMethod(value) end
 
+--- @param value number 
 function UnityEngine.UI.Image:set_fillAmount(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Image:set_fillClockwise(value) end
 
+--- @param value number 
 function UnityEngine.UI.Image:set_fillOrigin(value) end
 
+--- @param value number 
 function UnityEngine.UI.Image:set_eventAlphaThreshold(value) end
 
+--- @param value number 
 function UnityEngine.UI.Image:set_alphaHitTestMinimumThreshold(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Image:set_useSpriteMesh(value) end
 
+--- @param value number 
 function UnityEngine.UI.Image:set_pixelsPerUnitMultiplier(value) end
 
+--- @param value UnityEngine.Material 
 function UnityEngine.UI.Image:set_material(value) end
 
 function UnityEngine.UI.Image:OnBeforeSerialize() end
@@ -100,6 +114,8 @@ function UnityEngine.UI.Image:CalculateLayoutInputHorizontal() end
 
 function UnityEngine.UI.Image:CalculateLayoutInputVertical() end
 
+--- @param screenPoint UnityEngine.Vector2 
+--- @param eventCamera UnityEngine.Camera 
 --- @return boolean
 function UnityEngine.UI.Image:IsRaycastLocationValid(screenPoint, eventCamera) end
 

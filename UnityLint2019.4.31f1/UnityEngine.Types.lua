@@ -1,6 +1,8 @@
 --- @class UnityEngine.Types 
 UnityEngine.Types = {}
 
+--- @param typeName string 
+--- @param assemblyName string 
 --- @return System.Type
 function UnityEngine.Types.GetType(typeName, assemblyName) end
 

@@ -1,24 +1,39 @@
 --- @class UnityEngine.UIElements.VisualElementExtensions VisualElementExtensions is a set of extension methods useful for VisualElement.
 UnityEngine.UIElements.VisualElementExtensions = {}
 
+--- @param ele UnityEngine.UIElements.VisualElement 
+--- @param p UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.UIElements.VisualElementExtensions.WorldToLocal(ele, p) end
 
+--- @param ele UnityEngine.UIElements.VisualElement 
+--- @param p UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.UIElements.VisualElementExtensions.LocalToWorld(ele, p) end
 
+--- @param ele UnityEngine.UIElements.VisualElement 
+--- @param r UnityEngine.Rect 
 --- @return UnityEngine.Rect
 function UnityEngine.UIElements.VisualElementExtensions.WorldToLocal(ele, r) end
 
+--- @param ele UnityEngine.UIElements.VisualElement 
+--- @param r UnityEngine.Rect 
 --- @return UnityEngine.Rect
 function UnityEngine.UIElements.VisualElementExtensions.LocalToWorld(ele, r) end
 
+--- @param src UnityEngine.UIElements.VisualElement 
+--- @param dest UnityEngine.UIElements.VisualElement 
+--- @param point UnityEngine.Vector2 
 --- @return UnityEngine.Vector2
 function UnityEngine.UIElements.VisualElementExtensions.ChangeCoordinatesTo(src, dest, point) end
 
+--- @param src UnityEngine.UIElements.VisualElement 
+--- @param dest UnityEngine.UIElements.VisualElement 
+--- @param rect UnityEngine.Rect 
 --- @return UnityEngine.Rect
 function UnityEngine.UIElements.VisualElementExtensions.ChangeCoordinatesTo(src, dest, rect) end
 
+--- @param elem UnityEngine.UIElements.VisualElement 
 function UnityEngine.UIElements.VisualElementExtensions.StretchToParentSize(elem) end
 
 --- The given VisualElement's left and right edges will be aligned with the corresponding edges of the parent element.

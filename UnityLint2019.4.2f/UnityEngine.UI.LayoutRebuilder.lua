@@ -2,13 +2,16 @@
 --- @field transform UnityEngine.Transform
 UnityEngine.UI.LayoutRebuilder = {}
 
+--- @param layoutRoot UnityEngine.RectTransform 
 function UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(layoutRoot) end
 
+--- @param rect UnityEngine.RectTransform 
 function UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild(rect) end
 
 --- @return boolean
 function UnityEngine.UI.LayoutRebuilder:IsDestroyed() end
 
+--- @param executing UnityEngine.UI.CanvasUpdate 
 function UnityEngine.UI.LayoutRebuilder:Rebuild(executing) end
 
 function UnityEngine.UI.LayoutRebuilder:LayoutComplete() end
@@ -18,6 +21,7 @@ function UnityEngine.UI.LayoutRebuilder:GraphicUpdateComplete() end
 --- @return number
 function UnityEngine.UI.LayoutRebuilder:GetHashCode() end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UI.LayoutRebuilder:Equals(obj) end
 

@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleInt = {}
 
+--- @param lhs UnityEngine.UIElements.StyleInt 
+--- @param rhs UnityEngine.UIElements.StyleInt 
 --- @return boolean
 function UnityEngine.UIElements.StyleInt.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleInt 
+--- @param rhs UnityEngine.UIElements.StyleInt 
 --- @return boolean
 function UnityEngine.UIElements.StyleInt.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleInt
 function UnityEngine.UIElements.StyleInt.op_Implicit(keyword) end
 
+--- @param v number 
 --- @return UnityEngine.UIElements.StyleInt
 function UnityEngine.UIElements.StyleInt.op_Implicit(v) end
 
+--- @param value number 
 function UnityEngine.UIElements.StyleInt:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleInt:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleInt 
 --- @return boolean
 function UnityEngine.UIElements.StyleInt:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleInt:Equals(obj) end
 

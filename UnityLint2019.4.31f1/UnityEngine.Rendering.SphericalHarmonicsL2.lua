@@ -14,12 +14,18 @@ function UnityEngine.Rendering.SphericalHarmonicsL2.op_Multiply(lhs, rhs) end
 --- @return UnityEngine.Rendering.SphericalHarmonicsL2 
 function UnityEngine.Rendering.SphericalHarmonicsL2.op_Multiply(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.SphericalHarmonicsL2 
+--- @param rhs UnityEngine.Rendering.SphericalHarmonicsL2 
 --- @return UnityEngine.Rendering.SphericalHarmonicsL2
 function UnityEngine.Rendering.SphericalHarmonicsL2.op_Addition(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.SphericalHarmonicsL2 
+--- @param rhs UnityEngine.Rendering.SphericalHarmonicsL2 
 --- @return boolean
 function UnityEngine.Rendering.SphericalHarmonicsL2.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.Rendering.SphericalHarmonicsL2 
+--- @param rhs UnityEngine.Rendering.SphericalHarmonicsL2 
 --- @return boolean
 function UnityEngine.Rendering.SphericalHarmonicsL2.op_Inequality(lhs, rhs) end
 
@@ -41,14 +47,19 @@ function UnityEngine.Rendering.SphericalHarmonicsL2:AddDirectionalLight(directio
 --- @param results UnityEngine.Color[] Output array for the evaluated values of the corresponding directions.
 function UnityEngine.Rendering.SphericalHarmonicsL2:Evaluate(directions, results) end
 
+--- @param rgb number 
+--- @param coefficient number 
+--- @param value number 
 function UnityEngine.Rendering.SphericalHarmonicsL2:set_Item(rgb, coefficient, value) end
 
 --- @return number
 function UnityEngine.Rendering.SphericalHarmonicsL2:GetHashCode() end
 
+--- @param other System.Object 
 --- @return boolean
 function UnityEngine.Rendering.SphericalHarmonicsL2:Equals(other) end
 
+--- @param other UnityEngine.Rendering.SphericalHarmonicsL2 
 --- @return boolean
 function UnityEngine.Rendering.SphericalHarmonicsL2:Equals(other) end
 

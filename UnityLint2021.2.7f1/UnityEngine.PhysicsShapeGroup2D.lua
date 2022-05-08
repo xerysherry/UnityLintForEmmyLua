@@ -7,6 +7,7 @@
 ---       Gets or sets a matrix that transforms the PhysicsShapeGroup2D vertices from local space into world space.
 UnityEngine.PhysicsShapeGroup2D = {}
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.PhysicsShapeGroup2D:set_localToWorldMatrix(value) end
 
 --- Clears all the vertices and shapes from the PhysicsShapeGroup.
@@ -98,6 +99,12 @@ function UnityEngine.PhysicsShapeGroup2D:AddPolygon(vertices) end
 function UnityEngine.PhysicsShapeGroup2D:AddEdges(vertices, edgeRadius) end
 
 --- Adds an edges shape (PhysicsShapeType2D.Edges) to the shape group.
+--- @param vertices UnityEngine.Vector2[] 
+--- @param useAdjacentStart boolean 
+--- @param useAdjacentEnd boolean 
+--- @param adjacentStart UnityEngine.Vector2 
+--- @param adjacentEnd UnityEngine.Vector2 
+--- @param edgeRadius number 
 --- @return number Returns the shape index the shape was added to in the PhysicsShapeGroup2D. This index is used as the main reference when retrieving a shape.
 function UnityEngine.PhysicsShapeGroup2D:AddEdges(vertices, useAdjacentStart, useAdjacentEnd, adjacentStart, adjacentEnd, edgeRadius) end
 

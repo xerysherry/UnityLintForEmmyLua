@@ -2,6 +2,9 @@
 UnityEngine.Playables.ScriptPlayableBinding = {}
 
 --- Creates a PlayableBinding that contains information representing a ScriptPlayableOutput.
+--- @param name string 
+--- @param key UnityEngine.Object 
+--- @param type System.Type 
 --- @return UnityEngine.Playables.PlayableBinding Returns a PlayableBinding that contains information that is used to create a ScriptPlayableOutput.
 function UnityEngine.Playables.ScriptPlayableBinding.Create(name, key, type) end
 

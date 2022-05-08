@@ -11,10 +11,17 @@ UnityEngine.TerrainUtils.TerrainMap = {}
 function UnityEngine.TerrainUtils.TerrainMap.CreateFromConnectedNeighbors(originTerrain, filter, fullValidation) end
 
 --- Creates a TerrainMap from the positions of all active Terrains.
+--- @param originTerrain UnityEngine.Terrain 
+--- @param filter function 
+--- @param fullValidation boolean 
 --- @return UnityEngine.TerrainUtils.TerrainMap The resulting Terrain map. Can return null when no Terrain objects pass the filter.
 function UnityEngine.TerrainUtils.TerrainMap.CreateFromPlacement(originTerrain, filter, fullValidation) end
 
 --- Creates a TerrainMap from the positions of all active Terrains.
+--- @param gridOrigin UnityEngine.Vector2 
+--- @param gridSize UnityEngine.Vector2 
+--- @param filter function 
+--- @param fullValidation boolean 
 --- @return UnityEngine.TerrainUtils.TerrainMap The resulting Terrain map. Can return null when no Terrain objects pass the filter.
 function UnityEngine.TerrainUtils.TerrainMap.CreateFromPlacement(gridOrigin, gridSize, filter, fullValidation) end
 

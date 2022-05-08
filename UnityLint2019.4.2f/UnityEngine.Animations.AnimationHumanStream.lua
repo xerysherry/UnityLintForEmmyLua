@@ -21,12 +21,16 @@
 ---       The right foot velocity from the last evaluated frame. (Read Only)
 UnityEngine.Animations.AnimationHumanStream = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AnimationHumanStream:set_bodyLocalPosition(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Animations.AnimationHumanStream:set_bodyLocalRotation(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.AnimationHumanStream:set_bodyPosition(value) end
 
+--- @param value UnityEngine.Quaternion 
 function UnityEngine.Animations.AnimationHumanStream:set_bodyRotation(value) end
 
 --- Returns the muscle value.

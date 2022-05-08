@@ -21,6 +21,8 @@ function UnityEngine.Animations.TransformStreamHandle:IsResolved(stream) end
 function UnityEngine.Animations.TransformStreamHandle:GetPosition(stream) end
 
 --- Sets the position of the transform in world space.
+--- @param stream UnityEngine.Animations.AnimationStream 
+--- @param position UnityEngine.Vector3 
 function UnityEngine.Animations.TransformStreamHandle:SetPosition(stream, position) end
 
 --- Gets the rotation of the transform in world space.
@@ -59,6 +61,8 @@ function UnityEngine.Animations.TransformStreamHandle:SetLocalRotation(stream, r
 function UnityEngine.Animations.TransformStreamHandle:GetLocalScale(stream) end
 
 --- Sets the scale of the transform relative to the parent.
+--- @param stream UnityEngine.Animations.AnimationStream 
+--- @param scale UnityEngine.Vector3 
 function UnityEngine.Animations.TransformStreamHandle:SetLocalScale(stream, scale) end
 
 --- Gets the position read mask of the transform.

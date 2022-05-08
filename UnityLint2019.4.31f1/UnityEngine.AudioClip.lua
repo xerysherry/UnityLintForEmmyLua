@@ -24,10 +24,23 @@
 UnityEngine.AudioClip = {}
 
 --- Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
+--- @param name string 
+--- @param lengthSamples number 
+--- @param channels number 
+--- @param frequency number 
+--- @param _3D boolean 
+--- @param stream boolean 
 --- @return UnityEngine.AudioClip A reference to the created AudioClip.
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, _3D, stream) end
 
 --- Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
+--- @param name string 
+--- @param lengthSamples number 
+--- @param channels number 
+--- @param frequency number 
+--- @param _3D boolean 
+--- @param stream boolean 
+--- @param pcmreadercallback function 
 --- @return UnityEngine.AudioClip A reference to the created AudioClip.
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, _3D, stream, pcmreadercallback) end
 
@@ -44,14 +57,32 @@ function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, 
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, _3D, stream, pcmreadercallback, pcmsetpositioncallback) end
 
 --- Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
+--- @param name string 
+--- @param lengthSamples number 
+--- @param channels number 
+--- @param frequency number 
+--- @param stream boolean 
 --- @return UnityEngine.AudioClip A reference to the created AudioClip.
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, stream) end
 
 --- Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
+--- @param name string 
+--- @param lengthSamples number 
+--- @param channels number 
+--- @param frequency number 
+--- @param stream boolean 
+--- @param pcmreadercallback function 
 --- @return UnityEngine.AudioClip A reference to the created AudioClip.
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, stream, pcmreadercallback) end
 
 --- Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
+--- @param name string 
+--- @param lengthSamples number 
+--- @param channels number 
+--- @param frequency number 
+--- @param stream boolean 
+--- @param pcmreadercallback function 
+--- @param pcmsetpositioncallback function 
 --- @return UnityEngine.AudioClip A reference to the created AudioClip.
 function UnityEngine.AudioClip.Create(name, lengthSamples, channels, frequency, stream, pcmreadercallback, pcmsetpositioncallback) end
 

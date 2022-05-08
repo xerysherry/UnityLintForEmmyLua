@@ -10,15 +10,18 @@ UnityEngine.Animations.AnimationMixerPlayable = {}
 --- @return UnityEngine.Animations.AnimationMixerPlayable A new AnimationMixerPlayable linked to the PlayableGraph.
 function UnityEngine.Animations.AnimationMixerPlayable.Create(graph, inputCount, normalizeWeights) end
 
+--- @param playable UnityEngine.Animations.AnimationMixerPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Animations.AnimationMixerPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Animations.AnimationMixerPlayable
 function UnityEngine.Animations.AnimationMixerPlayable.op_Explicit(playable) end
 
 --- @return UnityEngine.Playables.PlayableHandle
 function UnityEngine.Animations.AnimationMixerPlayable:GetHandle() end
 
+--- @param other UnityEngine.Animations.AnimationMixerPlayable 
 --- @return boolean
 function UnityEngine.Animations.AnimationMixerPlayable:Equals(other) end
 

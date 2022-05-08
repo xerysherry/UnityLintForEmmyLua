@@ -17,8 +17,11 @@ function UnityEngine.Jobs.TransformAccessArray.Allocate(capacity, desiredJobCoun
 --- Dispose.
 function UnityEngine.Jobs.TransformAccessArray:Dispose() end
 
+--- @param index number 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Jobs.TransformAccessArray:set_Item(index, value) end
 
+--- @param value number 
 function UnityEngine.Jobs.TransformAccessArray:set_capacity(value) end
 
 --- Add.

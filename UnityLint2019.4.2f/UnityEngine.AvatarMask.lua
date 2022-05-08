@@ -17,9 +17,11 @@ function UnityEngine.AvatarMask:GetHumanoidBodyPartActive(index) end
 --- @param value boolean Active or not.
 function UnityEngine.AvatarMask:SetHumanoidBodyPartActive(index, value) end
 
+--- @param value number 
 function UnityEngine.AvatarMask:set_transformCount(value) end
 
 --- Adds a transform path into the AvatarMask.
+--- @param transform UnityEngine.Transform 
 function UnityEngine.AvatarMask:AddTransformPath(transform) end
 
 --- Adds a transform path into the AvatarMask.
@@ -28,6 +30,7 @@ function UnityEngine.AvatarMask:AddTransformPath(transform) end
 function UnityEngine.AvatarMask:AddTransformPath(transform, recursive) end
 
 --- Removes a transform path from the AvatarMask.
+--- @param transform UnityEngine.Transform 
 function UnityEngine.AvatarMask:RemoveTransformPath(transform) end
 
 --- Removes a transform path from the AvatarMask.

@@ -2,42 +2,66 @@
 UnityEngine.Networking.UnityWebRequestAssetBundle = {}
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri string 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri System.Uri 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri string 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri System.Uri 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri string 
+--- @param version number 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, version, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri System.Uri 
+--- @param version number 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, version, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri string 
+--- @param hash UnityEngine.Hash128 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, hash, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri System.Uri 
+--- @param hash UnityEngine.Hash128 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, hash, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri string 
+--- @param cachedAssetBundle UnityEngine.CachedAssetBundle 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, cachedAssetBundle, crc) end
 
 --- Creates a UnityWebRequest optimized for downloading a Unity Asset Bundle via HTTP GET.
+--- @param uri System.Uri 
+--- @param cachedAssetBundle UnityEngine.CachedAssetBundle 
+--- @param crc number 
 --- @return UnityEngine.Networking.UnityWebRequest A UnityWebRequest configured to downloading a Unity Asset Bundle.
 function UnityEngine.Networking.UnityWebRequestAssetBundle.GetAssetBundle(uri, cachedAssetBundle, crc) end
 

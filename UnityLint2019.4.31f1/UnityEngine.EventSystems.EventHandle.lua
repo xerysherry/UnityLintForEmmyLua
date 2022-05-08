@@ -1,3 +1,4 @@
+--- @class UnityEngine.EventSystems.EventHandle
 UnityEngine.EventSystems.EventHandle = {
     Unused = 0,
     Used = 1,

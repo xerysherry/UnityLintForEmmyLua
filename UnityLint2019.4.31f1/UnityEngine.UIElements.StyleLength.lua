@@ -5,28 +5,39 @@
 ---       The style keyword.
 UnityEngine.UIElements.StyleLength = {}
 
+--- @param lhs UnityEngine.UIElements.StyleLength 
+--- @param rhs UnityEngine.UIElements.StyleLength 
 --- @return boolean
 function UnityEngine.UIElements.StyleLength.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleLength 
+--- @param rhs UnityEngine.UIElements.StyleLength 
 --- @return boolean
 function UnityEngine.UIElements.StyleLength.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleLength
 function UnityEngine.UIElements.StyleLength.op_Implicit(keyword) end
 
+--- @param v number 
 --- @return UnityEngine.UIElements.StyleLength
 function UnityEngine.UIElements.StyleLength.op_Implicit(v) end
 
+--- @param v UnityEngine.UIElements.Length 
 --- @return UnityEngine.UIElements.StyleLength
 function UnityEngine.UIElements.StyleLength.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Length 
 function UnityEngine.UIElements.StyleLength:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleLength:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleLength 
 --- @return boolean
 function UnityEngine.UIElements.StyleLength:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleLength:Equals(obj) end
 

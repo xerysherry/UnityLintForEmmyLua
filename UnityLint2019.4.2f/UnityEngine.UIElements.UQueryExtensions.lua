@@ -2,34 +2,58 @@
 UnityEngine.UIElements.UQueryExtensions = {}
 
 --- Convenience overload, shorthand for Query<T>.Build().First().
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param classes string[] 
 --- @return UnityEngine.UIElements.UQueryExtensions.T The first element matching all the criteria, or null if none was found.
 function UnityEngine.UIElements.UQueryExtensions.Q(e, name, classes) end
 
 --- Convenience overload, shorthand for Query<T>.Build().First().
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param classes string[] 
 --- @return UnityEngine.UIElements.VisualElement The first element matching all the criteria, or null if none was found.
 function UnityEngine.UIElements.UQueryExtensions.Q(e, name, classes) end
 
 --- Convenience overload, shorthand for Query<T>.Build().First().
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param className string 
 --- @return UnityEngine.UIElements.UQueryExtensions.T The first element matching all the criteria, or null if none was found.
 function UnityEngine.UIElements.UQueryExtensions.Q(e, name, className) end
 
 --- Convenience overload, shorthand for Query<T>.Build().First().
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param className string 
 --- @return UnityEngine.UIElements.VisualElement The first element matching all the criteria, or null if none was found.
 function UnityEngine.UIElements.UQueryExtensions.Q(e, name, className) end
 
 --- Initializes a QueryBuilder with the specified selection rules.
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param classes string[] 
 --- @return UnityEngine.UIElements.UQueryBuilder`1 QueryBuilder configured with the associated selection rules.
 function UnityEngine.UIElements.UQueryExtensions.Query(e, name, classes) end
 
 --- Initializes a QueryBuilder with the specified selection rules.
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param className string 
 --- @return UnityEngine.UIElements.UQueryBuilder`1 QueryBuilder configured with the associated selection rules.
 function UnityEngine.UIElements.UQueryExtensions.Query(e, name, className) end
 
 --- Initializes a QueryBuilder with the specified selection rules.
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param classes string[] 
 --- @return UnityEngine.UIElements.UQueryBuilder`1 QueryBuilder configured with the associated selection rules.
 function UnityEngine.UIElements.UQueryExtensions.Query(e, name, classes) end
 
 --- Initializes a QueryBuilder with the specified selection rules.
+--- @param e UnityEngine.UIElements.VisualElement 
+--- @param name string 
+--- @param className string 
 --- @return UnityEngine.UIElements.UQueryBuilder`1 QueryBuilder configured with the associated selection rules.
 function UnityEngine.UIElements.UQueryExtensions.Query(e, name, className) end
 

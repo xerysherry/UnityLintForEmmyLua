@@ -1,3 +1,4 @@
+--- @class UnityEngine.iPhoneKeyboardType
 UnityEngine.iPhoneKeyboardType = {
     Default = 0,
     ASCIICapable = 1,

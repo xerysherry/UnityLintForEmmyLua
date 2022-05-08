@@ -19,24 +19,32 @@
 --- @field graphicalSelectCursorPos UnityEngine.Vector2
 UnityEngine.TextEditor = {}
 
+--- @param value UnityEngine.GUIContent 
 function UnityEngine.TextEditor:set_content(value) end
 
+--- @param value string 
 function UnityEngine.TextEditor:set_text(value) end
 
+--- @param value UnityEngine.Rect 
 function UnityEngine.TextEditor:set_position(value) end
 
+--- @param value number 
 function UnityEngine.TextEditor:set_cursorIndex(value) end
 
+--- @param value number 
 function UnityEngine.TextEditor:set_selectIndex(value) end
 
+--- @param value UnityEngine.TextEditor.DblClickSnapping 
 function UnityEngine.TextEditor:set_doubleClickSnapping(value) end
 
+--- @param value number 
 function UnityEngine.TextEditor:set_altCursorPosition(value) end
 
 function UnityEngine.TextEditor:OnFocus() end
 
 function UnityEngine.TextEditor:OnLostFocus() end
 
+--- @param e UnityEngine.Event 
 --- @return boolean
 function UnityEngine.TextEditor:HandleKeyEvent(e) end
 
@@ -65,8 +73,10 @@ function UnityEngine.TextEditor:SelectNone() end
 --- @return boolean
 function UnityEngine.TextEditor:DeleteSelection() end
 
+--- @param replace string 
 function UnityEngine.TextEditor:ReplaceSelection(replace) end
 
+--- @param c number 
 function UnityEngine.TextEditor:Insert(c) end
 
 function UnityEngine.TextEditor:MoveSelectionToAltCursor() end
@@ -95,13 +105,17 @@ function UnityEngine.TextEditor:MoveParagraphForward() end
 
 function UnityEngine.TextEditor:MoveParagraphBackward() end
 
+--- @param cursorPosition UnityEngine.Vector2 
 function UnityEngine.TextEditor:MoveCursorToPosition(cursorPosition) end
 
+--- @param cursorPosition UnityEngine.Vector2 
 function UnityEngine.TextEditor:MoveAltCursorToPosition(cursorPosition) end
 
+--- @param cursorPosition UnityEngine.Vector2 
 --- @return boolean
 function UnityEngine.TextEditor:IsOverSelection(cursorPosition) end
 
+--- @param cursorPosition UnityEngine.Vector2 
 function UnityEngine.TextEditor:SelectToPosition(cursorPosition) end
 
 function UnityEngine.TextEditor:SelectLeft() end
@@ -116,8 +130,10 @@ function UnityEngine.TextEditor:SelectTextEnd() end
 
 function UnityEngine.TextEditor:SelectTextStart() end
 
+--- @param on boolean 
 function UnityEngine.TextEditor:MouseDragSelectsWholeWords(on) end
 
+--- @param snapping UnityEngine.TextEditor.DblClickSnapping 
 function UnityEngine.TextEditor:DblClickSnap(snapping) end
 
 function UnityEngine.TextEditor:MoveWordRight() end
@@ -130,6 +146,7 @@ function UnityEngine.TextEditor:SelectToStartOfNextWord() end
 
 function UnityEngine.TextEditor:SelectToEndOfPreviousWord() end
 
+--- @param p number 
 --- @return number
 function UnityEngine.TextEditor:FindStartOfNextWord(p) end
 
@@ -155,8 +172,10 @@ function UnityEngine.TextEditor:SelectCurrentWord() end
 
 function UnityEngine.TextEditor:SelectCurrentParagraph() end
 
+--- @param evt UnityEngine.Event 
 function UnityEngine.TextEditor:UpdateScrollOffsetIfNeeded(evt) end
 
+--- @param newText string 
 function UnityEngine.TextEditor:DrawCursor(newText) end
 
 function UnityEngine.TextEditor:SaveBackup() end

@@ -12,25 +12,35 @@
 ---        
 UnityEngine.UIElements.StyleTransformOrigin = {}
 
+--- @param lhs UnityEngine.UIElements.StyleTransformOrigin 
+--- @param rhs UnityEngine.UIElements.StyleTransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.StyleTransformOrigin.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleTransformOrigin 
+--- @param rhs UnityEngine.UIElements.StyleTransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.StyleTransformOrigin.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleTransformOrigin
 function UnityEngine.UIElements.StyleTransformOrigin.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.TransformOrigin 
 --- @return UnityEngine.UIElements.StyleTransformOrigin
 function UnityEngine.UIElements.StyleTransformOrigin.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.TransformOrigin 
 function UnityEngine.UIElements.StyleTransformOrigin:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleTransformOrigin:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleTransformOrigin 
 --- @return boolean
 function UnityEngine.UIElements.StyleTransformOrigin:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleTransformOrigin:Equals(obj) end
 

@@ -36,17 +36,25 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.MaskableGraphic = {}
 
+--- @param value UnityEngine.UI.MaskableGraphic.CullStateChangedEvent 
 function UnityEngine.UI.MaskableGraphic:set_onCullStateChanged(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.MaskableGraphic:set_maskable(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.MaskableGraphic:set_isMaskingGraphic(value) end
 
+--- @param baseMaterial UnityEngine.Material 
 --- @return UnityEngine.Material
 function UnityEngine.UI.MaskableGraphic:GetModifiedMaterial(baseMaterial) end
 
+--- @param clipRect UnityEngine.Rect 
+--- @param validRect boolean 
 function UnityEngine.UI.MaskableGraphic:Cull(clipRect, validRect) end
 
+--- @param clipRect UnityEngine.Rect 
+--- @param validRect boolean 
 function UnityEngine.UI.MaskableGraphic:SetClipRect(clipRect, validRect) end
 
 function UnityEngine.UI.MaskableGraphic:ParentMaskStateChanged() end

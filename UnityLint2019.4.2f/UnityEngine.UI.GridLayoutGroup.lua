@@ -38,16 +38,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.GridLayoutGroup = {}
 
+--- @param value UnityEngine.UI.GridLayoutGroup.Corner 
 function UnityEngine.UI.GridLayoutGroup:set_startCorner(value) end
 
+--- @param value UnityEngine.UI.GridLayoutGroup.Axis 
 function UnityEngine.UI.GridLayoutGroup:set_startAxis(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UI.GridLayoutGroup:set_cellSize(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UI.GridLayoutGroup:set_spacing(value) end
 
+--- @param value UnityEngine.UI.GridLayoutGroup.Constraint 
 function UnityEngine.UI.GridLayoutGroup:set_constraint(value) end
 
+--- @param value number 
 function UnityEngine.UI.GridLayoutGroup:set_constraintCount(value) end
 
 function UnityEngine.UI.GridLayoutGroup:CalculateLayoutInputHorizontal() end

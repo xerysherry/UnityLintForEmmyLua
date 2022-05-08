@@ -19,42 +19,64 @@
 ---       Currently assigned stencil clear value for this attachment. Default is 0.
 UnityEngine.Rendering.AttachmentDescriptor = {}
 
+--- @param left UnityEngine.Rendering.AttachmentDescriptor 
+--- @param right UnityEngine.Rendering.AttachmentDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.AttachmentDescriptor.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.AttachmentDescriptor 
+--- @param right UnityEngine.Rendering.AttachmentDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.AttachmentDescriptor.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Rendering.RenderBufferLoadAction 
 function UnityEngine.Rendering.AttachmentDescriptor:set_loadAction(value) end
 
+--- @param value UnityEngine.Rendering.RenderBufferStoreAction 
 function UnityEngine.Rendering.AttachmentDescriptor:set_storeAction(value) end
 
+--- @param value UnityEngine.Experimental.Rendering.GraphicsFormat 
 function UnityEngine.Rendering.AttachmentDescriptor:set_graphicsFormat(value) end
 
+--- @param value UnityEngine.RenderTextureFormat 
 function UnityEngine.Rendering.AttachmentDescriptor:set_format(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetIdentifier 
 function UnityEngine.Rendering.AttachmentDescriptor:set_loadStoreTarget(value) end
 
+--- @param value UnityEngine.Rendering.RenderTargetIdentifier 
 function UnityEngine.Rendering.AttachmentDescriptor:set_resolveTarget(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.Rendering.AttachmentDescriptor:set_clearColor(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.AttachmentDescriptor:set_clearDepth(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.AttachmentDescriptor:set_clearStencil(value) end
 
 --- Binds this AttachmentDescriptor to the given target surface.
+--- @param target UnityEngine.Rendering.RenderTargetIdentifier 
+--- @param loadExistingContents boolean 
+--- @param storeResults boolean 
 function UnityEngine.Rendering.AttachmentDescriptor:ConfigureTarget(target, loadExistingContents, storeResults) end
 
 --- When the renderpass that uses this attachment ends, resolve the MSAA surface into the given target.
+--- @param target UnityEngine.Rendering.RenderTargetIdentifier 
 function UnityEngine.Rendering.AttachmentDescriptor:ConfigureResolveTarget(target) end
 
 --- When the RenderPass starts, clear this attachment into the color or depth/stencil values given (depending on the format of this attachment). Changes loadAction to RenderBufferLoadAction.Clear.
+--- @param clearColor UnityEngine.Color 
+--- @param clearDepth number 
+--- @param clearStencil number 
 function UnityEngine.Rendering.AttachmentDescriptor:ConfigureClear(clearColor, clearDepth, clearStencil) end
 
+--- @param other UnityEngine.Rendering.AttachmentDescriptor 
 --- @return boolean
 function UnityEngine.Rendering.AttachmentDescriptor:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.AttachmentDescriptor:Equals(obj) end
 

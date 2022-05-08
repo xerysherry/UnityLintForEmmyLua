@@ -7,24 +7,34 @@
 ---       The time length in seconds before dictation recognizer session ends due to lack of audio input in case there was no audio heard in the current session.
 UnityEngine.Windows.Speech.DictationRecognizer = {}
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:add_DictationHypothesis(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:remove_DictationHypothesis(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:add_DictationResult(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:remove_DictationResult(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:add_DictationComplete(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:remove_DictationComplete(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:add_DictationError(value) end
 
+--- @param value function 
 function UnityEngine.Windows.Speech.DictationRecognizer:remove_DictationError(value) end
 
+--- @param value number 
 function UnityEngine.Windows.Speech.DictationRecognizer:set_AutoSilenceTimeoutSeconds(value) end
 
+--- @param value number 
 function UnityEngine.Windows.Speech.DictationRecognizer:set_InitialSilenceTimeoutSeconds(value) end
 
 --- Starts the dictation recognization session. Dictation recognizer can only be started if PhraseRecognitionSystem is not running.

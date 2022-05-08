@@ -35,28 +35,38 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.UI.Selectable = {}
 
+--- @param selectables UnityEngine.UI.Selectable[] 
 --- @return number
 function UnityEngine.UI.Selectable.AllSelectablesNoAlloc(selectables) end
 
+--- @param value UnityEngine.UI.Navigation 
 function UnityEngine.UI.Selectable:set_navigation(value) end
 
+--- @param value UnityEngine.UI.Selectable.Transition 
 function UnityEngine.UI.Selectable:set_transition(value) end
 
+--- @param value UnityEngine.UI.ColorBlock 
 function UnityEngine.UI.Selectable:set_colors(value) end
 
+--- @param value UnityEngine.UI.SpriteState 
 function UnityEngine.UI.Selectable:set_spriteState(value) end
 
+--- @param value UnityEngine.UI.AnimationTriggers 
 function UnityEngine.UI.Selectable:set_animationTriggers(value) end
 
+--- @param value UnityEngine.UI.Graphic 
 function UnityEngine.UI.Selectable:set_targetGraphic(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Selectable:set_interactable(value) end
 
+--- @param value UnityEngine.UI.Image 
 function UnityEngine.UI.Selectable:set_image(value) end
 
 --- @return boolean
 function UnityEngine.UI.Selectable:IsInteractable() end
 
+--- @param dir UnityEngine.Vector3 
 --- @return UnityEngine.UI.Selectable
 function UnityEngine.UI.Selectable:FindSelectable(dir) end
 
@@ -72,18 +82,25 @@ function UnityEngine.UI.Selectable:FindSelectableOnUp() end
 --- @return UnityEngine.UI.Selectable
 function UnityEngine.UI.Selectable:FindSelectableOnDown() end
 
+--- @param eventData UnityEngine.EventSystems.AxisEventData 
 function UnityEngine.UI.Selectable:OnMove(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.Selectable:OnPointerDown(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.Selectable:OnPointerUp(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.Selectable:OnPointerEnter(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.PointerEventData 
 function UnityEngine.UI.Selectable:OnPointerExit(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
 function UnityEngine.UI.Selectable:OnSelect(eventData) end
 
+--- @param eventData UnityEngine.EventSystems.BaseEventData 
 function UnityEngine.UI.Selectable:OnDeselect(eventData) end
 
 function UnityEngine.UI.Selectable:Select() end

@@ -8,6 +8,7 @@
 UnityEngine.VFX.VisualEffectAsset = {}
 
 --- Gets the TextureDimension of a named exposed Texture.
+--- @param nameID number 
 --- @return UnityEngine.Rendering.TextureDimension 
 function UnityEngine.VFX.VisualEffectAsset:GetTextureDimension(nameID) end
 
@@ -20,6 +21,7 @@ function UnityEngine.VFX.VisualEffectAsset:GetExposedProperties(exposedPropertie
 function UnityEngine.VFX.VisualEffectAsset:GetEvents(names) end
 
 --- Gets the TextureDimension of a named exposed Texture.
+--- @param name string 
 --- @return UnityEngine.Rendering.TextureDimension 
 function UnityEngine.VFX.VisualEffectAsset:GetTextureDimension(name) end
 

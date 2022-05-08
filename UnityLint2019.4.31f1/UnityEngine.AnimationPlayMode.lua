@@ -1,3 +1,4 @@
+--- @class UnityEngine.AnimationPlayMode
 UnityEngine.AnimationPlayMode = {
     Stop = 0,
     Queue = 1,

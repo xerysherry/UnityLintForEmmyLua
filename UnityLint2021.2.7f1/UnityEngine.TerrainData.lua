@@ -81,12 +81,16 @@ UnityEngine.TerrainData = {}
 --- @param syncHeightmapTextureImmediately boolean Update immediately, instead of deferring the update.
 function UnityEngine.TerrainData:UpdateDirtyRegion(x, y, width, height, syncHeightmapTextureImmediately) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_heightmapResolution(value) end
 
+--- @param value boolean 
 function UnityEngine.TerrainData:set_enableHolesTextureCompression(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.TerrainData:set_size(value) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_thickness(value) end
 
 --- Gets the world space height of the Terrain at a certain point x,y without adding the Terrain's world position y.
@@ -197,12 +201,16 @@ function UnityEngine.TerrainData:GetSteepness(x, y) end
 --- @return UnityEngine.Vector3 
 function UnityEngine.TerrainData:GetInterpolatedNormal(x, y) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_wavingGrassStrength(value) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_wavingGrassAmount(value) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_wavingGrassSpeed(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.TerrainData:set_wavingGrassTint(value) end
 
 --- Sets the resolution of the detail map.
@@ -213,6 +221,7 @@ function UnityEngine.TerrainData:SetDetailResolution(detailResolution, resolutio
 --- Reloads all the values of the available prototypes (ie, detail mesh assets) in the TerrainData Object.
 function UnityEngine.TerrainData:RefreshPrototypes() end
 
+--- @param value UnityEngine.DetailPrototype[] 
 function UnityEngine.TerrainData:set_detailPrototypes(value) end
 
 --- Returns an array of all supported detail layer indices in the area.
@@ -253,6 +262,7 @@ function UnityEngine.TerrainData:SetDetailLayer(xBase, yBase, layer, details) en
 --- @return UnityEngine.Vector2Int[] 
 function UnityEngine.TerrainData:GetClampedDetailPatches(density) end
 
+--- @param value UnityEngine.TreeInstance[] 
 function UnityEngine.TerrainData:set_treeInstances(value) end
 
 --- Sets the Tree Instance array, and optionally snaps Trees onto the surface of the Terrain heightmap.
@@ -270,6 +280,7 @@ function UnityEngine.TerrainData:GetTreeInstance(index) end
 --- @param instance UnityEngine.TreeInstance The new TreeInstance value.
 function UnityEngine.TerrainData:SetTreeInstance(index, instance) end
 
+--- @param value UnityEngine.TreePrototype[] 
 function UnityEngine.TerrainData:set_treePrototypes(value) end
 
 --- Returns the alpha map at a position x, y given a width and height.
@@ -280,8 +291,10 @@ function UnityEngine.TerrainData:set_treePrototypes(value) end
 --- @return number[] A 3D array of floats, where the 3rd dimension represents the mixing weight of each splatmap at each x,y coordinate.
 function UnityEngine.TerrainData:GetAlphamaps(x, y, width, height) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_alphamapResolution(value) end
 
+--- @param value number 
 function UnityEngine.TerrainData:set_baseMapResolution(value) end
 
 --- Assign all splat values in the given map area.
@@ -298,8 +311,10 @@ function UnityEngine.TerrainData:SetBaseMapDirty() end
 --- @return UnityEngine.Texture2D Alphamap texture at the specified index.
 function UnityEngine.TerrainData:GetAlphamapTexture(index) end
 
+--- @param value UnityEngine.SplatPrototype[] 
 function UnityEngine.TerrainData:set_splatPrototypes(value) end
 
+--- @param value UnityEngine.TerrainLayer[] 
 function UnityEngine.TerrainData:set_terrainLayers(value) end
 
 --- This function sets the terrainLayers property, and in addition, registers the action to the Editor's undo stack.

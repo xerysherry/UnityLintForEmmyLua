@@ -29,192 +29,610 @@ function UnityEngine.Graphics.WaitOnGPUFence(fence, stage) end
 function UnityEngine.Graphics.CreateGPUFence() end
 
 --- This functionality is deprecated, and should no longer be used. Please use Graphics.WaitOnAsyncGraphicsFence.
+--- @param fence UnityEngine.Rendering.GPUFence 
 function UnityEngine.Graphics.WaitOnGPUFence(fence) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
+--- @param useLightProbes boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, useLightProbes) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, camera) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param count number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer, camera) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
 function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, material, bounds, bufferWithArgs, argsOffset, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param sourceRect UnityEngine.Rect 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param color UnityEngine.Color 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, color, mat) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param sourceRect UnityEngine.Rect 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param color UnityEngine.Color 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, color) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param sourceRect UnityEngine.Rect 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, mat) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param sourceRect UnityEngine.Rect 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, leftBorder, rightBorder, topBorder, bottomBorder, mat) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, leftBorder, rightBorder, topBorder, bottomBorder) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, mat) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture) end
 
 --- Sets current render target.
+--- @param rt UnityEngine.RenderTexture 
 function UnityEngine.Graphics.SetRenderTarget(rt) end
 
 --- Sets current render target.
+--- @param rt UnityEngine.RenderTexture 
+--- @param mipLevel number 
 function UnityEngine.Graphics.SetRenderTarget(rt, mipLevel) end
 
 --- Sets current render target.
+--- @param rt UnityEngine.RenderTexture 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
 function UnityEngine.Graphics.SetRenderTarget(rt, mipLevel, face) end
 
 --- Sets current render target.
+--- @param colorBuffer UnityEngine.RenderBuffer 
+--- @param depthBuffer UnityEngine.RenderBuffer 
 function UnityEngine.Graphics.SetRenderTarget(colorBuffer, depthBuffer) end
 
 --- Sets current render target.
+--- @param colorBuffer UnityEngine.RenderBuffer 
+--- @param depthBuffer UnityEngine.RenderBuffer 
+--- @param mipLevel number 
 function UnityEngine.Graphics.SetRenderTarget(colorBuffer, depthBuffer, mipLevel) end
 
 --- Sets current render target.
+--- @param colorBuffer UnityEngine.RenderBuffer 
+--- @param depthBuffer UnityEngine.RenderBuffer 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
 function UnityEngine.Graphics.SetRenderTarget(colorBuffer, depthBuffer, mipLevel, face) end
 
 --- Set random write target for level pixel shaders.
+--- @param index number 
+--- @param uav UnityEngine.ComputeBuffer 
 function UnityEngine.Graphics.SetRandomWriteTarget(index, uav) end
 
 --- Sets current render target.
+--- @param colorBuffer UnityEngine.RenderBuffer 
+--- @param depthBuffer UnityEngine.RenderBuffer 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param depthSlice number 
 function UnityEngine.Graphics.SetRenderTarget(colorBuffer, depthBuffer, mipLevel, face, depthSlice) end
 
 --- Sets current render target.
+--- @param colorBuffers UnityEngine.RenderBuffer[] 
+--- @param depthBuffer UnityEngine.RenderBuffer 
 function UnityEngine.Graphics.SetRenderTarget(colorBuffers, depthBuffer) end
 
 --- Sets current render target.
+--- @param setup UnityEngine.RenderTargetSetup 
 function UnityEngine.Graphics.SetRenderTarget(setup) end
 
 --- Set random write target for level pixel shaders.
+--- @param index number 
+--- @param uav UnityEngine.RenderTexture 
 function UnityEngine.Graphics.SetRandomWriteTarget(index, uav) end
 
 --- Set random write target for level pixel shaders.
@@ -224,24 +642,54 @@ function UnityEngine.Graphics.SetRandomWriteTarget(index, uav) end
 function UnityEngine.Graphics.SetRandomWriteTarget(index, uav, preserveCounterValue) end
 
 --- Copy texture contents.
+--- @param src UnityEngine.Texture 
+--- @param dst UnityEngine.Texture 
 function UnityEngine.Graphics.CopyTexture(src, dst) end
 
 --- Copy texture contents.
+--- @param src UnityEngine.Texture 
+--- @param srcElement number 
+--- @param dst UnityEngine.Texture 
+--- @param dstElement number 
 function UnityEngine.Graphics.CopyTexture(src, srcElement, dst, dstElement) end
 
 --- Copy texture contents.
+--- @param src UnityEngine.Texture 
+--- @param srcElement number 
+--- @param srcMip number 
+--- @param dst UnityEngine.Texture 
+--- @param dstElement number 
+--- @param dstMip number 
 function UnityEngine.Graphics.CopyTexture(src, srcElement, srcMip, dst, dstElement, dstMip) end
 
 --- Copy texture contents.
+--- @param src UnityEngine.Texture 
+--- @param srcElement number 
+--- @param srcMip number 
+--- @param srcX number 
+--- @param srcY number 
+--- @param srcWidth number 
+--- @param srcHeight number 
+--- @param dst UnityEngine.Texture 
+--- @param dstElement number 
+--- @param dstMip number 
+--- @param dstX number 
+--- @param dstY number 
 function UnityEngine.Graphics.CopyTexture(src, srcElement, srcMip, srcX, srcY, srcWidth, srcHeight, dst, dstElement, dstMip, dstX, dstY) end
 
 --- This function provides an efficient way to convert between textures of different formats and dimensions.
 --- The destination texture format should be uncompressed and correspond to a supported RenderTextureFormat.
+--- @param src UnityEngine.Texture 
+--- @param dst UnityEngine.Texture 
 --- @return boolean True if the call succeeded.
 function UnityEngine.Graphics.ConvertTexture(src, dst) end
 
 --- This function provides an efficient way to convert between textures of different formats and dimensions.
 --- The destination texture format should be uncompressed and correspond to a supported RenderTextureFormat.
+--- @param src UnityEngine.Texture 
+--- @param srcElement number 
+--- @param dst UnityEngine.Texture 
+--- @param dstElement number 
 --- @return boolean True if the call succeeded.
 function UnityEngine.Graphics.ConvertTexture(src, srcElement, dst, dstElement) end
 
@@ -261,6 +709,7 @@ function UnityEngine.Graphics.CreateAsyncGraphicsFence() end
 function UnityEngine.Graphics.CreateGraphicsFence(fenceType, stage) end
 
 --- Instructs the GPU's processing of the graphics queue to wait until the given GraphicsFence is passed.
+--- @param fence UnityEngine.Rendering.GraphicsFence 
 function UnityEngine.Graphics.WaitOnAsyncGraphicsFence(fence) end
 
 --- Instructs the GPU's processing of the graphics queue to wait until the given GraphicsFence is passed.
@@ -282,36 +731,114 @@ function UnityEngine.Graphics.WaitOnAsyncGraphicsFence(fence, stage) end
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, color, mat, pass) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param sourceRect UnityEngine.Rect 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, sourceRect, leftBorder, rightBorder, topBorder, bottomBorder, mat, pass) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param leftBorder number 
+--- @param rightBorder number 
+--- @param topBorder number 
+--- @param bottomBorder number 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, leftBorder, rightBorder, topBorder, bottomBorder, mat, pass) end
 
 --- Draw a texture in screen coordinates.
+--- @param screenRect UnityEngine.Rect 
+--- @param texture UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
 function UnityEngine.Graphics.DrawTexture(screenRect, texture, mat, pass) end
 
 --- Draw a mesh immediately.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param materialIndex number 
 function UnityEngine.Graphics.DrawMeshNow(mesh, position, rotation, materialIndex) end
 
 --- Draw a mesh immediately.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param materialIndex number 
 function UnityEngine.Graphics.DrawMeshNow(mesh, matrix, materialIndex) end
 
 --- Draw a mesh immediately.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Graphics.DrawMeshNow(mesh, position, rotation) end
 
 --- Draw a mesh immediately.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
 function UnityEngine.Graphics.DrawMeshNow(mesh, matrix) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
+--- @param receiveShadows boolean 
+--- @param useLightProbes boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, useLightProbes) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
+--- @param useLightProbes boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, useLightProbes) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows boolean 
+--- @param receiveShadows boolean 
+--- @param useLightProbes boolean 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, useLightProbes) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param material UnityEngine.Material 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param submeshIndex number 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param probeAnchor UnityEngine.Transform 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
+--- @param lightProbeProxyVolume UnityEngine.LightProbeProxyVolume 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, submeshIndex, properties, castShadows, receiveShadows, probeAnchor, lightProbeUsage, lightProbeProxyVolume) end
 
 --- Draw the same mesh multiple times using GPU instancing.
@@ -330,6 +857,17 @@ function UnityEngine.Graphics.DrawMesh(mesh, matrix, material, layer, camera, su
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, count, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage, lightProbeProxyVolume) end
 
 --- Draw the same mesh multiple times using GPU instancing.
+--- @param mesh UnityEngine.Mesh 
+--- @param submeshIndex number 
+--- @param material UnityEngine.Material 
+--- @param matrices UnityEngine.Matrix4x4[] 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
+--- @param camera UnityEngine.Camera 
+--- @param lightProbeUsage UnityEngine.Rendering.LightProbeUsage 
+--- @param lightProbeProxyVolume UnityEngine.LightProbeProxyVolume 
 function UnityEngine.Graphics.DrawMeshInstanced(mesh, submeshIndex, material, matrices, properties, castShadows, receiveShadows, layer, camera, lightProbeUsage, lightProbeProxyVolume) end
 
 --- Draw the same mesh multiple times using GPU instancing.
@@ -371,6 +909,10 @@ function UnityEngine.Graphics.DrawMeshInstancedIndirect(mesh, submeshIndex, mate
 function UnityEngine.Graphics.DrawProceduralNow(topology, vertexCount, instanceCount) end
 
 --- Draws procedural geometry on the GPU.
+--- @param topology UnityEngine.MeshTopology 
+--- @param indexBuffer UnityEngine.GraphicsBuffer 
+--- @param indexCount number 
+--- @param instanceCount number 
 function UnityEngine.Graphics.DrawProceduralNow(topology, indexBuffer, indexCount, instanceCount) end
 
 --- Draws procedural geometry on the GPU.
@@ -387,71 +929,178 @@ function UnityEngine.Graphics.DrawProceduralIndirectNow(topology, bufferWithArgs
 function UnityEngine.Graphics.DrawProceduralIndirectNow(topology, indexBuffer, bufferWithArgs, argsOffset) end
 
 --- Draws procedural geometry on the GPU.
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param topology UnityEngine.MeshTopology 
+--- @param vertexCount number 
+--- @param instanceCount number 
+--- @param camera UnityEngine.Camera 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawProcedural(material, bounds, topology, vertexCount, instanceCount, camera, properties, castShadows, receiveShadows, layer) end
 
 --- Draws procedural geometry on the GPU.
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param topology UnityEngine.MeshTopology 
+--- @param indexBuffer UnityEngine.GraphicsBuffer 
+--- @param indexCount number 
+--- @param instanceCount number 
+--- @param camera UnityEngine.Camera 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawProcedural(material, bounds, topology, indexBuffer, indexCount, instanceCount, camera, properties, castShadows, receiveShadows, layer) end
 
 --- Draws procedural geometry on the GPU.
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param topology UnityEngine.MeshTopology 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param camera UnityEngine.Camera 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawProceduralIndirect(material, bounds, topology, bufferWithArgs, argsOffset, camera, properties, castShadows, receiveShadows, layer) end
 
 --- Draws procedural geometry on the GPU.
+--- @param material UnityEngine.Material 
+--- @param bounds UnityEngine.Bounds 
+--- @param topology UnityEngine.MeshTopology 
+--- @param indexBuffer UnityEngine.GraphicsBuffer 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
+--- @param camera UnityEngine.Camera 
+--- @param properties UnityEngine.MaterialPropertyBlock 
+--- @param castShadows UnityEngine.Rendering.ShadowCastingMode 
+--- @param receiveShadows boolean 
+--- @param layer number 
 function UnityEngine.Graphics.DrawProceduralIndirect(material, bounds, topology, indexBuffer, bufferWithArgs, argsOffset, camera, properties, castShadows, receiveShadows, layer) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
 function UnityEngine.Graphics.Blit(source, dest) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param sourceDepthSlice number 
+--- @param destDepthSlice number 
 function UnityEngine.Graphics.Blit(source, dest, sourceDepthSlice, destDepthSlice) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param scale UnityEngine.Vector2 
+--- @param offset UnityEngine.Vector2 
 function UnityEngine.Graphics.Blit(source, dest, scale, offset) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param scale UnityEngine.Vector2 
+--- @param offset UnityEngine.Vector2 
+--- @param sourceDepthSlice number 
+--- @param destDepthSlice number 
 function UnityEngine.Graphics.Blit(source, dest, scale, offset, sourceDepthSlice, destDepthSlice) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
 function UnityEngine.Graphics.Blit(source, dest, mat, pass) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
+--- @param destDepthSlice number 
 function UnityEngine.Graphics.Blit(source, dest, mat, pass, destDepthSlice) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.Blit(source, dest, mat) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
 function UnityEngine.Graphics.Blit(source, mat, pass) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
+--- @param pass number 
+--- @param destDepthSlice number 
 function UnityEngine.Graphics.Blit(source, mat, pass, destDepthSlice) end
 
 --- Copies source texture into destination render texture with a shader.
+--- @param source UnityEngine.Texture 
+--- @param mat UnityEngine.Material 
 function UnityEngine.Graphics.Blit(source, mat) end
 
 --- Copies source texture into destination, for multi-tap shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param mat UnityEngine.Material 
+--- @param offsets UnityEngine.Vector2[] 
 function UnityEngine.Graphics.BlitMultiTap(source, dest, mat, offsets) end
 
 --- Copies source texture into destination, for multi-tap shader.
+--- @param source UnityEngine.Texture 
+--- @param dest UnityEngine.RenderTexture 
+--- @param mat UnityEngine.Material 
+--- @param destDepthSlice number 
+--- @param offsets UnityEngine.Vector2[] 
 function UnityEngine.Graphics.BlitMultiTap(source, dest, mat, destDepthSlice, offsets) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param position UnityEngine.Vector3 
+--- @param rotation UnityEngine.Quaternion 
+--- @param materialIndex number 
 function UnityEngine.Graphics.DrawMesh(mesh, position, rotation, materialIndex) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix) end
 
 --- Draw a mesh.
+--- @param mesh UnityEngine.Mesh 
+--- @param matrix UnityEngine.Matrix4x4 
+--- @param materialIndex number 
 function UnityEngine.Graphics.DrawMesh(mesh, matrix, materialIndex) end
 
 --- Draws procedural geometry on the GPU.
+--- @param topology UnityEngine.MeshTopology 
+--- @param vertexCount number 
+--- @param instanceCount number 
 function UnityEngine.Graphics.DrawProcedural(topology, vertexCount, instanceCount) end
 
 --- Draws procedural geometry on the GPU.
+--- @param topology UnityEngine.MeshTopology 
+--- @param bufferWithArgs UnityEngine.ComputeBuffer 
+--- @param argsOffset number 
 function UnityEngine.Graphics.DrawProceduralIndirect(topology, bufferWithArgs, argsOffset) end
 
+--- @param value UnityEngine.Rendering.GraphicsTier 
 function UnityEngine.Graphics.set_activeTier(value) end
 
 --- Clear random write targets for level pixel shaders.
@@ -467,6 +1116,10 @@ function UnityEngine.Graphics.ExecuteCommandBuffer(buffer) end
 function UnityEngine.Graphics.ExecuteCommandBufferAsync(buffer, queueType) end
 
 --- Sets current render target.
+--- @param rt UnityEngine.RenderTexture 
+--- @param mipLevel number 
+--- @param face UnityEngine.CubemapFace 
+--- @param depthSlice number 
 function UnityEngine.Graphics.SetRenderTarget(rt, mipLevel, face, depthSlice) end
 
 ---  Generated By xerysherry

@@ -11,14 +11,19 @@
 ---       The index of the atlas texture that contains this glyph.
 UnityEngine.TextCore.Glyph = {}
 
+--- @param value number 
 function UnityEngine.TextCore.Glyph:set_index(value) end
 
+--- @param value UnityEngine.TextCore.GlyphMetrics 
 function UnityEngine.TextCore.Glyph:set_metrics(value) end
 
+--- @param value UnityEngine.TextCore.GlyphRect 
 function UnityEngine.TextCore.Glyph:set_glyphRect(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.Glyph:set_scale(value) end
 
+--- @param value number 
 function UnityEngine.TextCore.Glyph:set_atlasIndex(value) end
 
 --- Compares two glyphs to determine if they have the same values.

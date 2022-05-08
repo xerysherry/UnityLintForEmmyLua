@@ -14,20 +14,32 @@
 --- @field fallbackSpriteAssets UnityEngine.TextCore.Text.SpriteAsset[]
 UnityEngine.TextCore.Text.SpriteAsset = {}
 
+--- @param spriteAsset UnityEngine.TextCore.Text.SpriteAsset 
+--- @param unicode number 
+--- @param includeFallbacks boolean 
 --- @return UnityEngine.TextCore.Text.SpriteAsset
+--- @return System.Int32& 
 function UnityEngine.TextCore.Text.SpriteAsset.SearchForSpriteByUnicode(spriteAsset, unicode, includeFallbacks) end
 
+--- @param spriteAsset UnityEngine.TextCore.Text.SpriteAsset 
+--- @param hashCode number 
+--- @param includeFallbacks boolean 
+--- @param textSettings UnityEngine.TextCore.Text.TextSettings 
 --- @return UnityEngine.TextCore.Text.SpriteAsset
+--- @return System.Int32& 
 function UnityEngine.TextCore.Text.SpriteAsset.SearchForSpriteByHashCode(spriteAsset, hashCode, includeFallbacks, textSettings) end
 
 function UnityEngine.TextCore.Text.SpriteAsset:UpdateLookupTables() end
 
+--- @param hashCode number 
 --- @return number
 function UnityEngine.TextCore.Text.SpriteAsset:GetSpriteIndexFromHashcode(hashCode) end
 
+--- @param unicode number 
 --- @return number
 function UnityEngine.TextCore.Text.SpriteAsset:GetSpriteIndexFromUnicode(unicode) end
 
+--- @param name string 
 --- @return number
 function UnityEngine.TextCore.Text.SpriteAsset:GetSpriteIndexFromName(name) end
 

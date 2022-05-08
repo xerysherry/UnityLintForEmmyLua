@@ -40,8 +40,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Tilemaps.TilemapCollider2D = {}
 
+--- @param value number 
 function UnityEngine.Tilemaps.TilemapCollider2D:set_maximumTileChangeCount(value) end
 
+--- @param value number 
 function UnityEngine.Tilemaps.TilemapCollider2D:set_extrusionFactor(value) end
 
 --- Processes Tilemap changes for Collider updates immediately, if there are any.

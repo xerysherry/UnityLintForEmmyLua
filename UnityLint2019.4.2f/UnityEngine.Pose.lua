@@ -11,15 +11,20 @@
 --- @field rotation UnityEngine.Quaternion The rotation component of the pose.
 UnityEngine.Pose = {}
 
+--- @param a UnityEngine.Pose 
+--- @param b UnityEngine.Pose 
 --- @return boolean
 function UnityEngine.Pose.op_Equality(a, b) end
 
+--- @param a UnityEngine.Pose 
+--- @param b UnityEngine.Pose 
 --- @return boolean
 function UnityEngine.Pose.op_Inequality(a, b) end
 
 --- @return string
 function UnityEngine.Pose:ToString() end
 
+--- @param format string 
 --- @return string
 function UnityEngine.Pose:ToString(format) end
 
@@ -33,9 +38,11 @@ function UnityEngine.Pose:GetTransformedBy(lhs) end
 --- @return UnityEngine.Pose 
 function UnityEngine.Pose:GetTransformedBy(lhs) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Pose:Equals(obj) end
 
+--- @param other UnityEngine.Pose 
 --- @return boolean
 function UnityEngine.Pose:Equals(other) end
 

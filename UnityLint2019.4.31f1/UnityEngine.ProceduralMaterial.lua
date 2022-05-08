@@ -39,6 +39,7 @@ UnityEngine.ProceduralMaterial = {}
 --- Deprecated feature, no longer available
 function UnityEngine.ProceduralMaterial.StopRebuilds() end
 
+--- @param value UnityEngine.ProceduralProcessorUsage 
 function UnityEngine.ProceduralMaterial.set_substanceProcessorUsage(value) end
 
 --- Deprecated feature, no longer available
@@ -138,8 +139,10 @@ function UnityEngine.ProceduralMaterial:CacheProceduralProperty(inputName, value
 --- Deprecated feature, no longer available
 function UnityEngine.ProceduralMaterial:ClearCache() end
 
+--- @param value UnityEngine.ProceduralCacheSize 
 function UnityEngine.ProceduralMaterial:set_cacheSize(value) end
 
+--- @param value number 
 function UnityEngine.ProceduralMaterial:set_animationUpdateRate(value) end
 
 --- Deprecated feature, no longer available
@@ -148,8 +151,10 @@ function UnityEngine.ProceduralMaterial:RebuildTextures() end
 --- Triggers an immediate (synchronous) rebuild of this ProceduralMaterial's dirty textures.
 function UnityEngine.ProceduralMaterial:RebuildTexturesImmediately() end
 
+--- @param value boolean 
 function UnityEngine.ProceduralMaterial:set_isLoadTimeGenerated(value) end
 
+--- @param value string 
 function UnityEngine.ProceduralMaterial:set_preset(value) end
 
 --- Deprecated feature, no longer available
@@ -161,6 +166,7 @@ function UnityEngine.ProceduralMaterial:GetGeneratedTextures() end
 --- @return UnityEngine.ProceduralTexture 
 function UnityEngine.ProceduralMaterial:GetGeneratedTexture(textureName) end
 
+--- @param value boolean 
 function UnityEngine.ProceduralMaterial:set_isReadable(value) end
 
 --- Deprecated feature, no longer available

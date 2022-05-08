@@ -19,29 +19,42 @@
 ---       Should probe use box projection.
 UnityEngine.Rendering.VisibleReflectionProbe = {}
 
+--- @param left UnityEngine.Rendering.VisibleReflectionProbe 
+--- @param right UnityEngine.Rendering.VisibleReflectionProbe 
 --- @return boolean
 function UnityEngine.Rendering.VisibleReflectionProbe.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.VisibleReflectionProbe 
+--- @param right UnityEngine.Rendering.VisibleReflectionProbe 
 --- @return boolean
 function UnityEngine.Rendering.VisibleReflectionProbe.op_Inequality(left, right) end
 
+--- @param value UnityEngine.Bounds 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_bounds(value) end
 
+--- @param value UnityEngine.Matrix4x4 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_localToWorldMatrix(value) end
 
+--- @param value UnityEngine.Vector4 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_hdrData(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_center(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_blendDistance(value) end
 
+--- @param value number 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_importance(value) end
 
+--- @param value boolean 
 function UnityEngine.Rendering.VisibleReflectionProbe:set_isBoxProjection(value) end
 
+--- @param other UnityEngine.Rendering.VisibleReflectionProbe 
 --- @return boolean
 function UnityEngine.Rendering.VisibleReflectionProbe:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.VisibleReflectionProbe:Equals(obj) end
 

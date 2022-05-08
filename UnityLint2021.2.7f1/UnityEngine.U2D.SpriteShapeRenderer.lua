@@ -59,8 +59,10 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.U2D.SpriteShapeRenderer = {}
 
+--- @param value UnityEngine.Color 
 function UnityEngine.U2D.SpriteShapeRenderer:set_color(value) end
 
+--- @param value UnityEngine.SpriteMaskInteraction 
 function UnityEngine.U2D.SpriteShapeRenderer:set_maskInteraction(value) end
 
 --- Prepare and generate the SpriteShape geometry that will be fed to SpriteShape generator for rendering.
@@ -83,9 +85,18 @@ function UnityEngine.U2D.SpriteShapeRenderer:GetBounds() end
 function UnityEngine.U2D.SpriteShapeRenderer:GetSegments(dataSize) end
 
 --- Get/Set an array of mesh data of SpriteShapeRenderer.
+--- @param dataSize number 
+--- @return Unity.Collections.NativeArray`1& 
+--- @return Unity.Collections.NativeSlice`1& 
+--- @return Unity.Collections.NativeSlice`1& 
 function UnityEngine.U2D.SpriteShapeRenderer:GetChannels(dataSize) end
 
 --- Get/Set an array of mesh data of SpriteShapeRenderer.
+--- @param dataSize number 
+--- @return Unity.Collections.NativeArray`1& 
+--- @return Unity.Collections.NativeSlice`1& 
+--- @return Unity.Collections.NativeSlice`1& 
+--- @return Unity.Collections.NativeSlice`1& 
 function UnityEngine.U2D.SpriteShapeRenderer:GetChannels(dataSize) end
 
 --- Get/Set an array of mesh data of SpriteShapeRenderer.

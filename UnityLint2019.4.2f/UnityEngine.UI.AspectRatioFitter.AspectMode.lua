@@ -1,11 +1,4 @@
-UnityEngine.UI.AspectRatioFitter.AspectMode = {
-    None = 0,
-    WidthControlsHeight = 1,
-    HeightControlsWidth = 2,
-    FitInParent = 3,
-    EnvelopeParent = 4,
-}
-
+--- @class UnityEngine.UI.AspectRatioFitter.AspectMode
 UnityEngine.UI.AspectRatioFitter.AspectMode = {
     None = 0,
     WidthControlsHeight = 1,

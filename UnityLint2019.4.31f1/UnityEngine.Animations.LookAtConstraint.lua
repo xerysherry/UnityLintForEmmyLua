@@ -43,20 +43,28 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.LookAtConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.LookAtConstraint:set_weight(value) end
 
+--- @param value number 
 function UnityEngine.Animations.LookAtConstraint:set_roll(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.LookAtConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.LookAtConstraint:set_locked(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.LookAtConstraint:set_rotationAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.LookAtConstraint:set_rotationOffset(value) end
 
+--- @param value UnityEngine.Transform 
 function UnityEngine.Animations.LookAtConstraint:set_worldUpObject(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.LookAtConstraint:set_useUpObject(value) end
 
 --- Gets the list of sources.

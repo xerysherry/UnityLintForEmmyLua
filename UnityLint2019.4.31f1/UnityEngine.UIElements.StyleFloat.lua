@@ -5,25 +5,35 @@
 ---       The style keyword.
 UnityEngine.UIElements.StyleFloat = {}
 
+--- @param lhs UnityEngine.UIElements.StyleFloat 
+--- @param rhs UnityEngine.UIElements.StyleFloat 
 --- @return boolean
 function UnityEngine.UIElements.StyleFloat.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleFloat 
+--- @param rhs UnityEngine.UIElements.StyleFloat 
 --- @return boolean
 function UnityEngine.UIElements.StyleFloat.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleFloat
 function UnityEngine.UIElements.StyleFloat.op_Implicit(keyword) end
 
+--- @param v number 
 --- @return UnityEngine.UIElements.StyleFloat
 function UnityEngine.UIElements.StyleFloat.op_Implicit(v) end
 
+--- @param value number 
 function UnityEngine.UIElements.StyleFloat:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleFloat:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleFloat 
 --- @return boolean
 function UnityEngine.UIElements.StyleFloat:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleFloat:Equals(obj) end
 

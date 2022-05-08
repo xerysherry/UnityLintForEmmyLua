@@ -1,3 +1,4 @@
+--- @class UnityEngine.EventSystems.MoveDirection
 UnityEngine.EventSystems.MoveDirection = {
     Left = 0,
     Up = 1,

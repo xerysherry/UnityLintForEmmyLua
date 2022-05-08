@@ -1,3 +1,4 @@
+--- @class UnityEngine.TexGenMode
 UnityEngine.TexGenMode = {
     None = 0,
     SphereMap = 1,

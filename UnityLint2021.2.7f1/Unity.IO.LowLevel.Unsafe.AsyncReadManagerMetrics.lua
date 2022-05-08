@@ -9,17 +9,25 @@ function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.IsEnabled() end
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.ClearCompletedMetrics() end
 
 --- Returns the current AsyncReadManager metrics.
+--- @param filters Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters 
+--- @param flags Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.Flags 
 --- @return Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric[] Array of AsyncReadManagerRequestMetric|read request metrics currently stored in the AsyncReadManager, which can be filtered by passing AsyncReadManagerMetricsFilters.
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.GetMetrics(filters, flags) end
 
 --- Returns the current AsyncReadManager metrics.
+--- @param outMetrics Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric[] 
+--- @param filters Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters 
+--- @param flags Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.Flags 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.GetMetrics(outMetrics, filters, flags) end
 
 --- Returns the current AsyncReadManager metrics.
+--- @param flags Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.Flags 
 --- @return Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric[] Array of AsyncReadManagerRequestMetric|read request metrics currently stored in the AsyncReadManager, which can be filtered by passing AsyncReadManagerMetricsFilters.
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.GetMetrics(flags) end
 
 --- Returns the current AsyncReadManager metrics.
+--- @param outMetrics Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric[] 
+--- @param flags Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.Flags 
 function Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics.GetMetrics(outMetrics, flags) end
 
 --- Begin recording metrics data for AsyncReadManager read operations.

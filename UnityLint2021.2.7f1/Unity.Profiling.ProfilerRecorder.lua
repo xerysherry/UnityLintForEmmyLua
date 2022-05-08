@@ -32,6 +32,9 @@ Unity.Profiling.ProfilerRecorder = {}
 function Unity.Profiling.ProfilerRecorder.StartNew(category, statName, capacity, options) end
 
 --- Initialize a new instance of ProfilerRecorder and start data collection.
+--- @param marker Unity.Profiling.ProfilerMarker 
+--- @param capacity number 
+--- @param options Unity.Profiling.ProfilerRecorderOptions 
 --- @return Unity.Profiling.ProfilerRecorder Returns new enabled recorder instance.
 function Unity.Profiling.ProfilerRecorder.StartNew(marker, capacity, options) end
 

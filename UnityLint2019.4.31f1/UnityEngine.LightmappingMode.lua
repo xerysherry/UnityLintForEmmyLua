@@ -1,3 +1,4 @@
+--- @class UnityEngine.LightmappingMode
 UnityEngine.LightmappingMode = {
 }
 

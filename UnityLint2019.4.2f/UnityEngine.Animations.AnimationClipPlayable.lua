@@ -7,15 +7,18 @@ UnityEngine.Animations.AnimationClipPlayable = {}
 --- @return UnityEngine.Animations.AnimationClipPlayable A AnimationClipPlayable linked to the PlayableGraph.
 function UnityEngine.Animations.AnimationClipPlayable.Create(graph, clip) end
 
+--- @param playable UnityEngine.Animations.AnimationClipPlayable 
 --- @return UnityEngine.Playables.Playable
 function UnityEngine.Animations.AnimationClipPlayable.op_Implicit(playable) end
 
+--- @param playable UnityEngine.Playables.Playable 
 --- @return UnityEngine.Animations.AnimationClipPlayable
 function UnityEngine.Animations.AnimationClipPlayable.op_Explicit(playable) end
 
 --- @return UnityEngine.Playables.PlayableHandle
 function UnityEngine.Animations.AnimationClipPlayable:GetHandle() end
 
+--- @param other UnityEngine.Animations.AnimationClipPlayable 
 --- @return boolean
 function UnityEngine.Animations.AnimationClipPlayable:Equals(other) end
 

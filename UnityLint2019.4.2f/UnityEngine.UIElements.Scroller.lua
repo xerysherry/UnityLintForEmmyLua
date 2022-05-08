@@ -55,16 +55,22 @@
 --- @field delegatesFocus boolean
 UnityEngine.UIElements.Scroller = {}
 
+--- @param value function 
 function UnityEngine.UIElements.Scroller:add_valueChanged(value) end
 
+--- @param value function 
 function UnityEngine.UIElements.Scroller:remove_valueChanged(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.Scroller:set_value(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.Scroller:set_lowValue(value) end
 
+--- @param value number 
 function UnityEngine.UIElements.Scroller:set_highValue(value) end
 
+--- @param value UnityEngine.UIElements.SliderDirection 
 function UnityEngine.UIElements.Scroller:set_direction(value) end
 
 --- Updates the slider element size as a ratio of total range. A value greater than 1 will disable the Scroller.

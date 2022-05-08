@@ -35,16 +35,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.Animations.RotationConstraint = {}
 
+--- @param value number 
 function UnityEngine.Animations.RotationConstraint:set_weight(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.RotationConstraint:set_rotationAtRest(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Animations.RotationConstraint:set_rotationOffset(value) end
 
+--- @param value UnityEngine.Animations.Axis 
 function UnityEngine.Animations.RotationConstraint:set_rotationAxis(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.RotationConstraint:set_constraintActive(value) end
 
+--- @param value boolean 
 function UnityEngine.Animations.RotationConstraint:set_locked(value) end
 
 --- Gets the list of sources.

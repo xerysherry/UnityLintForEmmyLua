@@ -3,6 +3,7 @@
 ---       Enables or disables code coverage. Note that Code Coverage can affect the performance.
 UnityEngine.TestTools.Coverage = {}
 
+--- @param value boolean 
 function UnityEngine.TestTools.Coverage.set_enabled(value) end
 
 --- Returns the coverage sequence points for the method you specify. See CoveredSequencePoint for more information about the coverage data this method returns.

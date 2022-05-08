@@ -3,8 +3,13 @@
 ---       Whether the app is displaying protected content.
 UnityEngine.XR.WSA.HolographicRemoting = {}
 
+--- @param clientName string 
+--- @param maxBitRate number 
 function UnityEngine.XR.WSA.HolographicRemoting.Connect(clientName, maxBitRate) end
 
+--- @param clientName string 
+--- @param maxBitRate number 
+--- @param deviceVersion UnityEngine.XR.WSA.RemoteDeviceVersion 
 function UnityEngine.XR.WSA.HolographicRemoting.Connect(clientName, maxBitRate, deviceVersion) end
 
 function UnityEngine.XR.WSA.HolographicRemoting.Disconnect() end

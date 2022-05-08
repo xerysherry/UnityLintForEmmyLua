@@ -5,8 +5,10 @@
 ---       The direction of the ray.
 UnityEngine.Ray = {}
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Ray:set_origin(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.Ray:set_direction(value) end
 
 --- Returns a point at distance units along the ray.

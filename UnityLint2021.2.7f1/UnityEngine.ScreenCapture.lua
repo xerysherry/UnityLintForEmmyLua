@@ -2,12 +2,17 @@
 UnityEngine.ScreenCapture = {}
 
 --- Captures a screenshot at path filename as a PNG file.
+--- @param filename string 
 function UnityEngine.ScreenCapture.CaptureScreenshot(filename) end
 
 --- Captures a screenshot at path filename as a PNG file.
+--- @param filename string 
+--- @param superSize number 
 function UnityEngine.ScreenCapture.CaptureScreenshot(filename, superSize) end
 
 --- Captures a screenshot at path filename as a PNG file.
+--- @param filename string 
+--- @param stereoCaptureMode UnityEngine.ScreenCapture.StereoScreenCaptureMode 
 function UnityEngine.ScreenCapture.CaptureScreenshot(filename, stereoCaptureMode) end
 
 --- Captures a screenshot of the game view into a Texture2D object.
@@ -15,10 +20,12 @@ function UnityEngine.ScreenCapture.CaptureScreenshot(filename, stereoCaptureMode
 function UnityEngine.ScreenCapture.CaptureScreenshotAsTexture() end
 
 --- Captures a screenshot of the game view into a Texture2D object.
+--- @param superSize number 
 --- @return UnityEngine.Texture2D 
 function UnityEngine.ScreenCapture.CaptureScreenshotAsTexture(superSize) end
 
 --- Captures a screenshot of the game view into a Texture2D object.
+--- @param stereoCaptureMode UnityEngine.ScreenCapture.StereoScreenCaptureMode 
 --- @return UnityEngine.Texture2D 
 function UnityEngine.ScreenCapture.CaptureScreenshotAsTexture(stereoCaptureMode) end
 

@@ -5,19 +5,27 @@
 ---       The offset from the top left of the texture to use as the target point (must be within the bounds of the cursor).
 UnityEngine.UIElements.Cursor = {}
 
+--- @param style1 UnityEngine.UIElements.Cursor 
+--- @param style2 UnityEngine.UIElements.Cursor 
 --- @return boolean
 function UnityEngine.UIElements.Cursor.op_Equality(style1, style2) end
 
+--- @param style1 UnityEngine.UIElements.Cursor 
+--- @param style2 UnityEngine.UIElements.Cursor 
 --- @return boolean
 function UnityEngine.UIElements.Cursor.op_Inequality(style1, style2) end
 
+--- @param value UnityEngine.Texture2D 
 function UnityEngine.UIElements.Cursor:set_texture(value) end
 
+--- @param value UnityEngine.Vector2 
 function UnityEngine.UIElements.Cursor:set_hotspot(value) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Cursor:Equals(obj) end
 
+--- @param other UnityEngine.UIElements.Cursor 
 --- @return boolean
 function UnityEngine.UIElements.Cursor:Equals(other) end
 

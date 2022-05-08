@@ -78,12 +78,16 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.ReflectionProbe = {}
 
+--- @param value function 
 function UnityEngine.ReflectionProbe.add_reflectionProbeChanged(value) end
 
+--- @param value function 
 function UnityEngine.ReflectionProbe.remove_reflectionProbeChanged(value) end
 
+--- @param value function 
 function UnityEngine.ReflectionProbe.add_defaultReflectionSet(value) end
 
+--- @param value function 
 function UnityEngine.ReflectionProbe.remove_defaultReflectionSet(value) end
 
 --- Utility method to blend 2 cubemaps into a target render texture.
@@ -94,46 +98,67 @@ function UnityEngine.ReflectionProbe.remove_defaultReflectionSet(value) end
 --- @return boolean Returns trues if cubemaps were blended, false otherwise.
 function UnityEngine.ReflectionProbe.BlendCubemap(src, dst, blend, target) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeType 
 function UnityEngine.ReflectionProbe:set_type(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ReflectionProbe:set_size(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.ReflectionProbe:set_center(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_nearClipPlane(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_farClipPlane(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_intensity(value) end
 
+--- @param value boolean 
 function UnityEngine.ReflectionProbe:set_hdr(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_shadowDistance(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_resolution(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_cullingMask(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeClearFlags 
 function UnityEngine.ReflectionProbe:set_clearFlags(value) end
 
+--- @param value UnityEngine.Color 
 function UnityEngine.ReflectionProbe:set_backgroundColor(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_blendDistance(value) end
 
+--- @param value boolean 
 function UnityEngine.ReflectionProbe:set_boxProjection(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeMode 
 function UnityEngine.ReflectionProbe:set_mode(value) end
 
+--- @param value number 
 function UnityEngine.ReflectionProbe:set_importance(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeRefreshMode 
 function UnityEngine.ReflectionProbe:set_refreshMode(value) end
 
+--- @param value UnityEngine.Rendering.ReflectionProbeTimeSlicingMode 
 function UnityEngine.ReflectionProbe:set_timeSlicingMode(value) end
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.ReflectionProbe:set_bakedTexture(value) end
 
+--- @param value UnityEngine.Texture 
 function UnityEngine.ReflectionProbe:set_customBakedTexture(value) end
 
+--- @param value UnityEngine.RenderTexture 
 function UnityEngine.ReflectionProbe:set_realtimeTexture(value) end
 
 --- Revert all ReflectionProbe parameters to default.

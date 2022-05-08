@@ -13,16 +13,22 @@
 ---       Gets the number of per-object light and reflection probe indices.
 UnityEngine.Rendering.CullingResults = {}
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Equality(left, right) end
 
+--- @param left UnityEngine.Rendering.CullingResults 
+--- @param right UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults.op_Inequality(left, right) end
 
 --- Fills a buffer with per-object light indices.
+--- @param computeBuffer UnityEngine.ComputeBuffer 
 function UnityEngine.Rendering.CullingResults:FillLightAndReflectionProbeIndices(computeBuffer) end
 
 --- Fills a buffer with per-object light indices.
+--- @param buffer UnityEngine.GraphicsBuffer 
 function UnityEngine.Rendering.CullingResults:FillLightAndReflectionProbeIndices(buffer) end
 
 --- If a RenderPipeline sorts or otherwise modifies the VisibleLight list, an index remap will be necessary to properly make use of per-object light lists.
@@ -80,9 +86,11 @@ function UnityEngine.Rendering.CullingResults:ComputePointShadowMatricesAndCulli
 --- @return UnityEngine.Rendering.ShadowSplitData& The computed cascade data.
 function UnityEngine.Rendering.CullingResults:ComputeDirectionalShadowMatricesAndCullingPrimitives(activeLightIndex, splitIndex, splitCount, splitRatio, shadowResolution, shadowNearPlaneOffset) end
 
+--- @param other UnityEngine.Rendering.CullingResults 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.Rendering.CullingResults:Equals(obj) end
 

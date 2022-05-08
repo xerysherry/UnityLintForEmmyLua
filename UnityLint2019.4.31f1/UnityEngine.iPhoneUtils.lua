@@ -3,16 +3,34 @@
 --- @field isApplicationGenuineAvailable boolean
 UnityEngine.iPhoneUtils = {}
 
+--- @param path string 
+--- @param bgColor UnityEngine.Color 
+--- @param controlMode UnityEngine.iPhoneMovieControlMode 
+--- @param scalingMode UnityEngine.iPhoneMovieScalingMode 
 function UnityEngine.iPhoneUtils.PlayMovie(path, bgColor, controlMode, scalingMode) end
 
+--- @param path string 
+--- @param bgColor UnityEngine.Color 
+--- @param controlMode UnityEngine.iPhoneMovieControlMode 
 function UnityEngine.iPhoneUtils.PlayMovie(path, bgColor, controlMode) end
 
+--- @param path string 
+--- @param bgColor UnityEngine.Color 
 function UnityEngine.iPhoneUtils.PlayMovie(path, bgColor) end
 
+--- @param url string 
+--- @param bgColor UnityEngine.Color 
+--- @param controlMode UnityEngine.iPhoneMovieControlMode 
+--- @param scalingMode UnityEngine.iPhoneMovieScalingMode 
 function UnityEngine.iPhoneUtils.PlayMovieURL(url, bgColor, controlMode, scalingMode) end
 
+--- @param url string 
+--- @param bgColor UnityEngine.Color 
+--- @param controlMode UnityEngine.iPhoneMovieControlMode 
 function UnityEngine.iPhoneUtils.PlayMovieURL(url, bgColor, controlMode) end
 
+--- @param url string 
+--- @param bgColor UnityEngine.Color 
 function UnityEngine.iPhoneUtils.PlayMovieURL(url, bgColor) end
 
 function UnityEngine.iPhoneUtils.Vibrate() end

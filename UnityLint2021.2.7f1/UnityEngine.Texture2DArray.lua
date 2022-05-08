@@ -32,6 +32,7 @@ UnityEngine.Texture2DArray = {}
 function UnityEngine.Texture2DArray:GetPixels(arrayElement, miplevel) end
 
 --- Retrieves a copy of the pixel color data for a given mip level of a given slice. The colors are represented by Color structs.
+--- @param arrayElement number 
 --- @return UnityEngine.Color[] An array that contains a copy of the requested pixel colors.
 function UnityEngine.Texture2DArray:GetPixels(arrayElement) end
 
@@ -42,6 +43,7 @@ function UnityEngine.Texture2DArray:GetPixels(arrayElement) end
 function UnityEngine.Texture2DArray:GetPixels32(arrayElement, miplevel) end
 
 --- Retrieves a copy of the pixel color data for a given slice, at a given mip level. The colors are represented by lower-precision Color32 structs.
+--- @param arrayElement number 
 --- @return UnityEngine.Color32[] An array that contains a copy of the requested pixel colors.
 function UnityEngine.Texture2DArray:GetPixels32(arrayElement) end
 
@@ -52,6 +54,8 @@ function UnityEngine.Texture2DArray:GetPixels32(arrayElement) end
 function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement, miplevel) end
 
 --- Set pixel colors for the whole mip level.
+--- @param colors UnityEngine.Color[] 
+--- @param arrayElement number 
 function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement) end
 
 --- Set pixel colors for the whole mip level.
@@ -61,6 +65,8 @@ function UnityEngine.Texture2DArray:SetPixels(colors, arrayElement) end
 function UnityEngine.Texture2DArray:SetPixels32(colors, arrayElement, miplevel) end
 
 --- Set pixel colors for the whole mip level.
+--- @param colors UnityEngine.Color32[] 
+--- @param arrayElement number 
 function UnityEngine.Texture2DArray:SetPixels32(colors, arrayElement) end
 
 --- Actually apply all previous SetPixels changes.
@@ -69,6 +75,7 @@ function UnityEngine.Texture2DArray:SetPixels32(colors, arrayElement) end
 function UnityEngine.Texture2DArray:Apply(updateMipmaps, makeNoLongerReadable) end
 
 --- Actually apply all previous SetPixels changes.
+--- @param updateMipmaps boolean 
 function UnityEngine.Texture2DArray:Apply(updateMipmaps) end
 
 --- Actually apply all previous SetPixels changes.

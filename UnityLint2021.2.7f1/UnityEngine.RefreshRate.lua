@@ -5,6 +5,7 @@
 --- @field denominator number Denominator of the refresh rate fraction.
 UnityEngine.RefreshRate = {}
 
+--- @param other UnityEngine.RefreshRate 
 --- @return boolean
 function UnityEngine.RefreshRate:Equals(other) end
 

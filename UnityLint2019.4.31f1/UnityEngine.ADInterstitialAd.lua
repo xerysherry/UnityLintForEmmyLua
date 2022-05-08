@@ -3,8 +3,10 @@
 --- @field loaded boolean
 UnityEngine.ADInterstitialAd = {}
 
+--- @param value function 
 function UnityEngine.ADInterstitialAd.add_onInterstitialWasLoaded(value) end
 
+--- @param value function 
 function UnityEngine.ADInterstitialAd.remove_onInterstitialWasLoaded(value) end
 
 function UnityEngine.ADInterstitialAd:Show() end

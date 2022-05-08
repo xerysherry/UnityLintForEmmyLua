@@ -2,6 +2,7 @@
 UnityEngine.JsonUtility = {}
 
 --- Generate a JSON representation of the public fields of an object.
+--- @param obj System.Object 
 --- @return string The object's data in JSON format.
 function UnityEngine.JsonUtility.ToJson(obj) end
 

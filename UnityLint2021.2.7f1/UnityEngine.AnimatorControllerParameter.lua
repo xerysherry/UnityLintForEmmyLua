@@ -13,16 +13,22 @@
 ---       The default bool value for the parameter.
 UnityEngine.AnimatorControllerParameter = {}
 
+--- @param value string 
 function UnityEngine.AnimatorControllerParameter:set_name(value) end
 
+--- @param value UnityEngine.AnimatorControllerParameterType 
 function UnityEngine.AnimatorControllerParameter:set_type(value) end
 
+--- @param value number 
 function UnityEngine.AnimatorControllerParameter:set_defaultFloat(value) end
 
+--- @param value number 
 function UnityEngine.AnimatorControllerParameter:set_defaultInt(value) end
 
+--- @param value boolean 
 function UnityEngine.AnimatorControllerParameter:set_defaultBool(value) end
 
+--- @param o System.Object 
 --- @return boolean
 function UnityEngine.AnimatorControllerParameter:Equals(o) end
 

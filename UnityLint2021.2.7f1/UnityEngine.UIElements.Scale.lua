@@ -11,17 +11,24 @@ UnityEngine.UIElements.Scale = {}
 --- @return UnityEngine.UIElements.Scale 
 function UnityEngine.UIElements.Scale.None() end
 
+--- @param lhs UnityEngine.UIElements.Scale 
+--- @param rhs UnityEngine.UIElements.Scale 
 --- @return boolean
 function UnityEngine.UIElements.Scale.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.Scale 
+--- @param rhs UnityEngine.UIElements.Scale 
 --- @return boolean
 function UnityEngine.UIElements.Scale.op_Inequality(lhs, rhs) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.UIElements.Scale:set_value(value) end
 
+--- @param other UnityEngine.UIElements.Scale 
 --- @return boolean
 function UnityEngine.UIElements.Scale:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.Scale:Equals(obj) end
 

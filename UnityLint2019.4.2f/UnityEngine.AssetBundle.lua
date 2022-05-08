@@ -41,10 +41,13 @@ function UnityEngine.AssetBundle.UnloadAllAssetBundles(unloadAllObjects) end
 function UnityEngine.AssetBundle.GetAllLoadedAssetBundles() end
 
 --- Asynchronously loads an AssetBundle from a file on disk.
+--- @param path string 
 --- @return UnityEngine.AssetBundleCreateRequest Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.
 function UnityEngine.AssetBundle.LoadFromFileAsync(path) end
 
 --- Asynchronously loads an AssetBundle from a file on disk.
+--- @param path string 
+--- @param crc number 
 --- @return UnityEngine.AssetBundleCreateRequest Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.
 function UnityEngine.AssetBundle.LoadFromFileAsync(path, crc) end
 
@@ -56,10 +59,13 @@ function UnityEngine.AssetBundle.LoadFromFileAsync(path, crc) end
 function UnityEngine.AssetBundle.LoadFromFileAsync(path, crc, offset) end
 
 --- Synchronously loads an AssetBundle from a file on disk.
+--- @param path string 
 --- @return UnityEngine.AssetBundle Loaded AssetBundle object or null if failed.
 function UnityEngine.AssetBundle.LoadFromFile(path) end
 
 --- Synchronously loads an AssetBundle from a file on disk.
+--- @param path string 
+--- @param crc number 
 --- @return UnityEngine.AssetBundle Loaded AssetBundle object or null if failed.
 function UnityEngine.AssetBundle.LoadFromFile(path, crc) end
 
@@ -71,6 +77,7 @@ function UnityEngine.AssetBundle.LoadFromFile(path, crc) end
 function UnityEngine.AssetBundle.LoadFromFile(path, crc, offset) end
 
 --- Asynchronously create an AssetBundle from a memory region.
+--- @param binary number[] 
 --- @return UnityEngine.AssetBundleCreateRequest Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.
 function UnityEngine.AssetBundle.LoadFromMemoryAsync(binary) end
 
@@ -81,6 +88,7 @@ function UnityEngine.AssetBundle.LoadFromMemoryAsync(binary) end
 function UnityEngine.AssetBundle.LoadFromMemoryAsync(binary, crc) end
 
 --- Synchronously create an AssetBundle from a memory region.
+--- @param binary number[] 
 --- @return UnityEngine.AssetBundle Loaded AssetBundle object or null if failed.
 function UnityEngine.AssetBundle.LoadFromMemory(binary) end
 
@@ -98,10 +106,13 @@ function UnityEngine.AssetBundle.LoadFromMemory(binary, crc) end
 function UnityEngine.AssetBundle.LoadFromStreamAsync(stream, crc, managedReadBufferSize) end
 
 --- Asynchronously loads an AssetBundle from a managed Stream.
+--- @param stream System.IO.Stream 
+--- @param crc number 
 --- @return UnityEngine.AssetBundleCreateRequest Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.
 function UnityEngine.AssetBundle.LoadFromStreamAsync(stream, crc) end
 
 --- Asynchronously loads an AssetBundle from a managed Stream.
+--- @param stream System.IO.Stream 
 --- @return UnityEngine.AssetBundleCreateRequest Asynchronous create request for an AssetBundle. Use AssetBundleCreateRequest.assetBundle property to get an AssetBundle once it is loaded.
 function UnityEngine.AssetBundle.LoadFromStreamAsync(stream) end
 
@@ -113,10 +124,13 @@ function UnityEngine.AssetBundle.LoadFromStreamAsync(stream) end
 function UnityEngine.AssetBundle.LoadFromStream(stream, crc, managedReadBufferSize) end
 
 --- Synchronously loads an AssetBundle from a managed Stream.
+--- @param stream System.IO.Stream 
+--- @param crc number 
 --- @return UnityEngine.AssetBundle The loaded AssetBundle object or null when the object fails to load.
 function UnityEngine.AssetBundle.LoadFromStream(stream, crc) end
 
 --- Synchronously loads an AssetBundle from a managed Stream.
+--- @param stream System.IO.Stream 
 --- @return UnityEngine.AssetBundle The loaded AssetBundle object or null when the object fails to load.
 function UnityEngine.AssetBundle.LoadFromStream(stream) end
 
@@ -149,9 +163,11 @@ function UnityEngine.AssetBundle:GetAllScenePaths() end
 --- @return boolean 
 function UnityEngine.AssetBundle:Contains(name) end
 
+--- @param name string 
 --- @return UnityEngine.Object
 function UnityEngine.AssetBundle:Load(name) end
 
+--- @param name string 
 --- @return UnityEngine.Object
 function UnityEngine.AssetBundle:Load(name) end
 

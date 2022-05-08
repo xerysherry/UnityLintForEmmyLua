@@ -1,3 +1,4 @@
+--- @class UnityEngine.Rendering.CullingOptions
 UnityEngine.Rendering.CullingOptions = {
     None = 0,
     ForceEvenIfCameraIsNotActive = 1,

@@ -1,3 +1,4 @@
+--- @class UnityEngine.VR.UserPresenceState
 UnityEngine.VR.UserPresenceState = {
     Unsupported = -1,
     NotPresent = 0,

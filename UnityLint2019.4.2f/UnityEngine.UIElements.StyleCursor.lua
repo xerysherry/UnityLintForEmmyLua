@@ -5,25 +5,35 @@
 ---       The style keyword.
 UnityEngine.UIElements.StyleCursor = {}
 
+--- @param lhs UnityEngine.UIElements.StyleCursor 
+--- @param rhs UnityEngine.UIElements.StyleCursor 
 --- @return boolean
 function UnityEngine.UIElements.StyleCursor.op_Equality(lhs, rhs) end
 
+--- @param lhs UnityEngine.UIElements.StyleCursor 
+--- @param rhs UnityEngine.UIElements.StyleCursor 
 --- @return boolean
 function UnityEngine.UIElements.StyleCursor.op_Inequality(lhs, rhs) end
 
+--- @param keyword UnityEngine.UIElements.StyleKeyword 
 --- @return UnityEngine.UIElements.StyleCursor
 function UnityEngine.UIElements.StyleCursor.op_Implicit(keyword) end
 
+--- @param v UnityEngine.UIElements.Cursor 
 --- @return UnityEngine.UIElements.StyleCursor
 function UnityEngine.UIElements.StyleCursor.op_Implicit(v) end
 
+--- @param value UnityEngine.UIElements.Cursor 
 function UnityEngine.UIElements.StyleCursor:set_value(value) end
 
+--- @param value UnityEngine.UIElements.StyleKeyword 
 function UnityEngine.UIElements.StyleCursor:set_keyword(value) end
 
+--- @param other UnityEngine.UIElements.StyleCursor 
 --- @return boolean
 function UnityEngine.UIElements.StyleCursor:Equals(other) end
 
+--- @param obj System.Object 
 --- @return boolean
 function UnityEngine.UIElements.StyleCursor:Equals(obj) end
 

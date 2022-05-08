@@ -33,16 +33,22 @@
 --- @field hideFlags UnityEngine.HideFlags
 UnityEngine.LODGroup = {}
 
+--- @param value number 
 function UnityEngine.LODGroup.set_crossFadeAnimationDuration(value) end
 
+--- @param value UnityEngine.Vector3 
 function UnityEngine.LODGroup:set_localReferencePoint(value) end
 
+--- @param value number 
 function UnityEngine.LODGroup:set_size(value) end
 
+--- @param value UnityEngine.LODFadeMode 
 function UnityEngine.LODGroup:set_fadeMode(value) end
 
+--- @param value boolean 
 function UnityEngine.LODGroup:set_animateCrossFading(value) end
 
+--- @param value boolean 
 function UnityEngine.LODGroup:set_enabled(value) end
 
 --- Recalculate the bounding region for the LODGroup (Relatively slow, do not call often).
@@ -52,6 +58,7 @@ function UnityEngine.LODGroup:RecalculateBounds() end
 --- @return UnityEngine.LOD[] The LOD array.
 function UnityEngine.LODGroup:GetLODs() end
 
+--- @param lods UnityEngine.LOD[] 
 function UnityEngine.LODGroup:SetLODS(lods) end
 
 --- Set the LODs for the LOD group. This will remove any existing LODs configured on the LODGroup.

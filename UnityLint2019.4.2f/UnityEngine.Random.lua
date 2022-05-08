@@ -16,12 +16,14 @@
 ---       Returns a random rotation with uniform distribution (Read Only).
 UnityEngine.Random = {}
 
+--- @param value number 
 function UnityEngine.Random.set_seed(value) end
 
 --- Initializes the random number generator state with a seed.
 --- @param seed number Seed used to initialize the random number generator.
 function UnityEngine.Random.InitState(seed) end
 
+--- @param value UnityEngine.Random.State 
 function UnityEngine.Random.set_state(value) end
 
 --- Return a random float number between min [inclusive] and max [inclusive] (Read Only).
@@ -36,9 +38,13 @@ function UnityEngine.Random.Range(min, max) end
 --- @return number 
 function UnityEngine.Random.Range(min, max) end
 
+--- @param min number 
+--- @param max number 
 --- @return number
 function UnityEngine.Random.RandomRange(min, max) end
 
+--- @param min number 
+--- @param max number 
 --- @return number
 function UnityEngine.Random.RandomRange(min, max) end
 
@@ -47,14 +53,26 @@ function UnityEngine.Random.RandomRange(min, max) end
 function UnityEngine.Random.ColorHSV() end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the input ranges.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax) end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
+--- @param saturationMin number 
+--- @param saturationMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the input ranges.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax, saturationMin, saturationMax) end
 
 --- Generates a random color from HSV and alpha ranges.
+--- @param hueMin number 
+--- @param hueMax number 
+--- @param saturationMin number 
+--- @param saturationMax number 
+--- @param valueMin number 
+--- @param valueMax number 
 --- @return UnityEngine.Color A random color with HSV and alpha values in the input ranges.
 function UnityEngine.Random.ColorHSV(hueMin, hueMax, saturationMin, saturationMax, valueMin, valueMax) end
 

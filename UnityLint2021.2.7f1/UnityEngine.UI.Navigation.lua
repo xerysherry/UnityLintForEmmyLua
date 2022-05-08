@@ -8,18 +8,25 @@
 --- @field selectOnRight UnityEngine.UI.Selectable
 UnityEngine.UI.Navigation = {}
 
+--- @param value UnityEngine.UI.Navigation.Mode 
 function UnityEngine.UI.Navigation:set_mode(value) end
 
+--- @param value boolean 
 function UnityEngine.UI.Navigation:set_wrapAround(value) end
 
+--- @param value UnityEngine.UI.Selectable 
 function UnityEngine.UI.Navigation:set_selectOnUp(value) end
 
+--- @param value UnityEngine.UI.Selectable 
 function UnityEngine.UI.Navigation:set_selectOnDown(value) end
 
+--- @param value UnityEngine.UI.Selectable 
 function UnityEngine.UI.Navigation:set_selectOnLeft(value) end
 
+--- @param value UnityEngine.UI.Selectable 
 function UnityEngine.UI.Navigation:set_selectOnRight(value) end
 
+--- @param other UnityEngine.UI.Navigation 
 --- @return boolean
 function UnityEngine.UI.Navigation:Equals(other) end
 

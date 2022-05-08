@@ -1,3 +1,4 @@
+--- @class Unity.Profiling.ProfilerCounterOptions
 Unity.Profiling.ProfilerCounterOptions = {
     None = 0,
     FlushOnEndOfFrame = 2,

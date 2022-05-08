@@ -15,6 +15,8 @@ function UnityEngine.RectTransformUtility.PixelAdjustPoint(point, elementTransfo
 function UnityEngine.RectTransformUtility.PixelAdjustRect(rectTransform, canvas) end
 
 --- Does the RectTransform contain the screen point as seen from the given camera?
+--- @param rect UnityEngine.RectTransform 
+--- @param screenPoint UnityEngine.Vector2 
 --- @return boolean True if the point is inside the rectangle.
 function UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(rect, screenPoint) end
 
@@ -26,26 +28,45 @@ function UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(rect, scr
 function UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(rect, screenPoint, cam) end
 
 --- Transform a screen space point to a position in world space that is on the plane of the given RectTransform.
+--- @param rect UnityEngine.RectTransform 
+--- @param screenPoint UnityEngine.Vector2 
+--- @param cam UnityEngine.Camera 
 --- @return boolean Returns true if the plane of the RectTransform is hit, regardless of whether the point is inside the rectangle.
+--- @return UnityEngine.Vector3& 
 function UnityEngine.RectTransformUtility.ScreenPointToWorldPointInRectangle(rect, screenPoint, cam) end
 
 --- Transform a screen space point to a position in the local space of a RectTransform that is on the plane of its rectangle.
+--- @param rect UnityEngine.RectTransform 
+--- @param screenPoint UnityEngine.Vector2 
+--- @param cam UnityEngine.Camera 
 --- @return boolean Returns true if the plane of the RectTransform is hit, regardless of whether the point is inside the rectangle.
+--- @return UnityEngine.Vector2& 
 function UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, screenPoint, cam) end
 
+--- @param cam UnityEngine.Camera 
+--- @param screenPos UnityEngine.Vector2 
 --- @return UnityEngine.Ray
 function UnityEngine.RectTransformUtility.ScreenPointToRay(cam, screenPos) end
 
+--- @param cam UnityEngine.Camera 
+--- @param worldPoint UnityEngine.Vector3 
 --- @return UnityEngine.Vector2
 function UnityEngine.RectTransformUtility.WorldToScreenPoint(cam, worldPoint) end
 
+--- @param root UnityEngine.Transform 
+--- @param child UnityEngine.Transform 
 --- @return UnityEngine.Bounds
 function UnityEngine.RectTransformUtility.CalculateRelativeRectTransformBounds(root, child) end
 
+--- @param trans UnityEngine.Transform 
 --- @return UnityEngine.Bounds
 function UnityEngine.RectTransformUtility.CalculateRelativeRectTransformBounds(trans) end
 
 --- Flips the alignment of the RectTransform along the horizontal or vertical axis, and optionally its children as well.
+--- @param rect UnityEngine.RectTransform 
+--- @param axis number 
+--- @param keepPositioning boolean 
+--- @param recursive boolean 
 function UnityEngine.RectTransformUtility.FlipLayoutOnAxis(rect, axis, keepPositioning, recursive) end
 
 --- Flips the horizontal and vertical axes of the RectTransform size and alignment, and optionally its children as well.

@@ -12,6 +12,7 @@ function UnityEngine.Playables.PlayableOutput:IsPlayableOutputOfType() end
 --- @return System.Type
 function UnityEngine.Playables.PlayableOutput:GetPlayableOutputType() end
 
+--- @param other UnityEngine.Playables.PlayableOutput 
 --- @return boolean
 function UnityEngine.Playables.PlayableOutput:Equals(other) end
 
